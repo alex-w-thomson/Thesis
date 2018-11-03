@@ -1,0 +1,184 @@
+% +--------------------------------------------------------------------+
+% | Sample Chapter 1
+% |
+% | This file provides examples of how to
+% | - insert a figure with a caption
+% | - construct a table with a caption
+% | - create subsections within the chapter
+% | - insert a reference to a Figure or Table
+% | - make a citation
+% +--------------------------------------------------------------------+
+
+\cleardoublepage
+
+% +--------------------------------------------------------------------+
+% | Replace "Chapter Title" below with the title of your chapter.
+% | LaTeX will automatically number the chapters.
+% +--------------------------------------------------------------------+
+
+\chapter{Introduction to Leibniz-type rules}
+\label{makereference1}
+
+Leibniz-type rules have been extensively studied due to their connections to partial differential equations which model many real world situations such as shallow water waves and fluid flow. In this chapter we introduce some of the definitions and history of the development of Leibniz-type rules which motivated the results to be discussed in chapters 2 and 3 of this manuscript. First consider the Leibniz rule taught in Calculus courses which expresses the derivatives of a product of functions as a linear combination of derivatives of the functions involved; more specifically, for functions $f$ and $g$ sufficiently smooth, it holds that
+\[\partial^\alpha_x (fg)(x) = \sum_{\alpha_1 + \alpha_2 = \alpha} C_{\alpha_1 \alpha_2} \partial^{\alpha_1}_x f(x) \partial^{\alpha_2}_x g(x),\]
+where $\alpha \in \mathbb{N}^n_0$ and $C_{\alpha_1 \alpha_2}$ are appropriate constants. The definitions in of the function spaces used below and multiindices $\alpha\in\mathbb{N}^n_0$ will be discussed in Appendix A \ref{Appendix:Key1}. In particular one term has all the derivatives on $f$ and another with $\alpha$ derivatives on $g$ and
+\[ \partial^\alpha_x (fg)(x) = \partial^\alpha_x f(x) g(x) + f(x) \partial^\alpha_x g(x) + ...\]
+In an analogous way, fractional Leibniz rules give estimates of the smoothness and size of a product of functions in terms of the smoothness and size of the factors. For instance, for $f$ and $g$ in the Schwartz class $\mathcal{S}(\mathbb{R}^n)$, it holds that
+\begin{equation}\label{def:leibniz}
+\norm{D^s (fg)}{L^r} \lesssim \norm{D^s f}{L^{p_1}}\norm{g}{L^{q_1}} + \norm{f}{L^{p_2}}\norm{D^s g}{L^{q_2}},
+\end{equation}
+where $1/r = 1/p_1 + 1/q_1 = 1/p_2 + 1/q_2$, $1<p_1,p_2,q_1,q_2\leq \infty$, $1/2 <r\leq \infty$, and $s>N(1/min(r,1) - 1)$ or $s$ is an even natural number. The homogeneous fractional differentiation operator of order $s$, $D^s$, is defined as \[D^s f(x) = \int_\rn |\xi|^s \widehat{f}(\xi) e^{2\pi i x\cdot \xi} d\xi,\]
+where $\widehat{f}$ is the Fourier transform of $f$.
+For $s>0$, the operator $D^s$ is naturally understood as taking $s$ derivatives of its argument. Indeed, in the case $s=2$, $D^2f = c\Delta f$, where $\Delta = \sum_{j=1}^n \partial^2_{x_j}$ is the Laplacian operator. Furthermore, if $s$ is a positive integer,
+
+%the $\dot{W}^{k,p}$ norm and $\norm{D^k \cdot}{L^p}$ are equivalent norms where 
+%\[\norm{f}{\cdot{W}^{k,p}} = \sum_{|\alpha|=k} \norm{\partial^\alpha}{L^p}.\] 
+
+\[\norm{D^s f}{L^p} \sim \sum_{|\alpha| = s} \norm{\partial^\alpha f}{L^p},\]
+where $|\alpha| = \alpha_1 + \alpha_2 + ... + \alpha_n$ for $\alpha = (\alpha_1,\alpha_2,...,\alpha_n) \in \mathbb{N}^n_0.$
+
+ Another version of (\ref{def:leibniz}) is obtained by using the inhomogeneous sth order fractional differentiation operator $J^s$:
+\begin{equation}\label{def:ileibniz}
+\norm{J^s(fg)}{L^r} \lesssim \norm{J^s f}{L^{p_1}}\norm{g}{L^{q_1}} + \norm{f}{L^{p_2}}\norm{J^s g}{L^{q_2}}.
+\end{equation}
+Similarly to its homeogenous counterpart, the operator $J^s$ is defined through the Fourier transform as 
+\[ J^s f(x) = \int_{\rn} (1+|\xi|^2)^\frac{s}{2} \widehat{f}(\xi)e^{2\pi i x\cdot\xi} d\xi\]
+and can be interpreted as taking derivatives up to order $s$ of $f$.
+%Then $s>0$ it is interpreted as taking up to $s$ derivatives of the function it is applied to as when $s=k$ is a positive integer $\norm{J^k(f)}{L^p} = \norm{f}{W^{k,p}}$ where $\norm{f}{W^{k,p}} = \sum_{|\alpha|\leq k} \norm{\partial^\alpha f}{L^p}$.
+ 
+The estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) are also known as Kato-Ponce inequalities due to the foundational work of Kato-Ponce \cite{MR951744}, where the estimate (\ref{def:ileibniz}) was proved in the case $1<r=p_1=q_2<\infty$ and $p_2=q_1=\infty$, with applications to the Cauchy problem for Euler and Navier-Stokes equations. This result was extended by Gulisashvili-Kon \cite{MR1420922}, who showed (\ref{def:leibniz}) and (\ref{def:ileibniz}) for the cases $s>0$, $1<r<\infty$, and $1 < p_1,p_2,q_1,q_2\leq\infty$ in connection to smoothing properties of Schr\"odinger semigroups. Grafakos-Oh \cite{MR3200091} and Muscalu-Schlag \cite{MR3052499} established the cases for $1/2 <r\leq 1$ and the case $r=\infty$ was completed in the work of Bourgain-Li \cite{MR3263081} and Grafakos-Maldonado-Naibo \cite{MR3189525}. Applications of the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) to Korteweg-de Vries equations were studied by Christ-Weinstein \cite{MR1124294} and Kenig-Ponce-Vega \cite{MR1211741}.
+
+In the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) the two functions $f$ and $g$ are related through pointwise multiplication. Throughout the rest of this manuscript we will consider estimates similar to (\ref{def:leibniz}) and (\ref{def:ileibniz}) where the two functions are related through a pseudodifferntial operator. Let $\sigma(x,\xi,\eta)$ be a complex-valued, smooth function for $x,\xi,\eta\in\rn$. We define the \textit{bilinear pseudodifferential operator}  associated to $\sigma$, $T_\sigma$, by 
+\[T_{\sigma}(f,g)(x) = \int_{\mathbb{R}^{2n}} \sigma(x,\xi,\eta) \widehat{f}(\xi)\widehat{g}(\eta)e^{-2\pi i x\cdot(\xi+\eta)}d\xi d\eta. \]
+We refer to $\sigma$ as the symbol of the operator $T_\sigma$. When $\sigma$ is independent of $x$ we call $\sigma$ the multiplier of the \textit{bilinear multiplier operator} $T_\sigma$. 
+
+
+Throughout this manuscript we will study estimates related to (\ref{def:leibniz}) and (\ref{def:ileibniz}) associated to bilinear pseudodifferential operators that are of the form 
+\begin{equation}\label{h_general_estimate}
+\norm{D^s T_\sigma(f,g)}{Z} \lesssim \norm{D^sf}{X_1}\norm{g}{Y_1} + \norm{f}{X_2}\norm{D^s g}{Y_2} ,
+\end{equation}
+\begin{equation}\label{i_general_estimate}
+\norm{J^sT_\sigma(f,g)}{Z} \lesssim \norm{J^sf}{X_1}\norm{g}{Y_1} + \norm{f}{X_2}\norm{J^sg}{Y_2} ,
+\end{equation}
+for a variety of function spaces $X_1$, $X_2$, $Y_1$, $Y_2$, and $Z$.
+
+%When $\sigma \equiv 1$, the Fourier inversion formula implies that $T_\sigma(f,g) = fg$. Therefore, estimates of the form (\ref{h_general_estimate}) and (\ref{i_general_estimate}) include, as particular cases, the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) presented in Section 1 by choosing $Z$, $X_1$, $Y_1$, $X_2$, and $Y_2$ to be appropriate Lebesgue spaces.
+
+The estimates (\ref{h_general_estimate}) and (\ref{i_general_estimate}) have been extensively studied in a variety of settings. In \cite{MR3750234}, Brummer-Naibo studied Leibniz-type rules in function spaces that admit a molecular decomposition and a $\varphi$-transform characterization in the sense of Frazier-Jawerth \cite{MR808825, MR1070037}. In the context of Lebesgue spaces and mixed Lebesgue spaces, estimates of the type (\ref{h_general_estimate}) were studied in Hart-Torres-Wu \cite{HTW} for bilinear multiplier operators with minimal smoothness assumptions on the multipliers. Related mapping properties for bilinear pseudodifferential operators with symbols in the bilinear H\"ormander classes were studied by B\'enyi-Torres \cite{MR1986065} and B\'enyi-Nahmod-Torres \cite{MR2250054} in the setting of Sobolev spaces, by B\'enyi \cite{MR1996120} in the setting of Besov spaces, and by Naibo \cite{MR3393696} and Koezuka-Tomita \cite{MR3750316} in the context of Triebel-Lizorkin spaces. Additionally, versions of (\ref{def:leibniz}) and (\ref{def:ileibniz}) in weighted Lebesgue spaces were proved in Cruz-Uribe-Naibo \cite{MR3513582}, while Brummer-Naibo \cite{BrNa2017} proved (\ref{h_general_estimate}) and (\ref{i_general_estimate}) in weighted Lebesgue spaces for Coifman-Meyer multiplier operators. 
+
+In chapter two we will present Leibniz-type rules in the settings of Besov and Triebel-Lizorkin spaces based in various function spaces. The techniques used are quite flexible and allow the method of proof to be adapted to many different function spaces. 
+
+In chapter three we will present Leibniz-type rules in Besov spaces for bilinear pseudodifferential operators symbols of critical order.
+
+%\begin{figure}[htb]%t=top, b=bottom, h=here
+%
+%    \includegraphics[height=2.5in]{figures/graph.png}
+%
+%    \caption[Optional: Short caption to appear in List of
+%    Figures]{Full caption to appear below the Figure}
+%
+%    \label{figure1}
+%\end{figure}
+
+% +--------------------------------------------------------------------+
+% |To create cross-references to figures, tables and segments
+% |of text, LaTeX provides the following commands:
+% |   \label{marker}
+% |   \ref{marker}
+% |   \pageref{marker}
+% | where {marker} is a unique identifier.
+% |
+% | In the line above, we use \label{figure1} to mark a location
+% | we wish to refer to later.  LATEX replaces \ref by the number of
+% | the chapter, section, subsection, figure, or table after which the
+% | corresponding \label command was issued. \pageref prints the page
+% | number of the page where the \label command occurred.
+% |
+% +--------------------------------------------------------------------+
+
+%See the file chapter1.tex for examples of the commands used to
+%insert a figure or table, add a caption, etc.  Here is an example of
+%a table:
+
+%\begin{table}[ht]
+%
+%% +--------------------------------------------------------------------+
+%% | We include the command \begin{center} to center the table
+%% | horizontally on the page.  Note use of the command \end{center}
+%% | to turn off centering after the table is defined.
+%% +--------------------------------------------------------------------+
+%    \begin{center}
+%
+%% +--------------------------------------------------------------------+
+%% | The table is created with this command
+%% |
+%% | \begin{tabular}[pos]{table spec}
+%% |
+%% | The "pos" argument specifies the vertical position of the table
+%% | relative to the baseline of the surrounding text.  Use t, b, or c
+%% | to specify alignment at the top, bottom, or center.
+%% |
+%% | The "table spec" command defines the format of the table
+%% |   l for a column of left-aligned text
+%% |   r for a column of right-aligned text
+%% |   c for centered text
+%% |   p{width} for a column containing justified text with line breaks
+%% |   | for a vertical line
+%% |
+%% |  In this example, the caption is made to appear above the table
+%% |  by positioning the \caption command before the \begin{tabular
+%% |  command. To position the caption below the table, insert the
+%% |  \caption command after the \end{tabular} command.
+%% +--------------------------------------------------------------------+
+%    \caption{Caption to appear above the table}
+%    \begin{tabular}[c]{|c|c|c|}
+%        \hline
+%        Column 1 Heading & Column 2 Heading & Column 3 Heading \\
+%        \hline
+%        Col 1 Row 1 & Col 2 Row 1 & Col 3 Row 1\\
+%        Col 1 Row 2 & Col 2 Row 2 & Col 3 Row 2\\
+%        Col 1 Row 3 & Col 2 Row 3 & Col 3 Row 3\\
+%        \hline
+%    \end{tabular}
+%
+%    \label{table1}
+%   \end{center}
+%\end{table}
+
+
+
+% +--------------------------------------------------------------------+
+% | Replace \section headings below with the title of your
+% | subsections.  LaTeX will automatically number the subsections 1.1,
+% | 1.2, 1.3, etc.
+% +--------------------------------------------------------------------+
+
+%\section{Making References to Figures or Tables}
+%\label{makereference1.1}
+%
+%It is possible to create cross-references and hyperlinks to items or
+%sections within your paper.  For example, here is a reference to
+%Fig.~\ref{figure1} mentioned at the beginning of this chapter and a
+%reference to the Table~\ref{table1}.
+%
+%\section{Making a Reference to a Chapter Subsection}
+%\label{makereference1.2}
+%
+%In this section, we refer back to text mentioned in
+%Section~\ref{makereference1.1} on page~\pageref{makereference1.1}.
+%
+%\section{Making a Citation}
+%\label{makereference1.3}
+%
+%Here's an example of a citation to a single
+%work.~\citep{CT:Weiner:1999} It's also possible to make multiple
+%citations.~\citep{CT:Phillips:1985, ARP:Loy:1974}
+%
+%This template uses BibTeX to manage and format citations.  BibTeX is
+%not the only way to create a bibliography within LaTeX, but it's
+%generally considered to be the best option for long documents like a
+%thesis or dissertation.~\citep{CT:Gould:1988}  There are a few more
+%sample citations in this paragraph so you can see examples of how
+%in-text references are made and how the bibliography is
+%formatted.~\citep{ARP:Melinger:1991} See the file "BibTeX Guide.pdf"
+%for information on how to use BibTeX.

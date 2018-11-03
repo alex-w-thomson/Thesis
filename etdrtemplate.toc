@@ -1,0 +1,12 @@
+\contentsline {chapter}{List of Figures}{vii}{chapter*.2}
+\contentsline {chapter}{List of Tables}{viii}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introduction to Leibniz-type rules}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Bilinear multiplier operators and applications to scattering properties of certain systems of PDEs}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Definitions}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Coifman-Meyer Multipliers}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Weighted spaces}{7}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Function spaces}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Triebel-Lizorkin and Besov spaces}{8}{subsection.2.3.1}
+\contentsline {chapter}{Bibliography}{11}{section*.4}
+\contentsline {chapter}{\numberline {A}Title for This Appendix}{11}{appendix.A}
