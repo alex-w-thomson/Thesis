@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.19)  2 NOV 2018 03:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.19)  9 NOV 2018 19:21
 entering extended mode
 **./etdrtemplate.tex
 (etdrtemplate.tex
@@ -343,7 +343,23 @@ Package hyperref Warning: Option `pdfpagelabels' has already been used,
 \c@example=\count119
 \c@remark=\count120
 \c@list=\count121
-(etdrtemplate.aux)
+(etdrtemplate.aux
+
+LaTeX Warning: Label `thm:CM:TL:B' multiply defined.
+
+
+LaTeX Warning: Label `KP:CM:TL' multiply defined.
+
+
+LaTeX Warning: Label `KP:CM:B' multiply defined.
+
+
+LaTeX Warning: Label `KP:CM:TL2' multiply defined.
+
+
+LaTeX Warning: Label `BrNa2017_THM' multiply defined.
+
+)
 \openout1 = `etdrtemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 286.
@@ -360,8 +376,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 286.
 LaTeX Font Info:    ... okay on input line 286.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 286.
 LaTeX Font Info:    ... okay on input line 286.
-
-(C:\Users\laure\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+ (C:\Users\laure\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen126
@@ -586,27 +601,76 @@ Chapter 2.
 [5
 
 
-]
+] [6]
 
-Package natbib Warning: Citation `MR518170' on page 6 undefined on input line 5
-4.
+Package natbib Warning: Citation `MR1880324' on page 7 undefined on input line 
+42.
 
+[7]
 
-Package natbib Warning: Citation `MR1880324' on page 6 undefined on input line 
-54.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
-[6] [7]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ... \inf\{\tau \in (1,\infty]: w\in A_\tau \]
+                                                  . The condition (\ref{weig...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.68 ... \inf\{\tau \in (1,\infty]: w\in A_\tau \]
+                                                  . The condition (\ref{weig...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.68 ... \inf\{\tau \in (1,\infty]: w\in A_\tau \]
+                                                  . The condition (\ref{weig...
+Things are pretty mixed up, but I think the worst is over.
+
 
 Package natbib Warning: Citation `MR3243741' on page 8 undefined on input line 
-88.
+80.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 95.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+[8]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 87.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
- [8] [9]) [10]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
+
+Overfull \hbox (16.69919pt too wide) in paragraph at lines 98--99
+[]\OT1/cmr/m/n/12 The weighted \OT1/cmr/m/it/12 ho-mo-ge-neous Triebel-Lizorkin
+ space $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 w\OT1/cmr/m/n/12 )$ con-sists of al
+l $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 2 []\OT1/cmr/m/n/12 ([])\OML/cmm/m/it/12
+ =\OMS/cmsy/m/n/12 P\OT1/cmr/m/n/12 ([])$
+ []
+
+[9] [10]
+
+LaTeX Warning: Reference `KPH:Lp' on page 11 undefined on input line 149.
+
+
+LaTeX Warning: Reference `KPH:Lp' on page 11 undefined on input line 149.
+
+[11]
+
+Package natbib Warning: Citation `BrNa2017' on page 12 undefined on input line 
+187.
+
+[12]) [13]
 No file etdrtemplate.bbl.
 (appendixA.tex
 Appendix A.
@@ -615,7 +679,7 @@ Appendix A.
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 516.
-[11
+[14
 
 
 
@@ -625,35 +689,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 516.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 516.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 516.
 Package rerunfilecheck Info: File `etdrtemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 87DEF2D6098A980C4C428B43ADF291F8;993.
+(rerunfilecheck)             Checksum: 79E0E74777BACB4FD62D7DE017EAAA63;1009.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 516.
  ) 
 Here is how much of TeX's memory you used:
- 7377 strings out of 493303
- 105022 string characters out of 3138856
- 202027 words of memory out of 3000000
- 10763 multiletter control sequences out of 15000+200000
+ 7398 strings out of 493303
+ 105294 string characters out of 3138856
+ 201245 words of memory out of 3000000
+ 10769 multiletter control sequences out of 15000+200000
  11383 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,10n,32p,1383b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,10n,32p,13435b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb>
-Output written on etdrtemplate.pdf (18 pages, 235934 bytes).
+X 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on etdrtemplate.pdf (21 pages, 261228 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
