@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.19)  30 NOV 2018 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.19)  2 DEC 2018 02:53
 entering extended mode
 **./etdrtemplate.tex
 (etdrtemplate.tex
@@ -343,7 +343,29 @@ Package hyperref Warning: Option `pdfpagelabels' has already been used,
 \c@example=\count119
 \c@remark=\count120
 \c@list=\count121
-(etdrtemplate.aux)
+(etdrtemplate.aux
+
+LaTeX Warning: Label `thm:CM:TL:B' multiply defined.
+
+
+LaTeX Warning: Label `KP:CM:TL' multiply defined.
+
+
+LaTeX Warning: Label `KP:CM:B' multiply defined.
+
+
+LaTeX Warning: Label `KP:CM:TL2' multiply defined.
+
+
+LaTeX Warning: Label `BrNa2017_THM' multiply defined.
+
+
+LaTeX Warning: Label `thm:Nikolskij:weighted' multiply defined.
+
+
+LaTeX Warning: Label `psi*u' multiply defined.
+
+)
 \openout1 = `etdrtemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 286.
@@ -360,8 +382,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 286.
 LaTeX Font Info:    ... okay on input line 286.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 286.
 LaTeX Font Info:    ... okay on input line 286.
-
-(C:\Users\laure\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+ (C:\Users\laure\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen126
@@ -461,7 +482,22 @@ h the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.344 \end{abstract}
-                     [1] (etdrtemplate.toc)
+                     [1] (etdrtemplate.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 1.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+))
 \tf@toc=\write4
 \openout4 = `etdrtemplate.toc'.
 
@@ -471,10 +507,9 @@ l.344 \end{abstract}
 \tf@lof=\write5
 \openout5 = `etdrtemplate.lof'.
 
- [7
+[7
 
-]
-(etdrtemplate.lot)
+] (etdrtemplate.lot)
 \tf@lot=\write6
 \openout6 = `etdrtemplate.lot'.
 
@@ -482,23 +517,6 @@ l.344 \end{abstract}
 
 ] (chapter1.tex
 Chapter 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 22.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-
-LaTeX Warning: Reference `Appendix:Key1' on page 1 undefined on input line 24.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -589,125 +607,19 @@ Chapter 2.
 [5
 
 
-]
-
-LaTeX Warning: Reference `KP:CM:TL' on page 6 undefined on input line 21.
-
-
-LaTeX Warning: Reference `KP:CM:B' on page 6 undefined on input line 21.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 6 undefined on input line 28.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 6 undefined on input line 28.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 6 undefined on input line 34.
-
-[6]
+] [6]
 
 Package natbib Warning: Citation `MR1880324' on page 7 undefined on input line 
-42.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 7 undefined on input line 47.
-
-! Undefined control sequence.
-l.55 \widehat{\Phi}(0) \coloneqq
-                                 1,\quad \widehat{\Phi}(\xi) \coloneqq \sum_...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.55 ...neqq 1,\quad \widehat{\Phi}(\xi) \coloneqq
-                                                   \sum_{j \le 0} \widehat{\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+40.
 
 
 Package natbib Warning: Citation `MR518170' on page 7 undefined on input line 5
-7.
-
-[7]
-
-LaTeX Warning: Reference `eq:decompT1' on page 8 undefined on input line 67.
-
-
-LaTeX Warning: Reference `eq:decompT1' on page 8 undefined on input line 69.
-
-
-LaTeX Warning: Reference `eq:CMm' on page 8 undefined on input line 69.
-
-
-! LaTeX Error: \begin{document} ended by \end{remark}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 \end{remark}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.72 \end{remark}
-                 
-Things are pretty mixed up, but I think the worst is over.
-
-[8]
-
-! LaTeX Error: \begin{document} ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95 ... \inf\{\tau \in (1,\infty]: w\in A_\tau \]
-                                                  . The condition (\ref{weig...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.95 ... \inf\{\tau \in (1,\infty]: w\in A_\tau \]
-                                                  . The condition (\ref{weig...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.95 ... \inf\{\tau \in (1,\infty]: w\in A_\tau \]
-                                                  . The condition (\ref{weig...
-Things are pretty mixed up, but I think the worst is over.
-
-
-LaTeX Warning: Reference `weight_condition' on page 9 undefined on input line 9
 5.
 
+[7] [8]
 
 Package natbib Warning: Citation `MR3243741' on page 9 undefined on input line 
 107.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 9 undefined on input line 110.
 
 [9]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 114.
@@ -725,37 +637,11 @@ l $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 2 []\OT1/cmr/m/n/12 ([])\OML/cmm/m/it/12
  =\OMS/cmsy/m/n/12 P\OT1/cmr/m/n/12 ([])$
  []
 
-[10]
-
-LaTeX Warning: Reference `TL_B_def' on page 11 undefined on input line 154.
-
-
-LaTeX Warning: Reference `ITL_B_def' on page 11 undefined on input line 154.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 11 undefined on input line 162.
-
-
-LaTeX Warning: Reference `ITL_B_def' on page 11 undefined on input line 162.
-
-
-LaTeX Warning: Reference `TL_B_def' on page 11 undefined on input line 162.
-
-[11]
-
-LaTeX Warning: Reference `ITL_B_def' on page 12 undefined on input line 167.
-
-
-LaTeX Warning: Reference `TL_B_def' on page 12 undefined on input line 167.
-
-
+[10] [11]
 Overfull \hbox (0.75194pt too wide) in paragraph at lines 175--175
 [][]\OT1/cmr/bx/n/12 Nikol'skij rep-re-sen-ta-tions for weighted ho-mo-ge-neous
  and in-ho-mo-ge-neous Triebel-
  []
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 12 undefined on input line 177.
 
 
 Package natbib Warning: Citation `MR837335' on page 12 undefined on input line 
@@ -770,265 +656,36 @@ LaTeX Warning: Reference `sec:appendix' on page 12 undefined on input line 177.
 
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185 \item\label
-                 {item:thh:Nikolskij:TL} Let $0 < p < \infty$, $0 < q \leq \...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `KPH:Lp' on page 12 undefined on input line 204.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+LaTeX Warning: Reference `KPH:Lp' on page 12 undefined on input line 204.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185 \item\label
-                 {item:thh:Nikolskij:TL} Let $0 < p < \infty$, $0 < q \leq \...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185 \item\label
-                 {item:thh:Nikolskij:TL} Let $0 < p < \infty$, $0 < q \leq \...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.190 \item\label
-                 {item:thh:Nikolskij:B} Let $0 < p, q \leq \infty$ and $s > ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.190 \item\label
-                 {item:thh:Nikolskij:B} Let $0 < p, q \leq \infty$ and $s > ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.190 \item\label
-                 {item:thh:Nikolskij:B} Let $0 < p, q \leq \infty$ and $s > ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[12]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.195 \end{enumerate}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `KPH:Lp' on page 13 undefined on input line 204.
-
-
-LaTeX Warning: Reference `KPH:Lp' on page 13 undefined on input line 204.
-
-
-LaTeX Warning: Reference `KP:CM:TL' on page 13 undefined on input line 217.
-
-
-LaTeX Warning: Reference `KP:CM:B' on page 13 undefined on input line 217.
-
-[13]
-
-LaTeX Warning: Reference `KP:CM:TL' on page 14 undefined on input line 224.
-
-
-LaTeX Warning: Reference `KP:CM:B' on page 14 undefined on input line 224.
-
-
-LaTeX Warning: Reference `KP:CM:TL2' on page 14 undefined on input line 224.
-
-
-LaTeX Warning: Reference `TL_B_section' on page 14 undefined on input line 226.
-
-
-
-LaTeX Warning: Reference `KP:CM:TL' on page 14 undefined on input line 226.
-
-
-LaTeX Warning: Reference `KP:CM:B' on page 14 undefined on input line 226.
-
-
-LaTeX Warning: Reference `KP:CM:Hardy' on page 14 undefined on input line 234.
-
-
-LaTeX Warning: Reference `coro:KP:CM:Hardy' on page 14 undefined on input line 
-242.
-
+[12] [13]
 
 Package natbib Warning: Citation `BrNa2017' on page 14 undefined on input line 
 242.
 
-[14]
+[14] [15]
 
-LaTeX Warning: Reference `KP:CM:Lebesgue' on page 15 undefined on input line 24
-8.
-
-
-LaTeX Warning: Reference `coro:KP:CM:Hardy' on page 15 undefined on input line 
-251.
+LaTeX Warning: Reference `KPH:Lp' on page 16 undefined on input line 297.
 
 
-LaTeX Warning: Reference `KP:CM:Hardy' on page 15 undefined on input line 254.
+LaTeX Warning: Reference `KPH:Lp' on page 16 undefined on input line 297.
 
 
-LaTeX Warning: Reference `KP:CM:Lebesgue' on page 15 undefined on input line 25
-4.
-
-
-LaTeX Warning: Reference `KP:CM:Hardy' on page 15 undefined on input line 254.
-
-
-LaTeX Warning: Reference `KP:CM:Lebesgue' on page 15 undefined on input line 25
-4.
-
-
-LaTeX Warning: Reference `KP:CM:Hardy' on page 15 undefined on input line 254.
-
-
-LaTeX Warning: Reference `KP:CM:Lebesgue' on page 15 undefined on input line 25
-4.
-
-
-LaTeX Warning: Reference `KP:CM:Hardy' on page 15 undefined on input line 255.
-
-
-LaTeX Warning: Reference `KP:CM:Lebesgue' on page 15 undefined on input line 25
-5.
-
-
-LaTeX Warning: Reference `KP:CM:Hardy' on page 15 undefined on input line 255.
-
-
-LaTeX Warning: Reference `KP:CM:Lebesgue' on page 15 undefined on input line 25
-5.
-
-
-LaTeX Warning: Reference `KP:CM:Lebesgue' on page 15 undefined on input line 25
-6.
-
-
-LaTeX Warning: Reference `Kp:CM:Hardy2' on page 15 undefined on input line 256.
-
-
-
-LaTeX Warning: Reference `Kp:CM:Hardy2' on page 15 undefined on input line 258.
-
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 15 undefined on input line 262.
-
-[15]
-
-LaTeX Warning: Reference `KP:TL' on page 16 undefined on input line 275.
-
-
-LaTeX Warning: Reference `KP:B' on page 16 undefined on input line 275.
-
-
-LaTeX Warning: Reference `KP:Hardy' on page 16 undefined on input line 290.
+LaTeX Warning: Reference `sec:decomp' on page 16 undefined on input line 302.
 
 [16]
-
-LaTeX Warning: Reference `KP:Hardy' on page 17 undefined on input line 297.
-
-
-LaTeX Warning: Reference `KPH:Lp' on page 17 undefined on input line 297.
-
-
-LaTeX Warning: Reference `KP:Hardy' on page 17 undefined on input line 297.
-
-
-LaTeX Warning: Reference `KPH:Lp' on page 17 undefined on input line 297.
-
-
-LaTeX Warning: Reference `KP:Hardy' on page 17 undefined on input line 297.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 17 undefined on input line 300.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 17 undefined on input line 302.
-
-
-LaTeX Warning: Reference `sec:decomp' on page 17 undefined on input line 302.
-
-
-LaTeX Warning: Reference `KP:CM:B' on page 17 undefined on input line 303.
-
-
-LaTeX Warning: Reference `KP:CM:TL2' on page 17 undefined on input line 303.
-
-
-LaTeX Warning: Reference `KP:CM:TL' on page 17 undefined on input line 306.
-
-
-LaTeX Warning: Reference `KP:CM:B' on page 17 undefined on input line 306.
-
-
 Overfull \hbox (13.65825pt too wide) detected at line 311
 []
  []
 
-[17]
 
-LaTeX Warning: Reference `eq:estbbTL' on page 18 undefined on input line 328.
-
-
-LaTeX Warning: Reference `thm:Nikolskij:weighted' on page 18 undefined on input
- line 329.
-
-
-LaTeX Warning: Reference `item:thh:Nikolskij:TL' on page 18 undefined on input 
+LaTeX Warning: Reference `item:thh:Nikolskij:TL' on page 17 undefined on input 
 line 329.
 
-
-LaTeX Warning: Reference `eq:cjbound' on page 18 undefined on input line 329.
-
+[17]
 
 LaTeX Warning: Reference `sec:spaces' on page 18 undefined on input line 336.
 
@@ -1042,214 +699,14 @@ LaTeX Warning: Reference `lem:pointineq' on page 18 undefined on input line 343
 
 [18]
 
-LaTeX Warning: Reference `eq:estbbTL' on page 19 undefined on input line 349.
-
-
-LaTeX Warning: Reference `eq:estbbB' on page 19 undefined on input line 352.
-
-
-LaTeX Warning: Reference `thm:Nikolskij:weighted' on page 19 undefined on input
- line 352.
-
-
 LaTeX Warning: Reference `item:thh:Nikolskij:B' on page 19 undefined on input l
 ine 352.
-
-
-LaTeX Warning: Reference `eq:cjbound' on page 19 undefined on input line 352.
 
 
 LaTeX Warning: Reference `lem:pointineq' on page 19 undefined on input line 359
 .
 
-
-LaTeX Warning: Reference `KP:CM:TL' on page 19 undefined on input line 362.
-
-
-LaTeX Warning: Reference `KP:CM:B' on page 19 undefined on input line 362.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 19 undefined on input line 368.
-
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 19 undefined on input line 368.
-
 [19]
-
-LaTeX Warning: Reference `thm:CM:TL:B' on page 20 undefined on input line 370.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.372 \item\label
-                 {item:first} there exists $r>0$ such that $\norm{f+g}{\itlw...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.372 \item\label
-                 {item:first} there exists $r>0$ such that $\norm{f+g}{\itlw...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.372 \item\label
-                 {item:first} there exists $r>0$ such that $\norm{f+g}{\itlw...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.373 \item \label
-                  {item:second} H\"older's inequality in weighted Lebesgue s...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.373 \item \label
-                  {item:second} H\"older's inequality in weighted Lebesgue s...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.373 \item \label
-                  {item:second} H\"older's inequality in weighted Lebesgue s...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.374 \item \label
-                  {item:third}  the boundedness properties in weighted Lebes...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.374 \item \label
-                  {item:third}  the boundedness properties in weighted Lebes...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.374 \item \label
-                  {item:third}  the boundedness properties in weighted Lebes...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.375 \item \label
-                  {item:last} Nikol'skij representations for weighted Triebe...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.375 \item \label
-                  {item:last} Nikol'skij representations for weighted Triebe...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.375 \item \label
-                  {item:last} Nikol'skij representations for weighted Triebe...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `thm:Nikolskij:weighted' on page 20 undefined on input
- line 375.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.376 \end{enumerate}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 
 LaTeX Warning: Reference `item:first' on page 20 undefined on input line 378.
 
@@ -1257,1062 +714,207 @@ LaTeX Warning: Reference `item:first' on page 20 undefined on input line 378.
 LaTeX Warning: Reference `item:last' on page 20 undefined on input line 378.
 
 
-LaTeX Warning: Reference `thm:CM:TL:B' on page 20 undefined on input line 378.
-
-
 LaTeX Warning: Reference `thm:ICM:TL:B' on page 20 undefined on input line 378.
 
 
-[20]
 
-Package natbib Warning: Citation `MR0223874' on page 21 undefined on input line
+Package natbib Warning: Citation `MR0223874' on page 20 undefined on input line
  387.
 
 
-LaTeX Warning: Reference `item:first' on page 21 undefined on input line 389.
+LaTeX Warning: Reference `item:first' on page 20 undefined on input line 389.
 
 
-LaTeX Warning: Reference `item:last' on page 21 undefined on input line 389.
+LaTeX Warning: Reference `item:last' on page 20 undefined on input line 389.
 
 
-LaTeX Warning: Reference `item:first' on page 21 undefined on input line 391.
+LaTeX Warning: Reference `item:first' on page 20 undefined on input line 391.
 
 
-Package natbib Warning: Citation `MR0223874' on page 21 undefined on input line
+Package natbib Warning: Citation `MR0223874' on page 20 undefined on input line
  391.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.391 ...the norms $|||\cdot|||_{\tl{(p,t)}{s}{q}$
-                                                   and $||\cdot||_{\tl{(p,t)...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.391 ...{s}{q}$ and $||\cdot||_{\tl{(p,t)}{s}{q}$
-                                                   are comparable where $|||...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.391 ...ble where $|||\cdot|||_{\tl{(p,t)}{s}{q}$
-                                                   is the quasi-norm with $|...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.391 ...,t)}{s}{q} + |||g|||^r_{\tl{(p,t)}{s}{q}$
-                                                  .
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.391 ...,t)}{s}{q} + |||g|||^r_{\tl{(p,t)}{s}{q}$
-                                                  .
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.391 ...,t)}{s}{q} + |||g|||^r_{\tl{(p,t)}{s}{q}$
-                                                  .
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+LaTeX Warning: Reference `item:second' on page 20 undefined on input line 393.
 
 
-LaTeX Warning: Reference `item:second' on page 21 undefined on input line 393.
-
-
-Package natbib Warning: Citation `MR0223874' on page 21 undefined on input line
+Package natbib Warning: Citation `MR0223874' on page 20 undefined on input line
  393.
 
+[20]
 
 LaTeX Warning: Reference `item:third' on page 21 undefined on input line 395.
 
-[21]
 
-Package natbib Warning: Citation `MR2797562' on page 22 undefined on input line
+Package natbib Warning: Citation `MR2797562' on page 21 undefined on input line
  404.
 
 
-LaTeX Warning: Reference `item:last' on page 22 undefined on input line 406.
+LaTeX Warning: Reference `item:last' on page 21 undefined on input line 406.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.414 \item\label
-                 {item:thh:Nikolskij:Lorrentz:TL} Let $0 < p < \infty$, $0 <...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.414 \item\label
-                 {item:thh:Nikolskij:Lorrentz:TL} Let $0 < p < \infty$, $0 <...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.414 \item\label
-                 {item:thh:Nikolskij:Lorrentz:TL} Let $0 < p < \infty$, $0 <...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (15.51605pt too wide) in paragraph at lines 413--415
-[]\OT1/cmr/m/it/12 [(i)][][] Let $\OT1/cmr/m/n/12 0 \OML/cmm/m/it/12 < p < \OMS
-/cmsy/m/n/12 1$\OT1/cmr/m/it/12 , $\OT1/cmr/m/n/12 0 \OML/cmm/m/it/12 < t; q \O
-MS/cmsy/m/n/12  1$ \OT1/cmr/m/it/12 and $\OML/cmm/m/it/12 s > []$\OT1/cmr/m/it
-/12 . If $[][] \OML/cmm/m/it/12 <
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.419 \item\label
-                 {item:thh:Nikolskij:Lorrentz:B} Let $0 < p, q \leq \infty$ ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.419 \item\label
-                 {item:thh:Nikolskij:Lorrentz:B} Let $0 < p, q \leq \infty$ ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.419 \item\label
-                 {item:thh:Nikolskij:Lorrentz:B} Let $0 < p, q \leq \infty$ ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[22]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.424 \end{enumerate}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `thm:Nikolskij:Lorrentz:weighted' on page 23 undefined
- on input line 426.
-
-
-Package natbib Warning: Citation `MR837335' on page 23 undefined on input line 
+Package natbib Warning: Citation `MR837335' on page 21 undefined on input line 
 428.
 
+[21]
 
-Package natbib Warning: Citation `MR837335' on page 23 undefined on input line 
+Package natbib Warning: Citation `MR837335' on page 22 undefined on input line 
 435.
 
 
-LaTeX Warning: Reference `coro:2:11' on page 23 undefined on input line 435.
+Package natbib Warning: Citation `MR837335' on page 22 undefined on input line 
+457.
 
+[22]
 
-LaTeX Warning: Reference `coro:2:11' on page 23 undefined on input line 446.
+LaTeX Warning: Reference `item:thh:Nikolskij:TL' on page 23 undefined on input 
+line 486.
 
 [23]
 
-Package natbib Warning: Citation `MR837335' on page 24 undefined on input line 
-457.
+LaTeX Warning: Reference `sec:spaces' on page 24 undefined on input line 493.
+
+[24] [25]
+
+LaTeX Warning: Reference `thm:ICM:TL:B' on page 26 undefined on input line 539.
 
 
-LaTeX Warning: Reference `thm:Nikolskij:Lorrentz:weighted' on page 24 undefined
- on input line 482.
 
-[24]
-
-LaTeX Warning: Reference `item:thh:Nikolskij:TL' on page 25 undefined on input 
-line 486.
-
-
-LaTeX Warning: Reference `sec:spaces' on page 25 undefined on input line 493.
-
-
-LaTeX Warning: Reference `coro:2:11' on page 25 undefined on input line 497.
-
-
-LaTeX Warning: Reference `coro:2:11' on page 25 undefined on input line 497.
-
-
-LaTeX Warning: Reference `psi*u' on page 25 undefined on input line 506.
-
-
-LaTeX Warning: Reference `eq:seriesineq' on page 25 undefined on input line 510
-.
-
-[25]
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.531 ...ightarrow\infty} |A_N| = |\cap A_N|$. $\[
-                                                  u_j\} \subset L^{(p,t)}(w)...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.531 ... $\[u_j\} \subset L^{(p,t)}(w)(\ell^{q})$
-                                                   so $u_j \rightarrow 0$ as...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Package natbib Warning: Citation `MR3513582' on page 26 undefined on input line
+ 561.
 
 [26]
 
-LaTeX Warning: Reference `thm:ICM:TL:B' on page 27 undefined on input line 539.
+Package natbib Warning: Citation `MR3538648' on page 27 undefined on input line
+ 568.
 
 
-
-LaTeX Warning: Reference `eq:FTLorentz' on page 27 undefined on input line 553.
-
+LaTeX Warning: Reference `sec:spaces' on page 27 undefined on input line 568.
 
 
-LaTeX Warning: Reference `thm:ICM:Lorentz' on page 27 undefined on input line 5
-54.
+Package natbib Warning: Citation `MR1274547' on page 27 undefined on input line
+ 568.
+
+
+Package natbib Warning: Citation `MR1946395' on page 27 undefined on input line
+ 568.
+
+
+Package natbib Warning: Citation `MR2792058' on page 27 undefined on input line
+ 568.
+
+
+LaTeX Warning: Reference `item:first' on page 27 undefined on input line 570.
+
+
+LaTeX Warning: Reference `item:last' on page 27 undefined on input line 570.
+
+
+LaTeX Warning: Reference `item:second' on page 27 undefined on input line 578.
 
 [27]
 
-Package natbib Warning: Citation `MR3513582' on page 28 undefined on input line
- 561.
+LaTeX Warning: Reference `item:third' on page 28 undefined on input line 587.
 
 
 Package natbib Warning: Citation `MR3538648' on page 28 undefined on input line
- 568.
-
-
-LaTeX Warning: Reference `sec:spaces' on page 28 undefined on input line 568.
-
-
-Package natbib Warning: Citation `MR1274547' on page 28 undefined on input line
- 568.
-
-
-Package natbib Warning: Citation `MR1946395' on page 28 undefined on input line
- 568.
-
-
-Package natbib Warning: Citation `MR2792058' on page 28 undefined on input line
- 568.
-
-
-LaTeX Warning: Reference `item:first' on page 28 undefined on input line 570.
-
-
-LaTeX Warning: Reference `item:last' on page 28 undefined on input line 570.
-
-
-LaTeX Warning: Reference `item:first' on page 28 undefined on input line 572.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.575 ...}{w}} + \|g\|^r_{\itlw{[p,t]}{s}{q}{w} \]
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[28]
-
-LaTeX Warning: Reference `item:second' on page 29 undefined on input line 578.
-
-
-LaTeX Warning: Reference `item:third' on page 29 undefined on input line 587.
-
-
-Package natbib Warning: Citation `MR3538648' on page 29 undefined on input line
  596.
 
-[29]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.605 \item\label
-                 {item:thh:Nikolskij:TL} Let $0 < p \leq t < \infty$, $0 < q...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.605 \item\label
-                 {item:thh:Nikolskij:TL} Let $0 < p \leq t < \infty$, $0 < q...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.605 \item\label
-                 {item:thh:Nikolskij:TL} Let $0 < p \leq t < \infty$, $0 < q...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (17.71826pt too wide) in paragraph at lines 604--606
-[]\OT1/cmr/m/it/12 [(i)][][] Let $\OT1/cmr/m/n/12 0 \OML/cmm/m/it/12 < p \OMS/c
-msy/m/n/12  \OML/cmm/m/it/12 t < \OMS/cmsy/m/n/12 1$\OT1/cmr/m/it/12 , $\OT1/c
-mr/m/n/12 0 \OML/cmm/m/it/12 < q \OMS/cmsy/m/n/12  1$ \OT1/cmr/m/it/12 and []$
-\OML/cmm/m/it/12 s > []$[]\OT1/cmr/m/it/12 . If $[][] \OML/cmm/m/it/12 <
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.610 \item\label
-                 {item:thh:Nikolskij:B} Let $0 < p, q \leq \infty$ and \text...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.610 \item\label
-                 {item:thh:Nikolskij:B} Let $0 < p, q \leq \infty$ and \text...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.610 \item\label
-                 {item:thh:Nikolskij:B} Let $0 < p, q \leq \infty$ and \text...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.615 \end{enumerate}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `thm:Nikolskij:weighted' on page 30 undefined on input
- line 618.
-
-
-LaTeX Warning: Reference `coro:2:11' on page 30 undefined on input line 618.
-
-
-LaTeX Warning: Reference `eq:seriesineq' on page 30 undefined on input line 618
-.
-
-
-LaTeX Warning: Reference `coro:2:12(1)' on page 30 undefined on input line 618.
-
-
-[30]
-
-LaTeX Warning: Reference `coro:2:11' on page 31 undefined on input line 628.
-
-[31]
+[28] [29]
 Overfull \hbox (2.74321pt too wide) in paragraph at lines 650--651
 \OT1/cmr/m/n/12 Assume that $1 \OML/cmm/m/it/12 < q < \OMS/cmsy/m/n/12 1$\OT1/c
 mr/m/n/12 . Be-cause $[][] \OML/cmm/m/it/12 < \OMS/cmsy/m/n/12 1$ \OT1/cmr/m/n/
 12 we have that $[][] [][] \OML/cmm/m/it/12 <
  []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.653 ...ges in ${\ibesw{[p,t]}{s-\epsilon}{1}{w}$
-                                                   and we have convergence i...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+[30] [31]
+
+LaTeX Warning: Reference `sec:spaces' on page 32 undefined on input line 707.
+
+
+Package natbib Warning: Citation `MR2431378' on page 32 undefined on input line
+ 707.
+
+
+Package natbib Warning: Citation `MR2339558' on page 32 undefined on input line
+ 707.
+
+
+Package natbib Warning: Citation `MR2449626' on page 32 undefined on input line
+ 707.
+
+
+Package natbib Warning: Citation `MR2498558' on page 32 undefined on input line
+ 707.
+
+
+Package natbib Warning: Citation `MR2566313' on page 32 undefined on input line
+ 707.
+
+
+LaTeX Warning: Reference `item:first' on page 32 undefined on input line 710.
+
+
+LaTeX Warning: Reference `item:last' on page 32 undefined on input line 710.
+
+
+LaTeX Warning: Reference `item:first' on page 32 undefined on input line 712.
 
 [32]
-! Undefined control sequence.
-<recently read> \p 
-                   
-l.684 ...ch that $p(\cdot)/\tau_0 \in \B$ then $\p
-                                                  (\cdot)/\tau \in \B$ for $...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+
+LaTeX Warning: Reference `item:second' on page 33 undefined on input line 716.
 
 
-LaTeX Warning: Reference `eq:power' on page 33 undefined on input line 684.
-
-Runaway argument?
- \norm {\Mf }{L^{\frac {p(\cdot )}{\tau }}} &\leq \norm {\M (|f|^{\tau \ETC.
-! Paragraph ended before \align* was complete.
-<to be read again> 
-                   \par 
-l.699 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.699 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.699 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \def 
-l.699 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-LaTeX Warning: Reference `sec:spaces' on page 33 undefined on input line 702.
-
-
-Package natbib Warning: Citation `MR2431378' on page 33 undefined on input line
- 702.
-
-
-Package natbib Warning: Citation `MR2339558' on page 33 undefined on input line
- 702.
-
-
-Package natbib Warning: Citation `MR2449626' on page 33 undefined on input line
- 702.
-
-
-Package natbib Warning: Citation `MR2498558' on page 33 undefined on input line
- 702.
-
-
-Package natbib Warning: Citation `MR2566313' on page 33 undefined on input line
- 702.
-
-[33]
-
-LaTeX Warning: Reference `item:first' on page 34 undefined on input line 705.
-
-
-LaTeX Warning: Reference `item:last' on page 34 undefined on input line 705.
-
-
-LaTeX Warning: Reference `item:first' on page 34 undefined on input line 707.
-
-
-LaTeX Warning: Reference `eq:power' on page 34 undefined on input line 707.
-
-
-LaTeX Warning: Reference `item:second' on page 34 undefined on input line 711.
-
-
-Package natbib Warning: Citation `MR3026953' on page 34 undefined on input line
- 711.
-
-
-LaTeX Warning: Reference `eq:power' on page 34 undefined on input line 711.
-
-
-Package natbib Warning: Citation `MR3026953' on page 34 undefined on input line
+Package natbib Warning: Citation `MR3026953' on page 33 undefined on input line
  716.
 
 
-LaTeX Warning: Reference `eq:power' on page 34 undefined on input line 716.
+Package natbib Warning: Citation `MR3026953' on page 33 undefined on input line
+ 721.
 
 
-Package natbib Warning: Citation `MR3026953' on page 34 undefined on input line
- 722.
+Package natbib Warning: Citation `MR3026953' on page 33 undefined on input line
+ 727.
 
 
-LaTeX Warning: Reference `eq:power' on page 34 undefined on input line 722.
+LaTeX Warning: Reference `item:third' on page 33 undefined on input line 727.
 
 
-LaTeX Warning: Reference `item:third' on page 34 undefined on input line 722.
+LaTeX Warning: Reference `item:last' on page 33 undefined on input line 737.
 
-[34]
-
-LaTeX Warning: Reference `item:last' on page 35 undefined on input line 732.
-
-! Display math should end with $$.
-<to be read again> 
-                   ;
-l.752 ...<r<min(1,p_-,q)$ such that $$s>n(1/r-1)$;
-                                                   note that this is possibl...
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-[35]
-
-LaTeX Warning: Reference `coro:2:11' on page 36 undefined on input line 760.
-
-
-LaTeX Warning: Reference `coro:2:11' on page 36 undefined on input line 760.
-
-
-LaTeX Warning: Reference `psi*u' on page 36 undefined on input line 769.
-
-
-LaTeX Warning: Reference `eq:seriesineq' on page 36 undefined on input line 773
-.
-
-[36]
-
-LaTeX Warning: Reference `psi*u' on page 37 undefined on input line 784.
-
-
-LaTeX Warning: Reference `coro:2:12(1)' on page 37 undefined on input line 784.
-
-
-
-Overfull \hbox (5.11606pt too wide) detected at line 787
+[33] [34]
+Overfull \hbox (5.11606pt too wide) detected at line 792
 []
  []
 
+[35] [36] [37]
 
-LaTeX Warning: Reference `eq:seriesineq' on page 37 undefined on input line 793
-.
-
-! Argument of \besw has an extra }.
-<inserted text> 
-                \par 
-l.796 \end{align*}
-                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \besw was complete.
-<to be read again> 
-                   \par 
-l.796 \end{align*}
-                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.796 \end{align*}
-                  
-I'm guessing that you meant to end an alignment here.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.796 \end{align*}
-                  
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.796 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Misplaced alignment tab character &.
-\math@cr@@@ ->&
-               \omit \global \advance \row@ \@ne \ifst@rred \nonumber \fi \i...
-l.796 \end{align*}
-                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \omit.
-\math@cr@@@ ->&\omit 
-                     \global \advance \row@ \@ne \ifst@rred \nonumber \fi \i...
-l.796 \end{align*}
-                  
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \cr.
-\math@cr@@@ ... \else \global \@eqnswtrue \fi \cr 
-                                                  
-l.796 \end{align*}
-                  
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \cr.
-\measure@ ...olumn@ \z@ \add@amps \maxfields@ \cr 
-                                                  }}\restorecounters@ \ifodd...
-l.796 \end{align*}
-                  
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Extra }, or forgotten $.
-\measure@ ...lumn@ \z@ \add@amps \maxfields@ \cr }
-                                                  }\restorecounters@ \ifodd ...
-l.796 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\measure@ ...umn@ \z@ \add@amps \maxfields@ \cr }}
-                                                  \restorecounters@ \ifodd \...
-l.796 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Incompatible list can't be unboxed.
-\measure@ ...i \fi \setbox \z@ \vbox {\unvbox \z@ 
-                                                  \unpenalty \global \setbox...
-l.796 \end{align*}
-                  
-Sorry, Pandora. (You sneaky devil.)
-I refuse to unbox an \hbox in vertical mode or vice versa.
-And I can't open any boxes in math mode.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Argument of \besw has an extra }.
-<inserted text> 
-                \par 
-l.796 \end{align*}
-                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \besw was complete.
-<to be read again> 
-                   \par 
-l.796 \end{align*}
-                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.796 \end{align*}
-                  
-I'm guessing that you meant to end an alignment here.
-
-! Missing { inserted.
-<inserted text> 
-                {
-l.796 \end{align*}
-                  
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.796 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $$ inserted.
-<to be read again> 
-                   \lesssim 
-l.796 \end{align*}
-                  
-Displays can use special alignments (like \eqalignno)
-only if nothing but the alignment itself is between $$'s.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Misplaced \cr.
-\math@cr@@@ ->\cr 
-                  
-l.796 \end{align*}
-                  
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \noalign.
-\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
-                                                  {\vskip #1\relax }
-l.796 \end{align*}
-                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-\math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
-                                                  
-l.796 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Misplaced \noalign.
-\black@ #1->\noalign 
-                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.796 \end{align*}
-                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Extra }, or forgotten \endgroup.
-\endalign ->\math@cr \black@ \totwidth@ \egroup 
-                                                \ifingather@ \restorealignst...
-l.796 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.796 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.796 \end{align*}
-                  
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-[37]
-
-LaTeX Warning: Reference `thm:Nikolskij:weighted' on page 38 undefined on input
- line 815.
+Package natbib Warning: Citation `MR2660466' on page 38 undefined on input line
+ 859.
 
 
-LaTeX Warning: Reference `thm:Nikolskij:weighted' on page 38 undefined on input
- line 815.
+Package natbib Warning: Citation `MR2680189' on page 38 undefined on input line
+ 871.
 
-[38]) [39]
+
+LaTeX Warning: Reference `thm:ICM:TL:B' on page 38 undefined on input line 877.
+
+
+[38] [39] [40]
+
+LaTeX Warning: Reference `sec:scattering' on page 41 undefined on input line 94
+7.
+
+
+LaTeX Warning: Reference `re:numderiv2' on page 41 undefined on input line 955.
+
+
+[41]
+
+LaTeX Warning: Reference `thm:ICM:TL:B' on page 42 undefined on input line 962.
+
+
+) [42]
 No file etdrtemplate.bbl.
 (appendixA.tex
 Appendix A.
@@ -2320,21 +922,8 @@ Appendix A.
 
 Package natbib Warning: There were undefined citations.
 
-
-! LaTeX Error: \begin{align*} on input line 685 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.516 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 516.
-[40
+[43
 
 
 
@@ -2343,54 +932,44 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 516.
  (etdrtemplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 516.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 516.
+Package rerunfilecheck Info: File `etdrtemplate.out' has not changed.
+(rerunfilecheck)             Checksum: 4B51593E41533C2B24F1F150364F84DE;1644.
 
-
-Package rerunfilecheck Warning: File `etdrtemplate.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `etdrtemplate.out':
-(rerunfilecheck)             Before: 918A98F602E7D40DD7ED54142C813AEC;330
-(rerunfilecheck)             After:  00C0751D477D926180EE29CFBD6D236C;1641.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 516.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 685 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 7527 strings out of 493303
- 106797 string characters out of 3138856
- 201587 words of memory out of 3000000
- 10818 multiletter control sequences out of 15000+200000
+ 7559 strings out of 493303
+ 107307 string characters out of 3138856
+ 206901 words of memory out of 3000000
+ 10846 multiletter control sequences out of 15000+200000
  12084 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,12n,32p,13435b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on etdrtemplate.pdf (47 pages, 371439 bytes).
+ 28i,12n,32p,13435b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on etdrtemplate.pdf (50 pages, 417976 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 146 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
