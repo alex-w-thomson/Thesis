@@ -1,5 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: etdrtemplate.aux
 The style file: unsrtnat.bst
 Database file #1: NaiboThomsonBiblio.bib
-Warning--I didn't find a database entry for "MR1880324"
-(There was 1 warning)
+Repeated entry---line 1297 of file NaiboThomsonBiblio.bib
+ : @book {MR518170
+ :                ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "MR763911"
+(There was 1 error message)

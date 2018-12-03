@@ -1,7 +1,7 @@
 \def\ocirc#1{\ifmmode\setbox0=\hbox{$#1$}\dimen0=\ht0 \advance\dimen0
   by1pt\rlap{\hbox to\wd0{\hss\raise\dimen0
   \hbox{\hskip.2em$\scriptscriptstyle\circ$}\hss}}#1\else {\accent"17 #1}\fi}
-\begin{thebibliography}{37}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -188,6 +188,38 @@ R.~Coifman and Y.~Meyer.
   of \emph{Ast\'erisque}.
 \newblock Soci\'et\'e Math\'ematique de France, Paris, 1978.
 
+\bibitem[Grafakos and Torres(2002{\natexlab{a}})]{MR1880324}
+Loukas Grafakos and Rodolfo~H. Torres.
+\newblock Multilinear {C}alder\'{o}n-{Z}ygmund theory.
+\newblock \emph{Adv. Math.}, 165\penalty0 (1):\penalty0 124--164,
+  2002{\natexlab{a}}.
+\newblock ISSN 0001-8708.
+\newblock \doi{10.1006/aima.2001.2028}.
+\newblock URL \url{https://doi-org.er.lib.k-state.edu/10.1006/aima.2001.2028}.
+
+\bibitem[Grafakos and Torres(2002{\natexlab{b}})]{MR1947875}
+Loukas Grafakos and Rodolfo~H. Torres.
+\newblock Maximal operator and weighted norm inequalities for multilinear
+  singular integrals.
+\newblock \emph{Indiana Univ. Math. J.}, 51\penalty0 (5):\penalty0 1261--1276,
+  2002{\natexlab{b}}.
+\newblock ISSN 0022-2518.
+\newblock \doi{10.1512/iumj.2002.51.2114}.
+\newblock URL
+  \url{https://doi-org.er.lib.k-state.edu/10.1512/iumj.2002.51.2114}.
+
+\bibitem[Lerner et~al.(2009)Lerner, Ombrosi, P\'{e}rez, Torres, and
+  Trujillo-Gonz\'{a}lez]{MR2483720}
+Andrei~K. Lerner, Sheldy Ombrosi, Carlos P\'{e}rez, Rodolfo~H. Torres, and
+  Rodrigo Trujillo-Gonz\'{a}lez.
+\newblock New maximal functions and multiple weights for the multilinear
+  {C}alder\'{o}n-{Z}ygmund theory.
+\newblock \emph{Adv. Math.}, 220\penalty0 (4):\penalty0 1222--1264, 2009.
+\newblock ISSN 0001-8708.
+\newblock \doi{10.1016/j.aim.2008.10.014}.
+\newblock URL
+  \url{https://doi-org.er.lib.k-state.edu/10.1016/j.aim.2008.10.014}.
+
 \bibitem[Grafakos(2014)]{MR3243741}
 L.~Grafakos.
 \newblock \emph{Modern {F}ourier analysis}, volume 250 of \emph{Graduate Texts
@@ -198,14 +230,6 @@ L.~Grafakos.
 \newblock URL
   \url{http://dx.doi.org.er.lib.k-state.edu/10.1007/978-1-4939-1230-8}.
 
-\bibitem[Yamazaki(1986)]{MR837335}
-M.~Yamazaki.
-\newblock A quasihomogeneous version of paradifferential operators. {I}.
-  {B}oundedness on spaces of {B}esov type.
-\newblock \emph{J. Fac. Sci. Univ. Tokyo Sect. IA Math.}, 33\penalty0
-  (1):\penalty0 131--174, 1986.
-\newblock ISSN 0040-8980.
-
 \bibitem[Triebel(2010)]{MR3024598}
 H.~Triebel.
 \newblock \emph{Theory of function spaces}.
@@ -214,6 +238,14 @@ H.~Triebel.
 \newblock ISBN 978-3-0346-0415-4; 978-3-0346-0416-1.
 \newblock Reprint of 1983 edition. Also published in 1983 by Birkh{\"a}user
   Verlag.
+
+\bibitem[Yamazaki(1986)]{MR837335}
+M.~Yamazaki.
+\newblock A quasihomogeneous version of paradifferential operators. {I}.
+  {B}oundedness on spaces of {B}esov type.
+\newblock \emph{J. Fac. Sci. Univ. Tokyo Sect. IA Math.}, 33\penalty0
+  (1):\penalty0 131--174, 1986.
+\newblock ISSN 0040-8980.
 
 \bibitem[Hunt(1966)]{MR0223874}
 R.~Hunt.
