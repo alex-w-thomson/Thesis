@@ -1,0 +1,349 @@
+\def\ocirc#1{\ifmmode\setbox0=\hbox{$#1$}\dimen0=\ht0 \advance\dimen0
+  by1pt\rlap{\hbox to\wd0{\hss\raise\dimen0
+  \hbox{\hskip.2em$\scriptscriptstyle\circ$}\hss}}#1\else {\accent"17 #1}\fi}
+\begin{thebibliography}{37}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kato and Ponce(1988)]{MR951744}
+T.~Kato and G.~Ponce.
+\newblock Commutator estimates and the {E}uler and {N}avier-{S}tokes equations.
+\newblock \emph{Comm. Pure Appl. Math.}, 41\penalty0 (7):\penalty0 891--907,
+  1988.
+\newblock ISSN 0010-3640.
+\newblock \doi{10.1002/cpa.3160410704}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1002/cpa.3160410704}.
+
+\bibitem[Gulisashvili and Kon(1996)]{MR1420922}
+A.~Gulisashvili and M.~Kon.
+\newblock Exact smoothing properties of {S}chr\"odinger semigroups.
+\newblock \emph{Amer. J. Math.}, 118\penalty0 (6):\penalty0 1215--1248, 1996.
+\newblock ISSN 0002-9327.
+\newblock URL
+  \url{http://muse.jhu.edu.er.lib.k-state.edu/journals/american_journal_of_mathematics/v118/118.6gulisashvili.pdf}.
+
+\bibitem[Grafakos and Oh(2014)]{MR3200091}
+L.~Grafakos and S.~Oh.
+\newblock The {K}ato-{P}once inequality.
+\newblock \emph{Comm. Partial Differential Equations}, 39\penalty0
+  (6):\penalty0 1128--1157, 2014.
+\newblock ISSN 0360-5302.
+\newblock \doi{10.1080/03605302.2013.822885}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1080/03605302.2013.822885}.
+
+\bibitem[Muscalu and Schlag(2013)]{MR3052499}
+C.~Muscalu and W.~Schlag.
+\newblock \emph{Classical and multilinear harmonic analysis. {V}ol. {II}},
+  volume 138 of \emph{Cambridge Studies in Advanced Mathematics}.
+\newblock Cambridge University Press, Cambridge, 2013.
+\newblock ISBN 978-1-107-03182-1.
+
+\bibitem[Bourgain and Li(2014)]{MR3263081}
+J.~Bourgain and D.~Li.
+\newblock On an endpoint {K}ato-{P}once inequality.
+\newblock \emph{Differential Integral Equations}, 27\penalty0 (11-12):\penalty0
+  1037--1072, 2014.
+\newblock ISSN 0893-4983.
+\newblock URL \url{http://projecteuclid.org/euclid.die/1408366784}.
+
+\bibitem[Grafakos et~al.(2014)Grafakos, Maldonado, and Naibo]{MR3189525}
+L.~Grafakos, D.~Maldonado, and V.~Naibo.
+\newblock A remark on an endpoint {K}ato-{P}once inequality.
+\newblock \emph{Differential Integral Equations}, 27\penalty0 (5-6):\penalty0
+  415--424, 2014.
+\newblock ISSN 0893-4983.
+\newblock URL
+  \url{http://projecteuclid.org.er.lib.k-state.edu/euclid.die/1396558089}.
+
+\bibitem[Christ and Weinstein(1991)]{MR1124294}
+M.~Christ and M.~Weinstein.
+\newblock Dispersion of small amplitude solutions of the generalized
+  {K}orteweg-de {V}ries equation.
+\newblock \emph{J. Funct. Anal.}, 100\penalty0 (1):\penalty0 87--109, 1991.
+\newblock ISSN 0022-1236.
+\newblock \doi{10.1016/0022-1236(91)90103-C}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1016/0022-1236(91)90103-C}.
+
+\bibitem[Kenig et~al.(1993)Kenig, Ponce, and Vega]{MR1211741}
+C.~Kenig, G.~Ponce, and L.~Vega.
+\newblock Well-posedness and scattering results for the generalized
+  {K}orteweg-de {V}ries equation via the contraction principle.
+\newblock \emph{Comm. Pure Appl. Math.}, 46\penalty0 (4):\penalty0 527--620,
+  1993.
+\newblock ISSN 0010-3640.
+\newblock \doi{10.1002/cpa.3160460405}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1002/cpa.3160460405}.
+
+\bibitem[Brummer and Naibo(2018)]{MR3750234}
+J.~Brummer and V.~Naibo.
+\newblock Bilinear operators with homogeneous symbols, smooth molecules, and
+  {K}ato-{P}once inequalities.
+\newblock \emph{Proc. Amer. Math. Soc.}, 146\penalty0 (3):\penalty0 1217--1230,
+  2018.
+\newblock ISSN 0002-9939.
+\newblock URL \url{https://doi-org.er.lib.k-state.edu/10.1090/proc/13841}.
+
+\bibitem[Frazier and Jawerth(1985)]{MR808825}
+M.~Frazier and B.~Jawerth.
+\newblock Decomposition of {B}esov spaces.
+\newblock \emph{Indiana Univ. Math. J.}, 34\penalty0 (4):\penalty0 777--799,
+  1985.
+\newblock ISSN 0022-2518.
+\newblock \doi{10.1512/iumj.1985.34.34041}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1512/iumj.1985.34.34041}.
+
+\bibitem[Frazier and Jawerth(1990)]{MR1070037}
+M.~Frazier and B.~Jawerth.
+\newblock A discrete transform and decompositions of distribution spaces.
+\newblock \emph{J. Funct. Anal.}, 93\penalty0 (1):\penalty0 34--170, 1990.
+\newblock ISSN 0022-1236.
+\newblock \doi{10.1016/0022-1236(90)90137-A}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1016/0022-1236(90)90137-A}.
+
+\bibitem[Hart et~al.(DOI: https://doi.org/10.1090/tran/7312)Hart, Torres, and
+  Wu]{HTW}
+J.~Hart, R.H. Torres, and X.~Wu.
+\newblock Smoothing properties of bilinear operators and {L}eibniz-type rules
+  in {L}ebesgue and mixed {L}ebesgue spaces.
+\newblock \emph{Trans. Amer. Math. Soc.}, DOI:
+  https://doi.org/10.1090/tran/7312.
+
+\bibitem[B{\'e}nyi and Torres(2003)]{MR1986065}
+{\'A}.~B{\'e}nyi and R.~H. Torres.
+\newblock Symbolic calculus and the transposes of bilinear pseudodifferential
+  operators.
+\newblock \emph{Comm. Partial Differential Equations}, 28\penalty0
+  (5-6):\penalty0 1161--1181, 2003.
+\newblock ISSN 0360-5302.
+\newblock \doi{10.1081/PDE-120021190}.
+\newblock URL \url{http://dx.doi.org/10.1081/PDE-120021190}.
+
+\bibitem[B{\'e}nyi et~al.(2006)B{\'e}nyi, Nahmod, and Torres]{MR2250054}
+{\'A}.~B{\'e}nyi, A.~R. Nahmod, and R.~H. Torres.
+\newblock Sobolev space estimates and symbolic calculus for bilinear
+  pseudodifferential operators.
+\newblock \emph{J. Geom. Anal.}, 16\penalty0 (3):\penalty0 431--453, 2006.
+\newblock ISSN 1050-6926.
+\newblock \doi{10.1007/BF02922061}.
+\newblock URL \url{http://dx.doi.org.er.lib.k-state.edu/10.1007/BF02922061}.
+
+\bibitem[B{\'e}nyi(2003)]{MR1996120}
+{\'A}.~B{\'e}nyi.
+\newblock Bilinear pseudodifferential operators with forbidden symbols on
+  {L}ipschitz and {B}esov spaces.
+\newblock \emph{J. Math. Anal. Appl.}, 284\penalty0 (1):\penalty0 97--103,
+  2003.
+\newblock ISSN 0022-247X.
+\newblock \doi{10.1016/S0022-247X(03)00245-2}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1016/S0022-247X(03)00245-2}.
+
+\bibitem[Naibo(2015)]{MR3393696}
+V.~Naibo.
+\newblock On the bilinear {H}\"ormander classes in the scales of
+  {T}riebel-{L}izorkin and {B}esov spaces.
+\newblock \emph{J. Fourier Anal. Appl.}, 21\penalty0 (5):\penalty0 1077--1104,
+  2015.
+\newblock ISSN 1069-5869.
+\newblock \doi{10.1007/s00041-015-9398-x}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1007/s00041-015-9398-x}.
+
+\bibitem[Koezuka and Tomita(2018)]{MR3750316}
+K.~Koezuka and N.~Tomita.
+\newblock Bilinear {P}seudo-differential {O}perators with {S}ymbols in
+  {$BS^m_{1,1}$} on {T}riebel--{L}izorkin {S}paces.
+\newblock \emph{J. Fourier Anal. Appl.}, 24\penalty0 (1):\penalty0 309--319,
+  2018.
+\newblock ISSN 1069-5869.
+\newblock URL
+  \url{https://doi-org.er.lib.k-state.edu/10.1007/s00041-016-9518-2}.
+
+\bibitem[Cruz-Uribe and Naibo(2016)]{MR3513582}
+D.~Cruz-Uribe and V.~Naibo.
+\newblock Kato-{P}once inequalities on weighted and variable {L}ebesgue spaces.
+\newblock \emph{Differential Integral Equations}, 29\penalty0 (9-10):\penalty0
+  801--836, 2016.
+\newblock ISSN 0893-4983.
+\newblock URL \url{http://projecteuclid.org/euclid.die/1465912605}.
+
+\bibitem[Brummer and Naibo(2017)]{BrNa2017}
+J.~Brummer and V.~Naibo.
+\newblock Weighted fractional {L}eibniz-type rules for bilinear multiplier
+  operators.
+\newblock \emph{Preprint}, 2017.
+
+\bibitem[Coifman and Meyer(1978)]{MR518170}
+R.~Coifman and Y.~Meyer.
+\newblock \emph{Au del\`a des op\'erateurs pseudo-diff\'erentiels}, volume~57
+  of \emph{Ast\'erisque}.
+\newblock Soci\'et\'e Math\'ematique de France, Paris, 1978.
+
+\bibitem[Grafakos(2014)]{MR3243741}
+L.~Grafakos.
+\newblock \emph{Modern {F}ourier analysis}, volume 250 of \emph{Graduate Texts
+  in Mathematics}.
+\newblock Springer, New York, third edition, 2014.
+\newblock ISBN 978-1-4939-1229-2; 978-1-4939-1230-8.
+\newblock \doi{10.1007/978-1-4939-1230-8}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1007/978-1-4939-1230-8}.
+
+\bibitem[Yamazaki(1986)]{MR837335}
+M.~Yamazaki.
+\newblock A quasihomogeneous version of paradifferential operators. {I}.
+  {B}oundedness on spaces of {B}esov type.
+\newblock \emph{J. Fac. Sci. Univ. Tokyo Sect. IA Math.}, 33\penalty0
+  (1):\penalty0 131--174, 1986.
+\newblock ISSN 0040-8980.
+
+\bibitem[Triebel(2010)]{MR3024598}
+H.~Triebel.
+\newblock \emph{Theory of function spaces}.
+\newblock Modern Birkh\"auser Classics. Birkh\"auser/Springer Basel AG, Basel,
+  2010.
+\newblock ISBN 978-3-0346-0415-4; 978-3-0346-0416-1.
+\newblock Reprint of 1983 edition. Also published in 1983 by Birkh{\"a}user
+  Verlag.
+
+\bibitem[Hunt(1966)]{MR0223874}
+R.~Hunt.
+\newblock On {$L(p,\,q)$} spaces.
+\newblock \emph{Enseignement Math. (2)}, 12:\penalty0 249--276, 1966.
+\newblock ISSN 0013-8584.
+
+\bibitem[Cruz-Uribe et~al.(2011)Cruz-Uribe, Martell, and P{\'e}rez]{MR2797562}
+D.~Cruz-Uribe, J.~M. Martell, and C.~P{\'e}rez.
+\newblock \emph{Weights, extrapolation and the theory of {R}ubio de {F}rancia},
+  volume 215 of \emph{Operator Theory: Advances and Applications}.
+\newblock Birkh\"auser/Springer Basel AG, Basel, 2011.
+\newblock ISBN 978-3-0348-0071-6.
+\newblock \doi{10.1007/978-3-0348-0072-3}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-0348-0072-3}.
+
+\bibitem[Rosenthal and Schmeisser(2016)]{MR3538648}
+M.~Rosenthal and H.-J. Schmeisser.
+\newblock The boundedness of operators in {M}uckenhoupt weighted {M}orrey
+  spaces via extrapolation techniques and duality.
+\newblock \emph{Rev. Mat. Complut.}, 29\penalty0 (3):\penalty0 623--657, 2016.
+\newblock ISSN 1139-1138.
+\newblock \doi{10.1007/s13163-016-0208-z}.
+\newblock URL
+  \url{https://doi-org.er.lib.k-state.edu/10.1007/s13163-016-0208-z}.
+
+\bibitem[Kozono and Yamazaki(1994)]{MR1274547}
+H.~Kozono and M.~Yamazaki.
+\newblock Semilinear heat equations and the {N}avier-{S}tokes equation with
+  distributions in new function spaces as initial data.
+\newblock \emph{Comm. Partial Differential Equations}, 19\penalty0
+  (5-6):\penalty0 959--1014, 1994.
+\newblock ISSN 0360-5302.
+\newblock \doi{10.1080/03605309408821042}.
+\newblock URL
+  \url{https://doi-org.er.lib.k-state.edu/10.1080/03605309408821042}.
+
+\bibitem[Mazzucato(2003)]{MR1946395}
+A.~L. Mazzucato.
+\newblock Besov-{M}orrey spaces: function space theory and applications to
+  non-linear {PDE}.
+\newblock \emph{Trans. Amer. Math. Soc.}, 355\penalty0 (4):\penalty0
+  1297--1364, 2003.
+\newblock ISSN 0002-9947.
+\newblock \doi{10.1090/S0002-9947-02-03214-2}.
+\newblock URL
+  \url{https://doi-org.er.lib.k-state.edu/10.1090/S0002-9947-02-03214-2}.
+
+\bibitem[Izuki et~al.(2010)Izuki, Sawano, and Tanaka]{MR2792058}
+M.~Izuki, Y.~Sawano, and H.~Tanaka.
+\newblock Weighted {B}esov-{M}orrey spaces and {T}riebel-{L}izorkin spaces.
+\newblock In \emph{Harmonic analysis and nonlinear partial differential
+  equations}, RIMS K\^oky\^uroku Bessatsu, B22, pages 21--60. Res. Inst. Math.
+  Sci. (RIMS), Kyoto, 2010.
+
+\bibitem[Xu(2008{\natexlab{a}})]{MR2431378}
+J.~Xu.
+\newblock Variable {B}esov and {T}riebel-{L}izorkin spaces.
+\newblock \emph{Ann. Acad. Sci. Fenn. Math.}, 33\penalty0 (2):\penalty0
+  511--522, 2008{\natexlab{a}}.
+\newblock ISSN 1239-629X.
+
+\bibitem[Gurka et~al.(2007)Gurka, Harjulehto, and Nekvinda]{MR2339558}
+P.~Gurka, P.~Harjulehto, and A.~Nekvinda.
+\newblock Bessel potential spaces with variable exponent.
+\newblock \emph{Math. Inequal. Appl.}, 10\penalty0 (3):\penalty0 661--676,
+  2007.
+\newblock ISSN 1331-4343.
+\newblock \doi{10.7153/mia-10-61}.
+\newblock URL \url{http://dx.doi.org.er.lib.k-state.edu/10.7153/mia-10-61}.
+
+\bibitem[Xu(2008{\natexlab{b}})]{MR2449626}
+J.~Xu.
+\newblock The relation between variable {B}essel potential spaces and
+  {T}riebel-{L}izorkin spaces.
+\newblock \emph{Integral Transforms Spec. Funct.}, 19\penalty0 (7-8):\penalty0
+  599--605, 2008{\natexlab{b}}.
+\newblock ISSN 1065-2469.
+\newblock \doi{10.1080/10652460802030631}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1080/10652460802030631}.
+
+\bibitem[Diening et~al.(2009)Diening, H{\"a}st{\"o}, and Roudenko]{MR2498558}
+L.~Diening, P.~H{\"a}st{\"o}, and S.~Roudenko.
+\newblock Function spaces of variable smoothness and integrability.
+\newblock \emph{J. Funct. Anal.}, 256\penalty0 (6):\penalty0 1731--1768, 2009.
+\newblock ISSN 0022-1236.
+\newblock \doi{10.1016/j.jfa.2009.01.017}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1016/j.jfa.2009.01.017}.
+
+\bibitem[Almeida and H{\"a}st{\"o}(2010)]{MR2566313}
+A.~Almeida and P.~H{\"a}st{\"o}.
+\newblock Besov spaces with variable smoothness and integrability.
+\newblock \emph{J. Funct. Anal.}, 258\penalty0 (5):\penalty0 1628--1655, 2010.
+\newblock ISSN 0022-1236.
+\newblock \doi{10.1016/j.jfa.2009.09.012}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1016/j.jfa.2009.09.012}.
+
+\bibitem[Cruz-Uribe and Fiorenza(2013)]{MR3026953}
+D.~Cruz-Uribe and A.~Fiorenza.
+\newblock \emph{Variable {L}ebesgue spaces}.
+\newblock Applied and Numerical Harmonic Analysis. Birkh\"auser/Springer,
+  Heidelberg, 2013.
+\newblock ISBN 978-3-0348-0547-6; 978-3-0348-0548-3.
+\newblock \doi{10.1007/978-3-0348-0548-3}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1007/978-3-0348-0548-3}.
+\newblock Foundations and harmonic analysis.
+
+\bibitem[B{\'e}nyi et~al.(2010)B{\'e}nyi, Maldonado, Naibo, and
+  Torres]{MR2660466}
+{\'A}.~B{\'e}nyi, D.~Maldonado, V.~Naibo, and R.~H. Torres.
+\newblock On the {H}\"ormander classes of bilinear pseudodifferential
+  operators.
+\newblock \emph{Integral Equations Operator Theory}, 67\penalty0 (3):\penalty0
+  341--364, 2010.
+\newblock ISSN 0378-620X.
+\newblock \doi{10.1007/s00020-010-1782-y}.
+\newblock URL \url{http://dx.doi.org/10.1007/s00020-010-1782-y}.
+
+\bibitem[Bernicot and Germain(2010)]{MR2680189}
+F.~Bernicot and P.~Germain.
+\newblock Bilinear oscillatory integrals and boundedness for new bilinear
+  multipliers.
+\newblock \emph{Adv. Math.}, 225\penalty0 (4):\penalty0 1739--1785, 2010.
+\newblock ISSN 0001-8708.
+\newblock \doi{10.1016/j.aim.2010.03.032}.
+\newblock URL
+  \url{http://dx.doi.org.er.lib.k-state.edu/10.1016/j.aim.2010.03.032}.
+
+\end{thebibliography}

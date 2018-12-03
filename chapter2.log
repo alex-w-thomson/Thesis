@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.19)  2 DEC 2018 02:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.19)  2 DEC 2018 18:52
 entering extended mode
 **./chapter2.tex
 (chapter2.tex
@@ -271,6 +271,52 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+<write> ...ference `def:leibniz' on page \thepage 
+                                                  \space undefined\on@line .
+l.6 ...v spaces which generalize \ref{def:leibniz}
+                                                   and \ref{def:ileibniz}.  ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `def:leibniz' on page  undefined on input line 6.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+<write> ...erence `def:ileibniz' on page \thepage 
+                                                  \space undefined\on@line .
+l.6 ...ze \ref{def:leibniz} and \ref{def:ileibniz}
+                                                  .  Additionally we obtain ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `def:ileibniz' on page  undefined on input line 6.
+
 Missing character: There is no . in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -515,6 +561,16 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
+[]
+ []
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 6--7
+[]
+ []
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 6--7
 []
  []
 
@@ -3706,6 +3762,108 @@ Overfull \hbox (92.70203pt too wide) detected at line 62
 \OML/cmm/m/it/10 ; j \OMS/cmsy/m/n/10 2\OML/cmm/m/it/10 ;
  []
 
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{equation}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+
+{C:/Users/laure/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+! Undefined control sequence.
+<write> \newlabel{thm:CM:TL:B}{{}{\thepage 
+                                           }}
+l.62 \end{equation}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{thm:CM:TL:B}{{}{}}
+! Undefined control sequence.
+<write> \newlabel{KP:CM:TL}{{1}{\thepage 
+                                         }}
+l.62 \end{equation}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{KP:CM:TL}{{1}{}}
+! Undefined control sequence.
+<write> \newlabel{KP:CM:B}{{2}{\thepage 
+                                        }}
+l.62 \end{equation}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{KP:CM:B}{{2}{}}
+! Undefined control sequence.
+<write> \newlabel{KP:CM:TL2}{{3}{\thepage 
+                                          }}
+l.62 \end{equation}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{KP:CM:TL2}{{3}{}}
+! Undefined control sequence.
+<write> \newlabel{CM_def}{{}{\thepage 
+                                      }}
+l.62 \end{equation}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{CM_def}{{}{}}
+! Undefined control sequence.
+<write> \newlabel{eq:CMm}{{4}{\thepage 
+                                       }}
+l.62 \end{equation}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:CMm}{{4}{}}
+! Undefined control sequence.
+<write> \newlabel{eq:decompT1}{{}{\thepage 
+                                           }}
+l.62 \end{equation}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:decompT1}{{}{}}
+]
 Missing character: There is no w in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -3822,121 +3980,6 @@ Overfull \hbox (5.12846pt too wide) in paragraph at lines 62--64
 \OML/cmm/m/it/10 g$
  []
 
-
-! LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1
-
-
-! Undefined control sequence.
-<write> \newlabel{thm:CM:TL:B}{{}{\thepage 
-                                           }}
-l.64 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{thm:CM:TL:B}{{}{}}
-{C:/Users/laure/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-! Undefined control sequence.
-<write> \newlabel{KP:CM:TL}{{1}{\thepage 
-                                         }}
-l.64 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{KP:CM:TL}{{1}{}}
-! Undefined control sequence.
-<write> \newlabel{KP:CM:B}{{2}{\thepage 
-                                        }}
-l.64 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{KP:CM:B}{{2}{}}
-! Undefined control sequence.
-<write> \newlabel{KP:CM:TL2}{{3}{\thepage 
-                                          }}
-l.64 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{KP:CM:TL2}{{3}{}}
-! Undefined control sequence.
-<write> \newlabel{CM_def}{{}{\thepage 
-                                      }}
-l.64 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{CM_def}{{}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:CMm}{{4}{\thepage 
-                                       }}
-l.64 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:CMm}{{4}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:decompT1}{{}{\thepage 
-                                           }}
-l.64 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:decompT1}{{}{}}
-! Undefined control sequence.
-<write> \newlabel{eq:cjbound}{{5}{\thepage 
-                                           }}
-l.64 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{eq:cjbound}{{5}{}}
-]
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -24100,70 +24143,6 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 408--424
-[]
- []
-
-
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 408--424
-\OML/cmm/m/it/10 >
- []
-
-
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 408--424
-\/cmr/m/n/10 0\OML/cmm/m/it/10 ;$
- []
-
-
-Overfull \hbox (40.09615pt too wide) in paragraph at lines 408--424
-\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u[]\OMS/cmsy/m/n/10 g[] 
- []
-
-
-Overfull \hbox (17.38887pt too wide) in paragraph at lines 408--424
-\OMS/cmsy/m/n/10 S[]\/cmr/m/n/10 ()$
- []
-
-
-Overfull \hbox (24.38255pt too wide) in paragraph at lines 408--424
-[]\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
- []
-
-
-Overfull \hbox (55.8797pt too wide) in paragraph at lines 408--424
-\OML/cmm/m/it/10 B\/cmr/m/n/10 (0\OML/cmm/m/it/10 ;  \/cmr/m/n/10 2[]) \OMS/cms
-y/m/n/10 8\OML/cmm/m/it/10 j \OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 408--424
-\OML/cmm/m/it/10 :$
- []
-
-
-Overfull \hbox (16.87265pt too wide) in paragraph at lines 408--424
-\OML/cmm/m/it/10 w \OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (18.75005pt too wide) in paragraph at lines 408--424
-\OML/cmm/m/it/10 A[];$
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{enumerate}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.424 \end{enumerate}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 ! LaTeX Error: \begin{document} ended by \end{theorem}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -24175,13 +24154,6 @@ l.425 \end{theorem}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.425 \end{theorem}
-                   
-Things are pretty mixed up, but I think the worst is over.
 
 Missing character: There is no F in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -24244,8 +24216,59 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 426--427
-     []
+Overfull \hbox (20.0pt too wide) in paragraph at lines 408--427
+[]
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 408--427
+\OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 408--427
+\/cmr/m/n/10 0\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (40.09615pt too wide) in paragraph at lines 408--427
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u[]\OMS/cmsy/m/n/10 g[] 
+ []
+
+
+Overfull \hbox (17.38887pt too wide) in paragraph at lines 408--427
+\OMS/cmsy/m/n/10 S[]\/cmr/m/n/10 ()$
+ []
+
+
+Overfull \hbox (24.38255pt too wide) in paragraph at lines 408--427
+[]\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (55.8797pt too wide) in paragraph at lines 408--427
+\OML/cmm/m/it/10 B\/cmr/m/n/10 (0\OML/cmm/m/it/10 ;  \/cmr/m/n/10 2[]) \OMS/cms
+y/m/n/10 8\OML/cmm/m/it/10 j \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 408--427
+\OML/cmm/m/it/10 :$
+ []
+
+
+Overfull \hbox (16.87265pt too wide) in paragraph at lines 408--427
+\OML/cmm/m/it/10 w \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (18.75005pt too wide) in paragraph at lines 408--427
+\OML/cmm/m/it/10 A[];$
+ []
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 408--427
+[]
  []
 
 
@@ -28165,6 +28188,18 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [2
+! Undefined control sequence.
+<write> \newlabel{eq:cjbound}{{5}{\thepage 
+                                           }}
+l.511 $$
+        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{eq:cjbound}{{5}{}}
 ! Undefined control sequence.
 <write> \newlabel{re:numderiv1}{{}{\thepage 
                                             }}
@@ -54414,11 +54449,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 146 strings out of 493303
- 1620 string characters out of 3138856
- 120529 words of memory out of 3000000
- 3791 multiletter control sequences out of 15000+200000
+ 147 strings out of 493303
+ 1642 string characters out of 3138856
+ 120546 words of memory out of 3000000
+ 3792 multiletter control sequences out of 15000+200000
  4294 words of font info for 16 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,8n,21p,13410b,132s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 19i,8n,21p,13410b,132s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
