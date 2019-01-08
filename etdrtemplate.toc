@@ -18,5 +18,5 @@
 \contentsline {subsection}{\numberline {2.3.2}Morrey spaces}{31}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Variable Lebesgue spaces}{35}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Applications to scattering properties of PDEs}{42}{section.2.4}
-\contentsline {chapter}{Bibliography}{47}{section*.7}
-\contentsline {chapter}{\numberline {A}Title for This Appendix}{53}{appendix.A}
+\contentsline {chapter}{Bibliography}{43}{section*.7}
+\contentsline {chapter}{\numberline {A}Title for This Appendix}{49}{appendix.A}
