@@ -1,22 +1,22 @@
-\contentsline {chapter}{List of Figures}{vii}{chapter*.2}
-\contentsline {chapter}{List of Tables}{viii}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Introduction to Leibniz-type rules}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Weighted Leibniz-type rules with applications to scattering properties of PDEs}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Definitions}{6}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Coifman-Meyer Multipliers}{6}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Function spaces}{8}{subsection.2.1.2}
-\contentsline {subsubsection}{Weighted spaces}{8}{section*.4}
-\contentsline {subsubsection}{Triebel-Lizorkin and Besov spaces}{10}{section*.5}
-\contentsline {subsubsection}{Nikol'skij representations for weighted homogeneous and inhomogeneous Triebel-Lizorkin and Besov spaces}{12}{section*.6}
-\contentsline {section}{\numberline {2.2}Weighted Leibniz-type rules}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Homogeneous Leibniz-type rules}{13}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Connection to Kato-Ponce inequalities}{16}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Proof of Theorem \ref {thm:CM:TL:B}}{17}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Inhomogeneous Leibniz-type rules}{21}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Leibniz rules in other functions spaces}{22}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Leibniz-type rules in the setting of Lorentz-based Triebel-Lizorkin and Besov spaces}{23}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Morrey spaces}{31}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Variable Lebesgue spaces}{35}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Applications to scattering properties of PDEs}{42}{section.2.4}
-\contentsline {chapter}{Bibliography}{43}{section*.7}
-\contentsline {chapter}{\numberline {A}Title for This Appendix}{49}{appendix.A}
+\contentsline {chapter}{List of Figures}{vii}{chapter*.2}% 
+\contentsline {chapter}{List of Tables}{viii}{chapter*.3}% 
+\contentsline {chapter}{\numberline {1}Introduction to Leibniz-type rules}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Weighted Leibniz-type rules with applications to scattering properties of PDEs}{7}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Definitions}{8}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Coifman-Meyer Multipliers}{8}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Function spaces}{10}{subsection.2.1.2}% 
+\contentsline {subsubsection}{Weighted spaces}{10}{section*.4}% 
+\contentsline {subsubsection}{Triebel-Lizorkin and Besov spaces}{12}{section*.5}% 
+\contentsline {subsubsection}{Nikol'skij representations for weighted homogeneous and inhomogeneous Triebel-Lizorkin and Besov spaces}{14}{section*.6}% 
+\contentsline {section}{\numberline {2.2}Weighted Leibniz-type rules}{15}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Homogeneous Leibniz-type rules}{15}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Connection to Kato-Ponce inequalities}{18}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Proof of Theorem \ref {thm:CM:TL:B}}{19}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.4}Inhomogeneous Leibniz-type rules}{23}{subsection.2.2.4}% 
+\contentsline {section}{\numberline {2.3}Leibniz rules in other functions spaces}{24}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Leibniz-type rules in the setting of Lorentz-based Triebel-Lizorkin and Besov spaces}{25}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Morrey spaces}{33}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Variable Lebesgue spaces}{37}{subsection.2.3.3}% 
+\contentsline {section}{\numberline {2.4}Applications to scattering properties of PDEs}{44}{section.2.4}% 
+\contentsline {chapter}{Bibliography}{45}{section*.7}% 
+\contentsline {chapter}{\numberline {A}Title for This Appendix}{50}{appendix.A}% 

@@ -1,9 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: etdrtemplate.aux
-The style file: unsrtnat.bst
+The style file: plain.bst
 Database file #1: NaiboThomsonBiblio.bib
 Repeated entry---line 1297 of file NaiboThomsonBiblio.bib
  : @book {MR518170
  :                ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "MR763911"
+Warning--there's a number but no volume in MR639462
 (There was 1 error message)
