@@ -14,6 +14,12 @@ A.~Almeida and P.~H{\"a}st{\"o}.
   {L}ipschitz and {B}esov spaces.
 \newblock {\em J. Math. Anal. Appl.}, 284(1):97--103, 2003.
 
+\bibitem{MR2660466}
+{\'A}.~B{\'e}nyi, D.~Maldonado, V.~Naibo, and R.~H. Torres.
+\newblock On the {H}\"ormander classes of bilinear pseudodifferential
+  operators.
+\newblock {\em Integral Equations Operator Theory}, 67(3):341--364, 2010.
+
 \bibitem{MR2250054}
 {\'A}.~B{\'e}nyi, A.~R. Nahmod, and R.~H. Torres.
 \newblock Sobolev space estimates and symbolic calculus for bilinear
@@ -25,6 +31,18 @@ A.~Almeida and P.~H{\"a}st{\"o}.
 \newblock Symbolic calculus and the transposes of bilinear pseudodifferential
   operators.
 \newblock {\em Comm. Partial Differential Equations}, 28(5-6):1161--1181, 2003.
+
+\bibitem{benyi2018strongly}
+{\'A}rp{\'a}d B{\'e}nyi, Lucas Chaffee, and Virginia Naibo.
+\newblock Strongly singular bilinear calder$\backslash$'on-zygmund operators
+  and a class of bilinear pseudodifferential operators.
+\newblock {\em arXiv preprint arXiv:1804.09710}, 2018.
+
+\bibitem{MR2680189}
+F.~Bernicot and P.~Germain.
+\newblock Bilinear oscillatory integrals and boundedness for new bilinear
+  multipliers.
+\newblock {\em Adv. Math.}, 225(4):1739--1785, 2010.
 
 \bibitem{MR673825}
 G.~Bourdaud.
@@ -78,6 +96,12 @@ D.~Cruz-Uribe, J.~M. Martell, and C.~P{\'e}rez.
 D.~Cruz-Uribe and V.~Naibo.
 \newblock Kato-{P}once inequalities on weighted and variable {L}ebesgue spaces.
 \newblock {\em Differential Integral Equations}, 29(9-10):801--836, 2016.
+
+\bibitem{MR763911}
+Guy David and Jean-Lin Journ\'{e}.
+\newblock A boundedness criterion for generalized {C}alder\'{o}n-{Z}ygmund
+  operators.
+\newblock {\em Ann. of Math. (2)}, 120(2):371--397, 1984.
 
 \bibitem{MR2498558}
 L.~Diening, P.~H{\"a}st{\"o}, and S.~Roudenko.
@@ -137,6 +161,19 @@ J.~Hart, R.H. Torres, and X.~Wu.
   in {L}ebesgue and mixed {L}ebesgue spaces.
 \newblock {\em Trans. Amer. Math. Soc.}, DOI:
   https://doi.org/10.1090/tran/7312.
+
+\bibitem{MR3211086}
+Jodi Herbert and Virginia Naibo.
+\newblock Bilinear pseudodifferential operators with symbols in {B}esov spaces.
+\newblock {\em J. Pseudo-Differ. Oper. Appl.}, 5(2):231--254, 2014.
+
+\bibitem{MR3627725}
+Jodi Herbert and Virginia Naibo.
+\newblock Besov spaces, symbolic calculus, and boundedness of bilinear
+  pseudodifferential operators.
+\newblock In {\em Harmonic analysis, partial differential equations, complex
+  analysis, {B}anach spaces, and operator theory. {V}ol. 1}, volume~4 of {\em
+  Assoc. Women Math. Ser.}, pages 275--305. Springer, [Cham], 2016.
 
 \bibitem{MR0223874}
 R.~Hunt.
@@ -202,6 +239,34 @@ Y.~Meyer.
 \newblock Remarques sur un th\'eor\`eme de {J}.-{M}. {B}ony.
 \newblock {\em Rend. Circ. Mat. Palermo (2)}, (suppl. 1):1--20, 1981.
 
+\bibitem{MR3165300}
+N.~Michalowski, D.~Rule, and W.~Staubach.
+\newblock Multilinear pseudodifferential operators beyond
+  {C}alder\'on-{Z}ygmund theory.
+\newblock {\em J. Math. Anal. Appl.}, 414(1):149--165, 2014.
+
+\bibitem{MR3179688}
+A.~Miyachi and N.~Tomita.
+\newblock Calder\'on-{V}aillancourt-type theorem for bilinear operators.
+\newblock {\em Indiana Univ. Math. J.}, 62(4):1165--1201, 2013.
+
+\bibitem{miyachi2018bilinear}
+Akihiko Miyachi and Naohito Tomita.
+\newblock Bilinear pseudo-differential operators with exotic symbols.
+\newblock {\em Journal of Pseudo-Differential Operators and Applications},
+  pages 1--17, 2018.
+
+\bibitem{miyachi2018bilinear2}
+Akihiko Miyachi and Naohito Tomita.
+\newblock Bilinear pseudo-differential operators with exotic symbols, ii.
+\newblock {\em Journal of Pseudo-Differential Operators and Applications},
+  pages 1--17, 2018.
+
+\bibitem{MR0293384}
+Benjamin Muckenhoupt.
+\newblock Weighted norm inequalities for the {H}ardy maximal function.
+\newblock {\em Trans. Amer. Math. Soc.}, 165:207--226, 1972.
+
 \bibitem{MR3052499}
 C.~Muscalu and W.~Schlag.
 \newblock {\em Classical and multilinear harmonic analysis. {V}ol. {II}},
@@ -213,6 +278,12 @@ V.~Naibo.
 \newblock On the bilinear {H}\"ormander classes in the scales of
   {T}riebel-{L}izorkin and {B}esov spaces.
 \newblock {\em J. Fourier Anal. Appl.}, 21(5):1077--1104, 2015.
+
+\bibitem{MR3411149}
+Virginia Naibo.
+\newblock On the {$L^\infty\times L^\infty\to BMO$} mapping property for
+  certain bilinear pseudodifferential operators.
+\newblock {\em Proc. Amer. Math. Soc.}, 143(12):5323--5336, 2015.
 
 \bibitem{MR0374877}
 S.~M. Nikol'ski\u\i.
@@ -227,6 +298,18 @@ B.~J. Park.
 \newblock On the boundedness of pseudo-differential operators on
   triebel-lizorkin and besov spaces.
 \newblock {\em Preprint, arXiv:1602.08811v2}, 2016.
+
+\bibitem{MR676560}
+Bui~Huy Qui.
+\newblock Weighted {B}esov and {T}riebel spaces: interpolation by the real
+  method.
+\newblock {\em Hiroshima Math. J.}, 12(3):581--605, 1982.
+
+\bibitem{MR3035059}
+Salvador Rodr\'{i}guez-L\'{o}pez and Wolfgang Staubach.
+\newblock Estimates for rough {F}ourier integral and pseudodifferential
+  operators and applications to the boundedness of multilinear operators.
+\newblock {\em J. Funct. Anal.}, 264(10):2356--2385, 2013.
 
 \bibitem{MR3538648}
 M.~Rosenthal and H.-J. Schmeisser.

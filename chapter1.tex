@@ -48,7 +48,10 @@ and can be interpreted as taking derivatives up to order $s$ of $f$.
 The estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) are also known as Kato-Ponce inequalities due to the foundational work of Kato-Ponce \cite{MR951744}, where the estimate (\ref{def:ileibniz}) was proved in the case $1<r=p_1=q_2<\infty$ and $p_2=q_1=\infty$, with applications to the Cauchy problem for Euler and Navier-Stokes equations. This result was extended by Gulisashvili-Kon \cite{MR1420922}, who showed (\ref{def:leibniz}) and (\ref{def:ileibniz}) for the cases $s>0$, $1<r<\infty$, and $1 < p_1,p_2,q_1,q_2\leq\infty$ in connection to smoothing properties of Schr\"odinger semigroups. Grafakos-Oh \cite{MR3200091} and Muscalu-Schlag \cite{MR3052499} established the cases for $1/2 <r\leq 1$ and the case $r=\infty$ was completed in the work of Bourgain-Li \cite{MR3263081} and Grafakos-Maldonado-Naibo \cite{MR3189525}. Applications of the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) to Korteweg-de Vries equations were studied by Christ-Weinstein \cite{MR1124294} and Kenig-Ponce-Vega \cite{MR1211741}.
 
 In the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) the two functions $f$ and $g$ are related through pointwise multiplication. Throughout the rest of this manuscript we will consider estimates similar to (\ref{def:leibniz}) and (\ref{def:ileibniz}) where the two functions are related through a pseudodifferential operator. Let $\sigma(x,\xi,\eta)$ be a complex-valued, smooth function for $x,\xi,\eta\in\rn$. We define the \textit{bilinear pseudodifferential operator}  associated to $\sigma$, $T_\sigma$, by 
-\[T_{\sigma}(f,g)(x) = \int_{\mathbb{R}^{2n}} \sigma(x,\xi,\eta) \widehat{f}(\xi)\widehat{g}(\eta)e^{-2\pi i x\cdot(\xi+\eta)}d\xi d\eta. \]
+\begin{equation}\label{psydo}
+T_{\sigma}(f,g)(x) = \int_{\mathbb{R}^{2n}} \sigma(x,\xi,\eta) \widehat{f}(\xi)\widehat{g}(\eta)e^{-2\pi i x\cdot(\xi+\eta)}d\xi d\eta. 
+\end{equation}
+
 We refer to $\sigma$ as the symbol of the operator $T_\sigma$. When $\sigma$ is independent of $x$ we call $\sigma$ the multiplier of the \textit{bilinear multiplier operator} $T_\sigma$. 
 
 
@@ -86,7 +89,27 @@ If $w_1=w_2$ then different pairs of $p_1, p_2$ can be used on the right-hand si
 where $0<p<\infty,$ $0<q\le\infty$ and $s>\tau_{p,q}(w).$
 \end{theorem}
 
-By the equivalences $\norm{T_\sigma(f,g)}{\besw{p}{s}{q}{w}} \sim \norm{D^s T_\sigma(f,g)}{\besw{p}{0}{q}{w}}$ and $\norm{T_\sigma(f,g)}{\tlw{p}{s}{q}{w}} \sim \norm{D^s T_\sigma(f,g)}{\tlw{p}{0}{q}{w}}$ estimates \ref{KP:CM:TL} and \ref{thm:CM:TL:B} can be seen as estimates of the form \ref{h_general_estimate}. In particular in the case that $\sigma \equiv 1$ we obtain results that both extend and improve the estimates \ref{def:leibniz} and \ref{def:ileibniz}. 
+By the equivalences 
+\begin{equation}\label{lifting}
+\norm{T_\sigma(f,g)}{\besw{p}{s}{q}{w}} \sim \norm{D^s T_\sigma(f,g)}{\besw{p}{0}{q}{w}} \text{ and } \norm{T_\sigma(f,g)}{\tlw{p}{s}{q}{w}} \sim \norm{D^s T_\sigma(f,g)}{\tlw{p}{0}{q}{w}}
+\end{equation}
+and using estimates \ref{KP:CM:TL} we obtain estimates of the form \ref{h_general_estimate}. In particular, in the case that $\sigma \equiv 1$ we obtain results that both extend and improve the estimates \ref{def:leibniz} and \ref{def:ileibniz}. This is because in this case it holds that $\norm{D^s (fg)}{\tlw{p}{0}{2}{w}} \sim \norm{D^s fg)}{H^p(w)}$ and using this we obtain the following corollary.
+
+\begin{corollary}\label{coro:KP:Hardy} 
+Consider  $0 < p, p_1, p_2  < \infty$  such that $\hcline;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
+If  $s > \tau_{p}(w),$ it holds that
+\begin{equation}\label{KP:Hardy}
+\norm{D^s(fg)}{H^p(w)} \lesssim \norm{D^s f}{H^{p_1}(w_1)} \norm{g}{H^{p_2}(w_2)} +  \norm{f}{H^{p_1}(w_1)}   \norm{D^s g}{H^{p_2}(w_2)} \quad \forall f, g \in \swz.
+\end{equation}
+If $w_1=w_2$ then different pairs of $p_1, p_2$ can be used on the right-hand side of \eqref{KP:Hardy}; moreover, if $w\in A_\infty,$ then 
+\begin{equation*}
+\norm{D^s(fg)}{H^p(w)} \lesssim \norm{D^s f}{H^{p}(w)} \norm{g}{L^\infty} +  \norm{f}{L^\infty}   \norm{D^s g}{H^{p}(w)} \quad \forall f, g \in \swz,
+\end{equation*}
+where $0<p<\infty$ and $s>\tau_{p}(w).$
+\end{corollary}
+
+  We note that (\ref{KP:Hardy}) extends and improves the inequality \eqref{def:leibniz}. The inequality \eqref{KP:Hardy} extends the range of $p$, $p_1$, and $p_2$ by allowing $0<p,p_1,p_2<\infty$ while \eqref{def:leibniz} requires that $1<p_1,p_2<\infty$. Additionally (\ref{KP:Hardy}) allows for the $H^p$ norm on the left-hand side which is generally larger than $||\cdot||_{L^p}$. 
+  
 The techniques used in the proof of Theorem \ref{thm:CM:TL:B} are quite flexible and can be adapted to obtain related results in Triebel-Lizorkin and Besov spaces based in weighted Lorentz spaces, weighted Morrey spaces, and variable-exponent Lebesgue spaces.
 In particular the proof uses Nikol'skij representations of weighted Triebel-Lizorkin and Besov spaces. Such representations have been used in unweighted settings such as the work of Nikol'skij \citep{MR0374877}, Meyer \citep{MR639462}, Bourdad \citep{MR673825}, Triebel \citep{MR3024598}, and Yamazaki \citep{MR837335}. As an application of these results we obtain scattering properties to certain systems of partial differential equaitons which involve fractional powers of the Laplacian. Solutions of these systems scatter to a solution which can be viewed as a bilinear pseudodifferential operator to which the main results of this chapter can be applied. Additionally Corollary \ref{coro:KP:CM:Hardy} to Theorem \ref{thm:CM:TL:B} complements results from Brummer-Naibo \citep{BrNa2017} where related estimates were obtained using different methods.
 
@@ -101,9 +124,9 @@ where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1 = \infty$ o
 \end{theorem}
 
 Boundedness properties of bilinear pseudodifferential operators with symbols
-in the bilinear H¨ormander classes have been extensively studied in the settings of
-Lebesgue and Hardy spaces; see B´enyi-Bernicot-Maldonado-Naibo-Torres \citep{MR2660466}, B\'enyi-Chaffee-Naibo \citep{benyi2018strongly}, B\'enyi-Maldonado-Naibo-Torres [\citep{MR1986065}, \citep{MR2660466}], Brummer-Naibo \citep{MR3750234}, Herbert-Naibo [\citep{MR3627725}, \citep{MR3211086}], Koezuka-Tomita \citep{MR3750316}, Michalowski-Rule-Staubach \citep{MR3165300}, Miyachi-Tomita
-[\citep{MR3179688}, \citep{miyachi2018bilinear}, \citep{miyachi2018bilinear2}], Naibo [\citep{MR3393696}, \citep{MR3411149}], Rodr\'ıguez-L\'opez-Staubach \citep{MR3035059}, and the references therein.
+in the bilinear H\"ormander classes have been extensively studied in the settings of
+Lebesgue and Hardy spaces; see B\'enyi-Bernicot-Maldonado-Naibo-Torres \citep{MR2660466}, B\'enyi-Chaffee-Naibo \citep{benyi2018strongly}, B\'enyi-Maldonado-Naibo-Torres [\citep{MR1986065}, \citep{MR2660466}], Brummer-Naibo \citep{MR3750234}, Herbert-Naibo [\citep{MR3627725}, \citep{MR3211086}], Koezuka-Tomita \citep{MR3750316}, Michalowski-Rule-Staubach \citep{MR3165300}, Miyachi-Tomita
+[\citep{MR3179688}, \citep{miyachi2018bilinear}, \citep{miyachi2018bilinear2}], Naibo [\citep{MR3393696}, \citep{MR3411149}], Rodr\'iguez-L\'opez-Staubach \citep{MR3035059}, and the references therein.
 
 The proof of Theorem \ref{thm:critical_besov} utilizes the Nikol'skij representation for Besov spaces and a spectral decomposition of the symbol $\sigma$. The techniques used are inspired by bilinear techniques used in Naibo \cite{MR3393696} and techniques for linear operators in Johnsen \citep{MR2163627}, Marschall \citep{MR1376592}, and Park \citep{Park}. Results related to estimate \ref{critical_est} were proved for the forbidden class $BS^0_{1,1}$ in Koezuka-Timita \cite{MR3750316} and Naibo \citep{MR3393696}. Concerning bilinear pseudodifferential operators with symbols belonging to the subcritical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\leq p_1,p_2,p \leq \infty$ ($1 < p_1,p_2,p < \infty$ when $\rho = \delta = 0$) estimate \ref{critical_est} was shown in Naibo \citep{MR3393696} Theorem 1.3. Theorem \ref{thm:critical_besov} extends this result to the critical classes and allows for the indices to be in the wider range $(0,\infty)$. 
 
