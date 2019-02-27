@@ -9,7 +9,7 @@
 % | LaTeX will automatically number the chapters.                      
 % +--------------------------------------------------------------------+
 
-\chapter{Bilinear H\"ormander Classes of Critical Order}
+\chapter{Bilinear H\"ormander Classes of Critical Order}\label{chapter3}
 \label{makereference3}
 
 \section{Introduction}
@@ -18,8 +18,30 @@ In this chapter we obtain Leibniz-type rules for bilinear multiplier operators a
 \begin{equation}\label{def:Bmrd}
 |\partial_x^\alpha \partial_\xi^\beta \partial_\eta^\gamma \sigma(x, \xi, \eta)| \leq C_{\alpha, \beta, \gamma} (1+|\xi|+|\eta|)^{m +\delta \abs{\alpha}-\rho(\abs{\beta+\gamma})} \quad \forall x, \xi, \eta \in \rn.
 \end{equation}
-Then for any $\sigma \in BS^m_{\rho,\delta},$ the bilinear pseudodifferential operator $T_\sigma$ associated to $\sigma$ is defined as in \ref{psydo}. There has been a considerable amount of effort devoted to studying bilinear pseudodifferential operators associated to symbols in the classes $BS^m_{\rho,\delta}$. One fundamental aspect of the study of such symbols is their symbolic calculus for the transposes of operators associated to them. This was established in the works B\'enyi-Torres \citep{MR1986065} and B\'enyi-Maldonado-Naibo-Torres \citep{MR2660466}. Another important aspect of the study of these operators is their boundedness properties in a variety of function spaces. Operators associated to symbols in $BS^0_{1,0}$ can be realized as Calder\'on-Zygmund operators. As a consequence operators associated to symbols in $BS^0_{1,0}$ are bounded from $L^{p_1}(\rn) \times L^{p_2}(\rn)$ to  $L^p(\rn)$ for  $1 < p_1, p_2 < \infty$ and $1/2<p <\infty$ related through $\hcline.$ These operators also satisfy the endpoint mappings $L^\infty(\rn) \times L^\infty(\rn) \rightarrow BMO(\rn)$ and $L^1(\rn) \times L^1(\rn) \rightarrow L^{1/2, \infty}(\rn)$. For the development of the Calder\'on-Zygmund theory see Coifman-Meyer \citep{MR518170}, Kenig-Stein \citep{MR1713146}, and Grafakos-Torres \citep{MR1880324}.
+Then for any $\sigma \in BS^m_{\rho,\delta},$ the bilinear pseudodifferential operator $T_\sigma$ associated to $\sigma$ is defined as in \ref{psydo}. There has been a considerable amount of effort devoted to studying bilinear pseudodifferential operators associated to symbols in the classes $BS^m_{\rho,\delta}$. One fundamental aspect of the study of such symbols is their symbolic calculus for the transposes of operators associated to them. This was established in the works B\'enyi-Torres \citep{MR1986065} and B\'enyi-Maldonado-Naibo-Torres \citep{MR2660466}. Another important aspect of the study of these operators is their boundedness properties in a variety of function spaces. Operators associated to symbols in $BS^0_{1,0}$ can be realized as Calder\'on-Zygmund operators. As a consequence operators associated to symbols in $BS^0_{1,0}$ are bounded from $L^{p_1}(\rn) \times L^{p_2}(\rn)$ to  $L^p(\rn)$ for  $1 < p_1, p_2 < \infty$ and $1/2<p <\infty$ related through $\hcline.$ These operators also satisfy the endpoint mappings $L^\infty(\rn) \times L^\infty(\rn) \rightarrow BMO(\rn)$ and $L^1(\rn) \times L^1(\rn) \rightarrow L^{1/2, \infty}(\rn)$. For the development of the Calder\'on-Zygmund theory see Coifman-Meyer \citep{MR518170}, Kenig-Stein \citep{MR1713146}, and Grafakos-Torres \citep{MR1880324}. Operators with symbols in the forbidden class $BS^0_{1,1}$ may fail to be bounded in Lebesgue spaces. As such operators associated to these symbols are better understood in other settings. In B\'nyi et al. ~\cite{MR1996120, MR2250054, MR1986065} estimates in Sobolev spaces were obtained for such operators. For results in the settings of Besov and Triebel-Lizorkin spaces see Brummer--Naibo~\cite{MR3750234}, Koezuka--Tomita~\cite{MR3750316} and Naibo~\cite{MR3393696}.
+
+
+Given  $0\le \delta\le \rho< 1$  and $0< p_1,p_2,p\le \infty$  related   by $\hcline,$ define 
+$$
+m(\rho, p_1,p_2):=-n(1-\rho)\max({1}/{2},\,{1}/{p_1},{1}/{p_2},\, 1-1/p, 1/p-1/2).
+$$ 
+
+B\'enyi et al.~\cite{MR3205530} proved that if $1\le p_1,p_2, p\le \infty,$    $m<m(\rho,p_1,p_2)$ and $\sigma\in BS^m_{\rho,\delta}$  then $T_\sigma$ is bounded from $L^{p_1}(\rn)\times L^{p_2}(\rn)$ to $L^p(\rn).$  On the other hand, Miyachi--Tomita~\cite{MR3179688} proved that  if $m>m(\rho, p_1,p_2),$ with $0< p_1,p_2,p\le \infty,$ there are symbols in $BS^m_{\rho,\rho}$ for which the associated  bilinear pseudodifferential operators are not bounded from $H^{p_1}(\rn)\times H^{p_2}(\rn)$ to $L^p(\rn)$ and therefore are not bounded from $L^{p_1}(\rn)\times L^{p_2}(\rn)$ to $L^p(\rn)$; recall that $H^{p}(w)(\rn)=L^p(w)(\rn)$ if $1<p<\infty)$ and $\norm{f}{H^p(w)} \leq \norm{f}{L^p(w)}$ when $0<p\leq 1$. In the case that $p=\infty$ $L^p(\rn)$ should be replaced by $BMO(\rn)$. Because of the two results stated above the class $BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$ is referred to as a critical class and $m(\rho,p_1,p_2)$ is called a critical order. 
+
+We now turn our attention to the critical classes. Miyachi--Tomita~\cite{MR3179688} showed that the symbols in $BS^{m(0,p_1,p_2)}_{0,0}$ with $0<p_1,p_2,p\le  \infty $ give rise to operators that are bounded from  $h^{p_1}(\rn)\times h^{p_2}(\rn)$ to $h^p(\rn),$ where $h^{r}(\rn)$ denotes a local Hardy space (recall that $h^{r}(\rn)=L^r(\rn)$ if $1<r<\infty$)  and $h^{r}(\rn)$ should be replaced with $bmo(\rn)$ if $r=\infty.$   In the case that $p_1 = p_2 = \infty$ Naibo~\cite{MR3411149}  proved  that if $\sigma$ is in the critical class $BS^{m(\rho, \infty,\infty)}_{\rho,\delta}$ with $0\le \delta\le \rho<1/2 $ then $T_\sigma$ is bounded from $L^{\infty}(\rn)\times L^{\infty}(\rn)$ to $BMO(\rn).$ Recently the theory of boundedness properties in the setting of Lebesgue and  Hardy  spaces for operators with symbols in the critical classes was completed in Miyachi--Tomita~\cite{MT1, MT2}: operators with symbols of critical order $ m(\rho, p_1,p_2),$ with $0\le \delta\le \rho<1$  and $0< p_1,p_2,p\le \infty,$ are bounded from $H^{p_1}(\rn)\times H^{p_2}(\rn)$ to $L^p(\rn),$ where  $L^p(\rn)$ should be replaced by $BMO(\rn)$ if $p=\infty.$
+
+In this chapter we prove estimates in the setting of Besov and Hardy spaces for bilinear pseudodifferential operators associated to symbols in the critical classes $BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$. The main result of this chapter is the following theorem.
+
+\begin{theorem} \label{thm:main1}
+Let $0<p<\infty$ and  $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \infty,$   $0\le\delta\le \rho<1$ and   $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}.$ If $s>\tpline,$ then it holds that
+\begin{equation}\label{eq:main1}
+\norm{T_\sigma(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}} +\norm{f}{h^{p_1}}\norm{g}{\B{s}{p_2}{q}}\quad \forall f,g\in \sw,
+\end{equation}
+where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively. Moreover,  if there exits $\varepsilon>0$ such that the Fourier transform of  $\sigma(\cdot,\xi,\eta)$ is  supported outside the set  $\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\eta},$ then \eqref{eq:main1} holds for any $s\in\re.$
+\end{theorem}
+
+For symbols in the forbidden class $BS^{0}_{1,1}$ Leibniz-type rules in the spirit of \eqref{eq:main1} have been proved in B\'enyi~\cite{MR1996120}, Koezuka--Tomita~\cite{MR3750316} and Naibo~\cite{MR3393696}.  Another related result for symbols in the sub-critical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\le p_1,p_2\le \infty$ and in the critical classes $BS^{m(0,p_1,p_2)}_{0,0}$ with $1<p_1,p_2,p<\infty,$ \eqref{eq:main1} was proved in Naibo~\cite[Theorem 1.3]{MR3393696} under the condition $s>\tpline.$ Theorem~\ref{thm:main1} extends this result to all critical classes and with additional assumptions on $\sigma$ allows for any $s\in\re$.
+
+The proof of Theorem~\ref{thm:main1} uses the fact that operators with symbols in $BS^{(0,p_1,p_2)}_{0,0}$ that are localized at certain dyadic frequencies are bounded in the setting of local Hardy spaces; no other boundedness properties of operators with symbols in the bilinear H\"ormander classes are required in the proof. The tools employed are inspired by bilinear techniques in Naibo~\cite{MR3393696} and linear ones in   Johnsen~\cite{MR2163627}, Marschall~\cite{MR1376592} and   Park~\cite{MR3759556}.
 
 \section{Preliminaries}
-
-\section{•}
