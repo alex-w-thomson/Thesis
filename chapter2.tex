@@ -38,17 +38,18 @@ We say $\sigma = \sigma(\xi,\eta)$, $\xi,\eta\in\rn$, is an \textit{inhomogeneou
 |\partial_\xi^\alpha \partial_\eta^\beta \sigma(\xi, \eta)| \leq C_{\alpha, \beta} (1+|\xi|+|\eta|)^{m -(\abs{\alpha}+ \abs{\beta})} \quad \forall (\xi, \eta) \in \re^{2n}.
 \end{equation}
 \end{dfn}
-Bilinear multiplier operators associated to Coifman-Meyer multipliers of order 0 have been well studied. Such operators are examples of bilinear Calder\'on-Zygmund operators. As a consequence the following estimate holds 
-\[ \norm{T_\sigma(f,g)}{L^p}\lesssim \norm{f}{L^{p_1}}\norm{g}{L^{p_2}} \]
-holds where $\sigma$ is a Coifman-Meyer multiplier, $\frac{1}{p} = \frac{1}{p_1} + \frac{1}{p_2}$, and $1<p_1,p_2<\infty$ was established in \cite{MR1880324}. For more on these multipliers see Coifman-Meyer \cite{MR518170} for $L^2(\rn)$ estimates and background information. Additionally in David-Journ\'{e} \cite{MR763911} and Grafakos-Torres \cite{MR1880324} established estimates for Coifman-Meyer multipliers in their work on Calder\'on-Zygmund operators. Additionally estimates for operators associated to Coifman-Meyer multipliers in weighted-Lebesgue spaces and were proven by Grafakos-Torres \cite{MR1947875} and Lerner et al. \cite{MR2483720} in connection to a Calder\'{o}n-Zygmund operators. 	
+Bilinear multiplier operators associated to Coifman-Meyer multipliers of order 0 have been well studied. Such operators are examples of bilinear Calder\'on-Zygmund operators. As a consequence they are bounded in a variety of function spaces; in particular they satisfy
+\[ \norm{T_\sigma(f,g)}{L^p}\lesssim \norm{f}{L^{p_1}}\norm{g}{L^{p_2}}, \]
+where $\sigma$ is a Coifman-Meyer multiplier of order 0, $1/p = 1\p_1 + 1\p_2$, and $1<p_1,p_2<\infty$. The reader is referred to Coifman-Meyer \cite{MR518170} for various estimates and background information for Coifman-Meyer multiplier operators, and to David-Journ\'{e} \cite{MR763911}, Grafakos-Torres \cite{MR1880324}, and Kenig-Stein \cite{MR1682725} for the development of the Calder\'on-Zygmund theory. Estimatex in weighted Lebesgue spaces fo bilinear Calder\'on-Zygmund operators, and in particular for Coifman-Meyer multiplier operators of order 0, have been obtained in Grafakos-Torres \cite{MR1947875}, Grafakos-Martell \cite{MR2030573}, and Lerner et al. \cite{MR2483720}. 	
 
-In the proof of Theorem \ref{thm:CM:TL:B} we will use a decomposition of Coifman-Meyer operators. Before describing this decomposition we first define two linear multiplier operators and the translation operator.
-For $j\in\mathbb{Z}$ and $\varphi \in \sw$ such that $\text{supp}(\varphi) \subset \{\xi : a < |\xi| < b \}$ the operator $\Delta^\varphi_j$ is defined so that $\widehat{\Delta^\varphi_j f}(\xi) = \varphi(2^{-j})\widehat{f}(\xi)$. 
-If $\varphi \in \sw$ and $\text{\supp}(\varphi) \subset \{ \xi : |\xi| < b \}$ then the operator $S^\varphi_j$ is defined so that $\widehat{S^\varphi_j f}(\xi) = \varphi(2^{-j})\widehat{f}(\xi)$.
-We then have that $\widehat{\Delta^\varphi_j f}(\xi)$ isolates $\widehat{f}$ to frequencies of order $2^j$ and $\widehat{S^\varphi_j f}(\xi)$ isolates $\widehat{f}$ to frequencies of order \textit{up to} $2^j$. 
-We define the translation operator $\tau_a$ as $\tau_a f(x) := f(x+a)$ so by properties of the Fourier transform $\widehat{\tau_a f}(\xi) = e^{2\pi i \xi \cdot a} \widehat{f}(\xi)$.
 
-Let $\sigma$ be a Coifman--Meyer multiplier of order $m.$
+%For $j\in\mathbb{Z}$ and $\varphi \in \sw$ such that $\text{supp}(\varphi) \subset \{\xi : a < |\xi| < b \}$ the operator $\Delta^\varphi_j$ is defined so that $\widehat{\Delta^\varphi_j f}(\xi) = \varphi(2^{-j})\widehat{f}(\xi)$. 
+%If $\varphi \in \sw$ and $\text{\supp}(\varphi) \subset \{ \xi : |\xi| < b \}$ then the operator $S^\varphi_j$ is defined so that $\widehat{S^\varphi_j f}(\xi) = \varphi(2^{-j})\widehat{f}(\xi)$.
+%We then have that $\widehat{\Delta^\varphi_j f}(\xi)$ isolates $\widehat{f}$ to frequencies of order $2^j$ and $\widehat{S^\varphi_j f}(\xi)$ isolates $\widehat{f}$ to frequencies of order \textit{up to} $2^j$. 
+%We define the translation operator $\tau_a$ as $\tau_a f(x) := f(x+a)$ so by properties of the Fourier transform $\widehat{\tau_a f}(\xi) = e^{2\pi i \xi \cdot a} \widehat{f}(\xi)$.
+%
+%Let $\sigma$ be a Coifman--Meyer multiplier of order $m.$
+We next describe a decomposition of Coifman-Meyer multiplier operators that will be useful in the proofs of the main results of this chapter. 
 Fix $\Psi \in \sw$ such that 
 $$
 \supp(\widehat{\Psi}) \subseteq \{ \xi \in \rn : \fr{1}{2} < |\xi| < 2 \} \quad\text{ and }\quad
@@ -57,64 +58,67 @@ $$
 define $\Phi \in \sw$ so that
 $$
 \widehat{\Phi}(0) := 1,\quad \widehat{\Phi}(\xi) := \sum_{j \le 0} \widehat{\Psi}(2^{-j}\xi)\quad \forall \xi \in \rn \setminus \{0\}.$$
-For $a,b\in\rn,$ $\Do{\tau_a \Psi }{j} f$ and  $\So{ \tau_a \Phi }{j} f$ satisfy 
-$$\widehat{\Do{\tau_a \Psi }{j} f}(\xi)=\widehat{\tau_a\Psi}(2^{-j}\xi)\widehat{f}(\xi)=e^{2\pi i 2^{-j}\xi\cdot a} \widehat{\Psi}(2^{-j}\xi)\widehat{f}(\xi)$$
+By the notation previously introduced, if $a,b\in\rn,$ $\Do{\tau_a \Psi }{j} f$ and  $\So{ \tau_a \Phi }{j} f$ satisfy $\widehat{\Do{\tau_a \Psi }{j} f}(\xi)=\widehat{\tau_a\Psi}(2^{-j}\xi)\widehat{f}(\xi)=e^{2\pi i 2^{-j}\xi\cdot a} \widehat{\Psi}(2^{-j}\xi)\widehat{f}(\xi)$
  and   
- $$\widehat{\So{\tau_b \Phi }{j} f}(\xi)=\widehat{\tau_b\Phi}(2^{-j}\xi)\widehat{f}(\xi)=e^{2\pi i 2^{-j}\xi\cdot b} \widehat{\Phi}(2^{-j}\xi)\widehat{f}(\xi).$$
+ $\widehat{\So{\tau_b \Phi }{j} f}(\xi)=\widehat{\tau_b\Phi}(2^{-j}\xi)\widehat{f}(\xi)=e^{2\pi i 2^{-j}\xi\cdot b} \widehat{\Phi}(2^{-j}\xi)\widehat{f}(\xi).$
 By the work of Coifman and Meyer in \cite{MR518170},  given $N\in \na$ such that $N>n,$ it follows that $T_\sigma= T_\sigma^1 + T_\sigma^2$, where, for  $f\in \swz$ ($f\in \sw$ if $m\ge 0$) and $g\in\sw,$
 \begin{align}\label{eq:decompT1}
 T_\sigma^1(f,g)(x) &= \sum_{a,b\in \ent^n} \frac{1}{(1+|a|^2+|b|^2)^N} \sum_{j\in\ent} \C_j(a,b) \,(\Do{ \tau_a \Psi }{j} f)(x)\, (\So{ \tau_b \Phi }{j} g )(x)\quad \forall x\in \rn,
 \end{align}
  the coefficients $\C_j(a,b)$   satisfy
 \begin{equation}\label{eq:cjbound}
-\abs{\C_j(a,b)}\lesssim 2^{jm}\quad \forall a,b\in\ent, j\in \ent,
+\abs{\C_j(a,b)}\lesssim 2^{jm}\quad \forall a,b\in\ent^n, j\in \ent,
 \end{equation}
 with the implicit constant depending on $\sigma,$ and an analogous expression holds for $T_\sigma^2$ with the roles of $f$ and $g$ interchanged. 
 
-\begin{remark}\label{re:numderiv1} For the formula \eqref{eq:decompT1}  and its corresponding counterpart for $T^2_\sigma$ to hold, the condition \eqref{eq:CMm} on the derivatives of $\sigma$ is only needed for multi-indices $\alpha$ and $\beta$ such that  $\abs{\alpha+\beta}\le 2N$
-\end{remark}
 
 If $\sigma$ is an inhomogeneous Coifman--Meyer multiplier of order $m,$ a similar decomposition to \eqref{eq:decompT1} follows  with the summation in $j\in\naz$ rather than $j\in\ent,$  with  $\Delta_0^{\tau_a \Psi}$ replaced by $S_0^{\tau_a\Phi}$ and for $f,g\in \sw.$
 
 
+\begin{remark}\label{re:numderiv1} For the formula \eqref{eq:decompT1}  and its corresponding counterpart for $T^2_\sigma$ to hold, the condition \eqref{eq:CMm} on the derivatives of $\sigma$ is only needed for multi-indices $\alpha$ and $\beta$ such that  $\abs{\alpha+\beta}\le 2N$
+\end{remark}
 
 
-\subsection{Function spaces}
+\subsection{The scale of weighted Triebel-Lizorkin and Besov spaces}
+
+The Leibniz-type rules obtained in two of the main results of this chapter, Theorem \ref{thm:CM:TL:B} and Theorem\ref{thm:ICM:TL:B}, hold in the setting of weighted Triebel-Lizorkin and Besov spaces. In this section we define this scale of spaces and present some of their properties. In particular, we state and prove Nikol\'skij representation, which constitute important tools for the proofs of theorems ref{thm:CM:TL:B} and ref{thm:ICM:TL:B}.
+
+We start by defining the classes of weights we will be using and present maximal operators and inequalities.
 
 \subsubsection{Weighted spaces}
 
-\begin{dfn}
-A \textit{weight} $w$ defined on $\rn$ is a locally integrable function such that $0<w(x)<\infty$ for almost every $x\in\rn$.
-\end{dfn}
 
-Given a weight $w$ and $0<p<\infty$ we define the weighted Lebesgue space $L^p(w)$ as the space of all measurable functions satisfying 
-\[ \norm{f}{L^p(w)} = \left(\int_\rn |f(x)|^p w(x)dx\right)^{\frac{1}{p}} < \infty. \]
+A \textit{weight} $w$ defined on $\rn$ is a locally integrable function such that $0<w(x)<\infty$ for almost every $x\in\rn$.
+Given a weight $w$ and $0<p<\infty$ we define the weighted Lebesgue space $L^p(w)$ as the space of all measurable functions $f$ satisfying 
+\[ \norm{f}{L^p(w)} := \left(\int_\rn |f(x)|^p w(x)dx\right)^{\frac{1}{p}} < \infty. \]
 In the case that $p=\infty$ we define $L^\infty (w) = L^\infty$. 
 
 The specific classes of weights in the hypotheses of the results of this chapter are Muckenhoupt weights, which we next define. 
 \begin{dfn}
 For $1<p<\infty$ the \textit{Muckenhoupt class} $A_p$ consists of all weights $w$ on $\rn$ satisfying 
- \begin{equation}\label{weight_condition}
+ \begin{equation*}
  \sup_B\left(\frac{1}{\abs{B}}\int_Bw(x)\dx\right)\left(\frac{1}{\abs{B}}\int_Bw(x)^{-\frac{1}{p-1}}\dx\right)^{p-1}<\infty,
- \end{equation}
+ \end{equation*}
 where the supremum is taken over all Euclidean balls $B\subset\rn$ and $|B|$ is the Lebesgue measure of $B$. For $p=\infty$ we define $A_\infty := \cup_{1<p} A_p$. 
 \end{dfn}
 
 From this definition it follows that $A_p \subset A_q$ when $p\leq q$. 
 For $w\in A_\infty$ we set 
 $\tau_w = \inf\{\tau \in (1,\infty]: w\in A_\tau \}$. 
-The condition (\ref{weight_condition}) is motivated by a connection to the Hardy-Littlewood maximal operator, which we now define.
-\begin{dfn}
-For a locally integrable function $f$ the \textit{Hardy-Littlewood maximal operator} $\mathcal{M}$ is defined as 
-\[ \mathcal{M}(f)(x)  = \sup_{B \ni x} \frac{1}{|B|}\int_B |f(y)|dy \quad \forall x\in\mathbb{R}^n. \]
-\end{dfn}
-It turns out that the Hardy-Littlewood maximal operator is bounded on $L^p(w)$ if and only if $w\in A_p$. That is, for $1<p<\infty$, $w\in A_p$ if and only if 
-\[\norm{\mathcal{M}(f)}{L^p (w)} \lesssim \norm{f}{L^p (w)}, \quad \forall f\in L^p(\rn). \]
+
+It can be proved that if $w\in A_p$, $p>1$, then $w\in A_{p-\eps}$ for some $\eps > 0$. 
+
+The Muckenhoupt classes arise in the study of boundedness properties of Hardy-Littlewood maximal operators in the setting of weighted Lebesgue spaces, as we next explain. The \textit{Hardy-Littlewood maximal operator} $\mathcal{M}$ is defined as 
+\[ \mathcal{M}(f)(x)  = \sup_{B \ni x} \frac{1}{|B|}\int_B |f(y)|dy \quad \forall x\in\mathbb{R}^n, f\in L^1_{loc}(\rn), \]
+where the supremum is taken over all Euclidean balls $B \subset \rn$. It turns out that the Hardy-Littlewood maximal operator is bounded on $L^p(w)$ if and only if $w\in A_p$. That is, for $1<p<\infty$, $w\in A_p$ if and only if 
+\[\norm{\mathcal{M}(f)}{L^p (w)} \lesssim \norm{f}{L^p (w)}, \quad \forall f\in L^p(w). \]
+
+
 Later in this chapter we will use the maximal function 
 
 \begin{equation}\label{maximal_Mr}
-\mathcal{M}_r (f) = \left(\mathcal{M}(|f|^r)\right)^{\frac{1}{r}}.
-\end{equation} Since $0<r<p/\tau_w$ if and only if $0<r<p$ and $w\in A_{p/r}$ by the properties for the Hardy-Littlewood maximal operator stated above it holds that $\mathcal{M}_r$ is bounded on $L^p (w)$ when $w\in A_{p/r}$. This fact is a particular case of the following theorem which we refer to as the Fefferman-Stein inequality.
+\mathcal{M}_r (f) := \left(\mathcal{M}(|f|^r)\right)^{\frac{1}{r}}.
+\end{equation} Since $0<r<p/\tau_w$ if and only if $0<r<p$ and $w\in A_{p/r}$, by the boundedness properties for the Hardy-Littlewood maximal operator stated above, it holds that $\mathcal{M}_r$ is bounded on $L^p (w)$ when $w\in A_{p/r}$. This fact is a particular case of the following estimate known as the Fefferman-Stein inequality.
 
 \begin{theorem}
 If $0<p<\infty,$ $0<q\le \infty,$  $0<r <\min(p,q)$ and $w \in A_{p/r}$ (i.e. $0<r<\min(p/\tau_w,q)$), then for all sequences $\{f_{j}\}_{j\in\ent}$ of locally integrable functions defined on $\rn,$ we have
@@ -126,9 +130,7 @@ where the implicit constant depends on $r,$ $p,$ $q,$ and $w$ and the summation 
 \end{theorem}
 For more details on the Muckenhoupt classes see Muckenhoupt \cite{MR0293384} Grafakos \cite{MR3243741}.
 
-\subsubsection{Triebel-Lizorkin and Besov spaces}\label{TL_B_section}
-Here we describe the function spaces in which (\ref{thm:CM:TL:B}) is based and some properties of such spaces. 
-
+\subsubsection{Weighted Triebel-Lizorkin and Besov spaces}\label{TL_B_section}
 Let $\psi$ and $\varphi$ be functions in $\sw$ satisfying the following conditions:
 \begin{itemize}
 \item\label{TL_B_psi1} supp$(\widehat{\psi})\subset\{\xi\in\rn : \frac{1}{2} < |\xi| <2\}$,
@@ -136,82 +138,82 @@ Let $\psi$ and $\varphi$ be functions in $\sw$ satisfying the following conditio
 \item\label{TL_B_phi1} supp$(\widehat{\varphi}) \subset \{\xi\in\rn : |\xi| < 2\}$,
 \item\label{TL_B_phi2} $|\widehat{\varphi}(\xi)|>c$ for $|\xi| < \frac{5}{3}$ and some $c>0$. 
 \end{itemize}
-For $\psi$ supported in an annulus and $j\in\ent$ we define the operator $\Delta^\psi_j(f)$ through its Fourier transform as \[\widehat{\Delta^\psi_j (f)}(\xi) = \psi(2^{-j}\xi)\widehat{f}(\xi).\]
-Similarly we define the operator $S^\varphi_0$ through the Fourier transform as
-\[ \widehat{S^\varphi_0 (f)}(\xi) = \widehat{\varphi}(\xi)\widehat{f}(\xi).\]
-For such $\psi$ the homogeneous Triebel-Lizorkin and Besov spaces are sets of tempered distributions modulo polynomials. We denote the set of polynomials over $\rn$ by $\mathcal{P}(\rn)$. The space of \textit{tempered distributions} $\mathcal{S}'$ is the space of all continuous linear functionals acting on the Schwartz class.
 
-\begin{dfn}\label{TL_B_def}
-Let $s\in\mathbb{R}$, $0<p<\infty$, and $0<q\leq\infty$.
-\begin{itemize}
-\item The weighted \textit{homogeneous Triebel-Lizorkin space} $\tlw{p}{s}{q}{w}$ consists of all $f\in \swp/\mathcal{P}(\rn)$ such that 
-\begin{equation*}
-\norm{f}{\tlw{p}{s}{q}{w}}=\norm{\left(\sum_{j\in\ent}(2^{sj}|\Delta^\psi_jf|)^q\right)^{\frac{1}{q}}}{\lebw{p}{w}}<\infty.
-\end{equation*}
-\item The weighted \textit{homogeneous Besov space} $\besw{p}{s}{q}{w}$ consists of all $f\in \swp/\mathcal{P}(\rn)$ such that 
-\begin{equation}
-\norm{f}{\besw{p}{s}{q}{w}} = \left(\sum_{j\in\ent} (2^{js}\norm{\Delta^\psi_jf}{L^p(w)})^q\right)^{\frac{1}{q}} < \infty.
-\end{equation}
-\end{itemize}
-\end{dfn}
 
-Given $\varphi$, $\psi$, $S^\varphi_0$, and $\Delta^\psi_j$ as above the weighted inhomogeneous Triebel-Lizorkin and Besov spaces are defined as follows. 
-
-\begin{dfn}\label{ITL_B_def}
+\begin{dfn}{Weighted Homogeneous Triebel-Lizorkin and Besov spaces}\label{TL_B_def}
 Let $s\in\mathbb{R}$ and $0<q\leq\infty$.
 \begin{itemize}
-\item For $0<p<\infty$ the weighted \textit{inhomogeneous Triebel-Lizorkin space} $\itlw{p}{s}{q}{w}$ is the class of all $f\in\mathcal{S}'(\rn)$ such that
+\item For $0<p<\infty$ the \textit{weighted homogeneous Triebel-Lizorkin space} $\tlw{p}{s}{q}{w}$ consists of all $f\in \swp/\mathcal{P}(\rn)$ such that 
 \begin{equation*}
-\norm{f}{\itlw{p}{s}{q}{w}}= \norm{S^\varphi_0 f}{L^p(w)} + \norm{\left(\sum_{j\in\naz}(2^{sj}|\Delta^\psi_jf|)^q\right)^{\frac{1}{q}}}{\lebw{p}{w}}<\infty.
+\norm{f}{\tlw{p}{s}{q}{w}}=\norm{\left(\sum_{j\in\ent}(2^{sj}|\Delta^\psi_jf|)^q\right)^{\frac{1}{q}}}{\lebw{p}{w}}<\infty,
 \end{equation*}
-\item For $0<p\leq\infty$ weighted \textit{inhomogeneous Besov space} $\besw{p}{s}{q}{w}$ is the class of all $f\in\mathcal{S}'(\rn)$ such that 
+with appropriate changes of $q=\infty$. 
+\item For $0<p\leq\infty$ the \textit{weighted homogeneous Besov space} $\besw{p}{s}{q}{w}$ consists of all $f\in \swp/\mathcal{P}(\rn)$ such that 
 \begin{equation*}
-\norm{f}{\ibesw{p}{s}{q}{w}} = \norm{S^\varphi_0 f}{L^p(w)} + \left(\sum_{j\in\naz} (2^{js}\norm{\Delta^\psi_jf}{L^p(w)})^q\right)^{\frac{1}{q}} < \infty.
+\norm{f}{\besw{p}{s}{q}{w}} := \left(\sum_{j\in\ent} (2^{js}\norm{\Delta^\psi_jf}{L^p(w)})^q\right)^{\frac{1}{q}} < \infty,
 \end{equation*}
+with appropriate changes of $q=\infty$. 
 \end{itemize}
 \end{dfn}
 
-The definitions above are independent of the choice of $\varphi$ and $\psi$. The Triebel-Lizorkin and Besov defined above are generally quasi-Banach spaces and if $1\leq p,q <\infty$ they are Banach spaces. These spaces provide a framework to study a variety of other spaces such as Lebesgue, Hardy, and Sobolev spaces with a unified approach.  For instance the following equivalences hold where the corresponding function spaces have equivalent norms 
-\begin{equation}\label{TL&Hardy}
- \itlw{p}{0}{2}{w} \simeq H^p (w) \text{ for } 0<p<\infty, \quad w\in A_\infty, 
-\end{equation}
-\begin{equation}
- \itlw{p}{0}{2}{w} \simeq L^p(w) \simeq H^p(w) \text{ for } 1<p<\infty, \quad w\in A_p, 
-\end{equation}
-\begin{equation}
- \itlw{p}{s}{2}{w} \simeq \dot{W}^{s,p}(w) \text{ for } 1<p<\infty, \quad w\in A_p.
-\end{equation}
+\begin{dfn}{Weighted inhomogeneous Triebel-Lizorkin and Besov spaces}\label{ITL_B_def}
+Let $s\in\mathbb{R}$ and $0<q\leq\infty$.
+\begin{itemize}
+\item For $0<p<\infty$ the \textit{weighted inhomogeneous Triebel-Lizorkin space} $\itlw{p}{s}{q}{w}$ is the class of all $f\in\mathcal{S}'(\rn)$ such that
+\begin{equation*}
+\norm{f}{\itlw{p}{s}{q}{w}}:= \norm{S^\varphi_0 f}{L^p(w)} + \norm{\left(\sum_{j\in\naz}(2^{sj}|\Delta^\psi_jf|)^q\right)^{\frac{1}{q}}}{\lebw{p}{w}}<\infty,
+\end{equation*}
+with appropriate changes if $q=\infty$.
+\item For $0<p\leq\infty$ the \textit{weighted inhomogeneous Besov space} $\besw{p}{s}{q}{w}$ is the class of all $f\in\mathcal{S}'(\rn)$ such that 
+\begin{equation*}
+\norm{f}{\ibesw{p}{s}{q}{w}}: = \norm{S^\varphi_0 f}{L^p(w)} + \left(\sum_{j\in\naz} (2^{js}\norm{\Delta^\psi_jf}{L^p(w)})^q\right)^{\frac{1}{q}} < \infty,
+\end{equation*}
+with appropriate changes if $q=\infty$.
+\end{itemize}
+\end{dfn}
+
+The definitions above are independent of the choice of $\varphi$ and $\psi$. Triebel-Lizorkin and Besov spaces are quasi-Banach spaces and if $p,q \geq 1$ they are Banach spaces. These spaces provide a unified framework that includes a variety of other spaces such as weighted Lebesgue, Hardy, and Sobolev spaces.  For instance the following equalities equivalent norms: 
+\begin{align*}
+ \itlw{p}{0}{2}{w} &= H^p (w) \text{ for } 0<p<\infty, \quad w\in A_\infty, 
+
+ \itlw{p}{0}{2}{w} &= L^p(w) \simeq H^p(w) \text{ for } 1<p<\infty, \quad w\in A_p, 
+
+ \itlw{p}{s}{2}{w} &= \dot{W}^{s,p}(w) \text{ for } 1<p<\infty, \quad w\in A_p,
+\end{align*}
+where $H^p(w)$ and $\dot{W}^{s,p}(w)$ are, respectively, a weighted Hardy space and a weighted Sobolev space, whose definitions we next recall.
 Let $\Psi\in \sw$ be such that $\int_{\rn}\Psi(x)\dx\neq 0.$ Given $0<p<\infty,$ the  Hardy space $H^p(w)$ is defined as 
 \begin{equation*}
 H^p(w) :=\{f \in \swp: \norm{f}{H^p(w)}< \infty \},
 \end{equation*}
 where 
 \[
-\norm{f}{H^p(w)}:= \norm{\sup_{0<t} \abs{t^{-n}\Psi(t^{-1}\cdot)\ast f}}{L^p(w)} .
+\norm{f}{H^p(w)}:= \norm{\sup_{t>0} \abs{t^{-n}\Psi(t^{-1}\cdot)\ast f}}{L^p(w)} .
 \]
-The Sobolev spaces $\dot{W}^{s,p}(w)$ is the space of all tempered distributions modulo polynomials $\mathcal{S}' / \mathcal{P}$ such that 
-\[\norm{f}{\dot{W}^{s,p}(w)} = \norm{D^s f}{L^p(w)} < \infty. \]
-For a detailed overview of the development of Besov and Triebel-Lizorkin spaces see Triebel \cite{MR3024598} and Qui \cite{MR676560} for the unweighted and weighted settings respectively.
-Additionally by the lifting property of Triebel-Lizorkin and Besov spaces Theorem (\ref{thm:CM:TL:B}) and other results in this manuscript can be seen as Leibniz-type rules as in Chapter 1. 
-For weighted Triebel-Lizorkin spaces the so called lifting property is as follows: for $s$, $p$, and $q$ as in (\ref{ITL_B_def}) and (\ref{TL_B_def}) and $w\in A_\infty$ we have that 
+The Sobolev space $\dot{W}^{s,p}(w)$ is the space of all tempered distributions modulo polynomials such that 
+\[\norm{f}{\dot{W}^{s,p}(w)} := \norm{D^s f}{L^p(w)} < \infty. \]
+For a detailed overview of the development of Besov and Triebel-Lizorkin spaces see Triebel \cite{MR3024598} and Qui \cite{MR676560} for the unweighted and weighted settings respectively. We recall that these spaces satisfy the following lifting property: for $s$, $p$, and $q$ as in definitions \ref{TL_B_def} and \ref{ITL_B_def} and $w\in A_\infty$ we have that 
 
  \begin{equation}\label{lifting_TL}
-  \norm{f}{\tlw{p}{s}{q}{w}}\simeq\norm{D^s f}{\tlw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\itlw{p}{s}{q}{w}}\simeq\norm{J^s f}{\itlw{p}{0}{q}{w}}.
+  \norm{f}{\tlw{p}{s}{q}{w}}\simeq\norm{D^s f}{\tlw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\itlw{p}{s}{q}{w}}\simeq\norm{J^s f}{\itlw{p}{0}{q}{w}},
  \end{equation}
-The corresponding statement for Besov spaces is: for $s$, $p$, and $q$ as in (\ref{ITL_B_def}) and (\ref{TL_B_def}) and $w\in A_\infty$ we have that 
+
  \begin{equation}\label{lifting_B}
   \norm{f}{\besw{p}{s}{q}{w}}\simeq\norm{D^s f}{\besw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\ibesw{p}{s}{q}{w}}\simeq\norm{J^s f}{\ibesw{p}{0}{q}{w}}.
  \end{equation}
  
 
-  
+We end this section by introducing notation used in the statements of the main results in this chapter. For $w\in A_\infty$ and  $0<p,q\le \infty$  denote 
+\begin{equation*}
+\tau_{p,q}(w) := n \left(\frac{1}{\min(p/\tau_w,q,1)} - 1 \right)  \quad \text{and}\quad \tau_{p}(w):=n\left(\frac{1}{\min(p/\tau_w,1)}-1\right).
+\end{equation*} 
+If $w\equiv 1,$ in which case $\tau_w=1,$ we just write $\tau_{p,q}$  and $\tau_p,$ respectively. Note  that $\tau_{p,2}(w)=\tau_p(w),$ $\tau_{p,q}(w)\ge \tau_{p,q}$ and $\tau_p(w)\ge \tau_p$ for any $w\in A_\infty.$
 
-\subsubsection{Nikol'skij representations for weighted homogeneous and inhomogeneous Triebel-Lizorkin and Besov spaces}
+\subsubsection{Nikol'skij representations for weighted Triebel-Lizorkin and Besov spaces}
 
 An important tool for the proof of Theorem \ref{thm:CM:TL:B} is the Nikol'skij representation for weighted Triebel-Lizorkin and Besov spaces. Here we state a weighted version of \cite[Theorem 3.7]{MR837335} (see also \cite[Section 2.5.2]{MR3024598}). 
-We give the proof of Theorem \ref{thm:Nikolskij:weighted} at the end of this section.
+We give the proof of Theorem \ref{thm:Nikolskij:weighted} at the end of this section after stating and proving several lemmas used in its proof.
 
-\begin{theorem}\label{thm:Nikolskij:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
+\begin{theorem}{Nikol'skij representation}\label{thm:Nikolskij:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
 \begin{equation*}
 \supp(\widehat{u_j}) \subset B(0, \A\, 2^j ) \quad \forall j \in \ent.
 \end{equation*}
@@ -230,7 +232,7 @@ where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and $q.$   An an
 \end{enumerate}
 \end{theorem} 
  
-Before proving Theorem \ref{thm:Nikolskij:weighted} we state the following lemmas that are used in the proof. 
+Before proving Theorem \ref{thm:Nikolskij:weighted} we state the following lemmas that are used in its proof. 
  
  
 \begin{lemma}[Particular case of Corollary 2.11 in \cite{MR837335}]\label{coro:2:11}
@@ -379,9 +381,6 @@ Since $\tlw{p}{s}{\infty}{w}$ has the Fatou property (see Remark~\ref{fatou}), w
  The last part of the proof of Theorem~\ref{thm:Nikolskij:weighted} uses the Fatou property of Triebel--Lizorkin and Besov spaces.  Let  $\mathcal{A}$ be a quasi-Banach space such that $\sw\hookrightarrow\mathcal{A}\hookrightarrow\swp$ (or $\swz\hookrightarrow\mathcal{A}\hookrightarrow\mathcal{S}_0'(\rn)$). The space $\mathcal{A}$ is said to  have the Fatou property if  for every sequence $\{f_j\}_{j\in \na}\subset \mathcal{A}$ that converges in $\swp$ ($\mathcal{S}_0'(\rn),$  respectively), as $j\to \infty,$ and that satisfies $\liminf_{j\to\infty} \norm{f_j}{\mathcal{A}}<\infty,$ it follows that $\lim_{j\to\infty}f_j\in \mathcal{A}$ and $\norm{\lim_{j\to\infty}f_j}{\mathcal{A}}\lesssim \liminf_{j\to\infty} \norm{f_j}{\mathcal{A}},$ where the implicit constant is independent of $\{f_j\}_{j\in\na}.$ 
 
 Triebel--Lizorkin and Besov spaces based in weighted Lebesgue spaces posses the Fatou property for any $s\in \re$ and $0<q\le \infty$ because for $0<p\le \infty,$ $L^p(w)$ satisfies: (1) if $f,g\in L^p(w)$ and $\abs{f}\le\abs{g}$ pointwise a.e., then $\norm{f}{L^p(w)}\lesssim \norm{g}{L^p(w)};$ (2) if $\{f_j\}_{j\in \na}\subset L^p(w)$ and $f_j\ge 0$ poinwise a.e., then $\norm{\liminf_{j\to\infty} f_j}{L^p(w)}\lesssim \liminf_{j\to\infty}\norm{f_j}{L^p(w)}.$ 
-
-
-More generally we will see in Section \ref{ch2_othersettings} that Triebel-Lizorkin and Besov spaces based in wieghted Morrey spaces, weighted Lorentz spaces, and variable Lebesgue spaces. 
 \end{remark}
  \section{Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}\label{ch2_results}
  
