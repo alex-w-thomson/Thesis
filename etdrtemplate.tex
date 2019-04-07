@@ -70,16 +70,30 @@
 % | Here are added external packages that will be used throughout
 % | the document.  You can add other packages as needed.
 % +--------------------------------------------------------------------+
+\usepackage{amsmath,amssymb,amscd,amsxtra,upref,stmaryrd}
+\usepackage{latexsym}
+\usepackage{mathtools}
+\usepackage[dvips]{graphics,epsfig}
+\usepackage{enumerate}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{amsthm,amsfonts,color,esint,graphicx, float, mathabx}
 
-\usepackage{graphicx} % Extended graphics package.
-\usepackage{amsmath} % American Mathematics Society standards
-\usepackage{amsxtra} % Additional math symbols
-\usepackage{amssymb} % Additional math symbols
-\usepackage{amsthm} % Additional math symbols
-\usepackage{latexsym} % Additional math symbols
+
+
+
+
+
+%\usepackage{mathabx}
+%\usepackage{graphicx} % Extended graphics package.
+%\usepackage{amsmath} % American Mathematics Society standards
+%\usepackage{amsxtra} % Additional math symbols
+%\usepackage{amssymb} % Additional math symbols
+%\usepackage{amsthm} % Additional math symbols
+%\usepackage{latexsym} % Additional math symbols
 \usepackage{setspace} % Controls line spacing
 \usepackage[margin=1in]{geometry} % Sets page margins to 1 inch on all sides
 \usepackage[titles]{tocloft} % Adds leader dots to all entries in the table of contents
+\usepackage{enumitem}
 
 
 
@@ -125,7 +139,7 @@
 % | The hyperref package enables cross-references.
 % +---------------------------------------------------------------------+
 
-\usepackage[pdftex, plainpages=false, pdfpagelabels]{hyperref}
+%\usepackage[pdftex, plainpages=false, pdfpagelabels]{hyperref}
 
 \hypersetup{
     linktocpage=true,
@@ -225,10 +239,11 @@
 \newcommand{\Ss}{\mathcal{S}}
 %\newcommand{\P}{\mathcal{P}}
 \newcommand{\B}{\mathcal{B}}
-\def\P{\mathcal P}
+%\def\P{\mathcal P}
 
 
 %Greek letters
+\newcommand{\eps}{\varepsilon}
 \newcommand{\f}{\varphi}
 \newcommand{\fk}{\varphi_k}
 \newcommand{\fj}{\varphi_j}
@@ -269,6 +284,10 @@
 \newcommand{\ex}{d}
 \newcommand{\gamt}{\gamma_{p_1,p_2,p,q}^{w_1,w_2, tl}}
 \newcommand{\gamb}{\gamma_{p_1,p_2,p,q}^{w_1,w_2,b}}
+\newcommand{\pst}{\tilde{p}}
+
+
+
 
 \DeclareMathOperator*{\essinf}{ess\,inf}
 \DeclareMathOperator*{\esssup}{ess\,sup}
@@ -465,7 +484,7 @@
 
 \input{chapter1.tex}
 \input{chapter2.tex}
-%\input{chapter3.tex}
+\input{chapter3.tex}
 
 % +--------------------------------------------------------------------+
 % | Uncomment the lines below to add additional chapters.

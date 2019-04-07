@@ -1,19 +1,124 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+\usepackage{amsmath,amssymb,amscd,amsxtra,upref,stmaryrd}
+\usepackage{latexsym}
+\usepackage{mathtools}
+\usepackage[dvips]{graphics,epsfig}
+\usepackage{enumerate}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{amsthm,amsfonts,color,esint,graphicx, float, mathabx}
+
+%\usepackage{showkeys}
+%\allowdisplaybreaks
+
+%\headheight=8pt
+%\topmargin=0pt
+%\textheight=624pt
+%\textwidth=438pt
+%\oddsidemargin=18pt
+%\evensidemargin=18pt
+
+%This command makes for narrower margins
+\usepackage[margin=1in]{geometry} 
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+
+\newtheorem{thm}{Theorem} % used for known results
+\renewcommand{\thethm}{\thesection.\Alph{thm}}
+\newtheorem{lem}[thm]{Lemma} % used for known results
+\newtheorem{prop}[thm]{Proposition} % used for known results
+%\renewcommand{\thelem}{\Alph{lem}}
+
+
+\theoremstyle{remark}
+\newtheorem{dfn}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{remark}{Remark}[section]
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+\newcommand{\comment}[1]{\vskip.3cm
+\fbox{%
+\parbox{0.93\linewidth}{\footnotesize #1}}
+\vskip.3cm}
+
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+
+
+%Number sets, etc
+\newcommand{\com}{\mathbb{C}}
+\newcommand{\na}{\mathbb{N}}
+\newcommand{\naz}{\mathbb{N}_0}
+\newcommand{\re}{\mathbb{R}}
+\newcommand{\ent}{\mathbb{Z}}
+\newcommand{\toro}{\mathbb{T}}
+\newcommand{\rn}{{\mathbb R}^n}
+\newcommand{\rtn}{\re^{2n}}
+
+%Function spaces
+\newcommand{\sw}{{\mathcal{S}}(\rn)}
+\newcommand{\swp}{{\mathcal{S}'}(\rn)}
+\newcommand{\B}[3]{B^{#1}_{#2,#3}}
+\newcommand{\F}[3]{F^{#1}_{#2,#3}}
+
+
+%Cal letters
+\newcommand{\C}{\mathcacl{C}}
+\newcommand{\M}{\mathcal{M}} % for the Hardy-Littelwood maximal function
+\newcommand{\Mtau}{\mathcal{M}_\tau} 
+\newcommand{\K}{\mathcal{K}}
+
+
+%Greek letters
+\newcommand{\eps}{\varepsilon}
+\newcommand{\f}{\varphi}
+\newcommand{\fk}{\varphi_k}
+\newcommand{\fj}{\varphi_j}
+
+
+%Fourier transform of f and g; complex exponentials
+\newcommand{\fhat}{\widehat{f}}
+\newcommand{\ghat}{\widehat{g}}
+\newcommand{\eixxi}{e^{2\pi i x \cdot \xi}}
+\newcommand{\eixeta}{e^{2\pi i x \cdot \eta}}
+\newcommand{\eixzeta}{e^{2\pi i x \cdot \zeta}}
+\newcommand{\eixxe}{e^{2\pi i x \cdot (\xi + \eta)}}
+
+%dx, etc
+\newcommand{\dx}{\, dx}
+\newcommand{\dy}{\, dy}
+\newcommand{\dz}{\, dz}
+\newcommand{\dxi}{\, d\xi}
+\newcommand{\deta}{\, d\eta}
+\newcommand{\dzeta}{\, d\zeta}
+
+
+%Summations
+\newcommand{\sumkNz}{\sum_{k \in \na_0}}
+\newcommand{\sumlNz}{\sum_{\ell \in \na_0}}
+\newcommand{\sumjkNz}{\sum_{j, k \in \na_0}}
+
+%Other
+\newcommand{\abs}[1]{\left\vert #1 \right\vert}
+\newcommand{\fr}[2]{{\textstyle \frac{#1}{#2}}}
+\newcommand{\norm}[2]{\left\|#1\right\|_{#2}}
+\newcommand{\supp}{{\rm{supp}}}
+\newcommand{\tp}{\max(0,n(\frac{1}{p}-1))}
+%\newcommand{\tpline}{\max(0,n({1}/{p}-1))}
+\newcommand{\pst}{\tilde{p}}
+%\newcommand{\hc}{\frac{1}{p}=\frac{1}{p_1}+\frac{1}{p_2}}
+%\newcommand{\hcline}{1/p=1/{p_1}+1/{p_2}}
+
 \begin{document}
+\begin{align}\nonumber
+& \sum\limits_{\ell=4}^\infty 2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst\ell} 2^{k \pst[(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^{\pst}\right)^{\frac{q}{\pst}} \\ \label{eq:moving:the:sums}
+&\hspace{2cm}\lesssim \sum\limits_{k=0}^\infty 2^{k q[ (1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+ s_1+\eps] }   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^q.
+\end{align}
 
 
-Next we note that $\lambda^{-1}$ is homogeneous of degree $-\gamma$ so \
-$\partial^\alpha_\xi \partial^\beta_\eta \lambda^{-1}$ 
-is homogeneous of degree $-\gamma -|\alpha + \beta|$. 
-That is $\partial^\alpha_\xi 
-\partial^\beta_\eta 
-\lambda^{-1} (r \xi, r \eta) = 
-r^{-\gamma -|\alpha+\beta|}\partial^\alpha_\xi \partial^\beta_\eta \gamma^{-1}(\xi,\eta)$ for any $r>0$. 
-By letting $r = (\abs{\xi} + \abs{\eta})^{-1}$ we obtain 
-
-\bibliography{NaiboThomsonBiblio}
 \end{document}

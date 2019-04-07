@@ -1,44 +1,264 @@
-\cleardoublepage
 
-\chapter{Weighted Leibniz-type rules and applications to scattering properties of PDEs}\label{chapter2}
+% +--------------------------------------------------------------------+
+% | Here are added external packages that will be used throughout
+% | the document.  You can add other packages as needed.
+% +--------------------------------------------------------------------+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{graphicx} % Extended graphics package.
+\usepackage{amsmath} % American Mathematics Society standards
+\usepackage{amsxtra} % Additional math symbols
+\usepackage{amssymb} % Additional math symbols
+\usepackage{amsthm} % Additional math symbols
+\usepackage{latexsym} % Additional math symbols
+\usepackage{setspace} % Controls line spacing
+\usepackage[margin=1in]{geometry} % Sets page margins to 1 inch on all sides
+\usepackage[titles]{tocloft} % Adds leader dots to all entries in the table of contents
 
 
-In this chapter we obtain new Leibniz-type rules of the type \eqref{h_general_estimate} and \eqref{i_general_estimate} for bilinear multiplier operators associated to Coifman-Meyer multipliers in the settings of Triebel-Lizorkin and Besov spaces based on quasi-Banach spaces. These results extend and improve the fractional Leibniz rules (\ref{def:leibniz}) and (\ref{def:ileibniz}).  Additionally, we apply these results to obtain scattering properties of solutions to systems of partial differential equations involving fractional powers of the Laplacian. 
 
-We start with some preliminaries in Section \ref{ch2_prelim}, where we discuss Coifman-Meyer multipliers and Besov and Triebel-Lizorkin spaces based on weighted Lebesgue spaces.
+%\usepackage{amsmath,amssymb,amscd,amsxtra,upref,stmaryrd}
+%\usepackage{latexsym}
+%\usepackage{mathtools}
+%\usepackage[dvips]{graphics,epsfig}
+%\usepackage{enumerate}
+%\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+%\usepackage{amsthm,amsfonts,color,esint,graphicx, float, mathabx}
 
-In Section \ref{ch2_results} we state and prove two of the main results of this chapter on Leibniz-type rules associated to Coifman-Meyer multipliers in the setting of Besov and Triebel-Lizorkin spaces based on weighted Lebesgue spaces. These results are stated as Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B}. We also present several corollaries and connections with related results in the literature and estimates \eqref{def:leibniz} and \eqref{def:ileibniz}. The method of proof used for Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B} can be adapted to obtain \eqref{h_general_estimate} and \eqref{i_general_estimate} for Coifman-Meyer multipliers in the context of Triebel-Lizorkin and Besov spaces based on other quasi-Banach spaces such as weighted Lorentz, weighted Morrey, and variable-Lebesgue spaces. These results are discussed in Section \ref{ch2_othersettings}.
 
-Finally, in Section \ref{ch2_applications} we present applications of the results in this chapter to scattering properties of solutions to partial differential equations. 
+
+%
+%% +--------------------------------------------------------------------+
+%% |
+%% | Citation and Bibliography Style
+%% |
+%% | The following commands determine the citation and bibliography style.  The
+%% | template uses BibTeX for formatting the bibliography.  See "BibTeX Guide.pdf"
+%% | for details on formatting citations and references.  The template is set
+%% | to use a generic, superscript style, but it can be easily modified
+%% | to use author-year styles.
+%
+%\bibliographystyle{plain}
+%% | If you want to use an author-year citation style, change "unsrtnat" to
+%% | "plainnat" in the line above.  You can also use other styles supported
+%% | by LaTeX, e.g., acm, ieeetr, siam, etc.  Additional styles
+%% | are in the \styles folder and can be invoked like this:
+%% | \bibliographystyle{styles/apsrev}.  If the style you use is based
+%% | on an author-year citation style, you will need to make changes
+%% | in the usepackage and \setcitestyle statements below
+%
+%\usepackage[super,sort&compress]{natbib}
+%% | If you want to use an author-year citation style, change "super" to
+%% | "authoryear" in the line above.
+%
+%\setcitestyle{square,numbers}
+%% | if you want to use an author-year citation style, change "super" to
+%% | "authoryear" in the line above.
+%
+%% +---------------------------------------------------------------------+
+%% | The hyperref package enables cross-references.
+%% +---------------------------------------------------------------------+
+%
+%\usepackage[pdftex, plainpages=false, pdfpagelabels]{hyperref}
+%
+%\hypersetup{
+%    linktocpage=true,
+%    colorlinks=true,
+%    bookmarks=true,
+%    citecolor=blue,
+%    urlcolor=blue,
+%    linkcolor=blue,
+%    citebordercolor={1 0 0},
+%    urlbordercolor={1 0 0},
+%    linkbordercolor={.7 .8 .8},
+%    breaklinks=true,
+%    pdfpagelabels=true,
+%    }
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+
+\newtheorem{thm}{Theorem} % used for known results
+\renewcommand{\thethm}{\thesection.\Alph{thm}}
+\newtheorem{lem}[thm]{Lemma} % used for known results
+\newtheorem{prop}[thm]{Proposition} % used for known results
+%\renewcommand{\thelem}{\Alph{lem}}
+
+
+\theoremstyle{remark}
+\newtheorem{dfn}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{remark}{Remark}[section]
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+\newcommand{\comment}[1]{\vskip.3cm
+\fbox{%
+\parbox{0.93\linewidth}{\footnotesize #1}}
+\vskip.3cm}
+
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+
+
+%Number sets, etc
+\newcommand{\com}{\mathbb{C}}
+\newcommand{\na}{\mathbb{N}}
+\newcommand{\naz}{\mathbb{N}_0}
+\newcommand{\re}{\mathbb{R}}
+\newcommand{\ent}{\mathbb{Z}}
+\newcommand{\toro}{\mathbb{T}}
+\newcommand{\rn}{{{\mathbb R}^n}}
+\newcommand{\rtn}{\re^{2n}}
+
+%Function spaces
+\newcommand{\sw}{{\mathcal{S}}(\rn)}
+\newcommand{\swp}{{\mathcal{S}'}(\rn)}
+\newcommand{\swz}{{\mathcal{S}_0}(\rn)}
+
+
+%TL SPACES
+\newcommand{\tlw}[4]{\dot F_{#1,#3}^{#2}(#4)} %weighted homogeneous Triebel-Lizorkin space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\tl}[3]{\dot F_{#1,#3}^{#2}} %unweighted homogeneous Triebel-Lizorkin space
+\newcommand{\itlw}[4]{F_{#1,#3}^{#2}(#4)} %weighted inhomogeneous Triebel-Lizorkin space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\itl}[3]{F_{#1,#3}^{#2}} %unweighted inhomogeneous Triebel-Lizorkin space
+%BESOV SPACES
+\newcommand{\besw}[4]{\dot B_{#1,#3}^{#2}(#4)} %weighted homogeneous Besov space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\bes}[3]{\dot B_{#1,#3}^{#2}} %unweighted homogeneous Besov space
+\newcommand{\ibesw}[4]{B_{#1,#3}^{#2}(#4)} %weighted inhomogeneous Besov space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\ibes}[3]{B_{#1,#3}^{#2}} %unweighted inhomogeneous Besov space
+
+%LEBESGUE SPACES
+\newcommand{\lebw}[2]{L^{#1}(#2)} %weighted Lebesgue space with #1=index and #2=weight 
+
+%VARIABLE LEBESGUE SPACES
+\newcommand{\Lp}{L^{p(\cdot)}} %variable Lp
+\newcommand{\Lpc}{L^{p'(\cdot)}}
+\newcommand{\Lq}{L^{q(\cdot)}} %variable Lq
+\newcommand{\pp}{{p(\cdot)}}
+\newcommand{\cpp}{{p'(\cdot)}}
+\newcommand{\qq}{{q(\cdot)}}
+\newcommand{\cqq}{{q'(\cdot)}}
+\newcommand{\rr}{{r(\cdot)}}
+\newcommand{\crr}{{r'(\cdot)}}
+\newcommand{\ppo}{{p_1(\cdot)}}
+\newcommand{\ppt}{{p_2(\cdot)}}
+
+%MORREY SPACES
+\newcommand{\mow}[3]{M_{#1}^{#2}(#3)}
+
+%Cal letters
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\M}{\mathcal{M}} % for the Hardy-Littelwood maximal function
+\newcommand{\Mtau}{\mathcal{M}_\tau} 
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\Ss}{\mathcal{S}}
+%\newcommand{\P}{\mathcal{P}}
+\newcommand{\B}{\mathcal{B}}
+\def\P{\mathcal P}
+
+
+%Greek letters
+\newcommand{\f}{\varphi}
+\newcommand{\fk}{\varphi_k}
+\newcommand{\fj}{\varphi_j}
+
+
+%Fourier transform of f and g; complex exponentials
+\newcommand{\fhat}{\widehat{f}}
+\newcommand{\ghat}{\widehat{g}}
+\newcommand{\eixxi}{e^{2\pi i x \cdot \xi}}
+\newcommand{\eixeta}{e^{2\pi i x \cdot \eta}}
+\newcommand{\eixzeta}{e^{2\pi i x \cdot \zeta}}
+\newcommand{\eixxe}{e^{2\pi i x \cdot (\xi + \eta)}}
+
+%dx, etc
+\newcommand{\dx}{\, dx}
+\newcommand{\dy}{\, dy}
+\newcommand{\dz}{\, dz}
+\newcommand{\dxi}{\, d\xi}
+\newcommand{\deta}{\, d\eta}
+\newcommand{\dzeta}{\, d\zeta}
+
+
+
+% Standard multiplier operators
+\newcommand{\Do}[2]{\Delta^{#1}_{#2}}
+\newcommand{\So}[2]{S^{#1}_{#2}}
+
+
+%Other
+\newcommand{\abs}[1]{\left\vert #1 \right\vert}
+\newcommand{\fr}[2]{{\textstyle \frac{#1}{#2}}}
+\newcommand{\norm}[2]{\left\|#1\right\|_{#2}}
+\newcommand{\supp}{{\rm{supp}}}
+\newcommand{\hc}{\frac{1}{p}=\frac{1}{p_1}+\frac{1}{p_2}}
+\newcommand{\hcline}{1/p=1/p_1+1/p_2}
+\newcommand{\tp}{\max\{0,n(\frac{1}{p}-1)\}}
+\newcommand{\A}{D}
+\newcommand{\ex}{d}
+\newcommand{\gamt}{\gamma_{p_1,p_2,p,q}^{w_1,w_2, tl}}
+\newcommand{\gamb}{\gamma_{p_1,p_2,p,q}^{w_1,w_2,b}}
+
+\DeclareMathOperator*{\essinf}{ess\,inf}
+\DeclareMathOperator*{\esssup}{ess\,sup}
+
+
+%
+%\textwidth6in
+%
+%\setlength{\topmargin}{0in} \addtolength{\topmargin}{-\headheight}
+%\addtolength{\topmargin}{-\headsep}
+%
+%\setlength{\oddsidemargin}{0in}
+%
+%\oddsidemargin  0.0in \evensidemargin 0.0in \parindent0em
+%
+%\pagestyle{fancy}\lhead{Research Statement} \rhead{October 2018}
+%\chead{{\large{\bf Alex Thomson}}} \lfoot{} \rfoot{\bf \thepage} \cfoot{}
+
+\newcounter{list}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0em}
+% +--------------------------------------------------------------------+
+% | The document begins here.
+% +--------------------------------------------------------------------+
+
+\doublespacing
+\begin{document}
+%\chapter{Weighted Leibniz-type rules with applications to scattering properties of PDEs}\label{chapter2}
+%\label{makereference2}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+In this chapter we obtain Leibniz-type rules of the type \eqref{h_general_estimate} and \eqref{i_general_estimate} for bilinear multiplier operators associated to Coifman-Meyer multipliers in the settings of Triebel-Lizorkin and Besov spaces based in quasi-Banach spaces, including weighted Lebesgue, Morrey and Lorrentz spaces and variable exponent Lebesgue spaces. These results extend and improve the Leibniz-type rules (\ref{def:leibniz}) and (\ref{def:ileibniz}).  Additionally, we apply these results to obtain scattering properties of systems of partial differential equations involving fractional powers of the Laplacian. 
+
+We start with some preliminaries in Section \ref{ch2_prelim}, where we discuss Coifman-Meyer multipliers and Besov and Triebel-Lizorkin spaces bases on weighted Lebesgue spaces.
+
+In Section \ref{ch2_results} we state and prove one of the main results of this chapter on Leibniz-type rules associated to Coifman-Meyer multipliers in the setting of Besov and Triebel-Lizorkin spaces based on weighted Lebesgue spaces. This result is stated as Theorem \ref{}. We also present several corollaries and the connections with related results in the literature and estimates \eqref{def:leibniz} and \eqref{def:ileibniz}. the method of proof used for Theorem \ref{thm:CM:TL:B} can be adapted to obtain \eqref{h_general_estimate} and \eqref{i_general_estimate} for Coifman-Meyer multipliers in the context of Triebel-Lizorkin and Besov spaces based on other quasi-Banach spaces such as weighted Lorrentz, weighted Morrey, and variable-Lebesgue spaces. These results are discussed in Section \ref{ch2_othersettings}.
+
+Finally, in Section \ref{ch2_applications} we present applications of the results in this chapter to scattering properties of partial differential equations. 
 
 \section{Preliminaries}\label{ch2_prelim}
-
-In this section we set some notation and present definitions and  results about weights, the scales of weighted Triebel--Lizorkin, Besov and Hardy spaces, and Coifman--Meyer multiplier operators.
-
-The notations $\sw$ and $\swp$ are used for the Schwartz class of smooth rapidly decreasing functions defined on $\rn$ and its dual, the class of tempered distributions on $\rn$, respectively. $\swz$ refers to the closed subspace of functions in $\sw$ that have vanishing moments of all orders; that is, $f\in \swz$ if and only if $f\in \sw$ and $\int_{\rn}x^\alpha f(x)\,dx=0$ for all $\alpha\in \na_0^n.$ Its dual is  $\mathcal{S}'_0(\rn),$  which coincides with the class of tempered distributions modulo polynomials denoted by $\swp/\mathcal{P}(\rn).$ Throughout, all functions are defined on $\rn$ and therefore we omit $\rn$ in the notation of the  function spaces defined below. 
-
-The Fourier transform of a tempered distribution $f\in\swp$ is denoted by   $\fhat$; in particular, for $f\in L^1,$ we use the formula
-\begin{equation*}
-\widehat{f}(\xi)= \int_{\rn} f(x) e^{-2\pi i \xi\cdot x} \dx\quad \forall \xi\in\rn.
-\end{equation*}
-If $j\in \ent$ and  $h\in \sw,$ the operator $P_j^h$ is defined so that $\widehat{P_j^h f}(\xi)=h(2^{-j}\xi)\fhat(\xi)$ for $f\in \sw$ and $\xi\in \rn.$  If $\widehat{h}$ is supported in an annulus centered at the origin we will use the notation $\Delta_j^h$ rather than $P_j^h;$ if  $\widehat{h}$ is supported in a ball centered at the origin and $\widehat{h}(0)\neq 0,$   $S_j^h$ will be used instead of  $P_j^h.$
-For $y\in\rn$ denote by $\tau_y$ the operator given by $\tau_y h(x)=h(x+y)$ for  $x\in\rn.$ 
- 
+In this section we discuss the operators, function spaces, and their properties that are used in Theorem \ref{thm:ICM:TL:B} and its proof. We first define Coifman-Meyer multipliers and see boundedness properties of operators associated to these multipliers in Lebesgue spaces. Next the weighted Triebel-Lizorkin and Besov spaces used in Theorem \ref{thm:ICM:TL:B} are defined and their connection other well known function spaces are discussed. In particular the Nikol'skij representation of these function spaces, which is an important tool for the proof of Theorem \ref{thm:ICM:TL:B}, will be stated with a detailed proof.
 \subsection{Coifman-Meyer Multipliers}\label{Coifman-Meyer Multipliers}
 
-The symbols used in the main results of this chapter are Coifman-Meyer multipliers. Such multipliers are defined as follows.
+The symbols used in Theorem \ref{thm:CM:TL:B} and results later in this chapter are Coifman-Meyer multipliers. Such multipliers are defined as follows.
 
 \begin{dfn}\label{CM_def}
-Given $m\in\mathbb{R}$, a smooth, complex-valued function $\sigma = \sigma(\xi,\eta)$, $\xi,\eta\in\rn$, is a \textit{Coifman-Meyer multiplier} \textit{of order} $m$ if for all multi-indices $\alpha,\beta\in\mathbb{N}^n_0$ there exists a positive constant $C_{\alpha,\beta}$ such that 
+Given $m\in\mathbb{R}$, a smooth function $\sigma = \sigma(\xi,\eta)$, $\xi,\eta\in\rn$, is a \textit{Coifman-Meyer multiplier} of order $m$ if for all multi-indices $\alpha,\beta\in\mathbb{N}^n_0$ there exists a positive constant $C_{\alpha,\beta}$ such that 
 \begin{equation}\label{eq:CMm}
 |\partial_\xi^\alpha \partial_\eta^\beta \sigma(\xi, \eta)| \leq C_{\alpha, \beta} (|\xi|+|\eta|)^{m -(\abs{\alpha}+ \abs{\beta})} \quad \forall (\xi, \eta) \in \re^{2n} \setminus \{(0,0)\}.
 \end{equation}
-We say $\sigma = \sigma(\xi,\eta)$, $\xi,\eta\in\rn$, is an \textit{inhomogeneous Coifman-Meyer multiplier} \textit{of order} $m$ if for all multi-indices $\alpha,\beta\in\mathbb{N}^n_0$ there exists a positive constant $C_{\alpha,\beta}$ such that 
+We say $\sigma = \sigma(\xi,\eta)$, $\xi,\eta\in\rn$, is an \textit{inhomogeneous Coifman-Meyer multiplier} of order $m$ if for all multi-indices $\alpha,\beta\in\mathbb{N}^n_0$ there exists a positive constant $C_{\alpha,\beta}$ such that 
 \begin{equation}\label{eq:CMm}
 |\partial_\xi^\alpha \partial_\eta^\beta \sigma(\xi, \eta)| \leq C_{\alpha, \beta} (1+|\xi|+|\eta|)^{m -(\abs{\alpha}+ \abs{\beta})} \quad \forall (\xi, \eta) \in \re^{2n}.
 \end{equation}
 \end{dfn}
-Bilinear multiplier operators associated to Coifman-Meyer multipliers of order 0 have been well studied. Such operators are examples of bilinear Calder\'on-Zygmund operators. As a consequence the following estimate holds 
+Bilinear multiplier operators associated to Coifman-Meyer multipliers have been well studied. In particular such operators are examples of Calder\'on-Zygmund operators. As a consequence the following estimate holds 
 \[ \norm{T_\sigma(f,g)}{L^p}\lesssim \norm{f}{L^{p_1}}\norm{g}{L^{p_2}} \]
 holds where $\sigma$ is a Coifman-Meyer multiplier, $\frac{1}{p} = \frac{1}{p_1} + \frac{1}{p_2}$, and $1<p_1,p_2<\infty$ was established in \cite{MR1880324}. For more on these multipliers see Coifman-Meyer \cite{MR518170} for $L^2(\rn)$ estimates and background information. Additionally in David-Journ\'{e} \cite{MR763911} and Grafakos-Torres \cite{MR1880324} established estimates for Coifman-Meyer multipliers in their work on Calder\'on-Zygmund operators. Additionally estimates for operators associated to Coifman-Meyer multipliers in weighted-Lebesgue spaces and were proven by Grafakos-Torres \cite{MR1947875} and Lerner et al. \cite{MR2483720} in connection to a Calder\'{o}n-Zygmund operators. 	
 
@@ -71,8 +291,7 @@ T_\sigma^1(f,g)(x) &= \sum_{a,b\in \ent^n} \frac{1}{(1+|a|^2+|b|^2)^N} \sum_{j\i
 \end{equation}
 with the implicit constant depending on $\sigma,$ and an analogous expression holds for $T_\sigma^2$ with the roles of $f$ and $g$ interchanged. 
 
-\begin{remark}\label{re:numderiv1} For the formula \eqref{eq:decompT1}  and its corresponding counterpart for $T^2_\sigma$ to hold, the condition \eqref{eq:CMm} on the derivatives of $\sigma$ is only needed for multi-indices $\alpha$ and $\beta$ such that  $\abs{\alpha+\beta}\le 2N$
-\end{remark}
+We note that for the formula \eqref{eq:decompT1} and its corresponding counterpart for $T^2_\sigma$ to hold, the condition \eqref{eq:CMm} on the derivatives of $\sigma$ is only needed for multi-indices $\alpha$ and $\beta$ such that  $\abs{\alpha+\beta}\le 2N$
 
 If $\sigma$ is an inhomogeneous Coifman--Meyer multiplier of order $m,$ a similar decomposition to \eqref{eq:decompT1} follows  with the summation in $j\in\naz$ rather than $j\in\ent,$  with  $\Delta_0^{\tau_a \Psi}$ replaced by $S_0^{\tau_a\Phi}$ and for $f,g\in \sw.$
 
@@ -110,11 +329,7 @@ For a locally integrable function $f$ the \textit{Hardy-Littlewood maximal opera
 \end{dfn}
 It turns out that the Hardy-Littlewood maximal operator is bounded on $L^p(w)$ if and only if $w\in A_p$. That is, for $1<p<\infty$, $w\in A_p$ if and only if 
 \[\norm{\mathcal{M}(f)}{L^p (w)} \lesssim \norm{f}{L^p (w)}, \quad \forall f\in L^p(\rn). \]
-Later in this chapter we will use the maximal function 
-
-\begin{equation}\label{maximal_Mr}
-\mathcal{M}_r (f) = \left(\mathcal{M}(|f|^r)\right)^{\frac{1}{r}}.
-\end{equation} Since $0<r<p/\tau_w$ if and only if $0<r<p$ and $w\in A_{p/r}$ by the properties for the Hardy-Littlewood maximal operator stated above it holds that $\mathcal{M}_r$ is bounded on $L^p (w)$ when $w\in A_{p/r}$. This fact is a particular case of the following theorem which we refer to as the Fefferman-Stein inequality.
+Later in this chapter we will use the maximal function $\mathcal{M}_r (f) = \left(\mathcal{M}(|f|^r)\right)^{\frac{1}{r}}$. Since $0<r<p/\tau_w$ if and only if $0<r<p$ and $w\in A_{p/r}$ by the properties for the Hardy-Littlewood maximal operator stated above it holds that $\mathcal{M}_r$ is bounded on $L^p (w)$ when $w\in A_{p/r}$. This fact is a particular case of the following theorem which we refer to as the Fefferman-Stein inequality.
 
 \begin{theorem}
 If $0<p<\infty,$ $0<q\le \infty,$  $0<r <\min(p,q)$ and $w \in A_{p/r}$ (i.e. $0<r<\min(p/\tau_w,q)$), then for all sequences $\{f_{j}\}_{j\in\ent}$ of locally integrable functions defined on $\rn,$ we have
@@ -131,10 +346,10 @@ Here we describe the function spaces in which (\ref{thm:CM:TL:B}) is based and s
 
 Let $\psi$ and $\varphi$ be functions in $\sw$ satisfying the following conditions:
 \begin{itemize}
-\item\label{TL_B_psi1} supp$(\widehat{\psi})\subset\{\xi\in\rn : \frac{1}{2} < |\xi| <2\}$,
-\item\label{TL_B_psi2} $|\widehat{\psi}(\xi)|>c$ for all $\xi$ such that $\frac{3}{5} < |\xi| < \frac{5}{3}$ for some $c>0$,
-\item\label{TL_B_phi1} supp$(\widehat{\varphi}) \subset \{\xi\in\rn : |\xi| < 2\}$,
-\item\label{TL_B_phi2} $|\widehat{\varphi}(\xi)|>c$ for $|\xi| < \frac{5}{3}$ and some $c>0$. 
+\item supp$(\widehat{\psi})\subset\{\xi\in\rn : \frac{1}{2} < |\xi| <2\}$,
+\item $|\widehat{\psi}(\xi)|>c$ for all $\xi$ such that $\frac{3}{5} < |\xi| < \frac{5}{3}$ for some $c>0$,
+\item supp$(\widehat{\varphi}) \subset \{\xi\in\rn : |\xi| < 2\}$,
+\item $|\widehat{\varphi}(\xi)|>c$ for $|\xi| < \frac{5}{3}$ and some $c>0$. 
 \end{itemize}
 For $\psi$ supported in an annulus and $j\in\ent$ we define the operator $\Delta^\psi_j(f)$ through its Fourier transform as \[\widehat{\Delta^\psi_j (f)}(\xi) = \psi(2^{-j}\xi)\widehat{f}(\xi).\]
 Similarly we define the operator $S^\varphi_0$ through the Fourier transform as
@@ -181,27 +396,25 @@ The definitions above are independent of the choice of $\varphi$ and $\psi$. The
 \begin{equation}
  \itlw{p}{s}{2}{w} \simeq \dot{W}^{s,p}(w) \text{ for } 1<p<\infty, \quad w\in A_p.
 \end{equation}
-Let $\Psi\in \sw$ be such that $\int_{\rn}\Psi(x)\dx\neq 0.$ Given $0<p<\infty,$ the  Hardy space $H^p(w)$ is defined as 
+Let $\Psi\in \sw$ be such that $\int_{\rn}\Psi(x)\dx\neq 0.$ Given $0<p<\infty,$ the  Hardy space $H^p(w)(\rn)$ is defined as 
 \begin{equation*}
-H^p(w) :=\{f \in \swp: \norm{f}{H^p(w)}< \infty \},
+H^p(w)(\re^n) :=\{f \in \swp: \norm{f}{H^p(w)}< \infty \},
 \end{equation*}
 where 
 \[
 \norm{f}{H^p(w)}:= \norm{\sup_{0<t} \abs{t^{-n}\Psi(t^{-1}\cdot)\ast f}}{L^p(w)} .
 \]
-The Sobolev spaces $\dot{W}^{s,p}(w)$ is the space of all tempered distributions modulo polynomials $\mathcal{S}' / \mathcal{P}$ such that 
-\[\norm{f}{\dot{W}^{s,p}(w)} = \norm{D^s f}{L^p(w)} < \infty. \]
 For a detailed overview of the development of Besov and Triebel-Lizorkin spaces see Triebel \cite{MR3024598} and Qui \cite{MR676560} for the unweighted and weighted settings respectively.
 Additionally by the lifting property of Triebel-Lizorkin and Besov spaces Theorem (\ref{thm:CM:TL:B}) and other results in this manuscript can be seen as Leibniz-type rules as in Chapter 1. 
 For weighted Triebel-Lizorkin spaces the so called lifting property is as follows: for $s$, $p$, and $q$ as in (\ref{ITL_B_def}) and (\ref{TL_B_def}) and $w\in A_\infty$ we have that 
 
- \begin{equation}\label{lifting_TL}
-  \norm{f}{\tlw{p}{s}{q}{w}}\simeq\norm{D^s f}{\tlw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\itlw{p}{s}{q}{w}}\simeq\norm{J^s f}{\itlw{p}{0}{q}{w}}.
- \end{equation}
+ \begin{align*}
+ & \norm{f}{\tlw{p}{s}{q}{w}}\simeq\norm{D^s f}{\tlw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\itlw{p}{s}{q}{w}}\simeq\norm{J^s f}{\itlw{p}{0}{q}{w}}.
+ \end{align*}
 The corresponding statement for Besov spaces is: for $s$, $p$, and $q$ as in (\ref{ITL_B_def}) and (\ref{TL_B_def}) and $w\in A_\infty$ we have that 
- \begin{equation}\label{lifting_B}
-  \norm{f}{\besw{p}{s}{q}{w}}\simeq\norm{D^s f}{\besw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\ibesw{p}{s}{q}{w}}\simeq\norm{J^s f}{\ibesw{p}{0}{q}{w}}.
- \end{equation}
+ \begin{align*}
+ & \norm{f}{\besw{p}{s}{q}{w}}\simeq\norm{D^s f}{\besw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\ibesw{p}{s}{q}{w}}\simeq\norm{J^s f}{\ibesw{p}{0}{q}{w}}.
+ \end{align*}
  
 
   
@@ -209,7 +422,7 @@ The corresponding statement for Besov spaces is: for $s$, $p$, and $q$ as in (\r
 \subsubsection{Nikol'skij representations for weighted homogeneous and inhomogeneous Triebel-Lizorkin and Besov spaces}
 
 An important tool for the proof of Theorem \ref{thm:CM:TL:B} is the Nikol'skij representation for weighted Triebel-Lizorkin and Besov spaces. Here we state a weighted version of \cite[Theorem 3.7]{MR837335} (see also \cite[Section 2.5.2]{MR3024598}). 
-We give the proof of Theorem \ref{thm:Nikolskij:weighted} at the end of this section.
+For  completeness, a sketch of its proof is outlined in Appendix~\ref{sec:appendix}.
 
 \begin{theorem}\label{thm:Nikolskij:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
 \begin{equation*}
@@ -230,159 +443,8 @@ where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and $q.$   An an
 \end{enumerate}
 \end{theorem} 
  
-Before proving Theorem \ref{thm:Nikolskij:weighted} we state the following lemmas that are used in the proof. 
  
  
-\begin{lemma}[Particular case of Corollary 2.11 in \cite{MR837335}]\label{coro:2:11}
-Suppose $0 < r \leq 1,$  $A >0$, $R \geq 1$ and $\ex > n/r$. If $\phi \in \sw$ and $f$ is such that  $\supp(\widehat{f}) \subset \{\xi\in\rn:\abs{\xi}\le AR\}$, it holds that
-\begin{equation*}
-|\phi * f(x)| \lesssim R^{n (\frac{1}{r}  -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty}  \M_rf(x) \quad \forall x \in \rn,
-\end{equation*}
-where the implicit constant is independent of $A, R, \phi,$ and $f.$  
-\end{lemma}
-\begin{remark} \cite[Corollary 2.11]{MR837335} incorrectly states $A^{-n/r}$ instead of $ A^{-n}$. Also, it states $A \geq 1$, but the result is true for $A >0$ as stated in Lemma~\ref{coro:2:11}.
-\end{remark}
-
-The following lemma is a weighted version of   \cite[Corollary 2.12 (1)]{MR837335}. We include its brief proof for completeness.
-\begin{lemma}\label{coro:2:12(1)}
-Suppose $w\in A_\infty,$ $0 < p \leq \infty$, $A > 0$, $R \geq 1,$  and $\ex > b > n/ \min(1,p/\tau_w).$  If $\phi \in \sw$ and $f$ is such that $\supp(\widehat{f}) \subset \{\xi\in\rn:\abs{\xi}\le AR\}$, it holds that
-\begin{equation*}
-\norm{\phi * f}{\lebw{p}{w}} \lesssim R^{b - n} A^{-n} \norm{(1 + |A \cdot|^\ex) \phi}{L^\infty} \norm{f}{\lebw{p}{w}},
-\end{equation*}
-where the implicit constant is independent of $A,$ $R,$ $\phi$ and $f.$ 
-\end{lemma}
-
-
-\begin{proof}  Set $r:=n/b < \min(1, p/\tau_w).$ The hypothesis $\ex > b$  means $ \ex  > n/r$ and Lemma~\ref{coro:2:11}  yields
-$$
-|\phi * f(x)| \lesssim R^{n (\frac{1}{r} -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty}  \M_rf(x) \quad \forall x \in \rn.
-$$
-Since $r < p/\tau_w,$ we have   $\norm{\M_rf}{\lebw{p}{w}} \lesssim \norm{f}{\lebw{p}{w}}$ and therefore
-$$
-\norm{\phi * f}{\lebw{p}{w}} \lesssim R^{n (\frac{1}{r} -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty} \norm{f}{\lebw{p}{w}};
-$$
-observing that $1/r -1 = (b -n)/n$, the desired estimate follows. 
-\end{proof}
-
-
-The following lemma is a modified version of \cite[Lemma 3.8]{MR837335}.
-\begin{lemma}\label{eq:seriesineq} Let  $\tau < 0$, $\lambda \in \re$, $0 < q \leq \infty$, and $k_0 \in \ent$. Then, for any sequence $\{d_j\}_{j \in \ent} \subset [0, \infty)$ it holds that
-\begin{equation*}
-\norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in\ent}}{\ell^q} \lesssim \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q},
-\end{equation*}
-where the implicit constant depends only on $k_0, \tau, \lambda$ and $q$.
-\end{lemma}
-\begin{proof}
-Suppose first that $0 < q \leq 1$. Then,
-\begin{align*}
-& \norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in \ent}}{\ell^q} = \left[\sum_{j \in \ent} \left( \sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k} \right)^q \right]^\frac{1}{q}\\
-& \quad\quad\quad\quad\quad \leq  \left[\sum_{j \in \ent}  \sum_{k=k_0}^\infty 2^{\tau q k} 2^{\lambda q (j+k)}d_{j+k}^q \right]^\frac{1}{q} =  \left[ \sum_{k=k_0}^\infty  2^{\tau q k} \sum_{j \in \ent} 2^{\lambda q (j+k)}d_{j+k}^q \right]^\frac{1}{q}\\
-&  \quad\quad\quad \quad \quad = \left(  \sum_{k=k_0}^\infty   2^{\tau q k}     \right)^\frac{1}{q} \norm{\{2^{j \lambda} d_j\}_{j\in \ent}}{\ell^q} = C_{k_0, \tau, q} \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q},
-\end{align*}
-where in the last equality we have used that $\tau < 0$. If $1 < q < \infty$ we use H\"older's inequality with $q$ and $q'$ to write
-\begin{align*}
- \norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in\ent}}{\ell^q} 
-& \le \left[\sum_{j \in \ent}   \left(\sum_{k=k_0}^\infty 2^{\tau k q/2} 2^{\lambda q(j+k)}d_{j+k}^q \right)     \left( \sum_{k=k_0}^\infty 2^{\tau kq'/2} \right)^{q/q'}   \right]^\frac{1}{q}\\
-&    =C_{k_0, \tau, q} \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q}.
-\end{align*}
-
-The case $q = \infty$ is straightforward.
-\end{proof}
-
-We now prove Theorem \ref{thm:Nikolskij:weighted}.
-
-\begin{proof}[Proof of  Theorem~\ref{thm:Nikolskij:weighted}] 
-We first prove Theorem~\ref{thm:Nikolskij:weighted} for finite families. We will do this in the homogeneous settings, with the proof in the inhomogeneous settings being similar. Suppose $\{u_j\}_{j\in\ent}$ is such that $u_j=0$ for all $j$ except those belonging to some finite subset of $\ent;$  this assumption allows us to avoid convergence issues since all the sums  considered will be finite.
-
-For Part~\eqref{item:thh:Nikolskij:TL}, let $\A,$ $w,$ $p,$ $q$ and $s$ be as in the hypotheses. Fix $0<r<\min(1,p/\tau_w,q)$ such that  $s>n(1/r-1);$ note that the latter is possible since $s>\tau_{p,q}(w).$ 
-
-
-Let $k_0 \in \ent$ be such that $2^{k_0 -1} < \A\leq 2^{k_0},$ then  
-$$
-\supp(\widehat{u_\ell}) \subset B(0, 2^\ell \A) \subset B(0, 2^{\ell +k_0}) \quad \forall \ell \in \ent.
-$$
-Define $u =\sum_{\ell \in \ent} u_\ell$ and let $\psi$ be as in the definition of $\tlw{p}{s}{q}{w}$ in Section~\ref{TL_B_section}. We have
-\begin{equation}\label{psi*u}
-\Delta^\psi_j u = \sum_{\ell \in \ent} \Delta^\psi_j u_\ell = \sum_{\ell = j - k_0}^\infty \Delta^\psi_j  u_\ell = \sum_{k = - k_0}^\infty \Delta^\psi_j u_{j+k}.
-\end{equation}
-We will use Lemma~\ref{coro:2:11} with $\phi(x) =  2^{jn} \psi(2^j x),$  $f = u_{j+k},$  $A= 2^{j  } >0,$ and $R= 2^{k + k_0}.$ (Notice that $\supp(\widehat{u_{j+k}}) \subset  B(0, 2^{j} 2^{k + k_0})$ and, since $k \geq -k_0$, we get $R \geq 1$.) Fixing  $\ex>n/r$ and applying Lemma~\ref{coro:2:11}, we get
-\begin{align*}
-|\Delta^\psi_j  u_{j+k}(x)| & \lesssim   2^{k_0n(\frac{1}{r} -1)} 2^{k n (\frac{1}{r} -1)}  2^{-jn} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi (2^j\cdot)}{L^\infty}  \M_r(u_{j+k})(x)\\
-& \sim  2^{k n (\frac{1}{r} -1)} \left( \sup_{y \in \rn} (1 + |2^j y|)^\ex |\psi(2^j y)|\right) \M_r(u_{j+k})(x).
-\end{align*}
- Hence,
-\begin{align*}
-2^{js}|\Delta^\psi_j  u_{j+k}(x)| & \lesssim 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x),
-\end{align*}
-and then, recalling \eqref{psi*u}, 
-\begin{align*}
-2^{js} |\Delta^\psi_j  u(x)| & \lesssim  \sum_{k =  - k_0}^\infty 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x).
-\end{align*}
-Since $1/r -1-s/n < 0$,   Lemma~\ref{eq:seriesineq}  yields
-$$
-\norm{\{ 2^{js} |\Delta^\psi_j  u|\}_{j\in\ent}}{L^p(w)(\ell^{q})} \lesssim \norm{\{2^{js} \M_ru_j\}_{j\in\ent}}{L^p(w)(\ell^{q})}
-$$
-with an implicit constant independent of $\{u_j\}_{j\in \ent}.$
-Applying the weighted  Fefferman-Stein inequality  to the right-hand side of the last inequality leads to the desired estimate
-\begin{equation*}
-\norm{u}{\tlw{p}{s}{q}{w}} \lesssim \norm{\{2^{js}u_j\}_{j\in\ent}}{L^p(\ell^{q})}.
-\end{equation*}
-
-For Part~\eqref{item:thh:Nikolskij:B}, let $\A,$ $w,$ $p,$ $q$ and $s$ be as in the hypotheses and $k_0$ be as above. 
-Consider $\Delta^\psi_j  u_{j+k}$  in  \eqref{psi*u} and  apply  Lemma~\ref{coro:2:12(1)}  with $\phi(x)=2^{jn}\psi(2^{-j} x)$, $f= u_{j+k},$ $A=2^{j},$ $R=2^{k +  k_0}$,  $\ex>b$ and $  n /\min(1,p/\tau_w)<b<n+s;$ note that such $b$ exists since $s>\tau_p(w).$ We get
-\begin{align*}
- \norm{\Delta^\psi_j  u_{j+k}}{L^p(w)}  \lesssim 2^{(k + k_0)(b-n)} 2^{- j  n} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi(2^{-j}\cdot)}{L^\infty} \norm{u_{j+k}}{L^p(w)}\sim 2^{k(b-n)}   \norm{u_{j+k}}{L^p(w)},
-\end{align*}
-and setting $p^*:=\min(p,1)$ we obtain
-\begin{align*}
-2^{js p^*}\norm{\Delta^\psi_j  u}{L^p(w)}^{p^*} \lesssim 2^{js p^*}\sum_{k = - k_0}^\infty \norm{\Delta^\psi_j  u_{j+k}}{L^p(w)}^{p^*}
- =  \sum_{k = - k_0}^\infty 2^{k(b-n -s) p^*} 2^{s p^* (j+k)}   \norm{u_{j+k}}{L^p(w)}^{p^*}.
-\end{align*}
-Hence, applying Lemma~\ref{eq:seriesineq}, it follows that
-\begin{align*}
-\norm{u}{\besw{p}{s}{q}{w}}  \lesssim  \norm{\left\{ \sum_{k = - k_0}^\infty 2^{k(b-n -s) p^*}  2^{s p^* (j+k)}   \norm{u_{j+k}}{L^p(w)}^{p^*}\right\}_{j\in\ent}}{\ell^{q/p*}}^\frac{1}{p^*}\lesssim  \norm{\{2^{js} u_j\}_{j\in\ent}}{\ell^{q}(L^p(w))}, 
-\end{align*}
-as desired.
-
-We next show the theorem for any not necessarily finite family.  Let $\{u_j\}_{j\in \ent},$ $w,$ $p,$ $q,$ and $s$ be as in the hypotheses. Define $U_N:=\sum_{k=-N}^N u_j;$  since the theorem is true for finite families and, for $M<N,$ $\{u_j\}_{M+1\le \abs{j}\le N}$ satisfies the hypotheses of the theorem, we have
-\begin{equation}\label{eq:convergence}
-\norm{U_N-U_M}{\tlw{p}{s}{q}{w}}\lesssim \norm{\{2^{js} u_j\}_{M+1\le \abs{j}\le N}}{\lebw{p}{w}(\ell^q)},
-\end{equation}
-where the implicit constant is independent of $M,$ $N$ and the family $\{u_j\}_{j\in\ent}.$ The same reasoning can be used to obtain a similar statement for $\besw{p}{s}{q}{w}$.
-
-If $0<q<\infty,$ as $M,N\to\infty,$  the right-hand side of \eqref{eq:convergence} tends to zero by the assumption $\norm{\{2^{js} u_j\}_{j\in \ent}}{\lebw{p}{w}(\ell^q)} <\infty$ and the dominated convergence theorem; therefore, since $\tlw{p}{s}{q}{w}$ is complete, $\sum_{j\in\ent} u_j$ converges in $\tlw{p}{s}{q}{w}.$ The same reasoning used to obtain \eqref{eq:convergence} gives that
-\[
-\norm{U_N}{\tlw{p}{s}{q}{w}}\lesssim \norm{\{2^{js} u_j\}_{-N\le j\le N}}{\lebw{p}{w}(\ell^q)},
-\]
-where the implicit constant is independent of $N$ and the family $\{u_j\}_{j\in\ent}.$ It then  follows that
-\[
-\norm{\sum_{j\in\ent} u_j}{\tlw{p}{s}{q}{w}}\lesssim \norm{\{2^{js} u_j\}_{j\in\ent}}{\lebw{p}{w}(\ell^q)},
-\]
-with the implicit constant  independent of  the family $\{u_j\}_{j\in\ent}.$
-
-Using the same reasoning in the context of homogeneous weighted Besov spaces we obtain
-\[\norm{\sum_{j \in \ent} u_j}{\besw{p}{s}{q}{w}} \lesssim  \norm{\{2^{js} u_j\}_{j\in\ent}}{\ell^{q}(L^p(w))}. \]
-
-If $q=\infty,$  we use that $\{2^{(s-\varepsilon)j}u_j\}_{j\ge 0}$ and $\{2^{(s+\varepsilon)j}u_j\}_{j< 0}$ belong to $\ell^1(L^p(w))$ for any $\varepsilon>0$ and apply Theorem~\ref{thm:Nikolskij:weighted} under the case of finite $q$ to conclude that $\sum_{j=0}^Nu_j$ and $\sum_{j=-N}^{-1}u_j$ converge in $\besw{p}{s-\varepsilon}{1}{w}$ and $\besw{p}{s+\varepsilon}{1}{w},$ respectively (choosing $\varepsilon>0$ so that $s-\varepsilon>\tau_{p,q}(w)\ge \tau_p(w)$). Therefore, $U_N$ convergence in $\mathcal{S}'_0(\rn).$ Moreover, by  Theorem~\ref{thm:Nikolskij:weighted} applied to the finite sequence $\{u_j\}_{-N\le j\le N},$ we have that $U_N\in \tlw{p}{s}{\infty}{w}$ and 
-\[
-\norm{U_N}{\tlw{p}{s}{\infty}{w}}\lesssim \norm{\{2^{js} u_j\}_{-N\le j\le N}}{\lebw{p}{w}(\ell^\infty)}\le \norm{\{2^{js} u_j\}_{j\in \ent}}{\lebw{p}{w}(\ell^\infty)},
-\]
-with the implicit constant independent of $N$ and $\{u_j\}_{j\in\ent}.$
-Since $\tlw{p}{s}{\infty}{w}$ has the Fatou property (see Remark~\ref{fatou}), we conclude that $\lim_{N\to \infty} U_N=\sum_{j\in\ent}u_j$ belongs to $\tlw{p}{s}{\infty}{w}$ and 
-\[
-\norm{\sum_{j\in\ent}u_j}{\tlw{p}{s}{\infty}{w}}\lesssim  \norm{\{2^{js} u_j\}_{j\in \ent}}{\lebw{p}{w}(\ell^\infty)}.
-\]
-\end{proof}
- 
- 
-\begin{remark}\label{fatou}
- The last part of the proof of Theorem~\ref{thm:Nikolskij:weighted} uses the Fatou property of Triebel--Lizorkin and Besov spaces.  Let  $\mathcal{A}$ be a quasi-Banach space such that $\sw\hookrightarrow\mathcal{A}\hookrightarrow\swp$ (or $\swz\hookrightarrow\mathcal{A}\hookrightarrow\mathcal{S}_0'(\rn)$). The space $\mathcal{A}$ is said to  have the Fatou property if  for every sequence $\{f_j\}_{j\in \na}\subset \mathcal{A}$ that converges in $\swp$ ($\mathcal{S}_0'(\rn),$  respectively), as $j\to \infty,$ and that satisfies $\liminf_{j\to\infty} \norm{f_j}{\mathcal{A}}<\infty,$ it follows that $\lim_{j\to\infty}f_j\in \mathcal{A}$ and $\norm{\lim_{j\to\infty}f_j}{\mathcal{A}}\lesssim \liminf_{j\to\infty} \norm{f_j}{\mathcal{A}},$ where the implicit constant is independent of $\{f_j\}_{j\in\na}.$ 
-
-Triebel--Lizorkin and Besov spaces based in weighted Lebesgue spaces posses the Fatou property for any $s\in \re$ and $0<q\le \infty$ because for $0<p\le \infty,$ $L^p(w)$ satisfies: (1) if $f,g\in L^p(w)$ and $\abs{f}\le\abs{g}$ pointwise a.e., then $\norm{f}{L^p(w)}\lesssim \norm{g}{L^p(w)};$ (2) if $\{f_j\}_{j\in \na}\subset L^p(w)$ and $f_j\ge 0$ poinwise a.e., then $\norm{\liminf_{j\to\infty} f_j}{L^p(w)}\lesssim \liminf_{j\to\infty}\norm{f_j}{L^p(w)}.$ 
-
-
-More generally we will see in Section \ref{ch2_othersettings} that Triebel-Lizorkin and Besov spaces based in wieghted Morrey spaces, weighted Lorentz spaces, and variable Lebesgue spaces. 
-\end{remark}
  \section{Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}\label{ch2_results}
  
  \subsection{Homogeneous Leibniz-type rules}
@@ -447,7 +509,7 @@ However, (\ref{Kp:CM:Hardy2}) allows $0<p<\infty$ and $w\in A_\infty$ if $s>\tau
 \end{itemize}
 
 \subsection{Connection to Kato-Ponce inequalities}
-Using the lifting properties \ref{lifting_TL} and \ref{lifting_B} we obtain the following corollary to Theorem \ref{thm:CM:TL:B} by setting $\sigma \equiv 1$. 
+Using the equivalences \ref{lifting} and following discussion we obtain the following corollary to Theorem \ref{thm:CM:TL:B} by setting $\sigma \equiv 1$. 
 
 \begin{corollary}\label{coro:KP:TL:B}  Consider  $0 < p, p_1, p_2  \le \infty$  such that $\hcline$ and  $0 < q \leq \infty;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
 If $0 < p ,p_1,p_2< \infty$ and  $s > \tau_{p,q}(w),$ it holds that
@@ -508,7 +570,7 @@ Combining these two estimates completes the proof.
 
 We now prove Theorem \ref{thm:CM:TL:B}.
  
- \begin{proof}[Proof of Theorem~\ref{thm:CM:TL:B}] Consider $\Phi,$ $\Psi,$ $T_\sigma^1,$ $T_\sigma^2,$ $\{\C_j(a,b)\}_{j\in\ent,a,b\in\ent^n}$ as in Section~\ref{Coifman-Meyer Multipliers}. Let $m,$ $\sigma,$ $p,$ $p_1,$ $p_2,$ $q,$ $s,$ $w_1,$ $w_2$ and $w$ be as in the hypotheses.  
+ \begin{proof}[Proof of Theorem~\ref{thm:CM:TL:B}] Consider $\Phi,$ $\Psi,$ $T_\sigma^1,$ $T_\sigma^2,$ $\{\C_j(a,b)\}_{j\in\ent,a,b\in\ent^n}$ as in Section~\ref{sec:Coifman-Meyer Multipliers}. Let $m,$ $\sigma,$ $p,$ $p_1,$ $p_2,$ $q,$ $s,$ $w_1,$ $w_2$ and $w$ be as in the hypotheses.  
 For ease of notation, $p_1$ and $p_2$ will be assumed to be finite; the same proof applies for \eqref{KP:CM:B} if that is not the case, and for \eqref{KP:CM:TL2}.
 
 
@@ -618,14 +680,14 @@ where $0<p<\infty$ and $s>\tau_{p}(w).$
  The method used to prove Theorem (\ref{thm:CM:TL:B}) is quite versatile and can be applied to Triebel-Lizorkin and Besov spaces that are based in other quasi-Banach spaces. Here we highlight the important features of Lebesgue spaces that are necessary for the proof of Theorem (\ref{thm:CM:TL:B}) to be adapted to other settings. We also define Triebel-Lizorkin and Besov spaces that are based in other quasi-Banach spaces. 
  
 The main features of weighted Triebel-Lizorkin and Besov spaces used in the proof of Theorem (\ref{thm:CM:TL:B}) are the following:
-\begin{enumerate}[label=(\text{\arabic*})]
-\item\label{item:first} there exists $r>0$ such that $\norm{f+g}{\itlw{p}{s}{q}{w}}^r\le \norm{f}{\itlw{p}{s}{q}{w}}^r+\norm{g}{\itlw{p}{s}{q}{w}}^r;$ similarly for the weighted inhomogeneous  Besov spaces and the weighted homogeneous  Triebel--Lizorkin and Besov spaces;
-\item \label{item:second} H\"older's inequality in weighted Lebesgue spaces;
-\item \label{item:third}  the boundedness properties in weighted Lebesgue spaces  of the Hardy--Littlewood maximal operator (for the Besov space setting) and the weighted Fefferman--Stein inequality (for the Triebel--Lizorkin space setting);
-\item \label{item:last} Nikol'skij representations for weighted Triebel--Lizorkin and Besov spaces (Theorem~\ref{thm:Nikolskij:weighted}).
+\begin{enumerate}
+\item[(i)]\label{item:first} there exists $r>0$ such that $\norm{f+g}{\itlw{p}{s}{q}{w}}^r\le \norm{f}{\itlw{p}{s}{q}{w}}^r+\norm{g}{\itlw{p}{s}{q}{w}}^r;$ similarly for the weighted inhomogeneous  Besov spaces and the weighted homogeneous  Triebel--Lizorkin and Besov spaces;
+\item[(ii)] \label{item:second} H\"older's inequality in weighted Lebesgue spaces;
+\item[(iii)] \label{item:third}  the boundedness properties in weighted Lebesgue spaces  of the Hardy--Littlewood maximal operator (for the Besov space setting) and the weighted Fefferman--Stein inequality (for the Triebel--Lizorkin space setting);
+\item[(iv)] \label{item:last} Nikol'skij representations for weighted Triebel--Lizorkin and Besov spaces (Theorem~\ref{thm:Nikolskij:weighted}).
 \end{enumerate}
 
-In the followinig subsections we consider quasi-Banach spaces $\mathcal{X}$ such that properties \ref{item:first}--\ref{item:last} hold for the homogeneous and inhomogeneous $\mathcal{X}$-based Triebel-Lizorkin and Besov spaces. Corresponding versions of Theorems \ref{thm:CM:TL:B} and \ref{thm:ICM:TL:B} hold in Triebel-Lizorkin and Besov spaces based in these spaces. The homogeneous $\chi$-based Triebel-Lizorkin and Besov spaces denoted by $\tl{\mathcal{X}}{s}{q}$ and $\bes{\mathcal{X}}{s}{q}$ respectively are defined similarly to the weighted, homogeneous Triebel-Lizorkin and Besov spaces with the $||\cdot||_{L^p(w)}$ quasi-norm replaced with the $||\cdot||_\mathcal{X}$ quasi-norm. The inhomogeneous spaces are defined similarly. 
+In the followinig subsections we consider quasi-Banach spaces $\mathcal{X}$ such that properties (\ref{item:first})--(\ref{item:last}) hold for the homogeneous and inhomogeneous $\mathcal{X}$-based Triebel-Lizorkin and Besov spaces. Corresponding versions of Theorems (\ref{thm:CM:TL:B}) and \ref{thm:ICM:TL:B} hold in Triebel-Lizorkin and Besov spaces based in these spaces. The homogeneous $\chi$-based Triebel-Lizorkin and Besov spaces denoted by $\tl{\mathcal{X}}{s}{q}$ and $\bes{\mathcal{X}}{s}{q}$ respectively are defined similarly to the weighted, homogeneous Triebel-Lizorkin and Besov spaces with the $||\cdot||_{L^p(w)}$ quasi-norm replaced with the $||\cdot||_\mathcal{X}$ quasi-norm. The inhomogeneous spaces are defined similarly. 
 
  \subsection{Leibniz-type rules in the setting of Lorentz-based Triebel-Lizorkin and Besov spaces}
  For $0<p<\infty$ and $0<t\le \infty$ or $p=t=\infty,$ and an $A_\infty$ weight $w$ defined on $\rn,$  we denote by $L^{p,t}(w)$ the weighted Lorentz space consisting of complex-valued, measurable functions $f$ defined on $\rn$ such that
@@ -673,48 +735,78 @@ where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and  $q.$
 where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and $q.$
 \end{enumerate}
 \end{theorem}
+For the proof of Theorem \ref{thm:Nikolskij:Lorrentz:weighted} we need the following lemmas.
 
-To prove Theorem \ref{thm:Nikolskij:Lorrentz:weighted} we make use of the following Lemma.
-
-\begin{lemma}\label{coro:2:12(1)_Lorrentz}
-Suppose $w\in A_\infty,$ $0 < p \leq \infty$, $A > 0$, $R \geq 1,$  and $\ex > b > n/ \min(1,p/\tau_w,t).$  If $\phi \in \sw$ and $f$ is such that $\supp(\widehat{f}) \subset \{\xi\in\rn:\abs{\xi}\le DR\}$, it holds that
+\begin{lemma}[Particular case of Corollary 2.11 in \cite{MR837335}]\label{coro:2:11}
+Suppose $0 < r \leq 1,$  $A >0$, $R \geq 1$ and $\ex > n/r$. If $\phi \in \sw$ and $f$ is such that  $\supp(\widehat{f}) \subset \{\xi\in\rn:\abs{\xi}\le AR\}$, it holds that
 \begin{equation*}
-\norm{\phi * f}{\lebw{p,t}{w}} \lesssim R^{b - n} D^{-n} \norm{(1 + |D \cdot|^\ex) \phi}{L^\infty} \norm{f}{\lebw{p,t}{w}},
+|\phi * f(x)| \lesssim R^{n (\frac{1}{r}  -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty}  \M_rf(x) \quad \forall x \in \rn,
+\end{equation*}
+where the implicit constant is independent of $A, R, \phi,$ and $f.$  
+\end{lemma}
+\begin{remark} \cite[Corollary 2.11]{MR837335} incorrectly states $A^{-n/r}$ instead of $ A^{-n}$. Also, it states $A \geq 1$, but the result is true for $A >0$ as stated in Lemma~\ref{coro:2:11}.
+\end{remark}
+
+\begin{lemma}\label{coro:2:12(1)}
+Suppose $w\in A_\infty,$ $0 < p \leq \infty$, $A > 0$, $R \geq 1,$  and $\ex > b > n/ \min(1,p/\tau_w).$  If $\phi \in \sw$ and $f$ is such that $\supp(\widehat{f}) \subset \{\xi\in\rn:\abs{\xi}\le AR\}$, it holds that
+\begin{equation*}
+\norm{\phi * f}{\lebw{p}{w}} \lesssim R^{b - n} A^{-n} \norm{(1 + |A \cdot|^\ex) \phi}{L^\infty} \norm{f}{\lebw{p}{w}},
 \end{equation*}
 where the implicit constant is independent of $A,$ $R,$ $\phi$ and $f.$ 
 \end{lemma}
 
-
-\begin{proof}  Set $r:=n/b < \min(1, p/\tau_w,t).$ The hypothesis $\ex > b$  means $ \ex  > n/r$ and Lemma~\ref{coro:2:11}  yields
+\begin{proof}  Set $r:=n/b < \min(1, p/\tau_w).$ The hypothesis $\ex > b$  means $ \ex  > n/r$ and Lemma~\ref{coro:2:11}  yields
 $$
-|\phi * f(x)| \lesssim R^{n (\frac{1}{r} -1)} D^{-n} \norm{(1 + |D \cdot|)^\ex \phi}{L^\infty}  \M_rf(x) \quad \forall x \in \rn.
+|\phi * f(x)| \lesssim R^{n (\frac{1}{r} -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty}  \M_rf(x) \quad \forall x \in \rn.
 $$
-Since $r < p/\tau_w \text{ and } r<t,$ we have   $\norm{\M_rf}{\lebw{p,t}{w}} \lesssim \norm{f}{\lebw{p,t}{w}}$ and therefore
+Since $r < p/\tau_w,$ we have   $\norm{\M_rf}{\lebw{p,t}{w}} \lesssim \norm{f}{\lebw{p,t}{w}}$ and therefore
 $$
-\norm{\phi * f}{\lebw{p,t}{w}} \lesssim R^{n (\frac{1}{r} -1)} D^{-n} \norm{(1 + |D \cdot|)^\ex \phi}{L^\infty} \norm{f}{\lebw{p,t}{w}};
+\norm{\phi * f}{\lebw{p,t}{w}} \lesssim R^{n (\frac{1}{r} -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty} \norm{f}{\lebw{p,t}{w}};
 $$
 observing that $1/r -1 = (b -n)/n$, the desired estimate follows. 
 \end{proof}
 
-We now prove Theorem \ref{thm:Nikolskij:Lorentz:weighted}.
+The following lemma is a modified version of \cite[Lemma 3.8]{MR837335}.
+\begin{lemma}\label{eq:seriesineq} Let  $\tau < 0$, $\lambda \in \re$, $0 < q \leq \infty$, and $k_0 \in \ent$. Then, for any sequence $\{d_j\}_{j \in \ent} \subset [0, \infty)$ it holds that
+\begin{equation*}
+\norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in\ent}}{\ell^q} \lesssim \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q},
+\end{equation*}
+where the implicit constant depends only on $k_0, \tau, \lambda$ and $q$.
+\end{lemma}
 
 \begin{proof}
-We first prove the theorem for finite families as in the proof of Theorem \ref{thm:Nikolskij:weighted}. Suppose $\{u_j\}_{j\in\mathbb{N}_0}$ is such that $u_j=0$ for all $j$ except those belonging to some finite subset of $\ent;$  this assumption allows us to avoid convergence issues since all the sums  considered will be finite. 
+Suppose first that $0 < q \leq 1$. Then,
+\begin{align*}
+& \norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in \ent}}{\ell^q} = \left[\sum_{j \in \ent} \left( \sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k} \right)^q \right]^\frac{1}{q}\\
+& \quad\quad\quad\quad\quad \leq  \left[\sum_{j \in \ent}  \sum_{k=k_0}^\infty 2^{\tau q k} 2^{\lambda q (j+k)}d_{j+k}^q \right]^\frac{1}{q} =  \left[ \sum_{k=k_0}^\infty  2^{\tau q k} \sum_{j \in \ent} 2^{\lambda q (j+k)}d_{j+k}^q \right]^\frac{1}{q}\\
+&  \quad\quad\quad \quad \quad = \left(  \sum_{k=k_0}^\infty   2^{\tau q k}     \right)^\frac{1}{q} \norm{\{2^{j \lambda} d_j\}_{j\in \ent}}{\ell^q} = C_{k_0, \tau, q} \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q},
+\end{align*}
+where in the last equality we have used that $\tau < 0$. If $1 < q < \infty$ we use H\"older's inequality with $q$ and $q'$ to write
+\begin{align*}
+ \norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in\ent}}{\ell^q} 
+& \le \left[\sum_{j \in \ent}   \left(\sum_{k=k_0}^\infty 2^{\tau k q/2} 2^{\lambda q(j+k)}d_{j+k}^q \right)     \left( \sum_{k=k_0}^\infty 2^{\tau kq'/2} \right)^{q/q'}   \right]^\frac{1}{q}\\
+&    =C_{k_0, \tau, q} \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q}.
+\end{align*}
 
-For 
-Part~\ref{item:thh:Nikolskij:Lorentz:TL}, 
-let $D,$ $w,$ $p,$ $q$, $t$ and $s$ be as in the hypotheses. Fix $0<r<\min(1,p/\tau_w,q,t)$ such that  $s>n(1/r-1);$ note that the latter is possible since $s>\tau_{p,q}(w).$ 
+The case $q = \infty$ is straightforward.
+\end{proof}
+
+We now show the proof of Theorem \ref{thm:Nikolskij:Lorrentz:weighted}.
+
+\begin{proof} We first establish the theorem for finite families of functions and then extend this result to families that are not necessarily finite.  We will do this in the homogeneous settings, with the proof in the inhomogeneous settings being similar. Suppose $\{u_j\}_{j\in\ent}$ is such that $u_j=0$ for all $j$ except those belonging to some finite subset of $\ent;$  this assumption allows us to avoid convergence issues since all the sums  considered will be finite.
+
+For Part~\eqref{item:thh:Nikolskij:TL}, let $\A,$ $w,$ $p,$ $q$ and $s$ be as in the hypotheses. Fix $0<r<\min(1,p/\tau_w,q)$ such that  $s>n(1/r-1);$ note that the latter is possible since $s>\tau_{p,q}(w).$ 
 
 
-Let $k_0 \in \mathbb{N}_0$ be such that $2^{k_0 -1} < D\leq 2^{k_0},$ then  
+Let $k_0 \in \ent$ be such that $2^{k_0 -1} < \A\leq 2^{k_0},$ then  
 $$
-\supp(\widehat{u_\ell}) \subset B(0, 2^\ell D) \subset B(0, 2^{\ell +k_0}) \quad \forall \ell \in \mathbb{N}_0.
+\supp(\widehat{u_\ell}) \subset B(0, 2^\ell \A) \subset B(0, 2^{\ell +k_0}) \quad \forall \ell \in \ent.
 $$
-Define $u =\sum_{\ell \in \ent} u_\ell$ and let $\psi$ be as in the definition of $\itlw{(p,t)}{s}{q}{w}$ in Section~\ref{TL_B_section}. We have
-\begin{equation}\label{psi*u_Lorentz}
-\Delta^\psi_j u = \sum_{\ell \in \mathbb{N}_0} \Delta^\psi_j u_\ell = \sum_{\ell = j - k_0}^\infty \Delta^\psi_j  u_\ell = \sum_{k = - k_0}^\infty \Delta^\psi_j u_{j+k}.
+Define $u =\sum_{\ell \in \ent} u_\ell$ and let $\psi$ be as in the definition of $\tlw{(p,t)}{s}{q}{w}$ in Section~\ref{sec:spaces}. We have
+\begin{equation}\label{psi*u}
+\Delta^\psi_j u = \sum_{\ell \in \ent} \Delta^\psi_j u_\ell = \sum_{\ell = j - k_0}^\infty \Delta^\psi_j  u_\ell = \sum_{k = - k_0}^\infty \Delta^\psi_j u_{j+k}.
 \end{equation}
-We now use Lemma~\ref{coro:2:11} with $\phi(x) =  2^{jn} \psi(2^j x),$  $f = u_{j+k},$  $D= 2^{j  } >0,$ and $R= 2^{k + k_0}.$ (Notice that $\supp(\widehat{u_{j+k}}) \subset  B(0, 2^{j} 2^{k + k_0})$ and, since $k \geq -k_0$, we get $R \geq 1$.) Fixing  $\ex>n/r$ and applying Lemma~\ref{coro:2:11}, we get
+We will use Lemma~\ref{coro:2:11} with $\phi(x) =  2^{jn} \psi(2^j x),$  $f = u_{j+k},$  $A= 2^{j  } >0,$ and $R= 2^{k + k_0}.$ (Notice that $\supp(\widehat{u_{j+k}}) \subset  B(0, 2^{j} 2^{k + k_0})$ and, since $k \geq -k_0$, we get $R \geq 1$.) Fixing  $\ex>n/r$ and applying Lemma~\ref{coro:2:11}, we get
 \begin{align*}
 |\Delta^\psi_j  u_{j+k}(x)| & \lesssim   2^{k_0n(\frac{1}{r} -1)} 2^{k n (\frac{1}{r} -1)}  2^{-jn} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi (2^j\cdot)}{L^\infty}  \M_r(u_{j+k})(x)\\
 & \sim  2^{k n (\frac{1}{r} -1)} \left( \sup_{y \in \rn} (1 + |2^j y|)^\ex |\psi(2^j y)|\right) \M_r(u_{j+k})(x).
@@ -723,7 +815,7 @@ We now use Lemma~\ref{coro:2:11} with $\phi(x) =  2^{jn} \psi(2^j x),$  $f = u_{
 \begin{align*}
 2^{js}|\Delta^\psi_j  u_{j+k}(x)| & \lesssim 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x),
 \end{align*}
-and then, recalling \eqref{psi*u_Lorentz}, 
+and then, recalling \eqref{psi*u}, 
 \begin{align*}
 2^{js} |\Delta^\psi_j  u(x)| & \lesssim  \sum_{k =  - k_0}^\infty 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x).
 \end{align*}
@@ -731,29 +823,14 @@ Since $1/r -1-s/n < 0$,   Lemma~\ref{eq:seriesineq}  yields
 $$
 \norm{\{ 2^{js} |\Delta^\psi_j  u|\}_{j\in\ent}}{L^{p,t}(w)(\ell^{q})} \lesssim \norm{\{2^{js} \M_ru_j\}_{j\in\ent}}{L^{p,t}(w)(\ell^{q})}
 $$
-with an implicit constant independent of $\{u_j\}_{j\in \mathbb{N}_0}.$
-Applying the weighted  Fefferman-Stein inequality for Lorentz spaces to the right-hand side of the last inequality leads to the desired estimate
+with an implicit constant independent of $\{u_j\}_{j\in \ent}.$
+Applying the weighted  Fefferman-Stein inequality  to the right-hand side of the last inequality leads to the desired estimate
 \begin{equation*}
-\norm{u}{\itlw{(p,t)}{s}{q}{w}} \lesssim \norm{\{2^{js}u_j\}_{j\in\mathbb{N}_0}}{L^{p,t}(\ell^{q})}.
+\norm{u}{\tlw{(p,t)}{s}{q}{w}} \lesssim \norm{\{2^{js}u_j\}_{j\in\ent}}{L^{p,t}(\ell^{q})}.
 \end{equation*}
 
-For Part~\eqref{item:thh:Nikolskij:Lorentz:B}, let $D,$ $w,$ $p,$ $q$ and $s$ be as in the hypotheses and $k_0$ be as above. 
-Consider $\Delta^\psi_j  u_{j+k}$  in  \eqref{psi*u_Lorentz} and  apply  Lemma~\ref{coro:2:12(1)_Lorentz}  with $\phi(x)=2^{jn}\psi(2^{-j} x)$, $f= u_{j+k},$ $D=2^{j},$ $R=2^{k +  k_0}$,  $\ex>b$ and $  n /\min(1,p/\tau_w,t)<b<n+s;$ note that such $b$ exists since $s>\tau_p(w).$ We get
-\begin{align*}
- \norm{\Delta^\psi_j  u_{j+k}}{L^{p,t}(w)}  \lesssim 2^{(k + k_0)(b-n)} 2^{- j  n} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi(2^{-j}\cdot)}{L^\infty} \norm{u_{j+k}}{L^p(w)}\sim 2^{k(b-n)}   \norm{u_{j+k}}{L^{p,t}(w)},
-\end{align*}
-and setting $p^*:=\min(p,t,1)$ we obtain
-\begin{align*}
-2^{js p^*}\norm{\Delta^\psi_j  u}{L^{p,t}(w)}^{p^*} \lesssim 2^{js p^*}\sum_{k = - k_0}^\infty \norm{\Delta^\psi_j  u_{j+k}}{L^{p,t}(w)}^{p^*}
- =  \sum_{k = - k_0}^\infty 2^{k(b-n -s) p^*} 2^{s p^* (j+k)}   \norm{u_{j+k}}{L^{p,t}(w)}^{p^*}.
-\end{align*}
-Hence, applying Lemma~\ref{eq:seriesineq}, it follows that
-\begin{align*}
-\norm{u}{\ibesw{p,t}{s}{q}{w}}  \lesssim  \norm{\left\{ \sum_{k = - k_0}^\infty 2^{k(b-n -s) p^*}  2^{s p^* (j+k)}   \norm{u_{j+k}}{L^{p,t}(w)}^{p^*}\right\}_{j\in\mathbb{N}_0}}{\ell^{q/p*}}^\frac{1}{p^*}\lesssim  \norm{\{2^{js} u_j\}_{j\in\mathbb{N}_0}}{\ell^{q}(L^{p,t}(w))}, 
-\end{align*}
-as desired.
 
-We know prove the theorem for families that are not necessarily finite. Using the theorem for finite families we have that 
+Assume that the theorem is true for finite families. Let $\{u_j\} \subset S'$ be as in the hypothesis. Then using the theorem for finite families we have that 
 \begin{equation}
 \norm{U_N - U_M}{\itl{(p,t)}{s}{q}} \lesssim \norm{ \{2^{js} u_j\}_{M+1\leq j \leq N}}{L^{p,t}(w)(\ell^q)}.
 \end{equation}
@@ -763,142 +840,15 @@ Now we apply the following version of the dominated convergence theorem.
 \textit{Suppose $f_n \rightarrow f$ in measure and $|f_n (x)| \leq |g(x)|$ for some $g\in L^{p,t}(w)$. Then $$\lim_{n\rightarrow\infty} \norm{f_n-f}{L^{p,t}(w)} = 0.$$}
 \\
 \bigskip
-We need to check that the functions $U_{N,M} = \left(\sum_{j=M+1}^{N} (2^{js} u_j)^q\right)^\frac{1}{q}$, 
-$U=0$, 
-and $g = \left(\sum_{j=0}^\infty (2^{js}u_j)^q \right)^\frac{1}{q}$ 
-satisfy the hypotheses of the theorem. Now we need to check that $f_{N,M}\rightarrow f$ in measure. 
-Let $A_N = \{ x : \sum^\infty_{j=N} |2^{jsq}u_j|^q > \tau^q \}$.
- Because $\{u_j\} \subset L^{(p,t)}(w)(\ell^{q})$ we have that $|A_1| < \infty$.
-  Then since $|A_{N+1}| \leq |A_{N}|$ it follows that
-   $\lim_{N\rightarrow\infty} |A_N| = |\cap A_N|$. $\{u_j\} \subset L^{(p,t)}(w)(\ell^{q})$ so $u_j \rightarrow 0$ 
-   as $j\rightarrow\infty$. Therefore $f_N \rightarrow 0$ in measure. 
-   This implies that 
+We need to check that the functions $U_{N,M} = \left(\sum_{j=M+1}^{N} (2^{js} u_j)^q \right)^\frac{1}{q}$, $U=0$, and $g = \left(\sum_{j=0}^\infty (2^{js}u_j)^q \right)^\frac{1}{q}$ satisfy the hypotheses of the theorem. Now we need to check that $f_{N,M}\rightarrow f$ in measure. Let $A_N = \{ x : \sum^\infty_{j=N} |2^{jsq}u_j|^q > \tau^q \}$. Because $\{u_j\} \subset L^{(p,t)}(w)(\ell^{q})$ we have that $|A_1| < \infty$. Then since $|A_{N+1}| \leq |A_{N}|$ it follows that $\lim_{N\rightarrow\infty} |A_N| = |\cap A_N|$. $\{u_j\} \subset L^{(p,t)}(w)(\ell^{q})$ so $u_j \rightarrow 0$ as $j\rightarrow\infty$. Therefore $f_N \rightarrow 0$ in measure. This implies that 
 $$ \norm{U_N - U_M}{\itl{(p,t)}{s}{q}} \lesssim \norm{\{2^{js}u_j\}_{M+1\leq j \leq N}}{L^{p,t}(w)(\ell^q)} \rightarrow 0.$$
 Then $\sum_{j=0}^\infty u_j$ converges in $\itl{(p,t)}{s}{q}$. 
 \\
-Now we consider the case where $q=\infty$. Then $\{2^{j(s-\epsilon)}\}_{j\geq0}$ belongs to $\ell^1(L^{p,t}(w))$ for any $\epsilon >0$. Then by the case for $q<\infty$ $\sum_{j=0}^\infty u_j$ converges in $B^s_{(p,t),1}$ and so it converges in $S'$. Then by using the case for finite families applied to $\{u_j\}_{0\leq j \leq N}$ (this case holds because the lemmas used only depend on the on the indexes considered and maximal function inequalities in Lorentz spaces) we have that 
-\[ \norm{U_N}{\itl{(p,t)}{s}{q}} \lesssim ||\{2^{js}u_j\}_{0\leq j \leq N}||_{F^s_{(p,t),\infty}} \leq ||\{2^{js}u_j\}||_{F^s_{(p,t),\infty}}. \] Then using the Fatou property completes the proof.
+Now we consider the case where $q=\infty$. Then $\{2^{j(s-\epsilon)}\}_{j\geq0}$ belongs to $\ell^1(L^{p,t}(w))$ for any $\epsilon >0$. Then by the case for $q<\infty$ $\sum_{j=0}^\infty u_j$ converges in $B^s_{(p,t),1}$ and so it converges in $S'$. Then by using the case for finite families applied to $\{u_j\}_{0\leq j \leq N}$ (this case holds because the lemmas used only depend on the on the indexes considered and maximal function inequalities in Lorrentz spaces) we have that 
+\[ \norm{U_N}{\itl{(p,t)}{s}{q}} \lesssim ||\{2^{js}u_j\}_{0\leq j \leq N}||_{F^s_{(p,t),\infty}} \leq ||\{2^{js}u_j\}||_{F^s_{(p,t),\infty}}. \] Then using the Fatou property finishes the proof.
 \end{proof}
 
-As it was noted in Remark \ref{fatou} Triebel-Lizorkin and Besov spaces based in weighted Lorentz spaces posses the Fatou property. As a consequence the proof of Theorem \ref{thm:Nikolskij:Lorentz:weighted} follows along the sames lines as the proof of Theorem \ref{thm:Nikolskij:weighted}. We know verify properties (i) and (ii) in Remark \ref{fatou} for such spaces. 
-
-Property (i) is easily verified using the definition of $ L^{p,t}(w)$.
-
-For property (ii) it holds that $(\liminf_{n\rightarrow\infty} f_n)^* \leq \liminf_{n\rightarrow\infty} f_n^*$. Then by applying Fatou's Lemma  we have property (ii).
-%For the proof of Theorem \ref{thm:Nikolskij:Lorentz:weighted} we need the following lemmas.
-
-%\begin{lemma}[Particular case of Corollary 2.11 in \cite{MR837335}]\label{coro:2:11}
-%Suppose $0 < r \leq 1,$  $A >0$, $R \geq 1$ and $\ex > n/r$. If $\phi \in \sw$ and $f$ is such that  $\supp(\widehat{f}) \subset \{\xi\in\rn:\abs{\xi}\le AR\}$, it holds that
-%\begin{equation*}
-%|\phi * f(x)| \lesssim R^{n (\frac{1}{r}  -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty}  \M_rf(x) \quad \forall x \in \rn,
-%\end{equation*}
-%where the implicit constant is independent of $A, R, \phi,$ and $f.$  
-%\end{lemma}
-%\begin{remark} \cite[Corollary 2.11]{MR837335} incorrectly states $A^{-n/r}$ instead of $ A^{-n}$. Also, it states $A \geq 1$, but the result is true for $A >0$ as stated in Lemma~\ref{coro:2:11}.
-%\end{remark}
-%
-%\begin{lemma}\label{coro:2:12(1)}
-%Suppose $w\in A_\infty,$ $0 < p \leq \infty$, $A > 0$, $R \geq 1,$  and $\ex > b > n/ \min(1,p/\tau_w).$  If $\phi \in \sw$ and $f$ is such that $\supp(\widehat{f}) \subset \{\xi\in\rn:\abs{\xi}\le AR\}$, it holds that
-%\begin{equation*}
-%\norm{\phi * f}{\lebw{p}{w}} \lesssim R^{b - n} A^{-n} \norm{(1 + |A \cdot|^\ex) \phi}{L^\infty} \norm{f}{\lebw{p}{w}},
-%\end{equation*}
-%where the implicit constant is independent of $A,$ $R,$ $\phi$ and $f.$ 
-%\end{lemma}
-%
-%\begin{proof}  Set $r:=n/b < \min(1, p/\tau_w).$ The hypothesis $\ex > b$  means $ \ex  > n/r$ and Lemma~\ref{coro:2:11}  yields
-%$$
-%|\phi * f(x)| \lesssim R^{n (\frac{1}{r} -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty}  \M_rf(x) \quad \forall x \in \rn.
-%$$
-%Since $r < p/\tau_w,$ we have   $\norm{\M_rf}{\lebw{p,t}{w}} \lesssim \norm{f}{\lebw{p,t}{w}}$ and therefore
-%$$
-%\norm{\phi * f}{\lebw{p,t}{w}} \lesssim R^{n (\frac{1}{r} -1)} A^{-n} \norm{(1 + |A \cdot|)^\ex \phi}{L^\infty} \norm{f}{\lebw{p,t}{w}};
-%$$
-%observing that $1/r -1 = (b -n)/n$, the desired estimate follows. 
-%\end{proof}
-%
-%The following lemma is a modified version of \cite[Lemma 3.8]{MR837335}.
-%\begin{lemma}\label{eq:seriesineq} Let  $\tau < 0$, $\lambda \in \re$, $0 < q \leq \infty$, and $k_0 \in \ent$. Then, for any sequence $\{d_j\}_{j \in \ent} \subset [0, \infty)$ it holds that
-%\begin{equation*}
-%\norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in\ent}}{\ell^q} \lesssim \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q},
-%\end{equation*}
-%where the implicit constant depends only on $k_0, \tau, \lambda$ and $q$.
-%\end{lemma}
-%
-%\begin{proof}
-%Suppose first that $0 < q \leq 1$. Then,
-%\begin{align*}
-%& \norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in \ent}}{\ell^q} = \left[\sum_{j \in \ent} \left( \sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k} \right)^q \right]^\frac{1}{q}\\
-%& \quad\quad\quad\quad\quad \leq  \left[\sum_{j \in \ent}  \sum_{k=k_0}^\infty 2^{\tau q k} 2^{\lambda q (j+k)}d_{j+k}^q \right]^\frac{1}{q} =  \left[ \sum_{k=k_0}^\infty  2^{\tau q k} \sum_{j \in \ent} 2^{\lambda q (j+k)}d_{j+k}^q \right]^\frac{1}{q}\\
-%&  \quad\quad\quad \quad \quad = \left(  \sum_{k=k_0}^\infty   2^{\tau q k}     \right)^\frac{1}{q} \norm{\{2^{j \lambda} d_j\}_{j\in \ent}}{\ell^q} = C_{k_0, \tau, q} \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q},
-%\end{align*}
-%where in the last equality we have used that $\tau < 0$. If $1 < q < \infty$ we use H\"older's inequality with $q$ and $q'$ to write
-%\begin{align*}
-% \norm{\left\{\sum_{k=k_0}^\infty 2^{\tau k} 2^{\lambda(j+k)}d_{j+k}\right\}_{j\in\ent}}{\ell^q} 
-%& \le \left[\sum_{j \in \ent}   \left(\sum_{k=k_0}^\infty 2^{\tau k q/2} 2^{\lambda q(j+k)}d_{j+k}^q \right)     \left( \sum_{k=k_0}^\infty 2^{\tau kq'/2} \right)^{q/q'}   \right]^\frac{1}{q}\\
-%&    =C_{k_0, \tau, q} \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q}.
-%\end{align*}
-%
-%The case $q = \infty$ is straightforward.
-%\end{proof}
-%
-%We now show the proof of Theorem \ref{thm:Nikolskij:Lorentz:weighted}.
-%
-%\begin{proof} We first establish the theorem for finite families of functions and then extend this result to families that are not necessarily finite.  We will do this in the homogeneous settings, with the proof in the inhomogeneous settings being similar. Suppose $\{u_j\}_{j\in\ent}$ is such that $u_j=0$ for all $j$ except those belonging to some finite subset of $\ent;$  this assumption allows us to avoid convergence issues since all the sums  considered will be finite.
-%
-%For Part~\eqref{item:thh:Nikolskij:TL}, let $\A,$ $w,$ $p,$ $q$ and $s$ be as in the hypotheses. Fix $0<r<\min(1,p/\tau_w,q)$ such that  $s>n(1/r-1);$ note that the latter is possible since $s>\tau_{p,q}(w).$ 
-%
-%
-%Let $k_0 \in \ent$ be such that $2^{k_0 -1} < \A\leq 2^{k_0},$ then  
-%$$
-%\supp(\widehat{u_\ell}) \subset B(0, 2^\ell \A) \subset B(0, 2^{\ell +k_0}) \quad \forall \ell \in \ent.
-%$$
-%Define $u =\sum_{\ell \in \ent} u_\ell$ and let $\psi$ be as in the definition of $\tlw{(p,t)}{s}{q}{w}$ in Section~\ref{TL_B_section}. We have
-%\begin{equation}\label{psi*u}
-%\Delta^\psi_j u = \sum_{\ell \in \ent} \Delta^\psi_j u_\ell = \sum_{\ell = j - k_0}^\infty \Delta^\psi_j  u_\ell = \sum_{k = - k_0}^\infty \Delta^\psi_j u_{j+k}.
-%\end{equation}
-%We will use Lemma~\ref{coro:2:11} with $\phi(x) =  2^{jn} \psi(2^j x),$  $f = u_{j+k},$  $A= 2^{j  } >0,$ and $R= 2^{k + k_0}.$ (Notice that $\supp(\widehat{u_{j+k}}) \subset  B(0, 2^{j} 2^{k + k_0})$ and, since $k \geq -k_0$, we get $R \geq 1$.) Fixing  $\ex>n/r$ and applying Lemma~\ref{coro:2:11}, we get
-%\begin{align*}
-%|\Delta^\psi_j  u_{j+k}(x)| & \lesssim   2^{k_0n(\frac{1}{r} -1)} 2^{k n (\frac{1}{r} -1)}  2^{-jn} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi (2^j\cdot)}{L^\infty}  \M_r(u_{j+k})(x)\\
-%& \sim  2^{k n (\frac{1}{r} -1)} \left( \sup_{y \in \rn} (1 + |2^j y|)^\ex |\psi(2^j y)|\right) \M_r(u_{j+k})(x).
-%\end{align*}
-% Hence,
-%\begin{align*}
-%2^{js}|\Delta^\psi_j  u_{j+k}(x)| & \lesssim 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x),
-%\end{align*}
-%and then, recalling \eqref{psi*u}, 
-%\begin{align*}
-%2^{js} |\Delta^\psi_j  u(x)| & \lesssim  \sum_{k =  - k_0}^\infty 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x).
-%\end{align*}
-%Since $1/r -1-s/n < 0$,   Lemma~\ref{eq:seriesineq}  yields
-%$$
-%\norm{\{ 2^{js} |\Delta^\psi_j  u|\}_{j\in\ent}}{L^{p,t}(w)(\ell^{q})} \lesssim \norm{\{2^{js} \M_ru_j\}_{j\in\ent}}{L^{p,t}(w)(\ell^{q})}
-%$$
-%with an implicit constant independent of $\{u_j\}_{j\in \ent}.$
-%Applying the weighted  Fefferman-Stein inequality  to the right-hand side of the last inequality leads to the desired estimate
-%\begin{equation*}
-%\norm{u}{\tlw{(p,t)}{s}{q}{w}} \lesssim \norm{\{2^{js}u_j\}_{j\in\ent}}{L^{p,t}(\ell^{q})}.
-%\end{equation*}
-%
-%
-%Assume that the theorem is true for finite families. Let $\{u_j\} \subset S'$ be as in the hypothesis. Then using the theorem for finite families we have that 
-%\begin{equation}
-%\norm{U_N - U_M}{\itl{(p,t)}{s}{q}} \lesssim \norm{ \{2^{js} u_j\}_{M+1\leq j \leq N}}{L^{p,t}(w)(\ell^q)}.
-%\end{equation}
-%Now we apply the following version of the dominated convergence theorem. 
-%\\
-%\bigskip
-%\textit{Suppose $f_n \rightarrow f$ in measure and $|f_n (x)| \leq |g(x)|$ for some $g\in L^{p,t}(w)$. Then $$\lim_{n\rightarrow\infty} \norm{f_n-f}{L^{p,t}(w)} = 0.$$}
-%\\
-%\bigskip
-%We need to check that the functions $U_{N,M} = \left(\sum_{j=M+1}^{N} (2^{js} u_j)^q \right)^\frac{1}{q}$, $U=0$, and $g = \left(\sum_{j=0}^\infty (2^{js}u_j)^q \right)^\frac{1}{q}$ satisfy the hypotheses of the theorem. Now we need to check that $f_{N,M}\rightarrow f$ in measure. Let $A_N = \{ x : \sum^\infty_{j=N} |2^{jsq}u_j|^q > \tau^q \}$. Because $\{u_j\} \subset L^{(p,t)}(w)(\ell^{q})$ we have that $|A_1| < \infty$. Then since $|A_{N+1}| \leq |A_{N}|$ it follows that $\lim_{N\rightarrow\infty} |A_N| = |\cap A_N|$. $\{u_j\} \subset L^{(p,t)}(w)(\ell^{q})$ so $u_j \rightarrow 0$ as $j\rightarrow\infty$. Therefore $f_N \rightarrow 0$ in measure. This implies that 
-%$$ \norm{U_N - U_M}{\itl{(p,t)}{s}{q}} \lesssim \norm{\{2^{js}u_j\}_{M+1\leq j \leq N}}{L^{p,t}(w)(\ell^q)} \rightarrow 0.$$
-%Then $\sum_{j=0}^\infty u_j$ converges in $\itl{(p,t)}{s}{q}$. 
-%\\
-%Now we consider the case where $q=\infty$. Then $\{2^{j(s-\epsilon)}\}_{j\geq0}$ belongs to $\ell^1(L^{p,t}(w))$ for any $\epsilon >0$. Then by the case for $q<\infty$ $\sum_{j=0}^\infty u_j$ converges in $B^s_{(p,t),1}$ and so it converges in $S'$. Then by using the case for finite families applied to $\{u_j\}_{0\leq j \leq N}$ (this case holds because the lemmas used only depend on the on the indexes considered and maximal function inequalities in Lorentz spaces) we have that 
-%\[ \norm{U_N}{\itl{(p,t)}{s}{q}} \lesssim ||\{2^{js}u_j\}_{0\leq j \leq N}||_{F^s_{(p,t),\infty}} \leq ||\{2^{js}u_j\}||_{F^s_{(p,t),\infty}}. \] Then using the Fatou property finishes the proof.
-%\end{proof}
-
-With these four properties theorems analogous those earlier in this chapter hold in the setting of weighted Lorentz-based Triebel-Lizorkin and Besov spaces and as an example the analogue to Theorem~\ref{thm:ICM:TL:B} in the context of the spaces $\itlw{(p,t)}{s}{q}{w}$ is below.
+With these four properties theorems analogous those earlier in this chapter hold in the setting of weighted Lorrentz-based Triebel-Lizorkin and Besov spaces and as an example the analogue to Theorem~\ref{thm:ICM:TL:B} in the context of the spaces $\itlw{(p,t)}{s}{q}{w}$ is below.
 
 
 \begin{theorem}\label{thm:ICM:Lorentz}  For $m \in \re,$ let $\sigma(\xi,\eta),$ $\xi,\eta\in\rn,$ be an inhomogeneous Coifman-Meyer multiplier of order $m.$ If $w\in A_\infty,$ $0 < p, p_1, p_2 < \infty$ and $0 < t, t_1, t_2\le \infty$  are  such that $\hcline$ and $1/t=1/t_1+1/t_2,$  $0 < q \le \infty$  and  $s > \tau_{p,t,q}(w),$  it holds that
@@ -921,17 +871,17 @@ Then, under the assumptions of Theorem~\ref{thm:ICM:Lorentz}  we obtain, in part
 \norm{J^s(fg)}{\itlw{(p,t)}{0}{q}{w}} \lesssim \norm{J^sf}{\itlw{(p,t)}{0}{q}{w}} \norm{g}{L^\infty} +  \norm{f}{L^\infty}   \norm{J^s g}{\itlw{(p,t)}{0}{q}{w}}.
 \end{equation*}
 These last two estimates supplement the results in \cite[Theorem 6.1]{MR3513582}, where related Leibniz-type rules in Lorentz spaces were obtained.
- \subsection{Leibniz-type rules in the setting of Morrey based Triebel-Lizorkin and Besov spaces}
+ \subsection{Morrey spaces}
  
  Given $0<p\le t<\infty$ and $w\in A_\infty,$  we denote by $\mow{p}{t}{w}$ the weighted Morrey space consisting of functions $f\in L^p_{\text{loc}}(\rn)$  such that
 \[
 \|f\|_{\mow{p}{t}{w}}=\sup_{B\subset \rn}w(B)^{\frac{1}{t}-\frac{1}{p}}\left( \int_B\abs{f(x)}^pw(x)\dx\right)^\frac{1}{p}<\infty,
 \]
-where the supremum is taken over all Euclidean balls $B$ contained in $\rn.$ We note that $\mow{p}{p}{w}=\lebw{p}{w}.$ For more details on Morrey spaces see the work Rosenthal--Schmeisser~\cite{MR3538648} and the references contained therein. The corresponding weighted inhomogeneous Triebel--Lizorkin spaces and inhomogeneous Besov spaces  are denoted by $\itlw{[p,t]}{s}{q}{w}$ and   $\ibesw{[p,t]}{s}{q}{w},$ respectively. These Morrey-based Triebel--Lizorkin and Besov  spaces are independent of the choice of $\varphi$ and $\psi$ given in  Section~\ref{TL_B_section} and are quasi-Banach spaces that contain $\sw$ (see the works Kozono--Yamazaki~\cite{MR1274547}, Mazzucato~\cite{MR1946395}, Izuki et al.~\cite{MR2792058} and the references they contain). The corresponding local Hardy spaces are denoted by $h^t_p(w).$ 
+where the supremum is taken over all Euclidean balls $B$ contained in $\rn.$ We note that $\mow{p}{p}{w}=\lebw{p}{w}.$ For more details on Morrey spaces see the work Rosenthal--Schmeisser~\cite{MR3538648} and the references contained therein. The corresponding weighted inhomogeneous Triebel--Lizorkin spaces and inhomogeneous Besov spaces  are denoted by $\itlw{[p,t]}{s}{q}{w}$ and   $\ibesw{[p,t]}{s}{q}{w},$ respectively. These Morrey-based Triebel--Lizorkin and Besov  spaces are independent of the choice of $\varphi$ and $\psi$ given in  Section~\ref{sec:spaces} and are quasi-Banach spaces that contain $\sw$ (see the works Kozono--Yamazaki~\cite{MR1274547}, Mazzucato~\cite{MR1946395}, Izuki et al.~\cite{MR2792058} and the references they contain). The corresponding local Hardy spaces are denoted by $h^t_p(w).$ 
 
 We now show the analogues to properties \ref{item:first}--\ref{item:last} for weighted Morrey spaces.
 
-For \ref{item:first} we use that for $0<s<\infty$ $\| |f|^s \|_{\mow{p}{t}{w}} = \|f\|^s_{\mow{sp}{st}{w}}$ and the corresponding property for weighted Lebesgue spaces to get 
+%For \ref{item:first} we use that for $0<s<\infty$ $\| |f|^s \|_{\mow{p}{t}{w}} = \|f\|^s_{\mow{sp}{st}{w}}$ and the corresponding property for weighted Lebesgue spaces to get 
 \[\|f+g\|^r_{\mow{p}{t}{w}} \lesssim \|f\|^r_{\mow{p}{t}{w}} + \|g\|^r_{\mow{p}{t}{w}} \]
 for $r = min(1,p)$. It follows that for $r :=min(1,p,q)$ 
 \[ \|f+g\|^r_{\itlw{[p,t]}{s}{q}{w}} \lesssim \|f\|^r_{\itlw{[p,t]}{s}{q}{w}} + \|g\|^r_{\itlw{[p,t]}{s}{q}{w}} \]
@@ -977,7 +927,7 @@ where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and $q.$
 \end{enumerate}
 \end{theorem}
 
-The proof of Theorem \ref{thm:Nikolskij:Morrey:weighted} uses Lemma \ref{coro:2:11}, Lemma \ref{eq:seriesineq}, and a modified version of Lemma (\ref{coro:2:12(1)}).
+The proof of Theorem (\ref{thm:Nikolskij:weighted}) uses Lemma \ref{coro:2:11}, Lemma \ref{eq:seriesineq}, and a modified version of Lemma (\ref{coro:2:12(1)}).
 
 \begin{lemma}\label{morrey:lemma}
 Let $0<p\leq t < \infty$, $A>0$, $R\geq 1$ and $d>b>\frac{n}{min(p/\tau_{w},1)}$. If $\phi \in \sw$ and $supp(\widehat{f}) \subset \{\xi: |\xi| \leq AR \}$. Then 
@@ -987,46 +937,29 @@ Let $0<p\leq t < \infty$, $A>0$, $R\geq 1$ and $d>b>\frac{n}{min(p/\tau_{w},1)}$
 with the implicit constant independent of $R, A, \phi, \text{ and } f.$
 \end{lemma}
 
-The proof follows along the same lines as Lemma \ref{coro:2:11}. We now prove Theorem \ref{thm:Nikolskij:Morrey:weighted}.
+The proof follows along the same lines as Lemma \ref{coro:2:11}.
 
 \begin{proof}
-First we will assume that $u_j = 0$ for all but finitely many $j$. 
-For Part~\eqref{item:thh:Nikolskij:Morrey:TL}, let $D,$ $w,$ $p,$ $q$, $t$ and $s$ be as in the hypotheses. Fix $0<r<\min(1,p/\tau_w,q)$ such that  $s>n(1/r-1);$ note that the latter is possible since $s>\tau_{p,q}(w).$ 
-
-
-Let $k_0 \in \mathbb{N}_0$ be such that $2^{k_0 -1} < D\leq 2^{k_0},$ then  
-$$
-\supp(\widehat{u_\ell}) \subset B(0, 2^\ell D) \subset B(0, 2^{\ell +k_0}) \quad \forall \ell \in \mathbb{N}_0.
-$$
-Define $u =\sum_{\ell \in \ent} u_\ell$ and let $\psi$ be as in the definition of $\itlw{[p,t]}{s}{q}{w}$ in Section~\ref{TL_B_section}. We have
-\begin{equation}\label{psi*u_Morrey}
-\Delta^\psi_j u = \sum_{\ell \in \mathbb{N}_0} \Delta^\psi_j u_\ell = \sum_{\ell = j - k_0}^\infty \Delta^\psi_j  u_\ell = \sum_{k = - k_0}^\infty \Delta^\psi_j u_{j+k}.
-\end{equation}
-We now use Lemma~\ref{coro:2:11} with $\phi(x) =  2^{jn} \psi(2^j x),$  $f = u_{j+k},$  $D= 2^{j  } >0,$ and $R= 2^{k + k_0}.$ (Notice that $\supp(\widehat{u_{j+k}}) \subset  B(0, 2^{j} 2^{k + k_0})$ and, since $k \geq -k_0$, we get $R \geq 1$.) Fixing  $\ex>n/r$ and applying Lemma~\ref{coro:2:11}, we get
+Proof of part (ii): Using Lemma 4.3 we have that $$\norm{\Delta^\psi_j u_{j+k}}{\mow{p}{t}{w}} \lesssim 2^{k(b-n)} \norm{u_{j+k}}{\mow{p}{t}{w}}$$ where we have used boundedness of the Hardy-Littlewood maximal function on Morrey spaces when $0<r<p/\tau_w$. Then by setting $r^\ast = min(1,p,q)$ and using property (1) for Morrey spaces 
+$$ 2^{jsr^\ast}\norm{\Delta^\psi_j u}{\mow{p}{t}{w}}^{r^\ast} \lesssim 2^{js r^*}\sum_{k = - k_0}^\infty \norm{\Delta^\psi_j  u_{j+k}}{\mow{p}{t}{w}}^{r^*}
+ =  \sum_{k = - k_0}^\infty 2^{k(b-n -s) r^*} 2^{s r^* (j+k)}   \norm{u_{j+k}}{\mow{p}{t}{w}}^{r^*}.  $$ 
+Now by applying Lemma A.3  we have 
 \begin{align*}
-|\Delta^\psi_j  u_{j+k}(x)| & \lesssim   2^{k_0n(\frac{1}{r} -1)} 2^{k n (\frac{1}{r} -1)}  2^{-jn} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi (2^j\cdot)}{L^\infty}  \M_r(u_{j+k})(x)\\
-& \sim  2^{k n (\frac{1}{r} -1)} \left( \sup_{y \in \rn} (1 + |2^j y|)^\ex |\psi(2^j y)|\right) \M_r(u_{j+k})(x).
+\norm{u}{\besw{[p,t]}{s}{q}{w}}  \lesssim  \norm{\left\{ \sum_{k = - k_0}^\infty 2^{k(b-n -s) r^*}  2^{s r^* (j+k)}   \norm{u_{j+k}}{\mow{p}{t}{w}}^{p^*}\right\}_{j\in\naz}}{\ell^{q/r*}}^\frac{1}{r^*}\lesssim  \norm{\{2^{js} u_j\}_{j\in\naz}}{\ell^{q}(\mow{p}{t}{w})} 
 \end{align*}
- Hence,
+and part (ii) is shown for the finite family case. For a family that is not necessarily finite we apply the finite family case to $U_N - U_M := \sum_{j=M+1}^N u_j$. For finite q this gives us 
 \begin{align*}
-2^{js}|\Delta^\psi_j  u_{j+k}(x)| & \lesssim 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x),
+\norm{U_N - U_M}{\besw{[p,t]}{s}{q}{w}} \lesssim \norm{\{2^{js} u_j\}_{M+1\leq j \leq N}}{\ell^{q}(\mow{p}{t}{w})} \leq \norm{\{2^{js} u_j\}_{j\in\naz}}{\ell^{q}(\mow{p}{t}{w})} < \infty
 \end{align*}
-and then, recalling \eqref{psi*u_Morrey}, 
-\begin{align*}
-2^{js} |\Delta^\psi_j  u(x)| & \lesssim  \sum_{k =  - k_0}^\infty 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x).
-\end{align*}
-Since $1/r -1-s/n < 0$,   Lemma~\ref{eq:seriesineq}  yields
-$$
-\norm{\{ 2^{js} |\Delta^\psi_j  u|\}_{j\in\ent}}{M^t_p(w)(\ell^{q})} \lesssim \norm{\{2^{js} \M_ru_j\}_{j\in\ent}}{M^t_p(w)(\ell^{q})}
-$$
-with an implicit constant independent of $\{u_j\}_{j\in \mathbb{N}_0}.$
-Applying the weighted  Fefferman-Stein inequality for Morrey spaces to the right-hand side of the last inequality leads to the desired estimate
-\begin{equation*}
-\norm{u}{\itlw{[p,t]}{s}{q}{w}} \lesssim \norm{\{2^{js}u_j\}_{j\in\mathbb{N}_0}}{M^t_p(w)(\ell^{q})}.
-\end{equation*}
-
+and by the dominated convergence theorem the left side converges to 0 as $M,N \rightarrow \infty$. So $U_N$ converges in $\ibesw{[p,t]}{s}{q}{w}.$ If $q = \infty$ then $\{2^{j(s-\epsilon)}\} \in \ell^1 (\mow{p}{t}{w})$. By the case for finite q we have that $\sum_{j=0}^N u_j$ converges in $\ibesw{[p,t]}{s-\epsilon}{q}{w}$. Therefore it converges in $\mathcal{S}'$. 
+\\
+Proof of part (i): First we will assume that $u_j = 0$ for all but finitely many $j$. From Lemma 4.2 we have that 
+$$ |\Delta^\psi_j u_{j+k}(x)| \lesssim 2^{kn(\frac{1}{r} - 1 - \frac{s}{n})} 2^{j(s+k)}\mathcal{M}_r(u_{j+k})(x) $$
+where $\Delta^\psi_j u = \sum_{\ell \in \naz} \Delta^{\psi}_j u_\ell.$ By Lemma 3.4 and the Fefferman-Stein inequality for Morrey spaces we get 
+\[ \norm{ \{ 2^{js} |\Delta^\psi_j u| \}_{j\in\naz}}{M^p_t (w)(\ell^q)} \lesssim \norm{ \{ 2^{js} \mathcal{M}_r u_j \}_{j\in\naz}}{M^p_t (w)(\ell^q)} \lesssim \norm{ \{ 2^{js} u_j \}_{j\in\naz}}{M^p_t (w)(\ell^q)}\] 
+for $0<r<min(\frac{p}{\tau_w},q)$.
 Now we prove the theorem for families with are not necessarily finite. Let $U_N := \sum_{j=0}^N u_j$. Then by the finite family case we have that 
-$$ \norm{u_N}{\itlw{[p,t]}{s}{q}{w}} \lesssim \norm{{\{2^{js}}u_j\}_{0\leq j\leq N} }{\mow{t}{p}{w}(\ell^q)} \lesssim \norm{{\{2^{js}}u_j\}}{\mow{t}{p}{w}(\ell^q)} <\infty.$$ Assume that $1<q<\infty$. Because $\norm{{\{2^{js}}u_j\}}{\mow{t}{p}{w}(\ell^q)} <\infty$ we have that $\sup_j\norm{{\{2^{js}}u_j\}}{\mow{t}{p}{w}} <\infty$ which falls in the $q=\infty$ case for part \eqref{item:thh:Nikolskij:Morrey:B}. Then $\sum_{j=0}^\infty u_j$ converges in $S'$ and from the Fatou property 
+$$ \norm{u_N}{\itlw{[p,t]}{s}{q}{w}} \lesssim \norm{{\{2^{js}}u_j\}_{0\leq j\leq N} }{\mow{t}{p}{w}(\ell^q)} \lesssim \norm{{\{2^{js}}u_j\}}{\mow{t}{p}{w}(\ell^q)} <\infty.$$ Assume that $1<q<\infty$. Because $\norm{{\{2^{js}}u_j\}}{\mow{t}{p}{w}(\ell^q)} <\infty$ we have that $\sup_j\norm{{\{2^{js}}u_j\}}{\mow{t}{p}{w}} <\infty$ which falls in the $q=\infty$ case for part (ii). Then $\sum_{j=0}^\infty u_j$ converges in $S'$ and from the Fatou property 
 \[\liminf_{N\rightarrow\infty} \norm{U_N}{\itlw{[p,t]}{s}{q}{w}} \leq \norm{U}{\itlw{[p,t]}{s}{q}{w}}v\lesssim \norm{{\{2^{js}}u_j\}}{\mow{t}{p}{w}(\ell^q)}. \]
 
 If $q=\infty$ then $\{2^{j(s-\epsilon)}u_j\}_{j\in\naz}$ is in $\ell^1(M^t_p)(w))$ for any $\epsilon>0$. Then the case for finite $q$ shows that $\{2^{j(s-\epsilon)}u_j\}_{j\in\naz}$ converges in ${\ibesw{[p,t]}{s-\epsilon}{1}{w}}$ and we have convergence in $\mathcal{S}'$. Then using the finite family case we have 
@@ -1034,43 +967,8 @@ If $q=\infty$ then $\{2^{j(s-\epsilon)}u_j\}_{j\in\naz}$ is in $\ell^1(M^t_p)(w)
 
 \[ \norm{U_N}{F^s_{[p,t],\infty}(w)} \lesssim \norm{ \{ 2^{js}u_j \}_{0\leq j\leq N }}{\ell^1(M^t_p)(w)} \leq \norm{ \{ 2^{js}u_j \} }{\ell^1(M^t_p)(w)} < \infty \] 
 
- Then after using the Fatou property of $\itlw{[p,t]}{s}{q}{w}$ we are finished.
- 
- Now for part \eqref{item:thh:Nikolskij:Morrey:B} we first assume that $u_j = 0$ for all but finitely many $j$. 
-Let $D,$ $w,$ $p,$ $q$, $t$ and $s$ be as in the hypotheses and $k_0$ be as above. 
-Consider $\Delta^\psi_j  u_{j+k}$  in  \eqref{psi*u_Morrey} and  apply  Lemma~\ref{morrey:lemma}  with $\phi(x)=2^{jn}\psi(2^{-j} x)$, $f= u_{j+k},$ $D=2^{j},$ $R=2^{k +  k_0}$,  $\ex>b$ and $  n /\min(1,p/\tau_w,t)<b<n+s;$ note that such $b$ exists since $s>\tau_p(w).$ We get
-\begin{align*}
- \norm{\Delta^\psi_j  u_{j+k}}{L^{p,t}(w)}  \lesssim 2^{(k + k_0)(b-n)} 2^{- j  n} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi(2^{-j}\cdot)}{L^\infty} \norm{u_{j+k}}{\mow{p}{t}{w}}\sim 2^{k(b-n)}   \norm{u_{j+k}}{L^{p,t}(w)},
-\end{align*}
-and setting $p^*:=\min(p,q,1)$ we obtain
-\begin{align*}
-2^{js p^*}\norm{\Delta^\psi_j  u}{\mow{p}{t}{w}}^{p^*} \lesssim 2^{js p^*}\sum_{k = - k_0}^\infty \norm{\Delta^\psi_j  u_{j+k}}{\mow{p}{t}{w}}^{p^*}
- =  \sum_{k = - k_0}^\infty 2^{k(b-n -s) p^*} 2^{s p^* (j+k)}   \norm{u_{j+k}}{\mow{p}{t}{w}}^{p^*}.
-\end{align*}
-Hence, applying Lemma~\ref{eq:seriesineq}, it follows that
-\begin{align*}
-\norm{u}{\ibesw{[p,t]}{s}{q}{w}}  \lesssim  \norm{\left\{ \sum_{k = - k_0}^\infty 2^{k(b-n -s) p^*}  2^{s p^* (j+k)}   \norm{u_{j+k}}{\mow{p}{t}{w}}^{p^*}\right\}_{j\in\mathbb{N}_0}}{\ell^{q/p*}}^\frac{1}{p^*}\lesssim  \norm{\{2^{js} u_j\}_{j\in\mathbb{N}_0}}{\ell^{q}(\mow{p}{t}{w})}, 
-\end{align*}
-as desired.
- 
- 
- 
- 
- 
- 
- 
-For a family that is not necessarily finite we apply the finite family case to $U_N - U_M := \sum_{j=M+1}^N u_j$. For finite q this gives us 
-\begin{align*}
-\norm{U_N - U_M}{\besw{[p,t]}{s}{q}{w}} \lesssim \norm{\{2^{js} u_j\}_{M+1\leq j \leq N}}{\ell^{q}(\mow{p}{t}{w})} \leq \norm{\{2^{js} u_j\}_{j\in\naz}}{\ell^{q}(\mow{p}{t}{w})} < \infty
-\end{align*}
-and by the dominated convergence theorem the left side converges to 0 as $M,N \rightarrow \infty$. So $U_N$ converges in $\ibesw{[p,t]}{s}{q}{w}.$ If $q = \infty$ then $\{2^{j(s-\epsilon)}\} \in \ell^1 (\mow{p}{t}{w})$. By the case for finite q we have that $\sum_{j=0}^N u_j$ converges in $\ibesw{[p,t]}{s-\epsilon}{q}{w}$. Therefore it converges in $\mathcal{S}'$.
+ Then after using the Fatou property of  $\itlw{[p,t]}{s}{q}{w}$ we are finished.
 \end{proof}
-
-
-We know verify that the Fatou property holds in Triebel-Lizorkin and Besov spaces based in weighted Morrey spaces. 
-
-As in Remark \ref{fatou} (i) is easily verified using the definition of $\norm{\cdot}{M^p_t(w)}.$ Also (ii) holds by applying Fatou's lemma.
-
 \subsection{Variable Lebesgue spaces}
  
  Let  $\P_0$ be the collection of  measurable functions $\pp : \rn \rightarrow (0,\infty)$  such that
@@ -1157,8 +1055,6 @@ Let $ \pp\in \P_0^*$, $0 < q \le \infty$ and $s > n(1/\min(\tau_{\pp},q,1)-1)$. 
 where the implicit constant depends only on $n,$ $\A,$ $s,$ $\pp$ and  $q.$  An analogous statement holds true for $\ibes{\pp}{s}{q}$ with $s> n(1/\min(\tau_{\pp},1)-1)$.
 \end{theorem}
 
-To prove Theorem \ref{thm:Nikolskij:variable} we use the following lemma.
-
 \begin{lemma}\label{lemma:variableLebesgue}
 Let $p(\cdot) \in \mathcal{P}_0$, $A>0$, $R\geq 1$ and $d>b>\frac{n}{min(\tau_{p(\cdot)},1)}$. If $\phi \in \sw$ and $supp(\widehat{f}) \subset \{\xi: |\xi| \leq AR \}$. Then 
 \begin{equation}
@@ -1167,15 +1063,15 @@ Let $p(\cdot) \in \mathcal{P}_0$, $A>0$, $R\geq 1$ and $d>b>\frac{n}{min(\tau_{p
 with the implicit constant independent of $R$, $A$, $\phi$, and $f$.
 \end{lemma}
 
-We now prove Theorem \ref{thm:Nikolskij:variable}.
+
 
 \begin{proof}
-We first prove the theorem for finite families. Assume that $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ is such that $u_j \equiv 0$ for all but finitely many $j$. Let $D$, $\pp$, $q$, and $s$ be as in the hypotheses. Fix $0<r<min(1,p_-,q)$ such that $s>n(1/r-1)$; note that this is possible since $s>n(1/\min(\tau_{\pp},q,1)-1)$. Let $k_0 \in \ent$ be such that $2^{k_0 -1} < D\leq 2^{k_0},$ then  
+We first prove the theorem for finite families. Assume that $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ is such that $u_j \equiv 0$ for all but finitely many $j$. Let $D$, $\pp$, $q$, and $s$ be as in the hypotheses. Fix $0<r<min(1,p_-,q)$ such that $s>n(1/r-1)$; note that this is possible since $s>n(1/\min(\tau_{\pp},q,1)-1)$. Let $k_0 \in \ent$ be such that $2^{k_0 -1} < \A\leq 2^{k_0},$ then  
 \[
-\supp(\widehat{u_\ell}) \subset B(0, 2^\ell D) \subset B(0, 2^{\ell +k_0}) \quad \forall \ell \in \ent.
+\supp(\widehat{u_\ell}) \subset B(0, 2^\ell \A) \subset B(0, 2^{\ell +k_0}) \quad \forall \ell \in \ent.
 \]
 Define $u =\sum_{\ell \in \ent} u_\ell$ and let $\psi$ be as in the definition of $\tlw{\pp}{s}{q}{w}$. We have
-\begin{equation}\label{psi*u_variable}
+\begin{equation}\label{psi*u}
 \Delta^\psi_j u = \sum_{\ell \in \ent} \Delta^\psi_j u_\ell = \sum_{\ell = j - k_0}^\infty \Delta^\psi_j  u_\ell = \sum_{k = - k_0}^\infty \Delta^\psi_j u_{j+k}.
 \end{equation}
 We will use Lemma~\ref{coro:2:11} with $\phi(x) =  2^{jn} \psi(2^j x),$  $f = u_{j+k},$  $A= 2^{j}>0,$ and $R= 2^{k + k_0}.$ (Notice that $\supp(\widehat{u_{j+k}}) \subset  B(0, 2^{j} 2^{k + k_0})$ and, since $k \geq -k_0$, we get $R \geq 1$.) Fixing  $\ex>n/r$ and applying Lemma~\ref{coro:2:11}, we get
@@ -1187,24 +1083,24 @@ We will use Lemma~\ref{coro:2:11} with $\phi(x) =  2^{jn} \psi(2^j x),$  $f = u_
 \begin{align*}
 2^{js}|\Delta^\psi_j  u_{j+k}(x)| & \lesssim 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x),
 \end{align*}
-and then, recalling \eqref{psi*u_variable}, 
+and then, recalling \eqref{psi*u}, 
 \begin{align*}
 2^{js} |\Delta^\psi_j  u(x)| & \lesssim  \sum_{k =  - k_0}^\infty 2^{k n (\frac{1}{r} -1-\frac{s}{n})} 2^{s(j+k)}\M_r(u_{j+k})(x).
 \end{align*}
 Since $1/r -1-s/n < 0$,   Lemma~\ref{eq:seriesineq}  yields
 $$
-\norm{\{ 2^{js} |\Delta^\psi_j  u|\}_{j\in\ent}}{\Lp(\ell^{q})} \lesssim \norm{\{2^{js} \M_ru_j\}_{j\in\ent}}{\Lp(\ell^{q})}
+\norm{\{ 2^{js} |\Delta^\psi_j  u|\}_{j\in\ent}}{L^p(w)(\ell^{q})} \lesssim \norm{\{2^{js} \M_ru_j\}_{j\in\ent}}{L^p(w)(\ell^{q})}
 $$
 with an implicit constant independent of $\{u_j\}_{j\in \ent}.$
 Applying the weighted  Fefferman-Stein inequality  to the right-hand side of the last inequality leads to the desired estimate
 \begin{equation*}
-\norm{u}{\tl{\pp}{s}{q}} \lesssim \norm{\{2^{js}u_j\}_{j\in\ent}}{\Lp(\ell^{q})}.
+\norm{u}{\tlw{p}{s}{q}{w}} \lesssim \norm{\{2^{js}u_j\}_{j\in\ent}}{L^p(\ell^{q})}.
 \end{equation*}
 
-For the space $\bes{\pp}{s}{q}$, let $\A,$ $w,$ $p,$ $q$ and $s$ be as in the hypotheses and $k_0$ be as above. 
-Consider $\Delta^\psi_j  u_{j+k}$  in  \eqref{psi*u} and  apply  Lemma~\ref{lemma:variableLebesgue}  with $\phi(x)=2^{jn}\psi(2^{-j} x)$, $f= u_{j+k},$ $D=2^{j},$ $R=2^{k +  k_0}$,  $\ex>b$ and $  n /\min(1,p/\tau_w)<b<n+s;$ note that such $b$ exists since $s>\tau_p(w).$ We get
+For the space $\besw{\pp}{s}{q}$, let $\A,$ $w,$ $p,$ $q$ and $s$ be as in the hypotheses and $k_0$ be as above. 
+Consider $\Delta^\psi_j  u_{j+k}$  in  \eqref{psi*u} and  apply  Lemma~\ref{coro:2:12(1)}  with $\phi(x)=2^{jn}\psi(2^{-j} x)$, $f= u_{j+k},$ $A=2^{j},$ $R=2^{k +  k_0}$,  $\ex>b$ and $  n /\min(1,p/\tau_w)<b<n+s;$ note that such $b$ exists since $s>\tau_p(w).$ We get
 \begin{align*}
- \norm{\Delta^\psi_j  u_{j+k}}{\Lp}  \lesssim 2^{(k + k_0)(b-n)} 2^{- j  n} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi(2^{-j}\cdot)}{L^\infty} \norm{u_{j+k}}{\Lp}\sim 2^{k(b-n)}   \norm{u_{j+k}}{\Lp},
+ \norm{\Delta^\psi_j  u_{j+k}}{\Lp}  \lesssim 2^{(k + k_0)(b-n)} 2^{- j  n} \norm{(1 + |2^j \cdot|)^\ex 2^{jn}\psi(2^{-j}\cdot)}{L^\infty} \norm{u_{j+k}}{L^p(w)}\sim 2^{k(b-n)}   \norm{u_{j+k}}{\Lp},
 \end{align*}
 and setting $p^*:=\min(p_-,1)$ we obtain
 \begin{align*}
@@ -1237,7 +1133,7 @@ Because $\tl{\pp}{s}{q}$ is a quasi-Banach space it is complete so $U_N$ converg
 \norm{\sum_{j=0}^\infty}{\itl{\pp}{s}{q}} \lesssim \norm{\{2^{js} u_j\}}{\Lp(\ell^q)}.
 \end{equation}
 
-If $q=\infty,$  we use that $\{2^{(s-\varepsilon)j}u_j\}_{j\ge 0}$ and $\{2^{(s+\varepsilon)j}u_j\}_{j< 0}$ belong to $\ell^1(\Lp)$ for any $\varepsilon>0$ and apply Theorem~\ref{thm:Nikolskij:variable} under the case of finite $q$ to conclude that $\sum_{j=0}^Nu_j$ and $\sum_{j=-N}^{-1}u_j$ converge in $\bes{\pp}{s-\varepsilon}{1}$ and $\bes{\pp}{s+\varepsilon}{1},$ respectively (choosing $\varepsilon>0$ so that $s-\varepsilon>n(1/\min(\tau_{\pp},1)-1)$). Therefore, $U_N$ convergence in $\mathcal{S}'(\rn).$ Moreover, by applying the finite family case to $\{u_j\}_{-N\le j\le N},$ we have that $U_N\in \tl{\pp}{s}{\infty}$ and 
+If $q=\infty,$  we use that $\{2^{(s-\varepsilon)j}u_j\}_{j\ge 0}$ and $\{2^{(s+\varepsilon)j}u_j\}_{j< 0}$ belong to $\ell^1(\Lp)$ for any $\varepsilon>0$ and apply Theorem~\ref{thm:Nikolskij:weighted} under the case of finite $q$ to conclude that $\sum_{j=0}^Nu_j$ and $\sum_{j=-N}^{-1}u_j$ converge in $\bes{\pp}{s-\varepsilon}{1}$ and $\bes{\pp}{s+\varepsilon}{1},$ respectively (choosing $\varepsilon>0$ so that $s-\varepsilon>n(1/\min(\tau_{\pp},1)-1)$). Therefore, $U_N$ convergence in $\mathcal{S}'(\rn).$ Moreover, by  Theorem~\ref{thm:Nikolskij:weighted} applied to the finite sequence $\{u_j\}_{-N\le j\le N},$ we have that $U_N\in \tl{\pp}{s}{\infty}$ and 
 \[
 \norm{U_N}{\tl{\pp}{s}{\infty}}\lesssim \norm{\{2^{js} u_j\}_{-N\le j\le N}}{\Lp(\ell^\infty)}\le \norm{\{2^{js} u_j\}_{j\in \ent}}{\Lp(\ell^\infty)},
 \]
@@ -1247,8 +1143,6 @@ Since $\tl{\pp}{s}{\infty}$ has the Fatou property, we conclude that $\lim_{N\to
 \norm{\sum_{j\in\ent}u_j}{\tl{\pp}{s}{\infty}}\lesssim  \norm{\{2^{js} u_j\}_{j\in \ent}}{\Lp(\ell^\infty)}.
 \]
 \end{proof}
-
-To verify the Fatou property as stated in Remark \ref{fatou} (i) is clear from the definition of $\norm{\cdot}{L^{p(\cdot)}}$. Item (ii) is shown in in \cite[Theorem 2.61]{MR3026953}.
 
 As a model result the we state the Leibniz type rule for variable exponent Triebel-Lizorkin spaces.
 
@@ -1382,7 +1276,7 @@ Indeed, by using the Taylor expansion of $\widehat{f}$ and $\widehat{g}$ we obta
  \left\lfloor\gamma\right\rfloor + 1} \frac{\partial^\alpha \widehat{f}(c_1 \xi)}{\alpha !}\xi^\alpha \]
 and 
 \[\widehat{g}(\eta) = \sum_{\abs{\alpha}\leq \left\lfloor\gamma\right\rfloor} \frac{\partial^\alpha \widehat{g}(0)}{\alpha !}\eta^\alpha + \sum_{\abs{\alpha} = \left\lfloor\gamma\right\rfloor + 1} \frac{\partial^\alpha \widehat{g}(c_2 \eta)}{\alpha !}\eta^\alpha \]
-for some $0<c_1 , c_2 <1$. Then by using that $f,g \in \swz$ we have $\partial^\alpha \widehat{f}(0) = 0$ and $\partial^\alpha \widehat{g}(0) = 0$ for all $\alpha \in \mathbb{N}_0$. From this we obtain 
+for some $0<c_1 , c_2 <1$. Then by using that $f,g \in \swz$ we have $partial^\alpha \widehat{f}(0) = 0$ and $partial^\alpha \widehat{g}(0) = 0$ for all $\alpha \in \mathbb{N}_0$. From this we obtain 
 \begin{align*}
 \abs{\frac{1-e^{-t(\abs{\xi}^\gamma + \abs{\eta}^\gamma)}}{\abs{\xi}^\gamma + \abs{\eta}^\gamma}\widehat{f}(\xi)\widehat{g}(\eta) e^{2\pi i x\cdot (\xi + \eta)}} &\leq \sum_{\abs{\alpha} = \left\lfloor\gamma\right\rfloor + 1} \abs{\frac{1}{\abs{\xi}^\gamma} \frac{\partial^\alpha \widehat{f}(c_1 \xi)}{\alpha !}\xi^\alpha\frac{\partial^\alpha \widehat{g}(c_2 \eta)}{\alpha !}\eta^\alpha}, 
 \end{align*}
@@ -1395,7 +1289,7 @@ We now want to show that $\lambda^{-1}$ is a Coifman-Meyer multiplier; that is $
 If $\gamma$ is an even positive integer then $\lambda^{-1}$ satisfies the estimates \eqref{eq:CMm} with $m=-\gamma$ for all $\alpha,\beta\in\na_0^n.$ Then,  all estimates from Theorem~\ref{thm:CM:TL:B} hold for $T_{\lambda^{-1}}$  and therefore the desired estimates follow for $u_\infty$ with constants independent of $f,g\in\swz.$ 
 
 Let $p_1,p_2,p,q, w_1,w_2$ be as in the hypotheses.  If $\gamma>0$ and $\gamma$ is not an even integer, then $\lambda^{-1}$ satisfies the estimates \eqref{eq:CMm} with $m=-\gamma$ as long as  $\alpha,\beta\in\na_0^n$ are such that $\abs{\alpha}<\gamma$ and $\abs{\beta}<\gamma;$ in particular, $\lambda^{-1}$ satisfies \eqref{eq:CMm} with $m=-\gamma$ for $\alpha,\beta\in \na_0^n$ such that $\abs{\alpha+\beta}<\gamma.$
-In view of the remarks following the proof of Theorem \ref{thm:CM:TL:B}, all estimates from Theorem~\ref{thm:CM:TL:B} hold for $T_{\lambda^{-1}}$ if $\gamma\ge \gamt$ in the context of Triebel--Lizorkin spaces and if $\gamma\ge \gamb$ in the context of Besov spaces; as a consequence, the desired estimates follow for $u_\infty$ with constants independent of $f,g\in\swz$ for such values of $\gamma.$
+In view of Remark~\ref{re:numderiv2}, all estimates from Theorem~\ref{thm:CM:TL:B} hold for $T_{\lambda^{-1}}$ if $\gamma\ge \gamt$ in the context of Triebel--Lizorkin spaces and if $\gamma\ge \gamb$ in the context of Besov spaces; as a consequence, the desired estimates follow for $u_\infty$ with constants independent of $f,g\in\swz$ for such values of $\gamma.$
 
 
 On the other hand, if $0<\gamma<\gamt$ in the Triebel-Lizorkin space setting or $0<\gamma<\gamb$ in the Besov space setting, and $\gamma$ is not an even positive integer, consider  $h\in\Ss(\re^{2n}) $ such that $\supp(h)\subset \Ss_{\delta/2}$ and $h\equiv 1$ on $\Ss_{\delta}.$ Then, for $f,g\in \swz$ such that $\fhat(\xi)\ghat(\eta)$ is supported in $\Ss_{\delta}$ we have $h(\xi,\eta)\fhat(\xi)\ghat(\eta)=\fhat(\xi)\ghat(\eta);$   therefore, $T_{\lambda^{-1}}(f,g)=T_{\Lambda}(f,g),$ where
@@ -1404,3 +1298,4 @@ $\Lambda(\xi,\eta)=h(\xi,\eta)/(\abs{\xi}^\gamma+\abs{\eta}^\gamma).$ The multip
 
 \begin{proof}[Proof of Theorem~\ref{thm:scattering2}] We proceed as in the proof of Theorem~\ref{thm:scattering} with $\lambda(\xi,\eta)=(1+\abs{\xi}^2)^{\gamma /2}+(1+\abs{\eta}^2)^{\gamma /2}$ and an application of  Theorem~\ref{thm:ICM:TL:B}.  
 \end{proof}
+\end{document}
