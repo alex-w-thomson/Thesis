@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.7)  6 APR 2019 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.7)  7 APR 2019 20:31
 entering extended mode
 **./etdrtemplate.tex
 (etdrtemplate.tex
@@ -777,22 +777,22 @@ LaTeX Warning: Label `KP:Hardy' multiply defined.
 )
 \openout1 = `etdrtemplate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 318.
-LaTeX Font Info:    ... okay on input line 318.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 318.
-LaTeX Font Info:    ... okay on input line 318.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 318.
-LaTeX Font Info:    ... okay on input line 318.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 318.
-LaTeX Font Info:    ... okay on input line 318.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 318.
-LaTeX Font Info:    ... okay on input line 318.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 318.
-LaTeX Font Info:    ... okay on input line 318.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 318.
-LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 322.
+LaTeX Font Info:    ... okay on input line 322.
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 318.
+Package hyperref Info: Link coloring ON on input line 322.
 
 ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -804,9 +804,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 318.
-LaTeX Info: Redefining \pageref on input line 318.
-LaTeX Info: Redefining \nameref on input line 318.
+LaTeX Info: Redefining \ref on input line 322.
+LaTeX Info: Redefining \pageref on input line 322.
+LaTeX Info: Redefining \nameref on input line 322.
  (etdrtemplate.out) (etdrtemplate.out)
 \@outlinefile=\write3
 \openout3 = `etdrtemplate.out'.
@@ -885,12 +885,12 @@ Non-PDF special ignored!
  identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.364 \begin{abstract}
+l.368 \begin{abstract}
                        [1] (abstract.tex)pdfTeX warning (ext4): destination wit
 h the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.376 \end{abstract}
+l.380 \end{abstract}
                      [1] (etdrtemplate.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
@@ -915,8 +915,11 @@ File: uesint.fd
 [6
 
 ]
+
+LaTeX Warning: Reference `' on page vii undefined on input line 30.
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
- ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -925,7 +928,8 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 \tf@toc=\write4
 \openout4 = `etdrtemplate.toc'.
 
- [7] (etdrtemplate.lof)
+
+[7] (etdrtemplate.lof)
 \tf@lof=\write5
 \openout5 = `etdrtemplate.lof'.
 
@@ -953,73 +957,80 @@ Chapter 2.
 [6
 
 
-] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (14.1283pt too wide) in paragraph at lines 147--148
-[]\OT1/cmr/m/n/12 The weighted \OT1/cmr/m/it/12 ho-mo-ge-neous Triebel-Lizorkin
- space $[]\U/matha/m/n/12 p\OML/cmm/m/it/12 w\U/matha/m/n/12 q$ \OT1/cmr/m/n/12
- con-sists of all $\OML/cmm/m/it/12 f \U/matha/m/n/12 P []p[]q{\OMS/cmsy/m/n/12
- P\U/matha/m/n/12 p[]q$
+] [7]
+
+Package natbib Warning: Citation `MR1682725' on page 8 undefined on input line 
+43.
+
+
+Package natbib Warning: Citation `MR2030573' on page 8 undefined on input line 
+43.
+
+[8]
+Overfull \hbox (3.37138pt too wide) in paragraph at lines 60--65
+[]\U/matha/m/n/12 p\OT1/cmr/m/n/12 2[]\OML/cmm/m/it/12 \U/matha/m/n/12 q[]p\OM
+L/cmm/m/it/12 \U/matha/m/n/12 q  \OML/cmm/m/it/12 e[][]\U/matha/m/n/12 p\OT1/
+cmr/m/n/12 2[]\OML/cmm/m/it/12 \U/matha/m/n/12 q[]p\OML/cmm/m/it/12 \U/matha/
+m/n/12 q$ \OT1/cmr/m/n/12 and $[]\U/matha/m/n/12 p\OML/cmm/m/it/12 \U/matha/m/
+n/12 q  []p\OT1/cmr/m/n/12 2[]\OML/cmm/m/it/12 \U/matha/m/n/12 q[]p\OML/cmm/m
+/it/12 \U/matha/m/n/12 q  \OML/cmm/m/it/12 e[][]\U/matha/m/n/12 p\OT1/cmr/m/n
+/12 2[]\OML/cmm/m/it/12 \U/matha/m/n/12 q[]p\OML/cmm/m/it/12 \U/matha/m/n/12 
+q\OML/cmm/m/it/12 :$
  []
 
-[13] [14]
-Overfull \hbox (0.75194pt too wide) in paragraph at lines 209--209
-[][]\OT1/cmr/bx/n/12 Nikol'skij rep-re-sen-ta-tions for weighted ho-mo-ge-neous
- and in-ho-mo-ge-neous Triebel-
+[9] [10]
+Overfull \hbox (10.70667pt too wide) in paragraph at lines 111--112
+[]\OT1/cmr/m/n/12 The Muck-en-houpt classes arise in the study of bound-ed-ness
+ prop-er-ties of Hardy-Littlewood
  []
 
-[15] [16] [17] [18]
-Overfull \hbox (2.03561pt too wide) detected at line 335
+[11] [12] [13] [14] [15] [16] [17] [18]
+Overfull \hbox (2.03561pt too wide) detected at line 336
 []
  []
 
 [19] [20]
-Overfull \hbox (0.63261pt too wide) in paragraph at lines 386--386
+Overfull \hbox (0.63261pt too wide) in paragraph at lines 384--384
 []\OT1/cmr/bx/n/17.28 Leibniz-type rules in weighted Triebel-Lizorkin and
  []
 
-[21] [22] [23] [24] [25] [26] [27] [28] [29] [30]
-Overfull \hbox (14.9844pt too wide) in paragraph at lines 625--626
+[21]
+
+LaTeX Warning: Reference `TL&Hardy' on page 22 undefined on input line 412.
+
+[22] [23] [24]
+
+LaTeX Warning: Reference `TL&Hardy' on page 25 undefined on input line 469.
+
+[25] [26] [27] [28] [29] [30]
+Overfull \hbox (14.9844pt too wide) in paragraph at lines 623--624
 []\OT1/cmr/m/n/12 Nikol'skij rep-re-sen-ta-tions for weighted Triebel--Lizorkin
  and Besov spaces (The-o-rem [][]2.1.2[][][]). 
  []
 
 [31] [32] [33]
-
-LaTeX Warning: Reference `thm:Nikolskij:Lorentz:weighted' on page 34 undefined 
-on input line 699.
-
-
-LaTeX Warning: Reference `item:thh:Nikolskij:Lorentz:TL' on page 34 undefined o
-n input line 705.
+Overfull \hbox (4.54366pt too wide) in paragraph at lines 702--705
+[]\OT1/cmr/m/n/12 For Part [][]2.3.1[][][], let $\OML/cmm/m/it/12 D;$ $w;$ $p;$
+ $q$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 t$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/1
+2 s$ \OT1/cmr/m/n/12 be as in the hy-pothe-ses. Fix $0 \U/matha/m/n/12   \OML/c
+mm/m/it/12 r \U/matha/m/n/12   []p\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; p\U/matha
+/m/n/12 {\OML/cmm/m/it/12 []; q; t\U/matha/m/n/12 q$
+ []
 
 [34] [35]
-
-LaTeX Warning: Reference `item:thh:Nikolskij:Lorentz:B' on page 36 undefined on
- input line 740.
-
-
-LaTeX Warning: Reference `coro:2:12(1)_Lorentz' on page 36 undefined on input l
-ine 741.
-
-
-Overfull \hbox (12.3133pt too wide) detected at line 744
+Overfull \hbox (12.3133pt too wide) detected at line 742
 []
  []
 
 
-Overfull \hbox (27.77501pt too wide) in paragraph at lines 763--776
+Overfull \hbox (27.77501pt too wide) in paragraph at lines 761--774
 \OT1/cmr/m/n/12 We need to check that the func-tions $\OML/cmm/m/it/12 U[] \U/m
 atha/m/n/12  [][]$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 U \U/matha/m/n/12  \OT1
 /cmr/m/n/12 0$, and $\OML/cmm/m/it/12 g \U/matha/m/n/12  [][]$
  []
 
-[36]
-
-LaTeX Warning: Reference `thm:Nikolskij:Lorentz:weighted' on page 37 undefined 
-on input line 783.
-
-[37] [38] [39] [40] [41] [42]
-Overfull \hbox (14.69595pt too wide) detected at line 1044
+[36] [37] [38] [39] [40] [41] [42]
+Overfull \hbox (14.69595pt too wide) detected at line 1042
 []
  []
 
@@ -1044,12 +1055,6 @@ Package natbib Warning: Citation `MT1' on page 60 undefined on input line 34.
 
 
 Package natbib Warning: Citation `MT2' on page 60 undefined on input line 34.
-
-
-LaTeX Warning: Reference `critical_est' on page 60 undefined on input line 46.
-
-
-LaTeX Warning: Reference `critical_est' on page 60 undefined on input line 46.
 
 
 LaTeX Warning: Reference `thm:critical_besov' on page 60 undefined on input lin
@@ -1084,111 +1089,167 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Warning: Reference `coro:main1' on page 63 undefined on input line 125.
 
-[63]
+[63] [64] [65]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 133.
+(hyperref)                removing `math shift' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 133.
+(hyperref)                removing `subscript' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 133.
+(hyperref)                removing `\sigma' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 133.
+(hyperref)                removing `superscript' on input line 156.
 
 
-LaTeX Warning: Reference `sec:decomp' on page 64 undefined on input line 142.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 156.
 
-[64]
-Overfull \hbox (26.16676pt too wide) detected at line 164
+
+Overfull \hbox (26.16676pt too wide) detected at line 189
 []
  []
 
+[66]
 
-LaTeX Warning: Reference `lem:nikol' on page 65 undefined on input line 170.
+LaTeX Warning: Reference `lem:nikol' on page 67 undefined on input line 195.
 
-[65]
+[67]
 
-LaTeX Warning: Reference `remark:locint' on page 66 undefined on input line 192
+LaTeX Warning: Reference `remark:locint' on page 68 undefined on input line 217
 .
 
-[66] [67] [68]
+[68] [69]
 
-LaTeX Warning: Reference `eq:Mtau:in:Lp' on page 69 undefined on input line 259
+LaTeX Warning: Reference `eq:Mtau:in:Lp' on page 70 undefined on input line 284
 .
 
-[69]
+[70]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 274.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 274.
+(hyperref)                removing `math shift' on input line 299.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 274.
+(hyperref)                removing `subscript' on input line 299.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 274.
+(hyperref)                removing `\sigma' on input line 299.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 274.
+(hyperref)                removing `superscript' on input line 299.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 276.
+(hyperref)                removing `math shift' on input line 299.
+
+
+LaTeX Warning: Reference `sec:T1' on page 71 undefined on input line 314.
+
+[71] [72]
+
+Package natbib Warning: Citation `MR0380394' on page 73 undefined on input line
+ 353.
+
+
+LaTeX Warning: Reference `lem:estimateKk' on page 73 undefined on input line 35
+8.
+
+
+LaTeX Warning: Reference `lem:int:M:N:k' on page 73 undefined on input line 358
+.
+
+
+LaTeX Warning: Reference `sec:app' on page 73 undefined on input line 358.
+
+
+Overfull \hbox (9.00641pt too wide) detected at line 364
+[]
+ []
+
+[73] [74]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 398.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 276.
+(hyperref)                removing `subscript' on input line 398.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 276.
+(hyperref)                removing `\sigma' on input line 398.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 276.
+(hyperref)                removing `superscript' on input line 398.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 276.
+(hyperref)                removing `math shift' on input line 398.
+
+
+LaTeX Warning: Reference `lem:T3' on page 75 undefined on input line 407.
+
+[75]
+
+LaTeX Warning: Reference `eq:Lp:hp' on page 76 undefined on input line 443.
+
+
+LaTeX Warning: Reference `eq:hp:scale' on page 76 undefined on input line 447.
+
+[76]
+
+LaTeX Warning: Reference `lem:T3' on page 77 undefined on input line 457.
+
+
+LaTeX Warning: Reference `eq:supp1' on page 77 undefined on input line 474.
+
+
+LaTeX Warning: Reference `eq:supp2' on page 77 undefined on input line 474.
+
+[77]
+
+LaTeX Warning: Reference `lem:nikol' on page 78 undefined on input line 482.
+
+
+LaTeX Warning: Reference `sec:T1' on page 78 undefined on input line 482.
+
+
+LaTeX Warning: Reference `eq:besovlh' on page 78 undefined on input line 482.
+
+
+LaTeX Warning: Reference `' on page 78 undefined on input line 490.
 
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <17.28> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 284.
-) [70] (etdrtemplate.bbl [71
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 493.
+) [78] (etdrtemplate.bbl [79
 
 
-] [72] [73] [74] [75]) (appendixA.tex [76]
+] [80] [81] [82] [83]) (appendixA.tex [84]
 Appendix A.
 )
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 548.
-[77
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 552.
+[85
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 548.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 552.
  (etdrtemplate.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 548.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 548.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 552.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 552.
 Package rerunfilecheck Info: File `etdrtemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 0EF86CCA7651F7A97F77DCC42A1F3E3E;2582.
+(rerunfilecheck)             Checksum: B0845E152AB1C2A937938B918F85C31D;2630.
 
 
 LaTeX Warning: There were undefined references.
@@ -1196,13 +1257,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 548.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 552.
  ) 
 Here is how much of TeX's memory you used:
- 9521 strings out of 492942
- 139263 string characters out of 3126094
- 241928 words of memory out of 3000000
- 12940 multiletter control sequences out of 15000+200000
+ 9546 strings out of 492942
+ 139404 string characters out of 3126094
+ 241482 words of memory out of 3000000
+ 12958 multiletter control sequences out of 15000+200000
  25226 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,12n,35p,1720b,623s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1232,9 +1293,9 @@ e1/mathb6.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/mathabx-type1/mathb8.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/mathabx-type1/mathx10.pfb><C:/Users/laure/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on etdrtemplate.pdf (85 pages, 619364 bytes).
+Output written on etdrtemplate.pdf (93 pages, 657214 bytes).
 PDF statistics:
- 1241 PDF objects out of 1440 (max. 8388607)
- 288 named destinations out of 1000 (max. 500000)
+ 1299 PDF objects out of 1440 (max. 8388607)
+ 295 named destinations out of 1000 (max. 500000)
  265 words of extra memory for PDF output out of 10000 (max. 10000000)
 

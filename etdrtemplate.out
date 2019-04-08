@@ -7,7 +7,7 @@
 \BOOKMARK [0][-]{chapter.2}{Weighted Leibniz-type rules and applications to scattering properties of PDEs}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Preliminaries}{chapter.2}% 8
 \BOOKMARK [2][-]{subsection.2.1.1}{Coifman-Meyer Multipliers}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.2}{Function spaces}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.2}{The scale of weighted Triebel-Lizorkin and Besov spaces}{section.2.1}% 10
 \BOOKMARK [1][-]{section.2.2}{Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}{chapter.2}% 11
 \BOOKMARK [2][-]{subsection.2.2.1}{Homogeneous Leibniz-type rules}{section.2.2}% 12
 \BOOKMARK [2][-]{subsection.2.2.2}{Connection to Kato-Ponce inequalities}{section.2.2}% 13
@@ -26,8 +26,8 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{Estimates for T1}{section.3.3}% 26
 \BOOKMARK [2][-]{subsection.3.3.2}{Estimates for T2}{section.3.3}% 27
 \BOOKMARK [2][-]{subsection.3.3.3}{Estimates for T3}{section.3.3}% 28
-\BOOKMARK [1][-]{section.3.4}{Proof of Theorem }{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.5}{Proof of Corollary }{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.4}{Proof of Theorem 3.1.1 }{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Proof of Corollary ??}{chapter.3}% 30
 \BOOKMARK [1][-]{section.3.6}{\200}{chapter.3}% 31
 \BOOKMARK [0][-]{section*.7}{Bibliography}{}% 32
 \BOOKMARK [0][-]{appendix.A}{Title for This Appendix}{}% 33

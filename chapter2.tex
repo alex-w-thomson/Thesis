@@ -40,7 +40,7 @@ We say $\sigma = \sigma(\xi,\eta)$, $\xi,\eta\in\rn$, is an \textit{inhomogeneou
 \end{dfn}
 Bilinear multiplier operators associated to Coifman-Meyer multipliers of order 0 have been well studied. Such operators are examples of bilinear Calder\'on-Zygmund operators. As a consequence they are bounded in a variety of function spaces; in particular they satisfy
 \[ \norm{T_\sigma(f,g)}{L^p}\lesssim \norm{f}{L^{p_1}}\norm{g}{L^{p_2}}, \]
-where $\sigma$ is a Coifman-Meyer multiplier of order 0, $1/p = 1\p_1 + 1\p_2$, and $1<p_1,p_2<\infty$. The reader is referred to Coifman-Meyer \cite{MR518170} for various estimates and background information for Coifman-Meyer multiplier operators, and to David-Journ\'{e} \cite{MR763911}, Grafakos-Torres \cite{MR1880324}, and Kenig-Stein \cite{MR1682725} for the development of the Calder\'on-Zygmund theory. Estimatex in weighted Lebesgue spaces fo bilinear Calder\'on-Zygmund operators, and in particular for Coifman-Meyer multiplier operators of order 0, have been obtained in Grafakos-Torres \cite{MR1947875}, Grafakos-Martell \cite{MR2030573}, and Lerner et al. \cite{MR2483720}. 	
+where $\sigma$ is a Coifman-Meyer multiplier of order 0, $1/p = 1/p_1 + 1/p_2$, and $1<p_1,p_2<\infty$. The reader is referred to Coifman-Meyer \cite{MR518170} for various estimates and background information for Coifman-Meyer multiplier operators, and to David-Journ\'{e} \cite{MR763911}, Grafakos-Torres \cite{MR1880324}, and Kenig-Stein \cite{MR1682725} for the development of the Calder\'on-Zygmund theory. Estimatex in weighted Lebesgue spaces fo bilinear Calder\'on-Zygmund operators, and in particular for Coifman-Meyer multiplier operators of order 0, have been obtained in Grafakos-Torres \cite{MR1947875}, Grafakos-Martell \cite{MR2030573}, and Lerner et al. \cite{MR2483720}. 	
 
 
 %For $j\in\mathbb{Z}$ and $\varphi \in \sw$ such that $\text{supp}(\varphi) \subset \{\xi : a < |\xi| < b \}$ the operator $\Delta^\varphi_j$ is defined so that $\widehat{\Delta^\varphi_j f}(\xi) = \varphi(2^{-j})\widehat{f}(\xi)$. 
@@ -172,13 +172,12 @@ with appropriate changes if $q=\infty$.
 \end{itemize}
 \end{dfn}
 
-The definitions above are independent of the choice of $\varphi$ and $\psi$. Triebel-Lizorkin and Besov spaces are quasi-Banach spaces and if $p,q \geq 1$ they are Banach spaces. These spaces provide a unified framework that includes a variety of other spaces such as weighted Lebesgue, Hardy, and Sobolev spaces.  For instance the following equalities equivalent norms: 
+The definitions above are independent of the choice of $\varphi$ and $\psi$. Triebel-Lizorkin and Besov spaces are quasi-Banach spaces and if $p,q \geq 1$ they are Banach spaces. These spaces provide a unified framework that includes a variety of other spaces such as weighted Lebesgue, Hardy, and Sobolev spaces.  For instance the following equalities hold with equivalent norms: 
 \begin{align*}
- \itlw{p}{0}{2}{w} &= H^p (w) \text{ for } 0<p<\infty, \quad w\in A_\infty, 
-
- \itlw{p}{0}{2}{w} &= L^p(w) \simeq H^p(w) \text{ for } 1<p<\infty, \quad w\in A_p, 
-
- \itlw{p}{s}{2}{w} &= \dot{W}^{s,p}(w) \text{ for } 1<p<\infty, \quad w\in A_p,
+ \tlw{p}{0}{2}{w} &= H^p (w) \text{ for } 0<p<\infty, \quad w\in A_\infty, \\
+ \tlw{p}{0}{2}{w} &= L^p(w) \simeq H^p(w) \text{ for } 1<p<\infty, \quad w\in A_p, \\
+ \tlw{p}{s}{2}{w} &= \dot{W}^{s,p}(w) \text{ for } 1<p<\infty, \quad w\in A_p, \\
+ \itlw{p}{}{2}{w} &= h^p(w) \text{ for } 0<p<\infty, \quad w\in A_\infty, 
 \end{align*}
 where $H^p(w)$ and $\dot{W}^{s,p}(w)$ are, respectively, a weighted Hardy space and a weighted Sobolev space, whose definitions we next recall.
 Let $\Psi\in \sw$ be such that $\int_{\rn}\Psi(x)\dx\neq 0.$ Given $0<p<\infty,$ the  Hardy space $H^p(w)$ is defined as 
@@ -635,7 +634,7 @@ where $f^*_w(\tau)=\inf\{\lambda\ge 0:w_f(\lambda)\le \tau\}$ with
 $w_f(\lambda)=w(\{x\in\rn : \abs{f(x)}>\lambda\}).$ 
 In the case that $t=\infty$, $\|f\|_{\lebw{p,t}{w}}= \sup_{t>0}t^{\frac{1}{p}}f_w^*(t)$. We note that for $p=t$ we have $\lebw{p,p}{w} = \lebw{p}{w}$ and $\lebw{1,\infty}{w}$ is the weighted weak $L^1(w)$ space. For more details on these spaces and their properties see Hunt \cite{MR0223874}. 
 
-We now turn our attention to the analogues to properties (\ref{item:first})-(\ref{item:last}) in the setting of weighted Lorrentz-based Triebel-Lizorkin and Besov spaces. 
+We now turn our attention to the analogues to properties (\ref{item:first})-(\ref{item:last}) in the setting of weighted Lorentz-based Triebel-Lizorkin and Besov spaces. 
 
 Property (\ref{item:first}) follows from the work of Hunt \cite{MR0223874} that the quasi norm $||\cdot||_{\lebw{p,t}{w}}$ is comparable to a quasi-norm $|||\cdot|||_{\lebw{p,t}{w}}$ that is subadditive. Therefore we have that the norms $|||\cdot|||_{\tl{(p,t)}{s}{q}}$ and $||\cdot||_{\tl{(p,t)}{s}{q}}$ are comparable where $|||\cdot|||_{\tl{(p,t)}{s}{q}}$ is the quasi-norm with $||\cdot||_{\lebw{p,t}{w}}$ replaced by $|||\cdot|||_{\lebw{p,t}{w}}$ and for some $r>0$ $|||f+g|||^r_{\tl{(p,t)}{s}{q}} \leq |||f|||^r_{\tl{(p,t)}{s}{q}} + |||g|||^r_{\tl{(p,t)}{s}{q}}$. 
 
@@ -650,22 +649,22 @@ in particular, if $0<r<p/\tau_w$ and $0<r\le t,$ it holds that
 \begin{equation*}
 \norm{\M_r(f)}{\lebw{p,t}{w}}\lesssim \norm{f}{\lebw{p,t}{w}}\quad \forall f\in \lebw{p,t}{w}. 
 \end{equation*}
-This is established by the extrapolation theorem \cite[Theorem 4.10 and comments on page 70]{MR2797562} when $r=1,$ $1<p<\infty,$  $1\le t\le \infty$ and $1<q\le \infty.$ The remaining cases are shown using the previous cases and the following scaling property for Lorrentz spaces: For $0<s<\infty$ $\norm{\abs{f}^s}{\lebw{p,t}{w}}=\norm{f}{\lebw{sp,st}{w}}^s$.
+This is established by the extrapolation theorem \cite[Theorem 4.10 and comments on page 70]{MR2797562} when $r=1,$ $1<p<\infty,$  $1\le t\le \infty$ and $1<q\le \infty.$ The remaining cases are shown using the previous cases and the following scaling property for Lorentz spaces: For $0<s<\infty$ $\norm{\abs{f}^s}{\lebw{p,t}{w}}=\norm{f}{\lebw{sp,st}{w}}^s$.
 
-The substitute for property \ref{item:last} is the following Nikols'kij representation in weighted Lorrentz spaces.
+The substitute for property \ref{item:last} is the following Nikols'kij representation in weighted Lorentz spaces.
 
-\begin{theorem}\label{thm:Nikolskij:Lorrentz:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \naz} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
+\begin{theorem}\label{thm:Nikolskij:Lorentz:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \naz} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
 \begin{equation*}
 \supp(\widehat{u_j}) \subset B(0, \A\, 2^j ) \quad \forall j \in \naz.
 \end{equation*}
 If $w\in A_\infty,$ then the following holds:  
 \begin{enumerate}
-\item[(i)]\label{item:thh:Nikolskij:Lorrentz:TL} Let $0 < p < \infty$, $0 < t,q \leq \infty$ and $s > \left(\frac{1}{\min(p/\tau_w,t,q,1)} - 1 \right)$. If $\norm{\{2^{js} u_j\}_{j\in\ent}}{L^{(p,t)}(w)(\ell^{q})} < \infty$, then the series $\sum_{j \in \naz} u_j$ converges in $\itlw{(p,t)}{s}{q}{w}$ (in $\mathcal{S}'(\rn)$ if $q=\infty$) and 
+\item[(i)]\label{item:thh:Nikolskij:Lorentz:TL} Let $0 < p < \infty$, $0 < t,q \leq \infty$ and $s > \left(\frac{1}{\min(p/\tau_w,t,q,1)} - 1 \right)$. If $\norm{\{2^{js} u_j\}_{j\in\ent}}{L^{(p,t)}(w)(\ell^{q})} < \infty$, then the series $\sum_{j \in \naz} u_j$ converges in $\itlw{(p,t)}{s}{q}{w}$ (in $\mathcal{S}'(\rn)$ if $q=\infty$) and 
 \begin{equation*}
 \norm{\sum_{j \in \ent} u_j}{\itlw{(p,t)}{s}{q}{w}} \lesssim  \norm{\{2^{js} u_j\}_{j\in\naz}}{L^{(p,t)}(w)(\ell^{q})},
 \end{equation*}
 where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and  $q.$
-\item[(ii)]\label{item:thh:Nikolskij:Lorrentz:B} Let $0 < p, q \leq \infty$ and $s > \tau_{p,t}(w)$. If $\norm{\{2^{js} u_j\}_{j\in\naz}}{\ell^{q}(L^{(p,t)}(w))} < \infty$, then the series $\sum_{j \in \naz} u_j$ converges in  $\ibesw{(p,t)}{s}{q}{w}$ (in $\mathcal{S}'(\rn)$ if $q=\infty$) and 
+\item[(ii)]\label{item:thh:Nikolskij:Lorentz:B} Let $0 < p, q \leq \infty$ and $s > \tau_{p,t}(w)$. If $\norm{\{2^{js} u_j\}_{j\in\naz}}{\ell^{q}(L^{(p,t)}(w))} < \infty$, then the series $\sum_{j \in \naz} u_j$ converges in  $\ibesw{(p,t)}{s}{q}{w}$ (in $\mathcal{S}'(\rn)$ if $q=\infty$) and 
 \begin{equation*}
 \norm{\sum_{j \in \ent} u_j}{\ibesw{(p,t)}{s}{q}{w}} \lesssim  \norm{\{2^{js} u_j\}_{j\in\naz}}{\ell^{q}(L^{(p,t)}(w))},
 \end{equation*}
@@ -673,9 +672,9 @@ where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and $q.$
 \end{enumerate}
 \end{theorem}
 
-To prove Theorem \ref{thm:Nikolskij:Lorrentz:weighted} we make use of the following Lemma.
+To prove Theorem \ref{thm:Nikolskij:Lorentz:weighted} we make use of the following Lemma.
 
-\begin{lemma}\label{coro:2:12(1)_Lorrentz}
+\begin{lemma}\label{coro:2:12(1)_Lorentz}
 Suppose $w\in A_\infty,$ $0 < p \leq \infty$, $A > 0$, $R \geq 1,$  and $\ex > b > n/ \min(1,p/\tau_w,t).$  If $\phi \in \sw$ and $f$ is such that $\supp(\widehat{f}) \subset \{\xi\in\rn:\abs{\xi}\le DR\}$, it holds that
 \begin{equation*}
 \norm{\phi * f}{\lebw{p,t}{w}} \lesssim R^{b - n} D^{-n} \norm{(1 + |D \cdot|^\ex) \phi}{L^\infty} \norm{f}{\lebw{p,t}{w}},

@@ -4,10 +4,10 @@
 \contentsline {chapter}{\numberline {2}Weighted Leibniz-type rules and applications to scattering properties of PDEs}{6}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Preliminaries}{7}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}Coifman-Meyer Multipliers}{8}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Function spaces}{10}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.2}The scale of weighted Triebel-Lizorkin and Besov spaces}{10}{subsection.2.1.2}% 
 \contentsline {subsubsection}{Weighted spaces}{10}{section*.4}% 
-\contentsline {subsubsection}{Triebel-Lizorkin and Besov spaces}{12}{section*.5}% 
-\contentsline {subsubsection}{Nikol'skij representations for weighted homogeneous and inhomogeneous Triebel-Lizorkin and Besov spaces}{15}{section*.6}% 
+\contentsline {subsubsection}{Weighted Triebel-Lizorkin and Besov spaces}{12}{section*.5}% 
+\contentsline {subsubsection}{Nikol'skij representations for weighted Triebel-Lizorkin and Besov spaces}{15}{section*.6}% 
 \contentsline {section}{\numberline {2.2}Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}{21}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Homogeneous Leibniz-type rules}{21}{subsection.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.2}Connection to Kato-Ponce inequalities}{24}{subsection.2.2.2}% 
@@ -23,11 +23,11 @@
 \contentsline {section}{\numberline {3.2}Preliminaries}{61}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Marchall's inequality for bilinear pseudodiffernetial operators}{61}{subsection.3.2.1}% 
 \contentsline {section}{\numberline {3.3}Decomposition of $T_\sigma $ and strategy for the proof of Theorem \ref {thm:main1}}{64}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Estimates for $T_{\sigma _1}$}{64}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Estimates for $T_{\sigma _2}$}{70}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Estimates for $T_{\sigma _3}$}{70}{subsection.3.3.3}% 
-\contentsline {section}{\numberline {3.4}Proof of Theorem }{70}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Proof of Corollary }{70}{section.3.5}% 
-\contentsline {section}{\numberline {3.6}\IeC {\textbullet }}{70}{section.3.6}% 
-\contentsline {chapter}{Bibliography}{71}{section*.7}% 
-\contentsline {chapter}{\numberline {A}Title for This Appendix}{77}{appendix.A}% 
+\contentsline {subsection}{\numberline {3.3.1}Estimates for $T_{\sigma ^1}$}{66}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Estimates for $T_{\sigma ^2}$}{71}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Estimates for $T_{\sigma ^3}$}{75}{subsection.3.3.3}% 
+\contentsline {section}{\numberline {3.4}Proof of Theorem \ref {thm:main1} }{78}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Proof of Corollary \ref {}}{78}{section.3.5}% 
+\contentsline {section}{\numberline {3.6}\IeC {\textbullet }}{78}{section.3.6}% 
+\contentsline {chapter}{Bibliography}{79}{section*.7}% 
+\contentsline {chapter}{\numberline {A}Title for This Appendix}{85}{appendix.A}% 

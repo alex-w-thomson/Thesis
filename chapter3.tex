@@ -43,7 +43,7 @@ Let $0<p<\infty$ and  $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \inf
 where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively. Moreover,  if there exits $\varepsilon>0$ such that the Fourier transform of  $\sigma(\cdot,\xi,\eta)$ is  supported outside the set  $\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\eta},$ then \eqref{eq:main1} holds for any $s\in\re.$
 \end{theorem}
 
-Results related to estimate \ref{critical_est} were proved for the forbidden class $BS^0_{1,1}$ in Koezuka-Timita \cite{MR3750316} and Naibo \citep{MR3393696}. Concerning bilinear pseudodifferential operators with symbols belonging to the subcritical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\leq p_1,p_2,p \leq \infty$ ($1 < p_1,p_2,p < \infty$ when $\rho = \delta = 0$) estimate \ref{critical_est} was shown in Naibo \citep{MR3393696} Theorem 1.3. Theorem \ref{thm:critical_besov} extends this result to the critical classes and allows for the indices to be in the wider range $(0,\infty)$. 
+Results related to estimate \ref{eq:main1} were proved for the forbidden class $BS^0_{1,1}$ in B\'enyi \cite{MR1996120}, Koezuka-Timita \cite{MR3750316}, and Naibo \citep{MR3393696}. Concerning bilinear pseudodifferential operators with symbols belonging to the subcritical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\leq p_1,p_2,p \leq \infty$ ($1 < p_1,p_2,p < \infty$ when $\rho = \delta = 0$) estimate \ref{eq:main1} was shown in Naibo \citep{MR3393696} Theorem 1.3. Theorem \ref{thm:critical_besov} extends this result to the critical classes and allows for the indices to be in the wider range $(0,\infty)$. 
 
 The proof of Theorem~\ref{thm:main1} uses the fact that operators with symbols in $BS^{(0,p_1,p_2)}_{0,0}$ that are localized at certain dyadic frequencies are bounded in the setting of local Hardy spaces; no other boundedness properties of operators with symbols in the bilinear H\"ormander classes are required in the proof. The tools employed are inspired by bilinear techniques in Naibo~\cite{MR3393696} and linear ones in   Johnsen~\cite{MR2163627}, Marschall~\cite{MR1376592} and   Park~\cite{MR3759556}.
 
@@ -130,7 +130,7 @@ In the proofs that follow in this chapter we implicitly assume that the symbol $
 & =(1 + |\xi| + |\eta|)^{m + \delta|\alpha| - \rho|\beta|} \sum_{\alpha_0 \leq \alpha, \beta_0 \leq \beta} C_{\alpha_0 , \beta_0} (1 + |\xi| + |\eta|)^{-\delta| \alpha_0| + \rho|\beta_0|} \\
 & \leq C_{\alpha,\beta} (1 + |\xi| + |\eta|)^{m + \delta|\alpha| - \rho|\beta|},
 \end{align*}
-for $(x,\xi,\eta) \in \text{supp}(\Psi)$ and $\sigma_\varepsilon \in BS^m_{\rho,\delta}$. Additionally by the dominated convergence theorem and using that  $\Psi(0,0,0) = 1$ we get that $T_{\sigma_\eps}(f,g) \rightarrow T_\sigma(f,g)$ in $\swp$ as $\eps \rightarrow 0$. Finally by the Fatou property of Besov spaces the estimates for $T_\sigma$ follow from the estimates for $T_\sigma_\eps$ which are uniform in $\eps$. 
+for $(x,\xi,\eta) \in \text{supp}(\Psi)$ and $\sigma_\varepsilon \in BS^m_{\rho,\delta}$. Additionally by the dominated convergence theorem and using that  $\Psi(0,0,0) = 1$ we get that $T_{\sigma_\eps}(f,g) \rightarrow T_\sigma(f,g)$ in $\swp$ as $\eps \rightarrow 0$. Finally by the Fatou property of Besov spaces the estimates for $T_\sigma$ follow from the estimates for $T_{\sigma_\eps}$ which are uniform in $\eps$. 
 
 We know present the decomposition of $T_\sigma$ that will be used in the proof of Theorem \ref{thm:main1}. Let $\varphi,\varphi_0 \in \sw$ satisfy conditions \ref{TL_B_psi1} and \ref{TL_B_phi1} respectively, and be such that $\sumkNz \fk \equiv 1,$ where $\fk(\xi)=\f(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\na.$
 
@@ -167,8 +167,8 @@ where $\sigma^1$ is as in Section~\ref{sec:decomp} and $h^{p_2}$ must be replace
 
 
 We note that in Lemma \ref{lem:T1} there is no restriction on the order $m$ of the symbol and the regularity indices, $s_1$ and $s_2$, can be different. In particular Lemma \ref{lem:T1} implies that 
-\norm{T_{\sigma^1}(f,g)}{\B{s}{p}{q}}  \lesssim \norm{f}{\B{s}{p_1}{q}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,
-\end{equation*}
+$$\norm{T_{\sigma^1}(f,g)}{\B{s}{p}{q}}  \lesssim \norm{f}{\B{s}{p_1}{q}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,$$
+
 for $s\in\re$ and $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$ as needed for the proof of Theorem~\ref{thm:main1}.
 
 
@@ -298,7 +298,7 @@ and obtain $ \norm{f}{\B{(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m +s_1+ \eps }{
 
 \subsection{Estimates for $T_{\sigma^2}$}
 
-In this section we prove the bounds for $T_\sigma^2}$ which are stated in the following lemma.
+In this section we prove the bounds for $T_{\sigma^2}$ which are stated in the following lemma.
 
 \begin{lemma}\label{lem:T2} 
 Let $m \in \re,$ $0 \le \delta\le \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}$. If $0<p<\infty$ and $0< p_1, p_2 \le \infty$ are such that $\hcline,$ $0 < q,\bar{q} \leq \infty$, and $s_1, s_2 \in \re,$ it holds that
@@ -348,18 +348,18 @@ Given $0<\tau <1,$  let $M \in \na$ be such that $M \geq n/\tau$, then
 \begin{align*}
 |\widetilde{\f}_k(D)f(y)|&  = \frac{|\widetilde{\f}_k(D)f(y)|}{(1 + 2^k |x-y|)^M} (1 + 2^k |x-y|)^M\\
 & \leq  (1 + 2^k |x-y|)^M \sup_{y\in\rn} \frac{|\widetilde{\f}_k(D)f(y)|}{(1 + 2^k |x-y|)^M} \\
-& \lesssim (1 + 2^k |x-y|)^M \Mtau(\widetilde{\f}_k(D)f)(x)\quad\forall x,y\in\rn,k\in\na_0,
+& \lesssim (1 + 2^k |x-y|)^M \mathcal{M}_r(\widetilde{\f}_k(D)f)(x)\quad\forall x,y\in\rn,k\in\na_0,
 \end{align*}
 where for the last inequality we used Peetre's maximal inequality (see Peetre~\cite{MR0380394} or Triebel~\cite[p.16, Theorem 1.3.1]{MR3024598}). Similarly, and recalling \eqref{def:g*},
 \begin{align*}
-|\widetilde{\Phi}_k(D)g(z)| & \lesssim (1 + 2^k |x-z|)^M \Mtau(\widetilde{\Phi}_k(D)g)(x)  \leq (1 + 2^k |x-z|)^M \Mtau(g^*)(x)
+|\widetilde{\Phi}_k(D)g(z)| & \lesssim (1 + 2^k |x-z|)^M \mathcal{M}_r(\widetilde{\Phi}_k(D)g)(x)  \leq (1 + 2^k |x-z|)^M \mathcal{M}_r(g^*)(x)
 \end{align*}
 for all $ x,z\in\rn,$ $k\in\na_0.$
 Given $J, N \in \na$ with $N>2(M+n),$  we use the estimates above, the fact that $\f\in\sw$ and Lemmas \ref{lem:estimateKk} and  \ref{lem:int:M:N:k}  in Appendix~\ref{sec:app} to obtain 
 \begin{align*}
- |\f_\nu(D) T_{\sigma^{2,2,k}}(f,g)(x)| &\lesssim 2^{-Jk} \Mtau(\widetilde{\f}_k(D)f)(x) \Mtau(g^*)(x)\\
+ |\f_\nu(D) T_{\sigma^{2,2,k}}(f,g)(x)| &\lesssim 2^{-Jk} \mathcal{M}_r(\widetilde{\f}_k(D)f)(x) \mathcal{M}_r(g^*)(x)\\
  &\quad\times \int_{\re^{3n}} \frac{2^{\nu n}}{(1+ 2^\nu |x- w|)^N} \frac{(1 + 2^k |x-y|)^M (1 + 2^k |x-z|)^M}{(1+ |w-y|)^{N/2} (1+ |w-z|)^{N/2}} \, dw \dy \dz\\
-&\lesssim 2^{-Jk} \Mtau(\widetilde{\f}_k(D)f)(x) \Mtau(g^*)(x)\\
+&\lesssim 2^{-Jk} \mathcal{M}_r(\widetilde{\f}_k(D)f)(x) \mathcal{M}_r(g^*)(x)\\
 &\quad \times \int_{\rn}  \frac{2^{\nu n} 2^{2kM}}{(1+ 2^\nu |x- w|)^N}(1 +  |x-w|)^{2M} \, dw\quad \forall x\in\rn,k,\nu\in\na_0, k\ge 4.
 \end{align*}
 Since
@@ -368,24 +368,24 @@ Since
 \end{align*}
 we then get 
 \begin{equation}\label{eq:fnuTbound}
-|\f_\nu(D) T_{\sigma^{2,2,k}}(f,g)(x)|\lesssim  2^{-k (J-2M)} \Mtau(\widetilde{\f}_k(D)f)(x) \Mtau(g^*)(x)\quad \forall x\in\rn, k,\nu\in\na_0, k\ge 4.
+|\f_\nu(D) T_{\sigma^{2,2,k}}(f,g)(x)|\lesssim  2^{-k (J-2M)} \mathcal{M}_r(\widetilde{\f}_k(D)f)(x) \mathcal{M}_r(g^*)(x)\quad \forall x\in\rn, k,\nu\in\na_0, k\ge 4.
 \end{equation}
  Using that  the Fourier transform of  $T_{\sigma^{2,2,k}}(f,g)$ is supported in $\{\zeta \in \rn: |\zeta| \leq 2^{k+5} \},$ choosing $\varepsilon>\max(0,s_1)$ and applying   \eqref{eq:fnuTbound},  we have
 \begin{align*}
  \norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} &=  \left(\sum\limits_{\nu =0}^\infty 2^{\nu s_1q}\norm{\f_\nu(D) \left(\sum\limits_{k=4}^\infty T_{\sigma^{2,2,k}}(f,g)\right)}{L^p}^q \right)^\frac{1}{q}\\
 &\le \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1 q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty \left| \f_\nu(D) T_{\sigma^{2,2,k}}(f,g)\right|}{L^p}^q \right)^\frac{1}{q}\\
-& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M)}  \Mtau(\widetilde{\f}_k(D)f) \Mtau(g^*)}{L^p}^q \right)^\frac{1}{q}\\
-& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  (s_1-\eps) q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M-\eps)}  \Mtau(\widetilde{\f}_k(D)f) \Mtau(g^*)}{L^p}^q \right)^\frac{1}{q}\\
-&\lesssim\norm{ \Mtau(g^*) \sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)}  \Mtau(\widetilde{\f}_k(D)f) }{L^p}\\
-&\lesssim \left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\Mtau(\widetilde{\f}_k(D)f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\norm{\Mtau(g^*)}{L^{p_2}},
+& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M)}  \mathcal{M}_r(\widetilde{\f}_k(D)f) \mathcal{M}_r(g^*)}{L^p}^q \right)^\frac{1}{q}\\
+& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  (s_1-\eps) q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M-\eps)}  \mathcal{M}_r(\widetilde{\f}_k(D)f) \mathcal{M}_r(g^*)}{L^p}^q \right)^\frac{1}{q}\\
+&\lesssim\norm{ \mathcal{M}_r(g^*) \sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)}  \mathcal{M}_r(\widetilde{\f}_k(D)f) }{L^p}\\
+&\lesssim \left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\norm{\mathcal{M}_r(g^*)}{L^{p_2}},
 \end{align*}
 where $\widetilde{p_1}=\min(1,p_1).$ Using that
 $$
-\left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\Mtau(\widetilde{\f}_k(D)f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\Mtau(\widetilde{\f}_k(D)f)}{L^{p_1}}^q  \right)^\frac{1}{q},
+\left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^q  \right)^\frac{1}{q},
 $$
-along with  the boundedness properties of $\Mtau$ with $0<\tau<\min(1,p_1,p_2),$ we obtain
+along with  the boundedness properties of $\mathcal{M}_r$ with $0<\tau<\min(1,p_1,p_2),$ we obtain
 \begin{align*}
-\norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} & \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\Mtau(\widetilde{\f}_k(D)f)}{L^{p_1}}^q  \right)^\frac{1}{q}\norm{\Mtau(g^*)}{L^{p_2}}\\
+\norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} & \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^q  \right)^\frac{1}{q}\norm{\mathcal{M}_r(g^*)}{L^{p_2}}\\
 & \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\widetilde{\f}_k(D)f)}{L^{p_1}}^q  \right)^\frac{1}{q} \norm{g^*}{L^{p_2}}\\
 & \lesssim \norm{f}{\B{-J +2M +2\eps}{p_1}{q}} \norm{g}{h^{p_2}} \lesssim  \norm{f}{\B{s_2}{p_1}{\bar{q}}} \norm{g}{h^{p_2}},
 \end{align*}
