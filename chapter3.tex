@@ -38,7 +38,7 @@ In this chapter we prove estimates in the setting of Besov and Hardy spaces for 
 \begin{theorem} \label{thm:main1}
 Let $0<p<\infty$ and  $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \infty,$   $0\le\delta\le \rho<1$ and   $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}.$ If $s>\text{max}(0,n(1/p - 1)),$ then it holds that
 \begin{equation}\label{eq:main1}
-\norm{T_\sigma(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}} +\norm{f}{h^{p_1}}\norm{g}{\B{s}{p_2}{q}}\quad \forall f,g\in \sw,
+\norm{T_\sigma(f,g)}{\ibes{p}{s}{q}}\lesssim \norm{f}{\ibes{p_1}{s}{q}}\norm{g}{h^{p_2}} +\norm{f}{h^{p_1}}\norm{g}{\ibes{p_2}{s}{q}}\quad \forall f,g\in \sw,
 \end{equation}
 where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively. Moreover,  if there exits $\varepsilon>0$ such that the Fourier transform of  $\sigma(\cdot,\xi,\eta)$ is  supported outside the set  $\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\eta},$ then \eqref{eq:main1} holds for any $s\in\re.$
 \end{theorem}
@@ -46,6 +46,22 @@ where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or 
 Results related to estimate \ref{eq:main1} were proved for the forbidden class $BS^0_{1,1}$ in B\'enyi \cite{MR1996120}, Koezuka-Timita \cite{MR3750316}, and Naibo \citep{MR3393696}. Concerning bilinear pseudodifferential operators with symbols belonging to the subcritical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\leq p_1,p_2,p \leq \infty$ ($1 < p_1,p_2,p < \infty$ when $\rho = \delta = 0$) estimate \ref{eq:main1} was shown in Naibo \citep{MR3393696} Theorem 1.3. Theorem \ref{thm:critical_besov} extends this result to the critical classes and allows for the indices to be in the wider range $(0,\infty)$. 
 
 The proof of Theorem~\ref{thm:main1} uses the fact that operators with symbols in $BS^{(0,p_1,p_2)}_{0,0}$ that are localized at certain dyadic frequencies are bounded in the setting of local Hardy spaces; no other boundedness properties of operators with symbols in the bilinear H\"ormander classes are required in the proof. The tools employed are inspired by bilinear techniques in Naibo~\cite{MR3393696} and linear ones in   Johnsen~\cite{MR2163627}, Marschall~\cite{MR1376592} and   Park~\cite{MR3759556}.
+
+As a consequence of Theorem~\ref{thm:main1}, we obtain  Leibniz-type rules for bilinear pseudodifferential operators associated to symbols in a general class $BS^m_{\rho,\delta}:$
+
+\begin{corollary}\label{coro:main1} 
+Let $0<p<\infty$ and $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \infty,$  $0\le\delta \le \rho<1,$   $m\in \re$ and $\sigma\in BS^{m}_{\rho,\delta};$ set $\bar{m}=m-m(\rho,p_1,p_2).$  If  $s>\max(0,n({1}/{p}-1))$ then it holds that
+\begin{equation}\label{eq:coro:main1}
+\norm{T_\sigma(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s+\bar{m}}{p_1}{q}}\norm{g}{h^{p_2}} +\norm{f}{h^{p_1}}\norm{g}{\B{s+\bar{m}}{p_2}{q}}\quad \forall f,g\in \sw,
+\end{equation}
+where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively. Moreover,  if there exits $\varepsilon>0$ such that the Fourier transform of  $\sigma(\cdot,\xi,\eta)$ is  supported outside the set  $\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\eta},$ then \eqref{eq:coro:main1} holds for any $s\in\re.$
+\end{corollary}
+
+\begin{remark} If $0\le \delta\le \rho<1,$ $m<m(\rho,p_1,p_2)$ and $\sigma\in BS^m_{\rho,\delta}$ then $T_\sigma$ is a smoothing operator since, in such case, $s+\bar{m}<s$ for $s,\bar{m}$ as in the statement of Corollary~\ref{coro:main1}. 
+\end{remark}
+
+\begin{remark} It will be clear from the proofs that different pairs of $p_1,p_2,$ related to $p$ through the H\"older condition, can be used in each of the terms on the right-hand sides of the estimates in Theorem~\ref{thm:main1} and Corollary~\ref{coro:main1}. 
+\end{remark}
 
 \section{Preliminaries}
 
@@ -77,7 +93,7 @@ If $0<r \le 1$ and $\norm{\Sigma(X, 2^{k_0} \cdot)}{\dot{B}^{N/r}_{1,r}(\re^N)} 
 where the implicit constant is independent of $\Sigma,$ $F$ and $k_0.$
 \end{lem}
 
-We will use Lemma \ref{lem:Marschall} to prove the following bilinear version of Marschall's inequality:
+We will use Lemma \ref{lem:Marschall} to prove the following bilinear version of Marschall's inequality that is used in the proof of Theorem \ref{thm:main1}:
 \begin{lemma}\label{lem:biMarschall}  Consider $f,g\in\sw$  and let $\sigma=\sigma(x,\xi,\eta)$ be a  symbol in $C^\infty(\re^{3n})$ 
 such that for some polynomial $P(\xi,\eta),$
 \[
@@ -122,7 +138,7 @@ We note that $\norm{\sigma(x, 2^{k_0+1} \cdot, 2^{k_0+1} \cdot)}{W^{\lfloor{2n/r
 
 
 \section{Decomposition of $T_\sigma$ and strategy for the proof of Theorem \ref{thm:main1}}\label{sec:decomp}
-In the proofs that follow in this chapter we implicitly assume that the symbol $\sigma$ in the statements of Theorem \ref{thm:main1} and Corollary \ref{coro:main1} has compact support in $\mathbb{R}^{3n}$. A limiting argument then allows us to to prove these results for sumbols in the bilinear H\"ormander classes without compact support. Indeed, for $0\le \delta,\rho\le 1,$ $m\in\re,$ $\sigma\in BS^m_{\rho,\delta}$ and $0\le \varepsilon<1$ let $\sigma_\epsilon (x,\xi,\eta) = \Psi(\varepsilon x, \varepsilon \xi, \varepsilon \eta) \sigma( x, \xi,\eta)$ for a smooth  function $\Psi$ of compact support such that $\Psi(0,0,0) = 1$. It follows that $\sigma_\varepsilon \in BS^m_{\rho,\delta}$ with constants independent of $\varepsilon$ and that, as $\varepsilon \rightarrow 0$, $T_{\sigma_\varepsilon}(f,g)$ converges to $T_\sigma(f,g)$ in $\swp$ for $f,g \in \sw$. Indeed, using the smoothness and compact support of $\Psi$ and the Leibniz rule we have that 
+In the proofs that follow in this chapter we implicitly assume that the symbol $\sigma$ in the statements of Theorem \ref{thm:main1} and Corollary \ref{coro:main1} has compact support in $\mathbb{R}^{3n}$. A limiting argument then allows us to to prove these results for sumbols in the bilinear H\"ormander classes without compact support. For $0\le \delta,\rho\le 1,$ $m\in\re,$ $\sigma\in BS^m_{\rho,\delta}$ and $0\le \varepsilon<1$ let $\sigma_\epsilon (x,\xi,\eta) = \Psi(\varepsilon x, \varepsilon \xi, \varepsilon \eta) \sigma( x, \xi,\eta)$ for a smooth  function $\Psi$ of compact support such that $\Psi(0,0,0) = 1$. It follows that $\sigma_\varepsilon \in BS^m_{\rho,\delta}$ with constants independent of $\varepsilon$ and that, as $\varepsilon \rightarrow 0$, $T_{\sigma_\varepsilon}(f,g)$ converges to $T_\sigma(f,g)$ in $\swp$ for $f,g \in \sw$. Indeed, using the smoothness and compact support of $\Psi$ and the Leibniz rule we have that 
 \begin{align*}
 |\partial^\alpha_\xi \partial^\beta_\eta \sigma_\varepsilon(x,\xi,\eta)| & 
 \leq \sum_{\alpha_0 \leq \alpha, \beta_0 \leq \beta} \varepsilon^{|\alpha_0| + |\beta_0|}|\partial^{\alpha_0}_\xi \partial^{\beta_0}_\eta \Psi(\varepsilon x, \varepsilon \xi, \varepsilon \eta) \partial^{\alpha - \alpha_0}_\xi \partial^{\beta - \beta_0}_\eta \sigma(x,\xi,\eta) | \\
@@ -132,9 +148,9 @@ In the proofs that follow in this chapter we implicitly assume that the symbol $
 \end{align*}
 for $(x,\xi,\eta) \in \text{supp}(\Psi)$ and $\sigma_\varepsilon \in BS^m_{\rho,\delta}$. Additionally by the dominated convergence theorem and using that  $\Psi(0,0,0) = 1$ we get that $T_{\sigma_\eps}(f,g) \rightarrow T_\sigma(f,g)$ in $\swp$ as $\eps \rightarrow 0$. Finally by the Fatou property of Besov spaces the estimates for $T_\sigma$ follow from the estimates for $T_{\sigma_\eps}$ which are uniform in $\eps$. 
 
-We know present the decomposition of $T_\sigma$ that will be used in the proof of Theorem \ref{thm:main1}. Let $\varphi,\varphi_0 \in \sw$ satisfy conditions \ref{TL_B_psi1} and \ref{TL_B_phi1} respectively, and be such that $\sumkNz \fk \equiv 1,$ where $\fk(\xi)=\f(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\na.$
+We now present the decomposition of $T_\sigma$ that will be used in the proof of Theorem \ref{thm:main1}. Let $\varphi,\varphi_0 \in \sw$ satisfy conditions \ref{TL_B_psi1} and \ref{TL_B_phi1} respectively, and be such that $\sumkNz \fk \equiv 1,$ where $\fk(\xi)=\f(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\na.$
 
-Let $m \in \re,$ $0 \leq \delta\le \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}.$  We perform a triple spectral decomposition of $T_\sigma(f,g)$ with $f,g\in\sw:$
+Let $m \in \re,$ $0 \leq \delta\le \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}.$  We perform a spectral decomposition of $T_\sigma(f,g)$ with $f,g\in\sw:$
 \begin{align*}
 T_\sigma(f,g)(x)&= \int_{\rtn} \sigma(x, \xi, \eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta \\
 & =  \sumjkNz \int_{\rtn} \left( \int_{\rn} \widehat{\sigma}^1(\zeta, \xi, \eta) \eixzeta  d\zeta \right) \fk(\xi) \fj(\eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta\\
@@ -145,31 +161,38 @@ where for $j,k, \ell \in \naz$ we define
 \begin{equation*}
 \sigma_{j,k,\ell}(x, \xi, \eta)= \fk(\xi) \fj(\eta) \int_{\rn}  \f_\ell(\zeta) \widehat{\sigma}^1(\zeta, \xi, \eta) \eixzeta  \dzeta.
 \end{equation*}
-We next introduce the symbols  
+Using this decomposition we define the following symbols
 
 \begin{align*}
 & \sigma^1:= \quad \sum\limits_{\ell=4}^\infty \sum\limits_{k=0}^{\ell - 4} \sum\limits_{j =0}^{k} \sigma_{j,k,\ell}, \quad \sigma^2:= \quad \sum\limits_{k=0}^\infty \sum\limits_{j=0}^k \sum\limits_{\ell =\max(0,k-3)}^{k+3} \sigma_{j,k,\ell},\quad\sigma^3:= \quad \sum\limits_{k=4}^\infty \sum\limits_{j=0}^k \sum\limits_{\ell =0}^{k-4} \sigma_{j,k,\ell},\\
 &\sigma^4:= \quad \sum\limits_{\ell=5}^\infty \sum\limits_{j=1}^{\ell - 4} \sum\limits_{k =0}^{j-1} \sigma_{j,k,\ell}, \quad \sigma^5:= \quad  \sum\limits_{j=1}^\infty \sum\limits_{k=0}^{j-1} \sum\limits_{\ell =\max(0,j-4)}^{j+3} \sigma_{j,k,\ell},\quad \sigma^6:= \quad \sum\limits_{j=5}^\infty \sum\limits_{k=0}^{j-1} \sum\limits_{\ell =0}^{j-5} \sigma_{j,k,\ell},
 \end{align*}
-so that $\sigma = \sigma^1+\sigma^2+\sigma^3+\sigma^4+\sigma^5+\sigma^6.$ Notice that since $j\leq k$ in $\sigma_1$, $\sigma_2$, and $\sigma_3$ they are supported on the set $\{(x,\xi,\eta) \in \mathbb{R}^{3n} : |\eta| \leq 4|\xi|\}$. On the other hand $\sigma_4$, $\sigma_5$, and $\sigma_6$ are supported on $\{(x,\xi,\eta) \in \mathbb{R}^{3n} : |\xi| \leq 2|\eta|\}$ since in these sums $k \leq j-1$. By taking the Fourier transform with respect to the first variable we have that $\widehat{\sigma^1(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\xi}\lesssim \abs{\zeta}\},$
-$\widehat{\sigma^2(\cdot,\xi,\eta)}$ is supported mostly on $\{\zeta\in\rn: \abs{\xi}\sim \abs{\zeta}\}$ and $\widehat{\sigma^3(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\zeta}\lesssim \abs{\xi}\}$. The supports of $\widehat{\sigma^4(\cdot,\xi,\eta)}$, $\widehat{\sigma^5(\cdot,\xi,\eta)}$, and $\widehat{\sigma^6(\cdot,\xi,\eta)}$ are in supported in similar sets with $|\xi|$ replaced by $|\eta|$. The proof of Theorem \ref{thm:main1} will follow from obtaining bounds for $T_{\sigma^j}$, $j=1,2,3,4,5,6$. In this dissertation we will show the proofs of the results for $T_{\sigma^1}$, $T_{\sigma^2}$, and $T_{\sigma^3}$. By symmetry the results for $T_{\sigma^4}$, $T_{\sigma^5}$, and $T_{\sigma^6}$ are obtained in an analogous way as $T_{\sigma^1}$, $T_{\sigma^2}$, and $T_{\sigma^3}$ respectively with the roles of $\xi$ and $\eta$ reversed.
+so that $\sigma = \sigma^1+\sigma^2+\sigma^3+\sigma^4+\sigma^5+\sigma^6.$ Notice that since $j\leq k$ in $\sigma_1$, $\sigma_2$, and $\sigma_3$ they are supported on the set $\{(x,\xi,\eta) \in \mathbb{R}^{3n} : |\eta| \leq 4|\xi|\}$. On the other hand $\sigma_4$, $\sigma_5$, and $\sigma_6$ are supported on $\{(x,\xi,\eta) \in \mathbb{R}^{3n} : |\xi| \leq 2|\eta|\}$. By taking the Fourier transform with respect to $x$ we have that $\widehat{\sigma^1(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\xi}\lesssim \abs{\zeta}\},$
+$\widehat{\sigma^2(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\xi}\sim \abs{\zeta}\}$ and $\widehat{\sigma^3(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\zeta}\lesssim \abs{\xi}\}$. The supports of $\widehat{\sigma^4(\cdot,\xi,\eta)}$, $\widehat{\sigma^5(\cdot,\xi,\eta)}$, and $\widehat{\sigma^6(\cdot,\xi,\eta)}$ are in supported in similar sets with $|\xi|$ replaced by $|\eta|$. The proof of Theorem \ref{thm:main1} will follow from obtaining bounds for $T_{\sigma^j}$, $j=1,2,3,4,5,6$. In this dissertation we will show the proofs of the results for $T_{\sigma^1}$, $T_{\sigma^2}$, and $T_{\sigma^3}$. By symmetry the results for $T_{\sigma^4}$, $T_{\sigma^5}$, and $T_{\sigma^6}$ are obtained in an analogous way as $T_{\sigma^1}$, $T_{\sigma^2}$, and $T_{\sigma^3}$ respectively with the roles of $\xi$ and $\eta$ reversed.
+
+In the proofs of Theorem \ref{thm:main1} and Corollary \ref{coro:main1} we will use the fact that $BS^m_{\rho,\delta}\subset BS^m_{\rho,\rho}$ for $m\in\re$ and $0\le \delta\le \rho\le 1$. With this in mind we will assume that $\rho = \delta$ in the proofs.
+
 \subsection{Estimates for $T_{\sigma^1}$}
-In this section we prove the estimates for the operator $T_{\sigma_1}$
+In this section we prove the estimates for the operator $T_{\sigma_1}$. First, we introduce some notation that will be used in the proof. 
+For $\{\fk\}_{k\in\naz}$ as in Section~\ref{sec:decomp} we set
+\begin{equation*}
+\Phi_k(\xi):= \sum_{j=0}^k \varphi_j(\xi)=\f_0(2^{-k}\xi)\quad \forall \xi\in\rn, k\in\naz,
+\end{equation*}
+and consider $\widetilde{\f},\widetilde{\f}_0\in\sw$ satisfying conditions \ref{{TL_B_psi1} - \ref{TL_B_phi2}, respectively, and such that $\widetilde{\f}_0\f_0=\f_0$ and $\widetilde{\f}\f=\f.$ We then define $\widetilde{\f}_k(\xi)=\widetilde{\f}(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\na$ and $\widetilde{\Phi}_k(\xi)=\widetilde{\f}_0(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\naz.$ It holds that $\widetilde{\f}_k \fk = \fk$ and $\widetilde{\Phi}_k \Phi_k = \Phi_k$ for all $k\in\naz.$
 
 The precise bounds for $T_{\sigma^1}$ are stated in the following lemma.
 
 \begin{lemma}\label{lem:T1} Let $m \in \re,$  $0 \le \delta\le  \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}$. If   $0<p,p_1,p_2\le \infty$ are such that $\hcline,$ $0 < q ,\bar{q}\leq \infty,$ $s_1, s_2 \in \re$, it holds that
 \begin{equation}\label{eq:estT1}
-\norm{T_{\sigma^1}(f,g)}{\B{s_1}{p}{q}}  \lesssim \norm{f}{\B{s_2}{p_1}{\bar{q}}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,
+\norm{T_{\sigma^1}(f,g)}{\ibes{s_1}{q}{p}}  \lesssim \norm{f}{\ibes{s_2}{p_1}{\bar{q}}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,
 \end{equation}
 where $\sigma^1$ is as in Section~\ref{sec:decomp} and $h^{p_2}$ must be replaced by $L^\infty$ if $p_2=\infty.$
 \end{lemma}
 
 
-We note that in Lemma \ref{lem:T1} there is no restriction on the order $m$ of the symbol and the regularity indices, $s_1$ and $s_2$, can be different. In particular Lemma \ref{lem:T1} implies that 
-$$\norm{T_{\sigma^1}(f,g)}{\B{s}{p}{q}}  \lesssim \norm{f}{\B{s}{p_1}{q}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,$$
-
-for $s\in\re$ and $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$ as needed for the proof of Theorem~\ref{thm:main1}.
+We note that in Lemma \ref{lem:T1} there is no restriction on the order $m$ of the symbol and the regularity indices, $s_1$ and $s_2$, can be different. In the case that $s=s_1=s_2$ Lemma \ref{lem:T1} implies the following estimate that is needed for the proof of Theorem \ref{thm:main1} 
+$$\norm{T_{\sigma^1}(f,g)}{\ibes{p}{s}{q}}  \lesssim \norm{f}{\ibes{p_1}{s}{q}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,$$
+for $s\in\re$ and $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$.
 
 
 
@@ -200,7 +223,7 @@ $\widehat{T_{\sigma^1_\ell}(f,g)}$ is supported in $\{\omega\in\rn: 2^{\ell-2}\l
 Recalling the definitions of $\widetilde{\f}_k$ and $\widetilde{\Phi}_k,$  we have
 \begin{align*}
 T_{\sigma^1_\ell}(f,g)(x) = 
-  \sum\limits_{k=0}^{\ell -4} T_{\sigma^1_{\ell,k}}(\widetilde{\f}_k(D)f,\widetilde{\Phi}_k(D)g)(x),
+  \sum\limits_{k=0}^{\ell -4} T_{\sigma^1_{\ell,k}}(\Delta^{\widetilde{\f}}_k f,\Delta^{\widetilde{\Phi}}_k g)(x),
 \end{align*}
 where, for each $k$ between $0$ and $\ell -4$, we set 
 $$
@@ -208,11 +231,12 @@ $$
 $$ 
 Since $\sigma^1_{\ell,k}$ satisfies 
 $$\abs{\sigma^1_{\ell,k}(x,\xi,\eta)}\lesssim (1+\abs{\xi}+\abs{\eta})^m\quad \forall x,\xi,\eta\in\rn,$$
-$\sigma^1_{\ell, k}(x,\cdot,\cdot)$ is supported on $\{(\xi, \eta) \in \re^{2n} : |\xi| + |\eta| \leq 2^{k+2}\}$ for all $x\in\rn$ and $\widetilde{\f}_k(D)f$ and $\widetilde{\Phi}_k(D)g$ are Schwartz functions with  Fourier transforms  supported in $\{\xi \in \rn: |\xi| \le 2^{k+1}\},$  we can apply the bilinear Marschall inequality \eqref{eq:biMarschall} with $0<r\le 1$ to get 
+$\sigma^1_{\ell, k}(x,\cdot,\cdot)$ is supported on $\{(\xi, \eta) \in \re^{2n} : |\xi| + |\eta| \leq 2^{k+2}\}$ for all $x\in\rn$ and $\Delta^{\widetilde{\f}}_k f$ and $\Delta^{\widetilde{\Phi}}_k g$ are Schwartz functions with  Fourier transforms  supported in $\{\xi \in \rn: |\xi| \le 2^{k+1}\},$  we can apply the bilinear Marschall inequality \eqref{eq:biMarschall} with $0<r\le 1$ to get 
 \begin{align}\label{eq:bound:h1:ell:k}
-&|T_{\sigma^1_{\ell,k}}(\widetilde{\f}_k(D)f,\widetilde{\Phi}_k(D)g)(x)| \\
-&\hspace{0.5cm}\lesssim  \norm{\sigma^1_{\ell, k}(x, 2^{k+3} \cdot, 2^{k+3} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})} \mathcal{M}_r(\widetilde{\f}_k(D)f)(x)\mathcal{M}_r(
-\widetilde{\Phi}_k(D)g)(x)\quad \forall x\in\rn.\nonumber
+&|T_{\sigma^1_{\ell,k}}(\Delta^{\widetilde{\f}}_k f,
+\Delta^{\widetilde{\Phi}}_k g)(x)| \\
+&\hspace{0.5cm}\lesssim  \norm{\sigma^1_{\ell, k}(x, 2^{k+3} \cdot, 2^{k+3} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})} \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)(x)\mathcal{M}_r(
+\Delta^{\widetilde{\Phi}}_k g)(x)\quad \forall x\in\rn.\nonumber
 \end{align}
 (See Remark~\ref{remark:locint} along with \eqref{eq:estsigkl} below.)
 
@@ -246,46 +270,46 @@ $\sigma^1_{\ell, k}(x, 2^k \xi, 2^k \eta) = \f(\xi) \f_0(\eta)  I_{\ell, k}(\xi,
 \end{align}
 From \eqref{eq:bound:h1:ell:k}, it then follows that for all $x\in\rn,$ we have
 \begin{equation*}
-|T_{\sigma^1_{\ell,k}}(\widetilde{\f}_k(D)f,\widetilde{\Phi}_k(D)g)(x)|  \lesssim 2^{- N \ell} 2^{k [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \mathcal{M}_r(\widetilde{\f}_k(D)f)(x)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)(x).
+|T_{\sigma^1_{\ell,k}}(\Delta^{\widetilde{\f}}_k f,\Delta^{\widetilde{\Phi}}_k g)(x)|  \lesssim 2^{- N \ell} 2^{k [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \mathcal{M}_r(\Delta{\widetilde{\f}}_k f)(x)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)(x).
 \end{equation*}
 
   Define $\pst=\min(1,p).$  For the sake of notation, we will next work with $q$ finite; the case $q=\infty$ can be treated analogously.
-  Recalling that $T_{\sigma^1_\ell}(f,g)= \sum\limits_{k=0}^{\ell -4} T_{\sigma^1_{\ell,k}}(\widetilde{\f}_k(D)f,\widetilde{\Phi}_k(D)g)$,  \eqref{eq:T:sigma:1:fg} and the last  estimate give
+  Recalling that $T_{\sigma^1_\ell}(f,g)= \sum\limits_{k=0}^{\ell -4} T_{\sigma^1_{\ell,k}}(\Delta^{\widetilde{\f}}_k f,\Delta^{\widetilde{\Phi}}_k g)$,  \eqref{eq:T:sigma:1:fg} and the last  estimate give
 \begin{align}
 & \norm{T_{\sigma^1}(f,g)}{\B{s_1}{p}{q}}  \lesssim  \left( \sum\limits_{\ell=4}^\infty 2^{\ell s_1q} \norm{T_{\sigma^1_\ell}(f,g)}{L^p}^q \right)^\frac{1}{q}\label{eq:T1:fg:Fqp}\\
-& \lesssim  \left[  \sum\limits_{\ell=4}^\infty 2^{\ell s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N\pst \ell} 2^{k\pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \right]^\frac{1}{q}. \nonumber
+& \lesssim  \left[  \sum\limits_{\ell=4}^\infty 2^{\ell s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N\pst \ell} 2^{k\pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_kf)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \right]^\frac{1}{q}. \nonumber
 \end{align}
 Next, let us see that, for  $N>s_1$ and $0<\epsilon< N-s_1,$  it holds that
 \begin{align}\nonumber
-& \sum\limits_{\ell=4}^\infty 2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst\ell} 2^{k \pst[(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^{\pst}\right)^{\frac{q}{\pst}} \\ \label{eq:moving:the:sums}
-&\hspace{2cm}\lesssim \sum\limits_{k=0}^\infty 2^{k q[ (1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+ s_1+\eps] }   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^q.
+& \sum\limits_{\ell=4}^\infty 2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst\ell} 2^{k \pst[(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_kg)}{L^p}^{\pst}\right)^{\frac{q}{\pst}} \\ \label{eq:moving:the:sums}
+&\hspace{2cm}\lesssim \sum\limits_{k=0}^\infty 2^{k q[ (1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+ s_1+\eps] }   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^q.
 \end{align}
  Indeed, if $0 < q \leq \pst$, we have
 \begin{align*}
-& \sum\limits_{\ell=4}^\infty  2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst \ell} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \\
-& \leq \sum\limits_{\ell=4}^\infty 2^{-(N-s_1) q \ell} \sum\limits_{k=0}^{\ell -4}  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r\widetilde{\Phi}_k(D)g)}{L^p}^q\\
-&= \sum_{k=0}^{\infty} \left(\sum_{\ell=k+4}^\infty 2^{-(N-s_1) q \ell} \right)  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^q \\
-& \lesssim \sum\limits_{k=0}^\infty  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]} 2^{-kq(N-s_1)}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^q,
+& \sum\limits_{\ell=4}^\infty  2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst \ell} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \\
+& \leq \sum\limits_{\ell=4}^\infty 2^{-(N-s_1) q \ell} \sum\limits_{k=0}^{\ell -4}  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r\Delta^{\widetilde{\Phi}}_k g)}{L^p}^q\\
+&= \sum_{k=0}^{\infty} \left(\sum_{\ell=k+4}^\infty 2^{-(N-s_1) q \ell} \right)  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^q \\
+& \lesssim \sum\limits_{k=0}^\infty  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]} 2^{-kq(N-s_1)}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^q,
 \end{align*}
 and \eqref{eq:moving:the:sums} follows for any $\eps>0.$ Now, if $\pst<q <\infty$ and $0<\eps < N - s_1,$ we have
 \begin{align*}
-& \sum\limits_{\ell=4}^\infty   2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst \ell} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1) +m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \\
-& \lesssim \sum\limits_{\ell=4}^\infty 2^{-  (N- s_1 - \eps) q \ell}  \left(  \sum\limits_{k=0}^{\ell -4} 2^{-\eps \pst k} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^{\pst}\right)^\frac{q}{\pst}\\
-& \lesssim  \sum\limits_{\ell=4}^\infty 2^{-  (N- s_1 - \eps) q \ell} \sum\limits_{k=0}^{\ell -4} 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^q \\
-& =  \sum\limits_{k=0}^\infty \left( \sum\limits_{\ell=k+4}^{\infty} 2^{- (N- s_1 - \eps) q \ell} \right) 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^q \\
-& \lesssim \sum\limits_{k=0}^\infty  2^{- (N- s_1 - \eps) kq } 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^q 
+& \sum\limits_{\ell=4}^\infty   2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst \ell} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1) +m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \\
+& \lesssim \sum\limits_{\ell=4}^\infty 2^{-  (N- s_1 - \eps) q \ell}  \left(  \sum\limits_{k=0}^{\ell -4} 2^{-\eps \pst k} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst}\\
+& \lesssim  \sum\limits_{\ell=4}^\infty 2^{-  (N- s_1 - \eps) q \ell} \sum\limits_{k=0}^{\ell -4} 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^q \\
+& =  \sum\limits_{k=0}^\infty \left( \sum\limits_{\ell=k+4}^{\infty} 2^{- (N- s_1 - \eps) q \ell} \right) 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^q \\
+& \lesssim \sum\limits_{k=0}^\infty  2^{- (N- s_1 - \eps) kq } 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)\mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)}{L^p}^q 
 \end{align*}
 and \eqref{eq:moving:the:sums} follows.
 
 Using  \eqref{eq:moving:the:sums},  the fact that  
 \begin{equation}\label{def:g*}
-|\widetilde{\Phi}_k(D)g(x)| \leq \sup\limits_{0 < t \le 1} |t^{-n}\mathcal{F}^{-1}(\widetilde{\f}_0)(t^{-1} \cdot)* g(x)| =: g^*(x) \quad \forall k \in \naz,  x \in \rn, 
+|\Delta^{\widetilde{\Phi}}_k g(x)| \leq \sup\limits_{0 < t \le 1} |t^{-n}\mathcal{F}^{-1}(\widetilde{\f}_0)(t^{-1} \cdot)* g(x)| =: g^*(x) \quad \forall k \in \naz,  x \in \rn, 
 \end{equation}
 and \eqref{eq:Mtau:in:Lp} with $0<r < \min(1,p),$ we can now continue with the inequality \eqref{eq:T1:fg:Fqp} to get
 \begin{align*}
 & \norm{T_{\sigma^1}(f,g)}{\B{s_1}{p}{q}}\\
-&  \lesssim   \left[  \sum\limits_{k=0}^\infty   2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+s_1+\eps]}  \norm{ \mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^q \right]^\frac{1}{q} \norm{\mathcal{M}_r(g^*)}{L^{p_2}}\\
-&  \lesssim   \left[  \sum\limits_{k=0}^\infty   2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+s_1+\eps]}   \norm{\widetilde{\f}_k(D)f}{L^{p_1}}^q \right]^\frac{1}{q} \norm{g^*}{L^{p_2}}\\
+&  \lesssim   \left[  \sum\limits_{k=0}^\infty   2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+s_1+\eps]}  \norm{ \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)}{L^{p_1}}^q \right]^\frac{1}{q} \norm{\mathcal{M}_r(g^*)}{L^{p_2}}\\
+&  \lesssim   \left[  \sum\limits_{k=0}^\infty   2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+s_1+\eps]}   \norm{\Delta^{\widetilde{\f}}_k f}{L^{p_1}}^q \right]^\frac{1}{q} \norm{g^*}{L^{p_2}}\\
 & \lesssim \norm{f}{\B{(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m + s_1+\eps }{p_1}{q}}  \norm{ g}{h^{p_2}},
 \end{align*}
  where, if $p_2=\infty,$  $\norm{g}{h^{p_2}}$ should be replaced with $\norm{g}{L^\infty}.$ Since $\rho<1$, we can choose $N$ large enough so that
@@ -296,7 +320,7 @@ and obtain $ \norm{f}{\B{(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m +s_1+ \eps }{
 
 \end{proof}
 
-\subsection{Estimates for $T_{\sigma^2}$}
+\subsection{Estimates for $T_{\sigma^2}$}\label{sec:T2}
 
 In this section we prove the bounds for $T_{\sigma^2}$ which are stated in the following lemma.
 
@@ -308,7 +332,10 @@ Let $m \in \re,$ $0 \le \delta\le \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}$
 where $\sigma^2$ is as in Section~\ref{sec:decomp} and $h^{p_2}$ must be replaced by $L^\infty$ if $p_2=\infty.$
 \end{lemma}
 
-Like with Lemma \ref{lem:T1} there is no restriction on the order $m$ of the symbol and the regularity indices can be different on the left and right hand sides.
+Like with Lemma \ref{lem:T1} there is no restriction on the order $m$ of the symbol and the regularity indices can be different on the left and right hand sides. In particular, Lemma \ref{lem:T2} implies the estimate
+$$
+\norm{T_{\sigma^2}(f,g)}{\B{s}{p}{q}}  \lesssim \norm{f}{\B{s}{p_1}{\bar{q}}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,$$
+with all parameters as in Lemma \ref{lem:T2} and $s\in\re$. 
 
 
 \begin{proof}   Let $p_1,$ $p_2,$ $p,$ $q,$ $\bar{q},$ $s_1,$ $s_2,$ $m,$ $\rho$ and $\sigma$ be as in the hypotheses of the lemma and consider $\fk,$ $\Phi_k,$ $\widetilde{\f}_k$ and $\widetilde{\Phi}_k$ as in Section~\ref{sec:T1}. We assume $q<\infty;$ the proof for the case $q=\infty$ is analogous.
@@ -325,8 +352,8 @@ and write $\sigma^2=\sigma^{2,1}+\sigma^{2,2},$ where
 
 Notice that the symbol $\sigma^{2,1}$ is supported on $\{(x,\xi,\eta)\in\re^{3n}: \abs{\xi}\le 2^{4} \text{ and } \abs{\eta}\le2^{4}\}$ and belongs to any H\"ormander class; in particular $\sigma^{2,1}\in BS^{m(0,p_1,p_2)}_{0,0}$ and by Miyachi--Tomita~\cite[Theorem 1.1]{MR3179688}, $T_{\sigma^{2,1}}$ is bounded from $h^{p_1}(\rn)\times h^{p_2}(\rn)$ to $h^{p}(\rn)$ (with $h^{p_1}(\rn)$ and $h^{p_2}(\rn)$ replaced by $L^\infty(\rn)$ if $p_1=\infty$ or $p_2=\infty$). Moreover, the Fourier transform of $T_{\sigma^{2,1}}(f,g)$ is supported on $\{\zeta\in\rn: \abs{\zeta}\le2^{8}\}.$ Let $h\in\sw$  be compactly supported and  identically one on $\{\xi\in\rn:\abs{\xi}\le 2^{4}\}.$ We then obtain
 \begin{align*}
-\norm{T_{\sigma^{2,1}}(f,g)}{\B{s_1}{p}{q}}&=\left(\sum_{k=0}^{8}2^{s_1kq}\norm{\varphi_k(D) T_{\sigma^{2,1}}(f,g)}{L^p}^q\right)^{\frac{1}{q}}\\&\lesssim \norm{T_{\sigma^{2,1}}(f,g)}{h^p}=\norm{T_{\sigma^{2,1}}(h(D)f,g)}{h^p}\\
-&\lesssim \norm{h(D)f}{h^{p_1}}\norm{g}{h^{p_2}}\lesssim \norm{f}{\B{s_2}{p_1}{q}}\norm{g}{h^{p_2}},
+\norm{T_{\sigma^{2,1}}(f,g)}{\B{s_1}{p}{q}}&=\left(\sum_{k=0}^{8}2^{s_1kq}\norm{\Delta^{\varphi}_k T_{\sigma^{2,1}}(f,g)}{L^p}^q\right)^{\frac{1}{q}}\\&\lesssim \norm{T_{\sigma^{2,1}}(f,g)}{h^p}=\norm{T_{\sigma^{2,1}}(\Delta^h f,g)}{h^p}\\
+&\lesssim \norm{\Delta^h f}{h^{p_1}}\norm{g}{h^{p_2}}\lesssim \norm{f}{\B{s_2}{p_1}{q}}\norm{g}{h^{p_2}},
 \end{align*}
 with $h^{p_1}$ or $h^{p_2}$ replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively.
 
@@ -342,24 +369,24 @@ $$
 $$
 Note that
 \begin{align*}
-| \f_\nu(D) T_{\sigma^{2,2,k}}(f,g)(x)| \leq \int_{\re^{3n}} |\widecheck{\f_\nu}(x- w)| |\K_k(w, y, z)| |\widetilde{\f}_k(D)f(y)| |\widetilde{\Phi}_k(D)g(z)| \, dw \dy \dz.
+| \Delta{\f}_\nu T_{\sigma^{2,2,k}}(f,g)(x)| \leq \int_{\re^{3n}} |\widecheck{\f_\nu}(x- w)| |\K_k(w, y, z)| |\Delta^{\widetilde{\f}}_k f(y)| |\Delta^{\widetilde{\Phi}}_k g(z)| \, dw \dy \dz.
 \end{align*}
 Given $0<\tau <1,$  let $M \in \na$ be such that $M \geq n/\tau$, then
 \begin{align*}
-|\widetilde{\f}_k(D)f(y)|&  = \frac{|\widetilde{\f}_k(D)f(y)|}{(1 + 2^k |x-y|)^M} (1 + 2^k |x-y|)^M\\
-& \leq  (1 + 2^k |x-y|)^M \sup_{y\in\rn} \frac{|\widetilde{\f}_k(D)f(y)|}{(1 + 2^k |x-y|)^M} \\
-& \lesssim (1 + 2^k |x-y|)^M \mathcal{M}_r(\widetilde{\f}_k(D)f)(x)\quad\forall x,y\in\rn,k\in\na_0,
+|\Delta^{\widetilde{\f}}_k f(y)|&  = \frac{|\Delta^{\widetilde{\f}}_k f(y)|}{(1 + 2^k |x-y|)^M} (1 + 2^k |x-y|)^M\\
+& \leq  (1 + 2^k |x-y|)^M \sup_{y\in\rn} \frac{|\Delta^{\widetilde{\f}}_k f(y)|}{(1 + 2^k |x-y|)^M} \\
+& \lesssim (1 + 2^k |x-y|)^M \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)(x)\quad\forall x,y\in\rn,k\in\na_0,
 \end{align*}
 where for the last inequality we used Peetre's maximal inequality (see Peetre~\cite{MR0380394} or Triebel~\cite[p.16, Theorem 1.3.1]{MR3024598}). Similarly, and recalling \eqref{def:g*},
 \begin{align*}
-|\widetilde{\Phi}_k(D)g(z)| & \lesssim (1 + 2^k |x-z|)^M \mathcal{M}_r(\widetilde{\Phi}_k(D)g)(x)  \leq (1 + 2^k |x-z|)^M \mathcal{M}_r(g^*)(x)
+|\Delta^{\widetilde{\Phi}}_k g(z)| & \lesssim (1 + 2^k |x-z|)^M \mathcal{M}_r(\Delta^{\widetilde{\Phi}}_k g)(x)  \leq (1 + 2^k |x-z|)^M \mathcal{M}_r(g^*)(x)
 \end{align*}
 for all $ x,z\in\rn,$ $k\in\na_0.$
 Given $J, N \in \na$ with $N>2(M+n),$  we use the estimates above, the fact that $\f\in\sw$ and Lemmas \ref{lem:estimateKk} and  \ref{lem:int:M:N:k}  in Appendix~\ref{sec:app} to obtain 
 \begin{align*}
- |\f_\nu(D) T_{\sigma^{2,2,k}}(f,g)(x)| &\lesssim 2^{-Jk} \mathcal{M}_r(\widetilde{\f}_k(D)f)(x) \mathcal{M}_r(g^*)(x)\\
+ |\Delta^{\f}_\nu T_{\sigma^{2,2,k}}(f,g)(x)| &\lesssim 2^{-Jk} \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)(x) \mathcal{M}_r(g^*)(x)\\
  &\quad\times \int_{\re^{3n}} \frac{2^{\nu n}}{(1+ 2^\nu |x- w|)^N} \frac{(1 + 2^k |x-y|)^M (1 + 2^k |x-z|)^M}{(1+ |w-y|)^{N/2} (1+ |w-z|)^{N/2}} \, dw \dy \dz\\
-&\lesssim 2^{-Jk} \mathcal{M}_r(\widetilde{\f}_k(D)f)(x) \mathcal{M}_r(g^*)(x)\\
+&\lesssim 2^{-Jk} \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)(x) \mathcal{M}_r(g^*)(x)\\
 &\quad \times \int_{\rn}  \frac{2^{\nu n} 2^{2kM}}{(1+ 2^\nu |x- w|)^N}(1 +  |x-w|)^{2M} \, dw\quad \forall x\in\rn,k,\nu\in\na_0, k\ge 4.
 \end{align*}
 Since
@@ -368,25 +395,25 @@ Since
 \end{align*}
 we then get 
 \begin{equation}\label{eq:fnuTbound}
-|\f_\nu(D) T_{\sigma^{2,2,k}}(f,g)(x)|\lesssim  2^{-k (J-2M)} \mathcal{M}_r(\widetilde{\f}_k(D)f)(x) \mathcal{M}_r(g^*)(x)\quad \forall x\in\rn, k,\nu\in\na_0, k\ge 4.
+|\Delta^{\f}_\nu T_{\sigma^{2,2,k}}(f,g)(x)|\lesssim  2^{-k (J-2M)} \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)(x) \mathcal{M}_r(g^*)(x)\quad \forall x\in\rn, k,\nu\in\na_0, k\ge 4.
 \end{equation}
  Using that  the Fourier transform of  $T_{\sigma^{2,2,k}}(f,g)$ is supported in $\{\zeta \in \rn: |\zeta| \leq 2^{k+5} \},$ choosing $\varepsilon>\max(0,s_1)$ and applying   \eqref{eq:fnuTbound},  we have
 \begin{align*}
- \norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} &=  \left(\sum\limits_{\nu =0}^\infty 2^{\nu s_1q}\norm{\f_\nu(D) \left(\sum\limits_{k=4}^\infty T_{\sigma^{2,2,k}}(f,g)\right)}{L^p}^q \right)^\frac{1}{q}\\
-&\le \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1 q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty \left| \f_\nu(D) T_{\sigma^{2,2,k}}(f,g)\right|}{L^p}^q \right)^\frac{1}{q}\\
-& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M)}  \mathcal{M}_r(\widetilde{\f}_k(D)f) \mathcal{M}_r(g^*)}{L^p}^q \right)^\frac{1}{q}\\
-& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  (s_1-\eps) q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M-\eps)}  \mathcal{M}_r(\widetilde{\f}_k(D)f) \mathcal{M}_r(g^*)}{L^p}^q \right)^\frac{1}{q}\\
-&\lesssim\norm{ \mathcal{M}_r(g^*) \sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)}  \mathcal{M}_r(\widetilde{\f}_k(D)f) }{L^p}\\
-&\lesssim \left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\norm{\mathcal{M}_r(g^*)}{L^{p_2}},
+ \norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} &=  \left(\sum\limits_{\nu =0}^\infty 2^{\nu s_1q}\norm{\Delta^{\f}_\nu \left(\sum\limits_{k=4}^\infty T_{\sigma^{2,2,k}}(f,g)\right)}{L^p}^q \right)^\frac{1}{q}\\
+&\le \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1 q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty \left| \Delta^{\f}_\nu T_{\sigma^{2,2,k}}(f,g)\right|}{L^p}^q \right)^\frac{1}{q}\\
+& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M)}  \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f) \mathcal{M}_r(g^*)}{L^p}^q \right)^\frac{1}{q}\\
+& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  (s_1-\eps) q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M-\eps)}  \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f) \mathcal{M}_r(g^*)}{L^p}^q \right)^\frac{1}{q}\\
+&\lesssim\norm{ \mathcal{M}_r(g^*) \sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)}  \mathcal{M}_r(\Delta^{\widetilde{\f}}_k f) }{L^p}\\
+&\lesssim \left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\norm{\mathcal{M}_r(g^*)}{L^{p_2}},
 \end{align*}
 where $\widetilde{p_1}=\min(1,p_1).$ Using that
 $$
-\left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^q  \right)^\frac{1}{q},
+\left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)}{L^{p_1}}^q  \right)^\frac{1}{q},
 $$
 along with  the boundedness properties of $\mathcal{M}_r$ with $0<\tau<\min(1,p_1,p_2),$ we obtain
 \begin{align*}
-\norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} & \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)}{L^{p_1}}^q  \right)^\frac{1}{q}\norm{\mathcal{M}_r(g^*)}{L^{p_2}}\\
-& \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\widetilde{\f}_k(D)f)}{L^{p_1}}^q  \right)^\frac{1}{q} \norm{g^*}{L^{p_2}}\\
+\norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} & \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\Delta^{\widetilde{\f}}_k f)}{L^{p_1}}^q  \right)^\frac{1}{q}\norm{\mathcal{M}_r(g^*)}{L^{p_2}}\\
+& \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\Delta^{\widetilde{\f}}_k f)}{L^{p_1}}^q  \right)^\frac{1}{q} \norm{g^*}{L^{p_2}}\\
 & \lesssim \norm{f}{\B{-J +2M +2\eps}{p_1}{q}} \norm{g}{h^{p_2}} \lesssim  \norm{f}{\B{s_2}{p_1}{\bar{q}}} \norm{g}{h^{p_2}},
 \end{align*}
 provided that we take $J$ large enough so that $-J +2M +2\eps < s_2$ and where $h^{p_2}$ should be replaced by $L^\infty$ if $p_2=\infty.$
@@ -401,10 +428,41 @@ In this section we prove the bounds for $T_{\sigma^3}$. Let $m,$ $p_1,$ $p_2,$ $
 \begin{align*}
 \sigma^{3,1}:=  \sum\limits_{k=4}^\infty \sum\limits_{j=0}^{k-4} \sum\limits_{\ell =0}^{k-4} \sigma_{j,k,\ell}\quad \text{and}\quad \sigma^{3,2}:= \sum\limits_{k=4}^\infty \sum\limits_{j=k-3}^k \sum\limits_{\ell =0}^{k-4} \sigma_{j,k,\ell}.
 \end{align*}
+It can be shown that $\sigma^{3,1}, \sigma^{3,2} \in BS^m(\rho,p_1,p_2)}_{\rho,\delta}$ and satisfy 
+\begin{equation*}
+\text{supp}(\sigma^{3,j}) \subset \{ (x,\xi,\eta) \in \re^{3n}:|\eta| \leq A |\xi| \} \quad j=1,2,
+\end{equation*}
+\begin{equation*}
+\text{\supp}(\widehat{\sigma(\cdot,\xi,\eta)}) \subset \{(x,\xi,\eta) \in \re^{3n}: |\xi| \leq \frac{1}{4} |\xi| \}.
+\end{equation*}
+In the case $j=1$ we have that $A=1/4$ and if $j=2$ then $A = 4$.
+The following lemma shows that for $s\in\re$
+\begin{equation}
+\norm{T_{\sigma^{3,1}}(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}} \quad \forall f,g\in \sw
+\end{equation}
+and that for $s>\tpline$
+\begin{equation}
+\norm{T_{\sigma^{3,2}}(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}} \quad \forall f,g\in \sw.
+\end{equation}
 
 
 
-We next state and prove a lemma that is useful in the proof of Lemma~\ref{lem:T3}, which is presented at the end of this section.
+\begin{lemma}\label{lem:T3}  Let $0<p<\infty$ and $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \infty$  and  $0\le \delta\le \rho<1.$   Consider $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$  such that for some positive constant $A$ it satisfies
+\begin{align}
+&\supp(\sigma)\subset\{(x,\xi,\eta)\in \re^{3n}: \abs{\eta}\le A\, \abs{\xi}\},\label{eq:supp1}\\
+&\supp(\widehat{\sigma}^1(\cdot,\xi,\eta)) \subset\{\zeta\in\rn: \abs{\zeta}\le A\, \abs{\xi}\}\quad \forall \xi,\eta\in\rn. \label{eq:supp2}
+\end{align}
+ If $0<A<1/2$ and $s\in\re$ it holds that
+\begin{equation*}
+\norm{T_\sigma(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}} \quad \forall f,g\in \sw,
+\end{equation*}
+where $h^{p_2}$ must be replaced by $L^\infty$ if $p_2=\infty;$  if $A\ge\frac{1}{2},$ the inequality above holds for $s>\tpline.$ 
+\end{lemma}
+ 
+
+
+
+Before proving Lemma~\ref{lem:T3} we state and prove the following lemma which is useful in its proof.
 
 \begin{lemma}\label{lem:Tsk:bound} Let $0<p<\infty$ and $0<p_1,p_2\le \infty$  be such that $\hcline$ and $0\le \delta\le \rho<1;$ assume $\{\sigma_k\}_{k\in \na_0}$ is a sequence in $BS^{(\rho,p_1,p_2)}_{\rho,\delta}$  with constants uniform in $k$ and satisfies 
 \begin{equation*}
@@ -481,13 +539,32 @@ and
 \end{equation*}
 Applying Lemma~\ref{lem:nikol}, recalling the definition of $\widetilde{\f}_k$ given at the beginning of Section~\ref{sec:T1} and using \eqref{eq:Tk:bound} and \eqref{eq:besovlh}, we obtain
 \begin{align*}
-\norm{T_\sigma(f,g)}{\B{s}{p}{q}}&\lesssim \left(\sum_{k=0}^\infty 2^{ksq}\norm{T_{\sigma_k}(f,g)}{L^p}^q\right)^{\frac{1}{q}}=\left(\sum_{k=0}^\infty 2^{ksq}\norm{T_{\sigma_k}(\widetilde{\f}_k(D)f,g)}{L^p}^q\right)^{\frac{1}{q}}\\
-&\lesssim\left(\sum_{k=0}^\infty 2^{ksq}\norm{\widetilde{\f}_k(D)f}{h^{p_1}}^q\right)^{\frac{1}{q}}\norm{g}{h^{p_2}}\sim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}}.
+\norm{T_\sigma(f,g)}{\ibes{p}{s}{q}}&\lesssim \left(\sum_{k=0}^\infty 2^{ksq}\norm{T_{\sigma_k}(f,g)}{L^p}^q\right)^{\frac{1}{q}}=\left(\sum_{k=0}^\infty 2^{ksq}\norm{T_{\sigma_k}(\Delta^{\widetilde{\f}}_k f,g)}{L^p}^q\right)^{\frac{1}{q}}\\
+&\lesssim\left(\sum_{k=0}^\infty 2^{ksq}\norm{\Delta^{\widetilde{\f}}_k f}{h^{p_1}}^q\right)^{\frac{1}{q}}\norm{g}{h^{p_2}}\sim \norm{f}{\ibes{p_1}{s}{q}}\norm{g}{h^{p_2}}.
 \end{align*}
 \end{proof}
 \section{Proof of Theorem \ref{thm:main1} }
+In this section we use lemmas \ref{lem:T1}, \ref{lem:T2}, and \ref{lem:T3} to prove Theorem \ref{thm:main1}. 
 
-\section{Proof of Corollary \ref{}}
+\begin{proof}[Proof of Theorem~\ref{thm:main1}] If $s>\tpline,$ then \eqref{eq:main1}  is a direct consequence of  Lemma~\ref{lem:T1}, Lemma~\ref{lem:T2}, the estimates \eqref{eq:T31} and \eqref{eq:T32} that follow from Lemma~\ref{lem:T3} and corresponding versions  of those results for $\sigma^4,$  $\sigma^5$ and $\sigma^6.$
+
+We next check that \eqref{eq:main1} holds for any $s\in \re$ if the support of the Fourier transform of $\sigma(\cdot,\xi,\eta)$ is contained outside the set 
+$\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\eta}$ and for some fixed $\varepsilon>0$ independent of $\xi$ and $\eta.$ We first recall that the boundedness properties of the operators $T_{\sigma^1},$ $T_{\sigma^2}$ and $T_{\sigma^{3,1}}$ (and the corresponding operators $T_{\sigma^4},$ $T_{\sigma^5}$ and $T_{\sigma^{6,1}}$) proved in Sections~\ref{sec:T1}, \ref{sec:T2} and \ref{sec:T3} hold for any $s\in \re;$ on the other hand,  the boundedness properties for the operator $T_{\sigma^{3,2}}$ (and the corresponding operator $T_{\sigma^{6,2}}$) proved in Section~\ref{sec:T3} hold under the condition $s>\tpline.$   Therefore, the desired result will follow from further analyzing $\sigma^{3,2}$ and $\sigma^{6,2}.$ 
+
+Let $M\in\na$ be such that $M>4$ and $2^{2-M}<\varepsilon;$ consider the following decomposition of $\sigma^{3,2}:$
+\begin{align*}
+\sigma^{3,2}&=\sum_{k=4}^{M-1}\sum_{j=k-3}^k\sum_{\ell=0}^{k-4}\sigma_{j,k,l}+\sum_{k=M}^{\infty}\sum_{j=k-3}^k\sum_{\ell=k-M+1}^{k-4}\sigma_{j,k,l}+\sum_{k=M}^{\infty}\sum_{j=k-3}^k\sum_{\ell=0}^{k-M}\sigma_{j,k,l}\\&=:\sigma^{3,2,1} +\sigma^{3,2,2}+\sigma^{3,2,3}.
+\end{align*}
+The support of $\sigma^{3,2,1}$ is contained in $\{(x,\xi,\eta)\in \re^{3n}: |\xi| \leq 2^M \text{ and } |\eta|\leq 2^M \}$ therefore the operator $T_{\sigma^{3,2,1}}$ can be treated as $T_{\sigma^{2,1}}$ in Section \ref{sec:T2}. Similarly the operator $T_{\sigma^{3,2,2}$ can be treated in the same way as $T_{\sigma^{2,2}}$. Therefore $T_{\sigma^{3,2,1}$ and $T_{\sigma^{3,2,2}}$ satisfy the same estimates as $T_{\sigma^2}$ in Lemma \ref{lem:T2}. The support of $\widehat{\sigma}^{3,2,3}(\cdot,\xi,\eta)(\zeta)$ is contained in $\{(\zeta,\xi,\eta)\in\re^{3n}: |\zeta| \leq 2^{2-M} |\xi| \} \subset \{(\zeta,\xi,\eta)\in\re^{3n}: |\zeta| \leq \eps |\xi| \}$ and the support of $\sigma^{3,2,3}$ is contained in $\{(x,\xi,\eta)\in\re^{3n}: \frac{1}{32}|\xi| \leq |\eta| \leq 4|\xi| \}$. Therefore $T_{\sigma^{3,2,3}}$ satisfies the same estimates as $T_{\sigma^{3,2}}$ for $s>\text{max}(0,n(1/p - 1)$.
+
+A similar reasoning applies to $\sigma^{6,2}=\sum_{j=5}^\infty\sum_{k=j-3}^{j-1}\sum_{\ell=0}^{j-5}\sigma_{j,k,\ell}.$ In this case, the corresponding operators with symbols $\sigma^{6,2,1}$ and $\sigma^{6,2,2}$ satisfy the estimates for any $s\in \re$ while the operator with symbol $\sigma^{6,2,3}$ satisfies the estimates for $s>\tpline.$ The support of the Fourier transform of  $\sigma^{6,2,3}(\cdot,\xi,\eta)$ is contained in  $\{\zeta\in\rn: \abs{\zeta}< \varepsilon\abs{\eta}\}$ and the support of $\sigma^{6,2,3}$ is contained   in  $\{(x,\xi,\eta)\in\re^{3n}: 1/2\abs{\xi}\le\abs{\eta}\le 32\abs{\xi}\}.$
+
+With work above and the formulas for the symbols $\sigma^{3,2,3}$ and $\sigma^{6,2,3}$ in terms of $\sigma$ we have that $\sigma^{3,2,3}$ and $\sigma^{6,2,3}$ are zero if  the support of the Fourier transform of $\sigma(\cdot,\xi,\eta)$ is contained outside the set 
+$\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\eta}.$ Therefore the desired result follows.
+ 
+
+\end{proof}
+\section{Proof of Corollary \ref{coro:main1}}
 
 
 \section{•}

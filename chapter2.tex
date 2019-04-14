@@ -21,8 +21,9 @@ The Fourier transform of a tempered distribution $f\in\swp$ is denoted by   $\fh
 \begin{equation*}
 \widehat{f}(\xi)= \int_{\rn} f(x) e^{-2\pi i \xi\cdot x} \dx\quad \forall \xi\in\rn.
 \end{equation*}
+We know define some notation that will be used throughout this dissertation. 
 If $j\in \ent$ and  $h\in \sw,$ the operator $P_j^h$ is defined so that $\widehat{P_j^h f}(\xi)=h(2^{-j}\xi)\fhat(\xi)$ for $f\in \sw$ and $\xi\in \rn.$  If $\widehat{h}$ is supported in an annulus centered at the origin we will use the notation $\Delta_j^h$ rather than $P_j^h;$ if  $\widehat{h}$ is supported in a ball centered at the origin and $\widehat{h}(0)\neq 0,$   $S_j^h$ will be used instead of  $P_j^h.$
-For $y\in\rn$ denote by $\tau_y$ the operator given by $\tau_y h(x)=h(x+y)$ for  $x\in\rn.$ 
+For $y\in\rn$ the translation operator, denoted by $\tau_y$, is given by $\tau_y h(x)=h(x+y)$ for  $x\in\rn.$ 
  
 \subsection{Coifman-Meyer Multipliers}\label{Coifman-Meyer Multipliers}
 
@@ -30,9 +31,9 @@ The symbols used in the main results of this chapter are Coifman-Meyer multiplie
 
 \begin{dfn}\label{CM_def}
 Given $m\in\mathbb{R}$, a smooth, complex-valued function $\sigma = \sigma(\xi,\eta)$, $\xi,\eta\in\rn$, is a \textit{Coifman-Meyer multiplier} \textit{of order} $m$ if for all multi-indices $\alpha,\beta\in\mathbb{N}^n_0$ there exists a positive constant $C_{\alpha,\beta}$ such that 
-\begin{equation}\label{eq:CMm}
+\begin{equation*}\label{eq:CMm}
 |\partial_\xi^\alpha \partial_\eta^\beta \sigma(\xi, \eta)| \leq C_{\alpha, \beta} (|\xi|+|\eta|)^{m -(\abs{\alpha}+ \abs{\beta})} \quad \forall (\xi, \eta) \in \re^{2n} \setminus \{(0,0)\}.
-\end{equation}
+\end{equation*}
 We say $\sigma = \sigma(\xi,\eta)$, $\xi,\eta\in\rn$, is an \textit{inhomogeneous Coifman-Meyer multiplier} \textit{of order} $m$ if for all multi-indices $\alpha,\beta\in\mathbb{N}^n_0$ there exists a positive constant $C_{\alpha,\beta}$ such that 
 \begin{equation}\label{eq:CMm}
 |\partial_\xi^\alpha \partial_\eta^\beta \sigma(\xi, \eta)| \leq C_{\alpha, \beta} (1+|\xi|+|\eta|)^{m -(\abs{\alpha}+ \abs{\beta})} \quad \forall (\xi, \eta) \in \re^{2n}.
@@ -81,7 +82,7 @@ If $\sigma$ is an inhomogeneous Coifman--Meyer multiplier of order $m,$ a simila
 
 \subsection{The scale of weighted Triebel-Lizorkin and Besov spaces}
 
-The Leibniz-type rules obtained in two of the main results of this chapter, Theorem \ref{thm:CM:TL:B} and Theorem\ref{thm:ICM:TL:B}, hold in the setting of weighted Triebel-Lizorkin and Besov spaces. In this section we define this scale of spaces and present some of their properties. In particular, we state and prove Nikol\'skij representation, which constitute important tools for the proofs of theorems ref{thm:CM:TL:B} and ref{thm:ICM:TL:B}.
+The Leibniz-type rules obtained in two of the main results of this chapter, Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B}, hold in the setting of weighted Triebel-Lizorkin and Besov spaces. In this section we define this scale of spaces and present some of their properties. In particular, we state and prove Nikol\'skij representation, which constitute important tools for the proofs of theorems \ref{thm:CM:TL:B} and \ref{thm:ICM:TL:B}.
 
 We start by defining the classes of weights we will be using and present maximal operators and inequalities.
 
@@ -140,7 +141,7 @@ Let $\psi$ and $\varphi$ be functions in $\sw$ satisfying the following conditio
 \end{itemize}
 
 
-\begin{dfn}{Weighted Homogeneous Triebel-Lizorkin and Besov spaces}\label{TL_B_def}
+\begin{dfn}{(Weighted Homogeneous Triebel-Lizorkin and Besov spaces)}\label{TL_B_def}
 Let $s\in\mathbb{R}$ and $0<q\leq\infty$.
 \begin{itemize}
 \item For $0<p<\infty$ the \textit{weighted homogeneous Triebel-Lizorkin space} $\tlw{p}{s}{q}{w}$ consists of all $f\in \swp/\mathcal{P}(\rn)$ such that 
@@ -156,31 +157,31 @@ with appropriate changes of $q=\infty$.
 \end{itemize}
 \end{dfn}
 
-\begin{dfn}{Weighted inhomogeneous Triebel-Lizorkin and Besov spaces}\label{ITL_B_def}
+\begin{dfn}{(Weighted inhomogeneous Triebel-Lizorkin and Besov spaces)}\label{ITL_B_def}
 Let $s\in\mathbb{R}$ and $0<q\leq\infty$.
 \begin{itemize}
 \item For $0<p<\infty$ the \textit{weighted inhomogeneous Triebel-Lizorkin space} $\itlw{p}{s}{q}{w}$ is the class of all $f\in\mathcal{S}'(\rn)$ such that
 \begin{equation*}
-\norm{f}{\itlw{p}{s}{q}{w}}:= \norm{S^\varphi_0 f}{L^p(w)} + \norm{\left(\sum_{j\in\naz}(2^{sj}|\Delta^\psi_jf|)^q\right)^{\frac{1}{q}}}{\lebw{p}{w}}<\infty,
+\norm{f}{\itlw{p}{s}{q}{w}}:= \norm{S^\varphi_0 f}{L^p(w)} + \norm{\left(\sum_{j\in\na}(2^{sj}|\Delta^\psi_jf|)^q\right)^{\frac{1}{q}}}{\lebw{p}{w}}<\infty,
 \end{equation*}
 with appropriate changes if $q=\infty$.
 \item For $0<p\leq\infty$ the \textit{weighted inhomogeneous Besov space} $\besw{p}{s}{q}{w}$ is the class of all $f\in\mathcal{S}'(\rn)$ such that 
 \begin{equation*}
-\norm{f}{\ibesw{p}{s}{q}{w}}: = \norm{S^\varphi_0 f}{L^p(w)} + \left(\sum_{j\in\naz} (2^{js}\norm{\Delta^\psi_jf}{L^p(w)})^q\right)^{\frac{1}{q}} < \infty,
+\norm{f}{\ibesw{p}{s}{q}{w}}: = \norm{S^\varphi_0 f}{L^p(w)} + \left(\sum_{j\in\na} (2^{js}\norm{\Delta^\psi_jf}{L^p(w)})^q\right)^{\frac{1}{q}} < \infty,
 \end{equation*}
 with appropriate changes if $q=\infty$.
 \end{itemize}
 \end{dfn}
 
 The definitions above are independent of the choice of $\varphi$ and $\psi$. Triebel-Lizorkin and Besov spaces are quasi-Banach spaces and if $p,q \geq 1$ they are Banach spaces. These spaces provide a unified framework that includes a variety of other spaces such as weighted Lebesgue, Hardy, and Sobolev spaces.  For instance the following equalities hold with equivalent norms: 
-\begin{align*}
+\begin{align}\label{TL_equalities}
  \tlw{p}{0}{2}{w} &= H^p (w) \text{ for } 0<p<\infty, \quad w\in A_\infty, \\
  \tlw{p}{0}{2}{w} &= L^p(w) \simeq H^p(w) \text{ for } 1<p<\infty, \quad w\in A_p, \\
  \tlw{p}{s}{2}{w} &= \dot{W}^{s,p}(w) \text{ for } 1<p<\infty, \quad w\in A_p, \\
  \itlw{p}{}{2}{w} &= h^p(w) \text{ for } 0<p<\infty, \quad w\in A_\infty, 
-\end{align*}
+\end{align}
 where $H^p(w)$ and $\dot{W}^{s,p}(w)$ are, respectively, a weighted Hardy space and a weighted Sobolev space, whose definitions we next recall.
-Let $\Psi\in \sw$ be such that $\int_{\rn}\Psi(x)\dx\neq 0.$ Given $0<p<\infty,$ the  Hardy space $H^p(w)$ is defined as 
+Let $\Psi\in \sw$ be such that $\int_{\rn}\Psi(x)\dx\neq 0.$ Given $0<p<\infty,$ the weighted Hardy space $H^p(w)$ is defined as 
 \begin{equation*}
 H^p(w) :=\{f \in \swp: \norm{f}{H^p(w)}< \infty \},
 \end{equation*}
@@ -188,7 +189,15 @@ where
 \[
 \norm{f}{H^p(w)}:= \norm{\sup_{t>0} \abs{t^{-n}\Psi(t^{-1}\cdot)\ast f}}{L^p(w)} .
 \]
-The Sobolev space $\dot{W}^{s,p}(w)$ is the space of all tempered distributions modulo polynomials such that 
+The weighted local Hardy spaces $h^p(w)$ is defined as
+\begin{equation*}
+h^p(w) :=\{f \in \swp: \norm{f}{h^p(w)}< \infty \},
+\end{equation*}
+where 
+\[
+\norm{f}{h^p(w)}:= \norm{\sup_{0<t<1} \abs{t^{-n}\Psi(t^{-1}\cdot)\ast f}}{L^p(w)} .
+\]
+The weighted Sobolev space $\dot{W}^{s,p}(w)$ is the space of all tempered distributions modulo polynomials such that 
 \[\norm{f}{\dot{W}^{s,p}(w)} := \norm{D^s f}{L^p(w)} < \infty. \]
 For a detailed overview of the development of Besov and Triebel-Lizorkin spaces see Triebel \cite{MR3024598} and Qui \cite{MR676560} for the unweighted and weighted settings respectively. We recall that these spaces satisfy the following lifting property: for $s$, $p$, and $q$ as in definitions \ref{TL_B_def} and \ref{ITL_B_def} and $w\in A_\infty$ we have that 
 
@@ -409,7 +418,7 @@ We note that if $m\geq 0$ then the above estimates hold for any $f,g\in\sw$ when
 
 For $w \in A_\infty$ and $0<p\leq\infty$ we denote 
 $\tau_w = \inf\{\tau\in(1,\infty]: w\in A_p\}$ and 
- $\tau_p(w) := n\left( \frac{1}{min(p/\tau_w,1)} - 1 \right).$  By the lifting property of weighted Besov and Triebel-Lizorkin spaces in Section \ref{TL_B_section} and their relation to weighted Hardy spaces (\ref{TL&Hardy}), the estimates (\ref{KP:CM:TL}) and (\ref{KP:CM:B}) imply the following Leibniz-type rule for Coifman-Meyer multipliers of order zero.
+ $\tau_p(w) := n\left( \frac{1}{min(p/\tau_w,1)} - 1 \right).$  By the lifting property of weighted Besov and Triebel-Lizorkin spaces in Section \ref{TL_B_section} and their relation to weighted Hardy spaces (\ref{TL_equalities}), the estimates (\ref{KP:CM:TL}) and (\ref{KP:CM:B}) imply the following Leibniz-type rule for Coifman-Meyer multipliers of order zero.
 
 \begin{corollary}\label{coro:KP:CM:Hardy}  Let $\sigma(\xi,\eta),$ $\xi,\eta\in\rn,$ be a Coifman-Meyer multiplier of order $0.$ 
 Consider  $0 < p, p_1, p_2  < \infty$  such that $\hcline;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
@@ -466,7 +475,7 @@ where $0<p<\infty,$ $0<q\le \infty$ and $s>\tau_{p,q}(w).$
 \end{corollary}
 
 
-In particular if we set $q=2$ and use the connection between weighted Hardy spaces and weighted Triebel-Lizorkin spaces (\ref{TL&Hardy}) we obtain the following corollary. 
+In particular if we set $q=2$ and use the connection between weighted Hardy spaces and weighted Triebel-Lizorkin spaces (\ref{TL_equalities}) we obtain the following corollary. 
 
 \begin{corollary}\label{coro:KP:Hardy} 
 Consider  $0 < p, p_1, p_2  < \infty$  such that $\hcline;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
