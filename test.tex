@@ -1,4 +1,5 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[12pt]{amsart}
+
 \usepackage{amsmath,amssymb,amscd,amsxtra,upref,stmaryrd}
 \usepackage{latexsym}
 \usepackage{mathtools}
@@ -57,25 +58,57 @@
 \newcommand{\re}{\mathbb{R}}
 \newcommand{\ent}{\mathbb{Z}}
 \newcommand{\toro}{\mathbb{T}}
-\newcommand{\rn}{{\mathbb R}^n}
+\newcommand{\rn}{{{\mathbb R}^n}}
 \newcommand{\rtn}{\re^{2n}}
 
 %Function spaces
 \newcommand{\sw}{{\mathcal{S}}(\rn)}
 \newcommand{\swp}{{\mathcal{S}'}(\rn)}
-\newcommand{\B}[3]{B^{#1}_{#2,#3}}
-\newcommand{\F}[3]{F^{#1}_{#2,#3}}
+\newcommand{\swz}{{\mathcal{S}_0}(\rn)}
 
+
+%TL SPACES
+\newcommand{\tlw}[4]{\dot F_{#1,#3}^{#2}(#4)} %weighted homogeneous Triebel-Lizorkin space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\tl}[3]{\dot F_{#1,#3}^{#2}} %unweighted homogeneous Triebel-Lizorkin space
+\newcommand{\itlw}[4]{F_{#1,#3}^{#2}(#4)} %weighted inhomogeneous Triebel-Lizorkin space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\itl}[3]{F_{#1,#3}^{#2}} %unweighted inhomogeneous Triebel-Lizorkin space
+%BESOV SPACES
+\newcommand{\besw}[4]{\dot B_{#1,#3}^{#2}(#4)} %weighted homogeneous Besov space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\bes}[3]{\dot B_{#1,#3}^{#2}} %unweighted homogeneous Besov space
+\newcommand{\ibesw}[4]{B_{#1,#3}^{#2}(#4)} %weighted inhomogeneous Besov space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\ibes}[3]{B_{#1,#3}^{#2}} %unweighted inhomogeneous Besov space
+
+%LEBESGUE SPACES
+\newcommand{\lebw}[2]{L^{#1}(#2)} %weighted Lebesgue space with #1=index and #2=weight 
+
+%VARIABLE LEBESGUE SPACES
+\newcommand{\Lp}{L^{p(\cdot)}} %variable Lp
+\newcommand{\Lpc}{L^{p'(\cdot)}}
+\newcommand{\Lq}{L^{q(\cdot)}} %variable Lq
+\newcommand{\pp}{{p(\cdot)}}
+\newcommand{\cpp}{{p'(\cdot)}}
+\newcommand{\qq}{{q(\cdot)}}
+\newcommand{\cqq}{{q'(\cdot)}}
+\newcommand{\rr}{{r(\cdot)}}
+\newcommand{\crr}{{r'(\cdot)}}
+\newcommand{\ppo}{{p_1(\cdot)}}
+\newcommand{\ppt}{{p_2(\cdot)}}
+
+%MORREY SPACES
+\newcommand{\mow}[3]{M_{#1}^{#2}(#3)}
 
 %Cal letters
-\newcommand{\C}{\mathcacl{C}}
+\newcommand{\C}{\mathcal{C}}
 \newcommand{\M}{\mathcal{M}} % for the Hardy-Littelwood maximal function
 \newcommand{\Mtau}{\mathcal{M}_\tau} 
 \newcommand{\K}{\mathcal{K}}
+\newcommand{\Ss}{\mathcal{S}}
+%\newcommand{\P}{\mathcal{P}}
+\newcommand{\B}{\mathcal{B}}
+\def\P{\mathcal P}
 
 
 %Greek letters
-\newcommand{\eps}{\varepsilon}
 \newcommand{\f}{\varphi}
 \newcommand{\fk}{\varphi_k}
 \newcommand{\fj}{\varphi_j}
@@ -98,27 +131,52 @@
 \newcommand{\dzeta}{\, d\zeta}
 
 
-%Summations
-\newcommand{\sumkNz}{\sum_{k \in \na_0}}
-\newcommand{\sumlNz}{\sum_{\ell \in \na_0}}
-\newcommand{\sumjkNz}{\sum_{j, k \in \na_0}}
+
+% Standard multiplier operators
+\newcommand{\Do}[2]{\Delta^{#1}_{#2}}
+\newcommand{\So}[2]{S^{#1}_{#2}}
+
 
 %Other
 \newcommand{\abs}[1]{\left\vert #1 \right\vert}
 \newcommand{\fr}[2]{{\textstyle \frac{#1}{#2}}}
 \newcommand{\norm}[2]{\left\|#1\right\|_{#2}}
 \newcommand{\supp}{{\rm{supp}}}
-\newcommand{\tp}{\max(0,n(\frac{1}{p}-1))}
-%\newcommand{\tpline}{\max(0,n({1}/{p}-1))}
-\newcommand{\pst}{\tilde{p}}
-%\newcommand{\hc}{\frac{1}{p}=\frac{1}{p_1}+\frac{1}{p_2}}
-%\newcommand{\hcline}{1/p=1/{p_1}+1/{p_2}}
-
+\newcommand{\hc}{\frac{1}{p}=\frac{1}{p_1}+\frac{1}{p_2}}
+\newcommand{\hcline}{1/p=1/p_1+1/p_2}
+\newcommand{\tp}{\max\{0,n(\frac{1}{p}-1)\}}
+\newcommand{\A}{D}
+\newcommand{\ex}{d}
+\newcommand{\gamt}{\gamma_{p_1,p_2,p,q}^{w_1,w_2, tl}}
+\newcommand{\gamb}{\gamma_{p_1,p_2,p,q}^{w_1,w_2,b}}
 \begin{document}
-\begin{align}\nonumber
-& \sum\limits_{\ell=4}^\infty 2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst\ell} 2^{k \pst[(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^{\pst}\right)^{\frac{q}{\pst}} \\ \label{eq:moving:the:sums}
-&\hspace{2cm}\lesssim \sum\limits_{k=0}^\infty 2^{k q[ (1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+ s_1+\eps] }   \norm{\mathcal{M}_r(\widetilde{\f}_k(D)f)\mathcal{M}_r(\widetilde{\Phi}_k(D)g)}{L^p}^q.
-\end{align}
+
+\begin{theorem}\label{thm:Nikolskij:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
+\begin{equation*}
+\supp(\widehat{u_j}) \subset B(0, \A\, 2^j ) \quad \forall j \in \ent.
+\end{equation*}
+If $w\in A_\infty,$ then the following holds:  
+\begin{enumerate}[(i)]
+\item\label{item:thh:Nikolskij:TL} Let $0 < p < \infty$, $0 < q \leq \infty$ and $s > \tau_{p,q}(w)$. If $\norm{\{2^{js} u_j\}_{j\in\ent}}{L^p(w)(\ell^{q})} < \infty$, then the series $\sum_{j \in \ent} u_j$ converges in $\tlw{p}{s}{q}{w}$ (in $\mathcal{S}'_0(\rn)$ if $q=\infty$) and 
+\begin{equation*}
+\norm{\sum_{j \in \ent} u_j}{\tlw{p}{s}{q}{w}} \lesssim  \norm{\{2^{js} u_j\}_{j\in\ent}}{L^p(w)(\ell^{q})},
+\end{equation*}
+where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and  $q.$  An analogous statement, with $j\in\naz,$ holds true for $\itlw{p}{s}{q}{w}$ (when $q=\infty,$  the convergence is in $\swp$).
+\item\label{item:thh:Nikolskij:B} Let $0 < p, q \leq \infty$ and $s > \tau_p(w)$. If $\norm{\{2^{js} u_j\}_{j\in\ent}}{\ell^{q}(L^p(w))} < \infty$, then the series $\sum_{j \in \ent} u_j$ converges in  $\besw{p}{s}{q}{w}$ (in $\mathcal{S}'_0(\rn)$ if $q=\infty$) and 
+\begin{equation*}
+\norm{\sum_{j \in \ent} u_j}{\besw{p}{s}{q}{w}} \lesssim  \norm{\{2^{js} u_j\}_{j\in\ent}}{\ell^{q}(L^p(w))},
+\end{equation*}
+where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and $q.$   An analogous statement, with $j\in\naz,$ holds true for $\ibesw{p}{s}{q}{w}$ (when $q=\infty,$  the convergence is in $\swp$).
+\end{enumerate}
+\end{theorem}
+
+For Part~\eqref{item:thh:Nikolskij:TL}
+
+ 
+
+
+
+
 
 
 \end{document}

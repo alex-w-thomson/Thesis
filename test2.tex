@@ -315,255 +315,29 @@
 
 \doublespacing
 \begin{document}
+\begin{theorem}\label{thm:Nikolskij:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
+\begin{equation*}
+\supp(\widehat{u_j}) \subset B(0, \A\, 2^j ) \quad \forall j \in \ent.
+\end{equation*}
+If $w\in A_\infty,$ then the following holds:  
+\begin{enumerate}[(i)]
+\item\label{item:thh:Nikolskij:TL} Let $0 < p < \infty$, $0 < q \leq \infty$ and $s > \tau_{p,q}(w)$. If $\norm{\{2^{js} u_j\}_{j\in\ent}}{L^p(w)(\ell^{q})} < \infty$, then the series $\sum_{j \in \ent} u_j$ converges in $\tlw{p}{s}{q}{w}$ (in $\mathcal{S}'_0(\rn)$ if $q=\infty$) and 
+\begin{equation*}
+\norm{\sum_{j \in \ent} u_j}{\tlw{p}{s}{q}{w}} \lesssim  \norm{\{2^{js} u_j\}_{j\in\ent}}{L^p(w)(\ell^{q})},
+\end{equation*}
+where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and  $q.$  An analogous statement, with $j\in\naz,$ holds true for $\itlw{p}{s}{q}{w}$ (when $q=\infty,$  the convergence is in $\swp$).
+\item\label{item:thh:Nikolskij:B} Let $0 < p, q \leq \infty$ and $s > \tau_p(w)$. If $\norm{\{2^{js} u_j\}_{j\in\ent}}{\ell^{q}(L^p(w))} < \infty$, then the series $\sum_{j \in \ent} u_j$ converges in  $\besw{p}{s}{q}{w}$ (in $\mathcal{S}'_0(\rn)$ if $q=\infty$) and 
+\begin{equation*}
+\norm{\sum_{j \in \ent} u_j}{\besw{p}{s}{q}{w}} \lesssim  \norm{\{2^{js} u_j\}_{j\in\ent}}{\ell^{q}(L^p(w))},
+\end{equation*}
+where the implicit constant depends only on $n,$ $\A,$ $s,$ $p$ and $q.$   An analogous statement, with $j\in\naz,$ holds true for $\ibesw{p}{s}{q}{w}$ (when $q=\infty,$  the convergence is in $\swp$).
+\end{enumerate}
+\end{theorem}
 
-% +--------------------------------------------------------------------+
-% | ******Masters Students -- You Need to Make Some Changes Here******
-% |
-% | The Abstract Title page and Abstract page following the Abstract
-% | Title page are required only for doctoral dissertations.  For
-% | masters theses or reports, comment out or delete the lines:
-% |
-% | \input{abstracttitle.tex} through \end{abstract}.
-% |
-% | You will also need to uncomment the two lines following the
-% | \begin{abstract} command:
-% |    %\setcounter{page}{-1}
-% |    %\pdfbookmark[0]{Abstract}{PDFAbstractPage}
-% |
-% | Don't uncomment the lines above.  Scroll down several lines until
-% | you see the section "For masters theses or reports, uncomment
-% | the commands..." and uncomment the lines in that section.
-% +--------------------- ----------------------------------------------+
+For Part~\eqref{item:thh:Nikolskij:TL}
 
-%\input{abstracttitle.tex}  % Masters students - comment or delete this line
-%
-%\begin{abstract} % Masters students - comment or delete this line
-%   \setcounter{page}{-1} % Masters students - comment or delete this line
-%   \pdfbookmark[0]{Abstract}{PDFAbstractPage} % Masters students - comment or delete this line
-%   \input{abstract.tex} % Masters students - comment or delete this line
-%   \vfill % Masters students - comment or delete this line
-%\end{abstract} % Masters students - comment or delete this line
-
-% +--------------------------------------------------------------------+
-% | Title Page -- Required for both Doctoral and Masters Students
-% +--------------------------------------------------------------------+
-
-\input{title.tex}
-
-% +--------------------------------------------------------------------+
-% | Copyright Page -- Required for both Doctoral and Masters Students
-% +--------------------------------------------------------------------+
-
-%\input{copyright.tex}
-
-% +--------------------------------------------------------------------+
-% |  Abstract -- Required for both Doctoral and Masters Students
-% +--------------------------------------------------------------------+
-
-%\begin{abstract}
-
-% +--------------------------------------------------------------------+
-% | For masters theses or reports, uncomment the commands on the next
-% | two lines (\setcounter and \pdfbookmark)
-% +--------------------------------------------------------------------+
-
-   %\setcounter{page}{-1}
-   %\pdfbookmark[0]{Abstract}{PDFAbstractPage}
-
-%\input{abstract.tex}
-%\vfill
-%\end{abstract}
-
-% +--------------------------------------------------------------------+
-% | The following commands start a new page and set the page numbering
-% | to lowercase roman numerals.
-% +--------------------------------------------------------------------+
-
-\newpage
-\pagenumbering{roman}
-
-% +--------------------------------------------------------------------+
-% |
-% | *********************** IMPORTANT ******************************
-% |
-% | In the \setcounter command below, set the number to represent the
-% | page number of the table of contents page.  For example, if the
-% | table of contents page is the 6th page of your document, enter 6
-% | in the brackets.  This number may vary, depending on the length of
-% | your abstract.
-% |
-% | Numbers do not appear on the title and abstract pages, but they
-% | are included in the page count.  The table of contents page is the
-% | first page on which page numbers are displayed.
-% +--------------------------------------------------------------------+
-
-\setcounter{page}{6}
-
-% +--------------------------------------------------------------------+
-% | The following command creates a bookmark for the table of contents
-% | in the final PDF document.
-% +--------------------------------------------------------------------+
-
-\pdfbookmark[0]{\contentsname}{contents}
-
-% +--------------------------------------------------------=-----------+
-% | The following command adds dot leaders for all entries in the
-% | table of contents.
-% +--------------------------------------------------------------------+
-
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
-
-% +--------------------------------------------------------------------+
-% | The following commands makes all entries and page numbers in the
-% | table of contents appear in normal weight font (not bold).
-% +--------------------------------------------------------------------+
-
-\renewcommand{\cftchapfont}{\mdseries}
-\renewcommand{\cftchappagefont}{\mdseries}
-
-% +--------------------------------------------------------------------+
-% | These commands add the table of contents, list of figures, and
-% | list of tables.
-% +--------------------------------------------------------------------+
-
-\tableofcontents
-%\listoffigures
-%\listoftables
-
-% +--------------------------------------------------------------------+
-% | Acknowledgements Page
-% |
-% | If you choose not to have an Acknowledgements page, comment out
-% | or delete the following 3 lines.
-% +--------------------------------------------------------------------+
-
-%\newpage
-%\phantomsection
-%\addcontentsline{toc}{chapter}{Acknowledgements}
-%\input{acknowledge.tex}
-
-% +--------------------------------------------------------------------+
-% | Dedication Page
-% |
-% | If you choose not to have a Dedication page, comment out
-% | or delete the following 3 lines.
-% +--------------------------------------------------------------------+
-
-%\newpage
-%\phantomsection
-%\addcontentsline{toc}{chapter}{Dedication}
-%\input{dedication.tex}
-
-% +--------------------------------------------------------------------+
-% | Preface Page
-% |
-% | If you choose not to have a Dedication page, comment out
-% | or delete the following 4 lines.
-% +--------------------------------------------------------------------+
-
-%\newpage
-%\phantomsection
-%\addcontentsline{toc}{chapter}{Preface}
-%\input{preface.tex}
+ 
 
 
-% +--------------------------------------------------------------------+
-% | This is where the chapter content of your ETDR begins.
-% +--------------------------------------------------------------------+
-
-%\phantomsection
-\newpage
-\pagenumbering{arabic}
-\setcounter{page}{1}
-
-% +--------------------------------------------------------------------+
-% | Individual chapters of your ETDR are added using the \input
-% | command.
-% +--------------------------------------------------------------------+
-
-\input{chapter1.tex}
-\input{chapter2.tex}
-\input{chapter3.tex}
-
-% +--------------------------------------------------------------------+
-% | Uncomment the lines below to add additional chapters.
-% +--------------------------------------------------------------------+
-
-%\input{chapter4.tex}
-%\input{chapter5.tex}
-
-% +--------------------------------------------------------------------+
-% | References
-% +--------------------------------------------------------------------+
-
-% +--------------------------------------------------------------------+
-% | Included for Gather Purpose only.  Do NOT uncomment the next line.
-%input "references.bib"
-% | In order for the WinEDT editor to index references correctly, it
-% | has to know where the "references.bib" file resides.  This
-% | command will be ignored completely by LaTeX
-% |
-% | WinEDT can read file path names with either "\" or "/". LaTeX,
-% | however,doesn't like "\", so it's easier to store a path name
-% | using forward slashes "/".
-% +--------------------------------------------------------------------+
-
-\cleardoublepage
-\phantomsection
-
-% +--------------------------------------------------------------------+
-% | This template uses the BibTeX program to format references.  The
-% | lines below create a separate Bibliography section and add
-% | an entry for "Bibliography" to the Table of Contents.  The actual
-% | data for your references (author, title, journal, date, etc.) are
-% | entered in the references.bib file.  See "Citations and Bibliography"
-% | for details on to creating citations and formatting references.
-% +--------------------------------------------------------------------+
-
-\addcontentsline{toc}{chapter}{Bibliography}
-\bibdata{references}
-\bibliography{NaiboThomsonBiblio}
-
-
-% +--------------------------------------------------------------------+
-% | The following commands add the appendices  To add or delete
-% | appendices, add or remove the line
-% |
-% |     \input{appendixX.tex}
-% |
-% | where "X" is the letter designation of the appendix (A, B, C,
-% | etc.) You should have one \input{appendixX.tex} line and a
-% | corresponding file appendixX.tex for each appendix.
-% |
-% |If you do not have any appendices, comment out or delete the three
-% |lines below.
-% +--------------------------------------------------------------------+
-
-
-%\appendix
-%\input{appendixA.tex}
-%\input{appendixB.tex}
 
 \end{document}
-
-% +--------------------------------------------------------------------+
-% | Template Revisions
-% |
-% | 9/14/06: Removed typos
-% | 3/29/13: Removed hypernat package
-% | 4/5/13: Changed to plain bib style
-% | 5/17/13: added /cleardoublepage and /phantomsection to
-% |          /bibliography to correct TOC page problem
-% | 5/17/13: Fixed TOC problem with Dedication, Preface, etc.
-% | 12/16/15: Added tocloft package to produce leader dots for all
-% |           entries in the table of contents.
-% |           Added geometry package to specify 1 inch margins.
-% |           Removed unnecessary color specifications.
-% |           Changed to \citep for citations.
-% | 2/9/2016: Replaced \bibpunct with \setcitestyle.
-% |           Changed to unsrtnat style
-% |           Added natbib.pdf and Citations and Bibliography.pdf files
-% | 8/3/2018: Fixed problem with incorrect page numbers for
-% |           Acknowledgements, Dedication, and Preface in TOC.
-% |           Removed limit on number of words in Abstract.
-% +--------------------------------------------------------------------+

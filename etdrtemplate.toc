@@ -3,17 +3,27 @@
 \contentsline {section}{\numberline {2.1}Preliminaries}{7}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}Coifman-Meyer Multipliers}{8}{subsection.2.1.1}% 
 \contentsline {subsection}{\numberline {2.1.2}The scale of weighted Triebel-Lizorkin and Besov spaces}{10}{subsection.2.1.2}% 
-\contentsline {subsubsection}{Weighted spaces}{10}{section*.2}% 
-\contentsline {subsubsection}{Weighted Triebel-Lizorkin and Besov spaces}{12}{section*.3}% 
-\contentsline {subsubsection}{Nikol'skij representations for weighted Triebel-Lizorkin and Besov spaces}{15}{section*.4}% 
-\contentsline {section}{\numberline {2.2}Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}{22}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Homogeneous Leibniz-type rules}{22}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Connection to Kato-Ponce inequalities}{24}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Proof of Theorem \ref {thm:CM:TL:B}}{26}{subsection.2.2.3}% 
-\contentsline {subsection}{\numberline {2.2.4}Inhomogeneous Leibniz-type rules}{30}{subsection.2.2.4}% 
-\contentsline {section}{\numberline {2.3}Leibniz rules in other functions spaces}{31}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Leibniz-type rules in the setting of Lorentz-based Triebel-Lizorkin and Besov spaces}{32}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Leibniz-type rules in the setting of Morrey based Triebel-Lizorkin and Besov spaces}{39}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Variable Lebesgue spaces}{45}{subsection.2.3.3}% 
-\contentsline {section}{\numberline {2.4}Applications to scattering properties of PDEs}{52}{section.2.4}% 
-\contentsline {chapter}{Bibliography}{58}{section*.5}% 
+\contentsline {subsubsection}{Weighted Triebel-Lizorkin and Besov spaces}{11}{section*.2}% 
+\contentsline {subsubsection}{Nikol'skij representations for weighted Triebel-Lizorkin and Besov spaces}{15}{section*.3}% 
+\contentsline {section}{\numberline {2.2}Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}{21}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Homogeneous Leibniz-type rules}{21}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Proof of Theorem \ref {thm:CM:TL:B}}{26}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Inhomogeneous Leibniz-type rules}{30}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Leibniz-type rules in other functions spaces}{32}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Leibniz-type rules in the settings of Lorentz-based Triebel--Lizorkin and Besov spaces.}{33}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Leibniz-type rules in the settings of Morrey-based Triebel--Lizorkin and Besov spaces.}{36}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Leibniz-type rules in the settings of variable-exponent Triebel--Lizorkin and Besov spaces.}{38}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Nikol'skij representations of Triebel-Lizorkin and Besov spaces}{42}{subsection.2.3.4}% 
+\contentsline {section}{\numberline {2.4}Applications to scattering properties of PDEs}{43}{section.2.4}% 
+\contentsline {chapter}{\numberline {3}Bilinear H\"ormander Classes of Critical Order}{50}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Introduction}{50}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Preliminaries}{54}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Besov and local Hardy spaces}{54}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Marchall's inequality for bilinear pseudodiffernetial operators}{54}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Decomposition of $T_\sigma $ and strategy for the proof of Theorem \ref {thm:main1}}{57}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Estimates for $T_{\sigma ^1}$}{59}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Estimates for $T_{\sigma ^2}$}{65}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Estimates for $T_{\sigma ^3}$}{72}{subsection.3.3.3}% 
+\contentsline {section}{\numberline {3.4}Proof of Theorem \ref {thm:main1} }{76}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Proof of Corollary \ref {coro:main1}}{77}{section.3.5}% 
+\contentsline {chapter}{Bibliography}{80}{section*.4}% 
