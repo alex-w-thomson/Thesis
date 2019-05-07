@@ -16,7 +16,7 @@
 % | LaTeX will automatically number the chapters.
 % +--------------------------------------------------------------------+
 
-\chapter{Introduction to Leibniz-type rules}
+\chapter{Introduction to Leibniz-type rules}\label{chapter1}
 \label{makereference1}
 
 Fractional Leibniz rules have been extensively studied due to their connections to partial differential equations that model many real world situations such as shallow water waves and fluid flow. In this chapter, we introduce the subject of Leibniz-type rules and describe the main results to be discussed in Chapters \ref{chapter2} and \ref{chapter3} of this dissertation.
@@ -41,14 +41,15 @@ where $|\alpha| = \alpha_1 + \alpha_2 + ... + \alpha_n$ for $\alpha = (\alpha_1,
 
  Another version of (\ref{def:leibniz}) is obtained by using the inhomogeneous $s$th order fractional differentiation operator $J^s$:
 \begin{equation}\label{def:ileibniz}
-\norm{J^s(fg)}{L^p} \lesssim \norm{J^s f}{L^{p_1}}\norm{g}{L^{p_2}} + \norm{f}{L^{\tilde{p}_1}}\norm{J^s g}{L^{\tilde{p}_2}}
+\norm{J^s(fg)}{L^p} \lesssim \norm{J^s f}{L^{p_1}}\norm{g}{L^{p_2}} + \norm{f}{L^{\tilde{p}_1}}\norm{J^s g}{L^{\tilde{p}_2}},
 \end{equation}
 where $p_1,p_2,\tilde{p}_1, \tilde{p}_2,$ and $s$ satisfy the same conditions as for (\ref{def:leibniz}).
 Similarly to its homeogenous counterpart, the operator $J^s$ is defined through the Fourier transform as 
 \[ J^s f(x) = \int_{\rn} (1+|\xi|^2)^\frac{s}{2} \widehat{f}(\xi)e^{2\pi i x\cdot\xi} d\xi\]
-and can be interpreted as taking derivatives up to order $s$ of $f$ where $s>0$.
+and can be interpreted as taking derivatives up to order $s$ of $f$ when $s>0$.
 %Then $s>0$ it is interpreted as taking up to $s$ derivatives of the function it is applied to as when $s=k$ is a positive integer $\norm{J^k(f)}{L^p} = \norm{f}{W^{k,p}}$ where $\norm{f}{W^{k,p}} = \sum_{|\alpha|\leq k} \norm{\partial^\alpha f}{L^p}$.
-% 
+
+
 The estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) are also known as Kato-Ponce inequalities due to the foundational work of Kato-Ponce \cite{MR951744}, where the estimate (\ref{def:ileibniz}) was proved in the case $1<p=p_1=\tilde{p}_2<\infty$ and $p_2=\tilde{p}_1=\infty$, with applications to the Cauchy problem for Euler and Navier-Stokes equations. This result was extended by Gulisashvili-Kon \cite{MR1420922}, who showed (\ref{def:leibniz}) and (\ref{def:ileibniz}) for the cases $s>0$, $1<p<\infty$, and $1 < p_1,p_2,\tilde{p}_1,\tilde{p}_2\leq\infty$ in connection to smoothing properties of Schr\"odinger semigroups. Grafakos-Oh \cite{MR3200091} and Muscalu-Schlag \cite{MR3052499} established the cases for $1/2 <p\leq 1$; the case $p=\infty$ was completed in the work of Bourgain-Li \cite{MR3263081} and Grafakos-Maldonado-Naibo \cite{MR3189525}; finally, the case $p_1 = 1$, $1\leq p_2 \leq \infty$ and $\frac{1}{2} \leq p \leq 1$ was established by Oh-Wu \cite{Oh_Wu}. Applications of the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) to Korteweg-de Vries equations were studied by Christ-Weinstein \cite{MR1124294} and Kenig-Ponce-Vega \cite{MR1211741}.
 
 In the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}), the two functions $f$ and $g$ are related through pointwise multiplication. In this dissertation, we will consider bilinear estimates in the spirit of (\ref{def:leibniz}) and (\ref{def:ileibniz}) where the two functions are related through a pseudodifferential operator. Let $\sigma(x,\xi,\eta)$ be a smooth, complex-valued function defined for $x,\xi,\eta\in\rn$. We define the \textit{bilinear pseudodifferential operator}  associated to $\sigma$, $T_\sigma$, by 
@@ -59,24 +60,23 @@ T_{\sigma}(f,g)(x) = \int_{\mathbb{R}^{2n}} \sigma(x,\xi,\eta) \widehat{f}(\xi)\
 \noindent We call $\sigma$ the \textit{symbol} of the operator $T_\sigma$; when $\sigma$ is independent of $x$, $\sigma$ is also referred to as the \textit{multiplier} of the \textit{bilinear multiplier operator} $T_\sigma$. We note that $\sigma \equiv 1$ gives $T_\sigma(f,g) = fg$. 
 
 
-In Chapters 2 and 3 we will present new results on Leibniz-type rules associated to bilinear pseudodifferential operators that are of the form 
+In Chapters \ref{chapter2} and \ref{chapter3} we will present new results on Leibniz-type rules associated to bilinear pseudodifferential operators that are of the form 
 \begin{equation}\label{h_general_estimate}
 \norm{D^s T_\sigma(f,g)}{Z} \lesssim \norm{D^sf}{X_1}\norm{g}{Y_1} + \norm{f}{X_2}\norm{D^s g}{Y_2} ,
 \end{equation}
 \begin{equation}\label{i_general_estimate}
 \norm{J^sT_\sigma(f,g)}{Z} \lesssim \norm{J^sf}{X_1}\norm{g}{Y_1} + \norm{f}{X_2}\norm{J^sg}{Y_2} ,
 \end{equation}
-for a variety of function spaces $X_1$, $X_2$, $Y_1$, $Y_2$, and $Z$. In the particular case that $\sigma \equiv 1$ and $X_1$, $X_2$, $Y_1$, $Y_2$, $Z$ are appropriate Lebesgue spaces (\ref{h_general_estimate}) and (\ref{i_general_estimate}) recover (\ref{def:leibniz}) and (\ref{def:ileibniz}) respectively. The main results presented in Chapter \ref{chapter2} will appear in Naibo-Thomson \cite{NaTh_CM}, while those discussed in Chapter \ref{chapter3} were published in Naibo-Thomson \cite{MR3912862}.
+for a variety of function spaces $X_1$, $X_2$, $Y_1$, $Y_2$, and $Z$. In the particular case that $\sigma \equiv 1$ and $X_1$, $X_2$, $Y_1$, $Y_2$, and $Z$ are appropriate Lebesgue spaces (\ref{h_general_estimate}) and (\ref{i_general_estimate}) recover (\ref{def:leibniz}) and (\ref{def:ileibniz}) respectively. The main results presented in Chapter \ref{chapter2} will appear in Naibo-Thomson \cite{NaTh_CM}, while those discussed in Chapter \ref{chapter3} were published in Naibo-Thomson \cite{MR3912862}.
 
 In Chapter \ref{chapter2}, we will discuss Leibniz-type rules (\ref{h_general_estimate}) and (\ref{i_general_estimate}) in the setting of Besov and Triebel-Lizorkin spaces based on certain quasi-Banach spaces. Such bilinear estimates will be proved for bilinear Coifman-Meyer multiplier operators. A particular case of the results in Chapter \ref{chapter2} is the following fractional Leibniz rule, and its inhomogeneous counterpart, in the context of Hardy spaces:
-
 \begin{equation}\label{KP:Hardy}
 \norm{D^s(fg)}{H^p} \lesssim \norm{D^s f}{H^{p_1}} \norm{g}{H^{p_2}} +  \norm{f}{H^{\tilde{p}_1}}   \norm{D^s g}{H^{\tilde{p}_2}}, 
 \end{equation}
-%where $0<p,p_1, p_2,\tilde{p}_1, \tilde{p}_2 <\infty$ and $1/p = 1/p_1 + 1/p_2 = 1/\tilde{p}_1 + 1/\tilde{p}_2$. Recalling that $H^p = L^p$ for $1<p<\infty$, (\ref{KP:Hardy}) extends and improves (\ref{def:leibniz}).Indeed, the inequality \eqref{KP:Hardy} extends the range of $p$, $p_1$, $p_2$, $\tilde{p}_1$, $\tilde{p}_2$ by allowing $0<p,p_1,p_2,\tilde{p}_1,\tilde{p}_2<\infty$ while \eqref{def:leibniz} requires $1<p_1,p_2,\tilde{p}_1, \tilde{p}_2\leq \infty$. Additionally (\ref{KP:Hardy}) allows for the $H^p$ norm on the left-hand side, which is larger than the $L^p$ norm. 
+where $0<p,p_1, p_2,\tilde{p}_1, \tilde{p}_2 <\infty$ and $1/p = 1/p_1 + 1/p_2 = 1/\tilde{p}_1 + 1/\tilde{p}_2$. Recalling that $H^p = L^p$ for $1<p<\infty$, (\ref{KP:Hardy}) extends and improves (\ref{def:leibniz}). Indeed, the inequality \eqref{KP:Hardy} extends the range of $p$, $p_1$, $p_2$, $\tilde{p}_1$, $\tilde{p}_2$ by allowing $0<p,p_1,p_2,\tilde{p}_1,\tilde{p}_2<\infty$, while \eqref{def:leibniz} requires $1<p_1,p_2,\tilde{p}_1, \tilde{p}_2\leq \infty$. Additionally, (\ref{KP:Hardy}) allows for the $H^p$ norm on the left-hand side, which is larger than the $L^p$ norm. 
   
 The techniques used in the proofs of the results in Chapter \ref{chapter2} are quite flexible and allow us to obtain \eqref{h_general_estimate} and \eqref{i_general_estimate} in Triebel-Lizorkin and Besov spaces based on weighted Lebesque spaces, weighted Lorrentz spaces, weighted Morrey spaces, and variable-exponent Lebesgue spaces.
-In particular, the proofs make use of Nikol'skij representations of such function spaces. These representations have been used in unweighted settings in the work of Nikol'skij \citep{MR0374877}, Meyer \citep{MR639462}, Bourdad \citep{MR673825}, Triebel \citep{MR3024598}, and Yamazaki \citep{MR837335}. 
+In particular, the proofs make use of Nikol'ski\u\i$\text{ }$  representations of such function spaces. These representations have been used in unweighted settings in the work of Nikol'ski\u\i$\text{ }$  \citep{MR0374877}, Meyer \citep{MR639462}, Bourdad \citep{MR673825}, Triebel \citep{MR3024598}, and Yamazaki \citep{MR837335}. 
 
 As an application of the results in Chapter \ref{chapter2} we obtain scattering properties for solutions to certain systems of partial differential equations that involve fractional powers of the Laplacian. Solutions of these systems scatter to functions that can be realized in terms of a Coifman-Meyer multiplier operator acting on appropriate arguments. As a consequence, the main results of Chapter \ref{chapter2} can be applied and lead to estimates associated to the long term behavior of the solutions. 
 
@@ -85,7 +85,7 @@ In Chapter \ref{chapter3}, we present Leibniz-type rules in Besov and local Hard
 \begin{equation}
 \norm{D^s T_\sigma(f,g)}{B^0_{p,q}} \lesssim \norm{D^s f}{B^0_{p_1,q}} \norm{g}{h^{p_2}} + \norm{f}{h^{p_1}}\norm{D^s g}{B^0_{p_2,q}},
 \end{equation}
-where $B^0_{p,q}$ and $h^p$ denote Besov and Hardy spaces respectively, $0<p<\infty$ and $0<p_1,p_2\leq\infty$ are such that $1/p = 1/p_1 + 1/p_2$, $0<q\leq\infty$ and $s>\text{max}\{0,n(1/p - 1)\}$.
+where $B^0_{p,q}$ and $h^p$ denote Besov and Hardy spaces respectively, $0<p<\infty$ and $0<p_1,p_2\leq\infty$ are such that $1/p = 1/p_1 + 1/p_2$, $0<q\leq\infty$ and $s>n(\frac{1}{\text{min}(p,1)} - 1)$.
 
 %\begin{theorem}\label{thm:critical_besov}
 %Let $0<p<\infty$ and $0<p_1,p_2\leq\infty$ be such that $1/p = 1/p_1 + 1/p_2$, $0<q\leq\infty$, $s>\text{max}\{0,n(1/p - 1)\}$, and $0\leq \delta\leq \rho <1$. If $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$ then it holds that 
@@ -100,7 +100,7 @@ where $B^0_{p,q}$ and $h^p$ denote Besov and Hardy spaces respectively, $0<p<\in
 %Lebesgue and Hardy spaces; see B\'enyi-Bernicot-Maldonado-Naibo-Torres \citep{MR2660466}, B\'enyi-Chaffee-Naibo \citep{benyi2018strongly}, B\'enyi-Maldonado-Naibo-Torres \citep{MR1986065}, MR2660466}, Brummer-Naibo \citep{MR3750234}, Herbert-Naibo \citep{MR3627725}, \citep{MR3211086}], Koezuka-Tomita \citep{MR3750316}, Michalowski-Rule-Staubach \citep{MR3165300}, Miyachi-Tomita
 %\citep{MR3179688, MT1, MT2}, Naibo \cite{MR3393696, MR3411149}, Rodr\'iguez-L\'opez-Staubach \citep{MR3035059}, and the references therein.
 
-The proofs of the results in Chapter \ref{chapter3} utilize appropriate spectral decompositions of the symbols, pointwise inequalities in terms of maximal functions, and Nikol'skij representations for Besov spaces. The techniques used are inspired by bilinear techniques used in Naibo \cite{MR3393696} and techniques for linear operators in Johnsen \citep{MR2163627}, Marschall \citep{MR1376592}, and Park \citep{Park}. 
+The proofs of the results in Chapter \ref{chapter3} utilize appropriate spectral decompositions of the symbols, pointwise inequalities in terms of maximal functions, and Nikol'ski\u\i$\text{ }$  representations for Besov spaces. The techniques used are inspired by bilinear techniques used in Naibo \cite{MR3393696} and techniques for linear operators in Johnsen \citep{MR2163627}, Marschall \citep{MR1376592}, and Park \citep{Park}. 
 %Results related to estimate \ref{critical_est} were proved for the forbidden class $BS^0_{1,1}$ in Koezuka-Timita \cite{MR3750316} and Naibo \citep{MR3393696}. Concerning bilinear pseudodifferential operators with symbols belonging to the subcritical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\leq p_1,p_2,p \leq \infty$ ($1 < p_1,p_2,p < \infty$ when $\rho = \delta = 0$) estimate \ref{critical_est} was shown in Naibo \citep{MR3393696} Theorem 1.3. Theorem \ref{thm:critical_besov} extends this result to the critical classes and allows for the indices to be in the wider range $(0,\infty)$. 
 
 We close this chapter by referencing serveral works in connection with the study of the bilinear estimates \eqref{h_general_estimate} and \eqref{i_general_estimate}. In \cite{MR3750234}, Brummer-Naibo studied Leibniz-type rules for bilinear pseudodifferential operators with homogeneous symbols and in function spaces that admit a molecular decomposition and a $\varphi$-transform characterization in the sense of Frazier-Jawerth \cite{MR808825, MR1070037}. In the context of Lebesgue spaces and mixed Lebesgue spaces, estimates of the type (\ref{h_general_estimate}) were studied in Hart-Torres-Wu \cite{MR3864388} for bilinear multiplier operators with minimal smoothness assumptions on the multipliers. Related mapping properties for bilinear pseudodifferential operators with symbols in the bilinear H\"ormander classes were studied by B\'enyi-Torres \cite{MR1986065} and B\'enyi-Nahmod-Torres \cite{MR2250054} in the setting of Sobolev spaces, by B\'enyi \cite{MR1996120} in the setting of Besov spaces, and by Naibo \cite{MR3393696} and Koezuka-Tomita \cite{MR3750316} in the context of Triebel-Lizorkin spaces. Additionally, versions of (\ref{def:leibniz}) and (\ref{def:ileibniz}) in weighted Lebesgue spaces were proved in Cruz-Uribe-Naibo \cite{MR3513582}, while Brummer-Naibo \cite{BrNa2017} proved (\ref{h_general_estimate}) and (\ref{i_general_estimate}) in weighted Lebesgue spaces for Coifman-Meyer multiplier operators. 

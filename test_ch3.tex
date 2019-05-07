@@ -1,0 +1,1026 @@
+% +--------------------------------------------------------------------+
+% | LaTeX Template for K-State Electronic Theses, Dissertations,
+% | and Reports
+% |
+% | Some guidelines for using the template are shown in comments.  Read
+% | these comments carefully, as they describe changes you will need to
+% | make to the template in order to meet Graduate School requirements.            |
+% |
+% | Additional information on using the template are contained in these
+% | files, which are included when you download the template:
+% |
+% | ReadMe.pdf - A general overview of using the template
+% |
+% | BibTeX Guide.pdf - Detailed guidelines on using BibTeX to create
+% | your bibliography and manage your citations.
+% |
+% | natbib.pdf - Gives detailed information on using the natbib package
+% | and formatting citations
+% +--------------------------------------------------------------------+
+
+% +--------------------------------------------------------------------+
+% | The template is designed to be used with PDFLaTeX. Process this
+% | file (etdrtemplate.tex) with PDFLaTeX in order to produce a PDF
+% | version of your ETDR.  If you are using BibTex to manage your
+% | refrences, you will need to process your file four times:
+% | 1. Run PDFLaTeX
+% | 2. Run BibTex
+% | 3. Run PDFLaTeX
+% | 4. Run PDFLaTeX
+% |
+% | Some LaTeX editors do not explicitly list PDFLaTeX as an option, but
+% | do use PDFLaTeX to produce a PDF file directly from your .tex files.
+% | See the ReadMe file for details.
+% +--------------------------------------------------------------------+
+% |
+% +--------------------------------------------------------------------+
+% |
+% | As required by the Graduate School, The template is configured to
+% | contain the following sections in the order shown.
+
+% | Abstract title page (doctoral dissertations only)
+% | Abstract (doctoral dissertations only)
+% | Title page
+% | Copyright page
+% | Abstract
+% | Table of contents
+% | List of figures
+% | List of tables
+% | Acknowledgements (Optional)
+% | Dedication (Optional)
+% | Preface (Optional)
+% | Individual Chapters
+% | References or Bibliography
+% | Appendices (as needed)
+% |
+% | Details on removing optional sections are given in the comments below.
+% |
+% +--------------------------------------------------------------------+
+
+% +--------------------------------------------------------------------+
+% | The LaTex command \documentclass selects a particular class to
+% | associate with the document.  Within this command, 12pt is
+% | specified for the font size.  You can change this to 11 pt, if
+% | desired.
+% +--------------------------------------------------------------------+
+
+\documentclass[final,letterpaper,12pt,oneside]{class_diss}
+
+% +--------------------------------------------------------------------+
+% | Here are added external packages that will be used throughout
+% | the document.  You can add other packages as needed.
+% +--------------------------------------------------------------------+
+\usepackage{amsmath,amssymb,amscd,amsxtra,upref,stmaryrd}
+\usepackage{latexsym}
+\usepackage{mathtools}
+\usepackage[dvips]{graphics,epsfig}
+\usepackage{enumerate}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{amsthm,amsfonts,color,esint,graphicx, float, mathabx}
+
+%\usepackage{mathabx}
+%\usepackage{graphicx} % Extended graphics package.
+%\usepackage{amsmath} % American Mathematics Society standards
+%\usepackage{amsxtra} % Additional math symbols
+%\usepackage{amssymb} % Additional math symbols
+%\usepackage{amsthm} % Additional math symbols
+%\usepackage{latexsym} % Additional math symbols
+\usepackage{setspace} % Controls line spacing
+\usepackage[margin=1in]{geometry} % Sets page margins to 1 inch on all sides
+\usepackage[titles]{tocloft} % Adds leader dots to all entries in the table of contents
+%\usepackage{enumitem}
+
+
+
+%\usepackage{amsmath,amssymb,amscd,amsxtra,upref,stmaryrd}
+%\usepackage{latexsym}
+%\usepackage{mathtools}
+%\usepackage[dvips]{graphics,epsfig}
+%\usepackage{enumerate}
+%\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+%\usepackage{amsthm,amsfonts,color,esint,graphicx, float, mathabx}
+
+
+
+
+% +--------------------------------------------------------------------+
+% |
+% | Citation and Bibliography Style
+% |
+% | The following commands determine the citation and bibliography style.  The
+% | template uses BibTeX for formatting the bibliography.  See "BibTeX Guide.pdf"
+% | for details on formatting citations and references.  The template is set
+% | to use a generic, superscript style, but it can be easily modified
+% | to use author-year styles.
+
+\bibliographystyle{plain}
+% | If you want to use an author-year citation style, change "unsrtnat" to
+% | "plainnat" in the line above.  You can also use other styles supported
+% | by LaTeX, e.g., acm, ieeetr, siam, etc.  Additional styles
+% | are in the \styles folder and can be invoked like this:
+% | \bibliographystyle{styles/apsrev}.  If the style you use is based
+% | on an author-year citation style, you will need to make changes
+% | in the usepackage and \setcitestyle statements below
+
+\usepackage[super,sort&compress]{natbib}
+% | If you want to use an author-year citation style, change "super" to
+% | "authoryear" in the line above.
+
+\setcitestyle{square,numbers}
+% | if you want to use an author-year citation style, change "super" to
+% | "authoryear" in the line above.
+
+% +---------------------------------------------------------------------+
+% | The hyperref package enables cross-references.
+% +---------------------------------------------------------------------+
+
+%\usepackage[pdftex, plainpages=false, pdfpagelabels]{hyperref}
+
+\hypersetup{
+    linktocpage=true,
+    colorlinks=true,
+    bookmarks=true,
+    citecolor=blue,
+    urlcolor=blue,
+    linkcolor=blue,
+    citebordercolor={1 0 0},
+    urlbordercolor={1 0 0},
+    linkbordercolor={.7 .8 .8},
+    breaklinks=true,
+    pdfpagelabels=true,
+    }
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+
+\newtheorem{thm}{Theorem} % used for known results
+\renewcommand{\thethm}{\thesection.\Alph{thm}}
+\newtheorem{lem}[thm]{Lemma} % used for known results
+\newtheorem{prop}[thm]{Proposition} % used for known results
+%\renewcommand{\thelem}{\Alph{lem}}
+
+
+\theoremstyle{remark}
+\newtheorem{dfn}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{remark}{Remark}[section]
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+\newcommand{\comment}[1]{\vskip.3cm
+\fbox{%
+\parbox{0.93\linewidth}{\footnotesize #1}}
+\vskip.3cm}
+
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+
+
+%Number sets, etc
+\newcommand{\com}{\mathbb{C}}
+\newcommand{\na}{\mathbb{N}}
+\newcommand{\naz}{\mathbb{N}_0}
+\newcommand{\re}{\mathbb{R}}
+\newcommand{\ent}{\mathbb{Z}}
+\newcommand{\toro}{\mathbb{T}}
+\newcommand{\rn}{{{\mathbb R}^n}}
+\newcommand{\rtn}{\re^{2n}}
+
+%Function spaces
+\newcommand{\sw}{{\mathcal{S}}(\rn)}
+\newcommand{\swp}{{\mathcal{S}'}(\rn)}
+\newcommand{\swz}{{\mathcal{S}_0}(\rn)}
+
+
+%TL SPACES
+\newcommand{\tlw}[4]{\dot F_{#1,#3}^{#2}(#4)} %weighted homogeneous Triebel-Lizorkin space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\tl}[3]{\dot F_{#1,#3}^{#2}} %unweighted homogeneous Triebel-Lizorkin space
+\newcommand{\itlw}[4]{F_{#1,#3}^{#2}(#4)} %weighted inhomogeneous Triebel-Lizorkin space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\itl}[3]{F_{#1,#3}^{#2}} %unweighted inhomogeneous Triebel-Lizorkin space
+%BESOV SPACES
+\newcommand{\besw}[4]{\dot B_{#1,#3}^{#2}(#4)} %weighted homogeneous Besov space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\bes}[3]{\dot B_{#1,#3}^{#2}} %unweighted homogeneous Besov space
+\newcommand{\ibesw}[4]{B_{#1,#3}^{#2}(#4)} %weighted inhomogeneous Besov space: #1=p (L^p norm), #2=s (regularity), #3=q (l^q norm), #4=weight
+\newcommand{\ibes}[3]{B_{#1,#3}^{#2}} %unweighted inhomogeneous Besov space
+
+%LEBESGUE SPACES
+\newcommand{\lebw}[2]{L^{#1}(#2)} %weighted Lebesgue space with #1=index and #2=weight 
+
+%VARIABLE LEBESGUE SPACES
+\newcommand{\Lp}{L^{p(\cdot)}} %variable Lp
+\newcommand{\Lpc}{L^{p'(\cdot)}}
+\newcommand{\Lq}{L^{q(\cdot)}} %variable Lq
+\newcommand{\pp}{{p(\cdot)}}
+\newcommand{\cpp}{{p'(\cdot)}}
+\newcommand{\qq}{{q(\cdot)}}
+\newcommand{\cqq}{{q'(\cdot)}}
+\newcommand{\rr}{{r(\cdot)}}
+\newcommand{\crr}{{r'(\cdot)}}
+\newcommand{\ppo}{{p_1(\cdot)}}
+\newcommand{\ppt}{{p_2(\cdot)}}
+
+%MORREY SPACES
+\newcommand{\mow}[3]{M_{#1}^{#2}(#3)}
+
+%Cal letters
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\M}{\mathcal{M}} % for the Hardy-Littelwood maximal function
+\newcommand{\Mtau}{\mathcal{M}_\tau} 
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\Ss}{\mathcal{S}}
+%\newcommand{\P}{\mathcal{P}}
+\newcommand{\B}{\mathcal{B}}
+%\def\P{\mathcal P}
+
+
+%Greek letters
+\newcommand{\eps}{\varepsilon}
+\newcommand{\f}{\varphi}
+\newcommand{\fk}{\varphi_k}
+\newcommand{\fj}{\varphi_j}
+
+
+%Fourier transform of f and g; complex exponentials
+\newcommand{\fhat}{\widehat{f}}
+\newcommand{\ghat}{\widehat{g}}
+\newcommand{\eixxi}{e^{2\pi i x \cdot \xi}}
+\newcommand{\eixeta}{e^{2\pi i x \cdot \eta}}
+\newcommand{\eixzeta}{e^{2\pi i x \cdot \zeta}}
+\newcommand{\eixxe}{e^{2\pi i x \cdot (\xi + \eta)}}
+
+%dx, etc
+\newcommand{\dx}{\, dx}
+\newcommand{\dy}{\, dy}
+\newcommand{\dz}{\, dz}
+\newcommand{\dxi}{\, d\xi}
+\newcommand{\deta}{\, d\eta}
+\newcommand{\dzeta}{\, d\zeta}
+
+
+
+% Standard multiplier operators
+\newcommand{\Do}[2]{\Delta^{#1}_{#2}}
+\newcommand{\So}[2]{S^{#1}_{#2}}
+
+
+%Other
+\newcommand{\tpline}{\max(0,n({1}/{p}-1))}
+\newcommand{\abs}[1]{\left\vert #1 \right\vert}
+\newcommand{\fr}[2]{{\textstyle \frac{#1}{#2}}}
+\newcommand{\norm}[2]{\left\|#1\right\|_{#2}}
+\newcommand{\supp}{{\rm{supp}}}
+\newcommand{\hc}{\frac{1}{p}=\frac{1}{p_1}+\frac{1}{p_2}}
+\newcommand{\hcline}{1/p=1/p_1+1/p_2}
+\newcommand{\tp}{\max\{0,n(\frac{1}{p}-1)\}}
+\newcommand{\A}{D}
+\newcommand{\ex}{d}
+\newcommand{\gamt}{\gamma_{p_1,p_2,p,q}^{w_1,w_2, tl}}
+\newcommand{\gamb}{\gamma_{p_1,p_2,p,q}^{w_1,w_2,b}}
+\newcommand{\pst}{\tilde{p}}
+
+%Summations
+\newcommand{\sumkNz}{\sum_{k \in \na_0}}
+\newcommand{\sumlNz}{\sum_{\ell \in \na_0}}
+\newcommand{\sumjkNz}{\sum_{j, k \in \na_0}}
+
+
+
+\DeclareMathOperator*{\essinf}{ess\,inf}
+\DeclareMathOperator*{\esssup}{ess\,sup}
+
+
+%
+%\textwidth6in
+%
+%\setlength{\topmargin}{0in} \addtolength{\topmargin}{-\headheight}
+%\addtolength{\topmargin}{-\headsep}
+%\setlength{\oddsidemargin}{0in}
+%
+%\oddsidemargin  0.0in \evensidemargin 0.0in \parindent0em
+%
+%\pagestyle{fancy}\lhead{Research Statement} \rhead{October 2018}
+%\chead{{\large{\bf Alex Thomson}}} \lfoot{} \rfoot{\bf \thepage} \cfoot{}
+
+\newcounter{list}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0em}
+% +--------------------------------------------------------------------+
+% | The document begins here.
+% +--------------------------------------------------------------------+
+
+\doublespacing
+\begin{document}
+
+
+
+\section{Introduction and main results}
+
+In this chapter, we obtain Leibniz-type rules for bilinear pseudodifferential operators associated to symbols in the H\"ormander classes of critical order in the setting of Besov and local Hardy spaces. 
+
+In this section, we present the bilinear H\"ormander classes and state the main results of this chapter. The notation used corresponds with that introduced in Chapter \ref{chapter2}. In particular, $L^p$, $B^s_{p,q}$ and $h^p$ denoted the unweighted Lebesgue, Besov and local Hardy spaces on $\rn$, respectively. We recall that $\tau_p = n(\frac{1}{\text{min}(p,1)} - 1)$ for $0<p<\infty$. 
+
+Given $0\leq \delta \leq \rho \leq 1$ and $m\in\re$, a complex-valued function $\sigma = \sigma(x,\xi,\eta)$, $x,\xi,\eta \in \rn$, belongs to the bilinear H\"ormander class $BS^m_{\rho,\delta}$ if for any multiindices $\alpha,\beta,\gamma \in \mathbb{N}^n_0$ there exists a positive constant $C_{\alpha,\beta,\gamma}$ such that 
+\begin{equation}\label{def:Bmrd}
+|\partial_x^\alpha \partial_\xi^\beta \partial_\eta^\gamma \sigma(x, \xi, \eta)| \leq C_{\alpha, \beta, \gamma} (1+|\xi|+|\eta|)^{m +\delta \abs{\alpha}-\rho(\abs{\beta+\gamma})} \quad \forall x, \xi, \eta \in \rn.
+\end{equation}
+Then for any $\sigma \in BS^m_{\rho,\delta},$ the bilinear pseudodifferential operator $T_\sigma$ associated to $\sigma$ is defined as in (\ref{psydo}). 
+
+Bilinear pseudodifferential operators with symbols
+in the bilinear H\"ormander classes have been extensively studied;
+Lebesgue and Hardy spaces; see B\'enyi-Bernicot-Maldonado-Naibo-Torres \citep{MR3205530}, B\'enyi-Chaffee-Naibo \citep{benyi2018strongly}, B\'enyi-Maldonado-Naibo-Torres \citep{MR2660466}, B\'enyi-Torres \citep{MR1986065; MR2046194}, Brummer-Naibo \citep{MR3750234}, Herbert-Naibo \citep{ MR3211086 ; MR3627725}, \citep{MR3211086}, Koezuka-Tomita \citep{MR3750316}, Michalowski-Rule-Staubach \citep{MR3165300}, Miyachi-Tomita
+\citep{MR3179688; MT1; MT2}, Naibo \cite{MR3393696, MR3411149}, Rodr\'iguez-L\'opez-Staubach \citep{MR3035059}, and the references therein.
+ 
+One fundamental aspect of the study of such symbols is their symbolic calculus for the transposes of operators associated to them. This was established in the works B\'enyi-Torres \citep{MR1986065} and B\'enyi-Maldonado-Naibo-Torres \citep{MR2660466}. Another important aspect of the study of these operators is their boundedness properties in a variety of function spaces. Operators associated to symbols in $BS^0_{1,\delta}$, $0\leq\delta < 1$, can be realized as Calder\'on-Zygmund operators. As a consequence, such operators are bounded from $L^{p_1} \times L^{p_2}$ to  $L^p$ for  $1 < p_1, p_2 < \infty$ and $1/2<p <\infty$ related through $\hcline.$ These operators also satisfy the endpoint mappings $L^\infty \times L^\infty \rightarrow BMO$ and $L^1 \times L^1 \rightarrow L^{1/2, \infty}$, where $BMO$ is the space of functions with bounded mean oscilation. Operators with symbols in the class $BS^0_{1,1}$ may fail to be bounded in Lebesgue spaces and are better understood in other settings. In B\'enyi et al. ~\cite{MR1996120, MR2250054, MR1986065}, estimates in Sobolev spaces were obtained for such operators. For results in the settings of Besov and Triebel-Lizorkin spaces see Brummer--Naibo~\cite{MR3750234}, Koezuka--Tomita~\cite{MR3750316} and Naibo~\cite{MR3393696}. For $0<\rho<1$, unless $m$ is sufficiently negative, the class $BS^m_{\rho,\delta}$ fall outside the bilinear Calder\'on-Zygmund theory. 
+
+
+Given  $0\le \delta\le \rho< 1$  and $0< p_1,p_2,p\le \infty$  related   by $\hcline,$ define 
+$$
+m(\rho, p_1,p_2):=-n(1-\rho)\max({1}/{2},\,{1}/{p_1},{1}/{p_2},\, 1-1/p, 1/p-1/2).
+$$ 
+
+\noindent B\'enyi et al.~\cite{MR3205530} proved that if $1\le p_1,p_2, p\le \infty,$    $m<m(\rho,p_1,p_2)$ and $\sigma\in BS^m_{\rho,\delta}$  then $T_\sigma$ is bounded from $L^{p_1}\times L^{p_2}$ to $L^p.$  On the other hand, Miyachi--Tomita~\cite{MR3179688} proved that  if $m>m(\rho, p_1,p_2),$ with $0< p_1,p_2,p\le \infty,$ there are symbols in $BS^m_{\rho,\rho}$ for which the associated  bilinear pseudodifferential operators are not bounded from $H^{p_1}\times H^{p_2}$ to $L^p$ (recall that $H^p = L^p$ if $1<p<\infty$), in the case that $p=\infty$ $L^p$ should be replaced by $BMO$. As a consequence of these results, the class $BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$ is referred to as a critical class and $m(\rho,p_1,p_2)$ is called a critical order. 
+
+We now turn our attention to the critical classes. Miyachi--Tomita~\cite{MR3179688} showed that the symbols in $BS^{m(0,p_1,p_2)}_{0,0}$ with $0<p_1,p_2,p\le  \infty $ give rise to operators that are bounded from  $h^{p_1}\times h^{p_2}$ to $h^p$ (recall that $h^{r}(\rn)=L^r(\rn)$, if $1<r<\infty$)  and $h^{r}$ should be replaced with $bmo$ if $r=\infty.$   In the case that $p_1 = p_2 = \infty$, Naibo~\cite{MR3411149}  proved  that if $\sigma$ is in the critical class $BS^{m(\rho, \infty,\infty)}_{\rho,\delta}$ with $0\le \delta\le \rho<1/2 $ then $T_\sigma$ is bounded from $L^{\infty}\times L^{\infty}$ to $BMO.$ The theory of boundedness properties in the setting of Lebesgue and  Hardy  spaces for operators with symbols in the critical classes was completed in Miyachi--Tomita~\cite{MT1, MT2}: operators with symbols of critical order $ m(\rho, p_1,p_2),$ with $0\le \delta\le \rho<1$  and $0< p_1,p_2,p\le \infty,$ are bounded from $H^{p_1}\times H^{p_2}$ to $L^p,$ where  $L^p$ should be replaced by $BMO$ if $p=\infty.$
+
+In this chapter we prove estimates in the setting of Besov and Hardy spaces for bilinear pseudodifferential operators associated to symbols in the critical classes $BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$. The main result of this chapter is the following theorem.
+
+\begin{theorem} \label{thm:main1}
+Let $0<p<\infty$ and  $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \infty,$   $0\le\delta\le \rho<1$ and   $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}.$ If $s>\tau_p,$ then it holds that
+\begin{equation}\label{eq:main1}
+\norm{T_\sigma(f,g)}{\ibes{p}{s}{q}}\lesssim \norm{f}{\ibes{p_1}{s}{q}}\norm{g}{h^{p_2}} +\norm{f}{h^{p_1}}\norm{g}{\ibes{p_2}{s}{q}}\quad \forall f,g\in \sw,
+\end{equation}
+where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively. Moreover,  if there exits $\varepsilon>0$ such that the Fourier transform of  $\sigma(\cdot,\xi,\eta)$ is  supported outside the set  $\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\xi},$ then \eqref{eq:main1} holds for any $s\in\re.$
+\end{theorem}
+
+Results related to estimate (\ref{eq:main1}) were proved for the forbidden class $BS^0_{1,1}$ in B\'enyi \cite{MR1996120}, Koezuka-Timita \cite{MR3750316}, and Naibo \citep{MR3393696}. Concerning bilinear pseudodifferential operators with symbols belonging to the subcritical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\leq p_1,p_2,p \leq \infty$ and in the critical classes $BS^{m(0,p_1,p_2)}_{0,0}$ with $1<p_1,p_2,p<\infty$, estimate (\ref{eq:main1}) was shown in Naibo \citep[Theorem 1.3]{MR3393696} for $s>\tau_p$. Theorem \ref{thm:main1} extends this result to the critical classes and allows for the the regularity $s$ to be in the wider range $(0,\infty)$ under certain assumptions on $\sigma$. 
+
+The proof of Theorem~\ref{thm:main1} uses the fact that operators with symbols in $BS^{(0,p_1,p_2)}_{0,0}$ that are localized at certain dyadic frequencies are bounded in the setting of local Hardy spaces; no other boundedness properties of operators with symbols in the bilinear H\"ormander classes are required in the proof. The tools employed are inspired by bilinear techniques in Naibo~\cite{MR3393696} and linear ones in   Johnsen~\cite{MR2163627}, Marschall~\cite{MR1376592} and   Park~\cite{Park}.
+
+As a consequence of Theorem~\ref{thm:main1}, we obtain  Leibniz-type rules for bilinear pseudodifferential operators associated to symbols in a general class $BS^m_{\rho,\delta}:$
+
+\begin{corollary}\label{coro:main1} 
+Let $0<p<\infty$ and $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \infty,$  $0\le\delta \le \rho<1,$   $m\in \re$ and $\sigma\in BS^{m}_{\rho,\delta};$ set $\bar{m}=m-m(\rho,p_1,p_2).$  If  $s>\tau_p$ then it holds that
+\begin{equation}\label{eq:coro:main1}
+\norm{T_\sigma(f,g)}{\ibes{s}{p}{q}}\lesssim \norm{f}{\ibes{s+\bar{m}}{p_1}{q}}\norm{g}{h^{p_2}} +\norm{f}{h^{p_1}}\norm{g}{\ibes{s+\bar{m}}{p_2}{q}}\quad \forall f,g\in \sw,
+\end{equation}
+where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively. Moreover,  if there exits $\varepsilon>0$ such that the Fourier transform of  $\sigma(\cdot,\xi,\eta)$ is  supported outside the set  $\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\xi},$ then \eqref{eq:coro:main1} holds for any $s\in\re.$
+\end{corollary}
+
+\begin{remark} If $0\le \delta\le \rho<1,$ $m<m(\rho,p_1,p_2)$ and $\sigma\in BS^m_{\rho,\delta}$ then $T_\sigma$ is a smoothing operator since, in such case, $s+\bar{m}<s$ for $s,\bar{m}$ as in the statement of Corollary~\ref{coro:main1}. 
+\end{remark}
+
+\begin{remark} It will be clear from the proofs that different pairs of $p_1,p_2,$ related to $p$ through the H\"older condition, can be used in each of the terms on the right-hand sides of the estimates in Theorem~\ref{thm:main1} and Corollary~\ref{coro:main1}. 
+\end{remark}
+
+\begin{remark}\label{remark_3}
+By the lifting propterty of Besov spaces \eqref{lifting_B}, the estimates \eqref{eq:main1} and \eqref{eq:coro:main1} can be written as 
+$$ \norm{J^s T_\sigma(f,g)}{\ibes{0}{p}{q}}\lesssim \norm{J^s f}{\ibes{\bar{m}}{p_1}{q}}\norm{g}{h^{p_2}} +\norm{f}{h^{p_1}}\norm{J^s g}{\ibes{\bar{m}}{p_2}{q}}  $$
+\end{remark}
+
+The organization of the rest of this chapters is as follows. In Section \ref{sec:maximal_ineq}, we prove a maximal inequality for bilinear pseudodifferential operators that will be useful in the proof of Theorem \ref{thm:main1}. In Section \ref{sec:decomp}, we introduce a decomposition for $T_\sigma$ for $\sigma \in BS^m_{\rho,\delta}$ and prove boundedness properties for the corresponding pieces. Finally, in Section \ref{}, we combine the results from sections \ref{sec:maximal_ineq} and \ref{sec:decomp} to conclude the proofs of Theorem \ref{thm:main1} and Corollary \ref{coro:main1}.
+
+\textit{Note:} $\text{max}(0,n(1/p - 1))$ appears in chapters \ref{chapter1} and \ref{chapter2} as $n(1/\text{min}(1,p) - 1)$ or $\tau_p$. 
+
+
+%%\subsection{Besov and local Hardy spaces}
+%%Recall the Besov and local Hardy spaces defined in (\ref{ITL_B_def}) and (\ref{def:local_Hardy}) respectively. 
+%%We note the following properties, which are easy to check and will be useful in our proofs: If $0<p<\infty,$  it holds that
+%%\begin{equation}\label{eq:Lp:hp}
+%%\norm{f}{L^p}\lesssim \norm{f}{h^p}\quad\forall f\in \sw, 
+%%\end{equation}
+%%\begin{equation}\label{eq:hp:scale}
+%%\norm{f(\lambda\cdot)}{h^p}\le \lambda^{-\frac{n}{p}}\norm{f}{h^p}\quad \forall\, 0<\lambda\le 1,\forall f\in h^p(\rn). 
+%%\end{equation}
+%%We also recall that if $s\in \re,$ $0<p<\infty$ and  $0<q\le \infty$ then 
+%%\begin{equation}\label{eq:besovlh}
+%%\norm{f}{B^s_{p,q}}\sim \norm{\{2^{ks}\psi_k(D)f\}_{k\in\na_0}}{\ell^q(h^p)} =\left(\sum_{k=0}^\infty (2^{ks} \norm{\psi_k(D)f}{h^p})^q\right)^{\frac{1}{q}}\quad \forall f\in B^s_{p,q}(\rn),
+%%\end{equation}
+%%that is, the $L^p$-norm in the definition of $\norm{f}{B^s_{p,q}}$ can be replaced by the $h^p$-norm (this is clear if $1<p<\infty$ since $h^p(\rn)=L^p(\rn)$ in such case). See, for instance, Qui~\cite[Corollary 2.3]{MR676560}.
+%
+%\section{A maximal inequality for bilinear pseudodiffernetial operators}\label{sec:maximal_ineq}
+%
+%In this section we prove the following maximal inequality for bilinear pseudodifferential operators, which will be usefull in the proof of Theorem \ref{thm:main1}. We recall that $\mathcal{M}_r f = \left( \mathcal{M}(|f|^r)\right)^{1/r}$, where $\mathcal{M}$ is the Hardy-Littlewood maximal operator, for functions $f$ and $g$ we set $f\otimes g (x,y) = f(x)g(y)$.  \
+%
+%\begin{lemma}\label{lem:biMarschall}  Consider $f,g\in\sw$  and let $\sigma=\sigma(x,\xi,\eta)$ be a  symbol in $C^\infty(\re^{3n})$ 
+%such that for some polynomial $P(\xi,\eta),$
+%\[
+%\abs{\sigma(x,\xi,\eta)}\lesssim P(\xi,\eta)\quad \forall x,\xi,\eta\in\rn.
+%\]
+%Suppose there exists $k_0\in\ent$  such that
+%$$
+%\supp(\sigma(x, \cdot, \cdot)) \subset \{(\xi, \eta) \in \re^{2n}: |\xi| + |\eta| \le 2^{k_0}\}\quad \forall x\in\rn
+%$$
+%and 
+%$$
+%\supp(\widehat{f}), \supp(\widehat{g}) \subset \{\xi \in \re^{n}: |\xi| \le 2^{k_0}\}.
+%$$
+%If $0< r\le1$ and $\norm{\sigma(x, 2^{k_0+1} \cdot, 2^{k_0+1} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})} \mathcal{M}_r(f\otimes g)(x,y) $ is locally integrable in $\rtn,$ it holds that
+%\begin{equation}\label{eq:biMarschall}
+%|T_{\sigma}(f,g)(x)| \lesssim  \norm{\sigma(x, 2^{k_0+1} \cdot, 2^{k_0+1} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})} \mathcal{M}_r(f)(x) \mathcal{M}_r(g)(x) \quad \forall x \in \rn,
+%\end{equation}
+%where the implicit constant is independent of $\sigma,$  $f,$ $g$ and $k_0.$
+%\end{lemma}
+
+Lemma \ref{lem:biMarschall} will be a consequence of the following result from Marchall~\cite[p.118, Proposition 5(a)]{MR1376592} and  Johnsen~\cite[p.275, Proposition 4.1]{MR2163627}:
+
+%\begin{lem}\label{lem:Marschall} Consider $F\in \mathcal{S}(\re^N)$ and let $\Sigma=\Sigma(X, \zeta)$ be a  symbol in $C^\infty(\re^N \times \re^N)$ such that for some polynomial $P(\zeta),$
+%\[
+%\abs{\Sigma(X, \zeta)}\lesssim P(\zeta)\quad \forall X,\zeta\in\re^N.
+%\]
+%Suppose there exists $k_0\in \ent$ such that
+%$$
+%\supp (\Sigma(X, \cdot)) \subset  \{ \zeta \in \re^N:  |\zeta| \le 2^{k_0}\}\quad \forall X\in \re^N
+%$$
+%and
+%$$
+%\supp(\widehat{F})  \subset  \{ \zeta \in \re^N:  |\zeta| \le 2^{k_0}\}.
+%$$
+%If $0<r \le 1$ and $\norm{\Sigma(X, 2^{k_0} \cdot)}{W^{\left\lfloor N/r \right\rfloor + 1 , 1} \mathcal{M}_r(F)(X)$ is locally integrable in $\re^N,$ it holds that
+%\begin{equation}\label{eq:Marschall:N}
+%|T_{\Sigma}(F)(X)| \lesssim \norm{\Sigma(X, 2^{k_0} \cdot)}{W^{\left\lfloor N/r \right\rfloor + 1, 1}} \mathcal{M}_r(F)(X) \quad \forall X \in \re^N,
+%\end{equation}
+%where the implicit constant is independent of $\Sigma,$ $F$ and $k_0.$
+%\end{lem}
+
+\begin{proof}[Proof of Lemma \ref{lem:biMarschall}]
+ We have that
+$$
+T_{\sigma}(f,g)(x) = \int_{\rtn} \sigma(x, \xi, \eta) \fhat(\xi) \ghat(\eta) \eixxe\dxi\deta
+$$
+can be regarded as the restriction to the diagonal in $\re^{2n}$ of the linear pseudodifferential operator
+$$
+T_\Sigma(F)(X) = \int_{\re^{2n}} \Sigma(X, \zeta) \widehat{F}(\zeta) e^{2\pi i X \cdot \zeta } \dzeta
+$$
+after setting $\zeta=(\xi, \eta)$ and defining, for $X = (x, y) \in \re^{2n}$, 
+$$
+\Sigma(X, \zeta) :=\sigma(x, \xi, \eta)\quad and \quad F(X):= (f\otimes g) (X)=f(x)g(y).
+$$
+Note that $\Sigma(X, \zeta)$ is in $C^\infty(\rtn\times \rtn),$  has polynomial growth in $\zeta$ uniformly in $X$ and  is supported in $\{\zeta\in\re^{2n}: \abs{\zeta}\le 2^{k_0}\}$ for each $X\in \rtn;$ moreover $\widehat{F}(\zeta) =  \widehat{f}(\xi) \widehat{g}(\eta)$ is supported in $\{\zeta \in \re^{2n}: |\zeta| \leq 2^{k_0+1} \}.$ Then, \eqref{eq:biMarschall} follows after applying Lemma~\ref{lem:Marschall}  and \eqref{eq:Marschall:N} to $T_{\Sigma}(F)$ and noticing that 
+\[
+\mathcal{M}_r(F)(x, x)\lesssim \mathcal{M}_r(f)(x)\mathcal{M}_r(g)(x)\quad \forall x\in\rn.
+\]
+\end{proof}
+
+%\begin{remark}\label{remark:locint}
+%We note that $\norm{\sigma(x, 2^{k_0+1} \cdot, 2^{k_0+1} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})} \mathcal{M}_r(f\otimes g)(x,y) $ is locally integrable in $\re^{2n}$ when $\norm{\sigma(x, 2^{k_0+1} \cdot, 2^{k_0+1} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})}$ is a bounded function of $x$ since $\mathcal{M}_r(f\otimes g)(x,y)$ is locally integrable in $\re^{2n}$.
+%\end{remark}
+
+%
+%\section{Decomposition of the operator $T_\sigma$ and main estimates}\label{sec:decomp}
+%In the proofs that follow in this chapter we implicitly assume that the symbol $\sigma$ in the statements of Theorem \ref{thm:main1} and Corollary \ref{coro:main1} has compact support in $\mathbb{R}^{3n}$ and prove estimates for such symbols with constants independent of its support. The following limiting argument then allows us to to prove these results for symbols in the bilinear H\"ormander classes without compact support. For $0\le \delta,\rho\le 1,$ $m\in\re,$ $\sigma\in BS^m_{\rho,\delta}$ and $0\le \varepsilon<1$ let $\sigma_\epsilon (x,\xi,\eta) = \Psi(\varepsilon x, \varepsilon \xi, \varepsilon \eta) \sigma( x, \xi,\eta)$ for a smooth  function $\Psi$ of compact support such that $\Psi(0,0,0) = 1$. It follows that $\sigma_\varepsilon \in BS^m_{\rho,\delta}$ with constants independent of $\varepsilon$ and that, as $\varepsilon \rightarrow 0$, $T_{\sigma_\varepsilon}(f,g)$ converges to $T_\sigma(f,g)$ in $\swp$ for $f,g \in \sw$. Indeed, by the product rule, the facts that $\sigma \in BS^m_{\rho,\delta}$ and $0<\eps<1$, and the properties of $\Psi$, we have
+%\begin{align*}
+%|\partial^\alpha_\xi \partial^\beta_\eta \sigma_\varepsilon(x,\xi,\eta)| & 
+%\lesssim \sum_{\alpha_0 \leq \alpha, \beta_0 \leq \beta} \varepsilon^{|\alpha_0| + |\beta_0|}|\partial^{\alpha_0}_\xi \partial^{\beta_0}_\eta \Psi(\varepsilon x, \varepsilon \xi, \varepsilon \eta) \partial^{\alpha - \alpha_0}_\xi \partial^{\beta - \beta_0}_\eta \sigma(x,\xi,\eta) | \\
+%& \lesssim \sum_{\alpha_0 \leq \alpha, \beta_0 \leq \beta} (1 + |\xi| + |\eta|)^{m + \delta|\alpha - \alpha_0| - \rho|\beta - \beta_0|} \\
+%& =(1 + |\xi| + |\eta|)^{m + \delta|\alpha| - \rho|\beta|} \sum_{\alpha_0 \leq \alpha, \beta_0 \leq \beta} (1 + |\xi| + |\eta|)^{-\delta| \alpha_0| + \rho|\beta_0|} \\
+%& \lesssim (1 + |\xi| + |\eta|)^{m + \delta|\alpha| - \rho|\beta|},
+%\end{align*}
+%for $(x,\xi,\eta) \in \text{supp}(\Psi)$ and with the implicit constants depending only on $\alpha$, $\beta$, and $\Psi$. Additionally, by the dominated convergence theorem and using that  $\Psi(0,0,0) = 1$ we get that $T_{\sigma_\eps}(f,g) \rightarrow T_\sigma(f,g)$ in $\swp$ as $\eps \rightarrow 0$. Finally by the Fatou property of Besov spaces the estimates for $T_\sigma$ follow from the estimates for $T_{\sigma_\eps}$ which are uniform in $\eps$. 
+%
+%We now present the decomposition of $T_\sigma$ that will be used in the proof of Theorem \ref{thm:main1}. Let $\varphi,\varphi_0 \in \sw$ be such that $\widecheck{\varphi}$ and $\widecheck{\varphi_0}$ satisfy \ref{TL_B_psi1}-\ref{TL_B_psi2} and \ref{TL_B_phi1}-\ref{TL_B_phi2} respectively, and assume $\sumkNz \fk \equiv 1,$ where $\fk(\xi)=\f(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\na.$
+%
+%Let $m \in \re,$ $0 \leq \delta\le \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}.$ Denote by $\widehat{\sigma^1}$ the Fourier transform of $\sigma(x,\xi,\eta)$ with respect to $x$, that is, $\widehat{\sigma^1}(\zeta,\xi,\eta) = \widehat{\sigma(\cdot,\xi,\eta)}(\zeta)$. We perform a spectral decomposition of $T_\sigma(f,g)$ with $f,g\in\sw:$
+%\begin{align*}
+%T_\sigma(f,g)(x)&= \int_{\rtn} \sigma(x, \xi, \eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta \\
+%& =  \sumjkNz \int_{\rtn} \left( \int_{\rn} \widehat{\sigma}^1(\zeta, \xi, \eta) \eixzeta  d\zeta \right) \fk(\xi) \fj(\eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta\\
+%& =  \sum_{j,k,\ell\in\na_0} \int_{\rtn} \left( \int_{\rn} \f_\ell(\zeta)\widehat{\sigma}^1(\zeta, \xi, \eta) \eixzeta  d\zeta \right) \fk(\xi) \fj(\eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta\\
+%&= \sum_{j,k,\ell\in\na_0}  T_{\sigma_{j,k,\ell}}(f,g)(x),
+%\end{align*}
+%where for $j,k, \ell \in \naz$ we define
+%\begin{equation*}
+%\sigma_{j,k,\ell}(x, \xi, \eta)= \fk(\xi) \fj(\eta) \int_{\rn}  \f_\ell(\zeta) \widehat{\sigma}^1(\zeta, \xi, \eta) \eixzeta  \dzeta.
+%\end{equation*}
+%Using this decomposition we define the following symbols:
+%\begin{align*}
+%& \sigma^1:= \quad \sum\limits_{\ell=4}^\infty \sum\limits_{k=0}^{\ell - 4} \sum\limits_{j =0}^{k} \sigma_{j,k,\ell}, \quad \sigma^2:= \quad \sum\limits_{k=0}^\infty \sum\limits_{j=0}^k \sum\limits_{\ell =\max(0,k-3)}^{k+3} \sigma_{j,k,\ell},\quad\sigma^3:= \quad \sum\limits_{k=4}^\infty \sum\limits_{j=0}^k \sum\limits_{\ell =0}^{k-4} \sigma_{j,k,\ell},\\
+%&\sigma^4:= \quad \sum\limits_{\ell=5}^\infty \sum\limits_{j=1}^{\ell - 4} \sum\limits_{k =0}^{j-1} \sigma_{j,k,\ell}, \quad \sigma^5:= \quad  \sum\limits_{j=1}^\infty \sum\limits_{k=0}^{j-1} \sum\limits_{\ell =\max(0,j-4)}^{j+3} \sigma_{j,k,\ell},\quad \sigma^6:= \quad \sum\limits_{j=5}^\infty \sum\limits_{k=0}^{j-1} \sum\limits_{\ell =0}^{j-5} \sigma_{j,k,\ell},
+%\end{align*}
+%so that $\sigma = \sigma^1+\sigma^2+\sigma^3+\sigma^4+\sigma^5+\sigma^6.$ Notice that since $j\leq k$ in $\sigma_1$, $\sigma_2$, and $\sigma_3$ they are supported on the set $\{(x,\xi,\eta) \in \mathbb{R}^{3n} : |\eta| \leq 4|\xi|\}$. On the other hand $\sigma_4$, $\sigma_5$, and $\sigma_6$ are supported on $\{(x,\xi,\eta) \in \mathbb{R}^{3n} : |\xi| \leq 2|\eta|\}$. By taking the Fourier transform with respect to $x$ we have that $\widehat{\sigma^1(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\xi}\lesssim \abs{\zeta}\},$
+%$\widehat{\sigma^2(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\xi}\sim \abs{\zeta}\}$ and $\widehat{\sigma^3(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\zeta}\lesssim \abs{\xi}\}$. The supports of $\widehat{\sigma^4(\cdot,\xi,\eta)}$, $\widehat{\sigma^5(\cdot,\xi,\eta)}$, and $\widehat{\sigma^6(\cdot,\xi,\eta)}$ are contained in similar sets with $|\xi|$ replaced by $|\eta|$. The proof of Theorem \ref{thm:main1} will follow from obtaining bounds for $T_{\sigma^j}$, $j=1,2,3,4,5,6$. We will show boundedness properties for $T_{\sigma^1}$, $T_{\sigma^2}$, and $T_{\sigma^3}$; by symmetry analogous results are obtained for $T_{\sigma^4}$, $T_{\sigma^5}$, and $T_{\sigma^6}$.
+%
+%We note that $BS^m_{\rho,\delta}\subset BS^m_{\rho,\rho}$ for $m\in\re$ and $0\le \delta\le \rho\le 1$. With this in mind we will assume that $\rho = \delta$ in the proofs.
+%
+%\subsection{Estimates for $T_{\sigma^1}$}\label{sec:T1}
+%In this section we prove the estimates for the operator $T_{\sigma_1}$. For $\{\fk\}_{k\in\naz}$ as in Section~\ref{sec:decomp}, we set
+%\begin{equation*}
+%\Phi_k(\xi):= \sum_{j=0}^k \varphi_j(\xi)=\f_0(2^{-k}\xi)\quad \forall \xi\in\rn, k\in\naz,
+%\end{equation*}
+%and consider $\widetilde{\f},\widetilde{\f}_0\in\sw$ with $\widecheck{widetilde{\f}}$ and $\widecheck{\widetilde{\f}_0}$ satisfying conditions (\ref{TL_B_psi1}) - (\ref{TL_B_psi2}) and (\ref{TL_B_phi1})  - (\ref{TL_B_phi2}), respectively, and such that $\widetilde{\f}_0\f_0=\f_0$ and $\widetilde{\f}\f=\f.$ We then define $\widetilde{\f}_k(\xi)=\widetilde{\f}(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\na$ and $\widetilde{\Phi}_k(\xi)=\widetilde{\f}_0(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\naz.$ It holds that $\widetilde{\f}_k \fk = \fk$ and $\widetilde{\Phi}_k \Phi_k = \Phi_k$ for all $k\in\naz.$
+%
+%The precise bounds for $T_{\sigma^1}$ are stated in the following lemma.
+%
+%\begin{lemma}\label{lem:T1} Let $m \in \re,$  $0 \le \delta\le  \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}$. If   $0<p,p_1,p_2\le \infty$ are such that $\hcline,$ $0 < q ,\bar{q}\leq \infty,$ $s_1, s_2 \in \re$, it holds that
+%\begin{equation}\label{eq:estT1}
+%\norm{T_{\sigma^1}(f,g)}{\ibes{p}{s_1}{q}}  \lesssim \norm{f}{\ibes{p_1}{s_2}{\bar{q}}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,
+%\end{equation}
+%where $\sigma^1$ is as in Section~\ref{sec:decomp} and $h^{p_2}$ must be replaced by $L^\infty$ if $p_2=\infty.$
+%\end{lemma}
+%
+%
+%We note that in Lemma \ref{lem:T1} there is no restriction on the order $m$ of the symbol and the regularity indices, $s_1$ and $s_2$, can be different. In the case that $s=s_1=s_2$ Lemma \ref{lem:T1} implies the following estimate that is needed for the proof of Theorem \ref{thm:main1} 
+%$$\norm{T_{\sigma^1}(f,g)}{\ibes{p}{s}{q}}  \lesssim \norm{f}{\ibes{p_1}{s}{q}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,$$
+%for $s\in\re$ and $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$.
+%
+%
+%
+%\begin{proof}  Let $m,$ $\rho,$ $p,$ $p_1,$ $p_2,$ $q,$ $\bar{q},$ $s_1,$  $s_2,$ $\sigma,$ $\sigma^1,$ $f$ and $g$ be as in the statement of the lemma. 
+%
+%For $\ell \in \naz$  set
+%$$
+%\sigma^1_\ell:=  \sum\limits_{k=0}^{\ell -4} \sum\limits_{j =0}^{k} \sigma_{j,k,\ell},
+%$$
+%so that $T_{\sigma^1}(f,g)= \sum\limits_{\ell=4}^\infty T_{\sigma^1_\ell}(f,g)$. Recalling the definition of $\Phi_k$ and $\sigma_{j,k,\ell},$ we have
+%\begin{align*}
+%T_{\sigma^1_\ell}(f,g)(x)= \int_{\re^{3n}} \sum\limits_{k=0}^{\ell -4}   \fk(\xi) \Phi_k(\eta)  \f_\ell(\zeta) \widehat{\sigma}^1(\zeta, \xi, \eta) \widehat{f}(\xi) \widehat{g}(\eta) e^{2\pi i x \cdot (\xi + \eta + \zeta)}  \dzeta \dxi \deta,
+%\end{align*}
+%and changing variables, we get
+%\begin{align*}
+%T_{\sigma^1_\ell}(f,g)(x)= \int_{\rn} \left( \int_{\rtn}  \sum\limits_{k=0}^{\ell -4}   \fk(\xi) \Phi_k(\eta)  \f_\ell(\omega- \xi - \eta) \widehat{\sigma}^1(\omega- \xi - \eta, \xi, \eta) \widehat{f}(\xi) \widehat{g}(\eta) \dxi \deta \right)  e^{2\pi i x \cdot \omega} \, d\omega.
+%\end{align*}
+%This yields
+%\begin{align*}
+%\widehat{T_{\sigma^1_\ell}(f,g)}(\omega)=  \int_{\rtn}  \sum\limits_{k=0}^{\ell -4}   \fk(\xi) \Phi_k(\eta)  \f_\ell(\omega- \xi - \eta) \widehat{\sigma}^1(\omega- \xi - \eta, \xi, \eta) \widehat{f}(\xi) \widehat{g}(\eta) \dxi \deta,
+%\end{align*}
+%where the integral effectively takes place when $ 2^{\ell-1}\le |\omega- \xi - \eta| \leq 2^{\ell +1}$ (keep in mind that $\ell\ge 4$)  as well as $|\xi| \leq 2^{\ell-3}$ and $|\eta| \leq 2^{\ell-3}.$  Consequently,
+%$\widehat{T_{\sigma^1_\ell}(f,g)}$ is supported in $\{\omega\in\rn: 2^{\ell-2}\le |\omega| \leq 2^{\ell +2}\}$. Then, the fact that  $T_{\sigma^1}(f,g)= \sum\limits_{\ell=4}^\infty T_{\sigma^1_\ell}(f,g)$  and Theorem \ref{thm:Nikolskij:weighted} with $w\equiv 1$ give
+%\begin{equation}\label{eq:T:sigma:1:fg}
+%\norm{T_{\sigma^1}(f,g)}{\B{p}{s_1}{q}} \lesssim  \left( \sum\limits_{\ell=4}^\infty 2^{\ell s_1q} \norm{T_{\sigma^1_\ell}(f,g)}{{L^p}}^q \right)^\frac{1}{q}.
+%\end{equation}
+%
+%Recalling the definitions of $\widetilde{\f}_k$ and $\widetilde{\Phi}_k,$  we have
+%\begin{align*}
+%T_{\sigma^1_\ell}(f,g)(x) = 
+%  \sum\limits_{k=0}^{\ell -4} T_{\sigma^1_{\ell,k}}(\Delta^{\widecheck{\widetilde{\f}}}_k f,\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)(x),
+%\end{align*}
+%where, for each $k$ between $0$ and $\ell -4$, we set 
+%$$
+%\sigma^1_{\ell, k}(x, \xi, \eta):=\left( \int_{\rn}  \f_\ell(\zeta) \widehat{\sigma}^1(\zeta, \xi, \eta) e^{2\pi i x \cdot \zeta}  \dzeta \right)  \fk(\xi) \Phi_k(\eta).
+%$$ 
+%Since $\sigma^1_{\ell,k}$ satisfies 
+%$$\abs{\sigma^1_{\ell,k}(x,\xi,\eta)}\lesssim (1+\abs{\xi}+\abs{\eta})^m\quad \forall x,\xi,\eta\in\rn,$$
+%$\sigma^1_{\ell, k}(x,\cdot,\cdot)$ is supported on $\{(\xi, \eta) \in \re^{2n} : |\xi| + |\eta| \leq 2^{k+2}\}$ for all $x\in\rn$ and $\Delta^{\widecheck{\widetilde{\f}}}_k f$ and $\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g$ are Schwartz functions with  Fourier transforms  supported in $\{\xi \in \rn: |\xi| \le 2^{k+1}\},$  we can apply the bilinear Marschall inequality \eqref{eq:biMarschall} with $0<r\le 1$ to get 
+%\begin{align}\label{eq:bound:h1:ell:k}
+%&|T_{\sigma^1_{\ell,k}}(\Delta^{\widecheck{\widetilde{\f}}}_k f,
+%\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)(x)| \\
+%&\hspace{0.5cm}\lesssim  \norm{\sigma^1_{\ell, k}(x, 2^{k+3} \cdot, 2^{k+3} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})} \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)(x)\mathcal{M}_r(
+%\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)(x)\quad \forall x\in\rn.\nonumber
+%\end{align}
+%(See Remark~\ref{remark:locint} along with \eqref{eq:estsigkl} below.)
+%
+%We next estimate $\norm{\sigma^1_{\ell, k}(x, 2^{k+3} \cdot, 2^{k+3} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})}.$ For ease of notation we just work with $2^k$ instead of $2^{k+3}.$ Notice that 
+%\begin{equation*}
+%\sigma^1_{\ell, k}(x, 2^k \xi, 2^k \eta) = \f(\xi) \f_0(\eta) \int_{\rn} \widecheck{\f_\ell}(y) \sigma(x-y, 2^k \xi, 2^k \eta)\dy\quad \forall k\in\na,
+%\end{equation*}
+%with a similar expression for $\sigma^1_{\ell, 0}$ obtained by replacing $\f$ with $\f_0$ in the formula above. 
+% For $\ell \geq 4$ the function $\widecheck{\f_\ell}$ has vanishing moments of every order; if $N \in \na$, we can then write
+%\begin{align*}
+% I_{\ell, k}(\xi, \eta)&:= \int_{\rn} \widecheck{\f_\ell}(y) \sigma(x-y, 2^k \xi, 2^k \eta)\dy=2^{n \ell}\int_{\rn} \widecheck{\f}(2^{\ell}y) \sigma(x-y, 2^k \xi, 2^k \eta)\dy\\
+%& = 2^{n \ell} \int_{\rn} \widecheck{\f}(2^{\ell}y) \left( \sigma(x-y, 2^k \xi, 2^k \eta) - \sum\limits_{|\alpha| < N} \frac{1}{\alpha!} (-y)^\alpha \partial_x^\alpha \sigma(x, 2^k \xi, 2^k \eta) \right)\dy\\
+%& = 2^{n \ell} \int_{\rn} \widecheck{\f}(2^{\ell}y) \sum\limits_{|\alpha| = N} \frac{N}{\alpha!} (-y)^\alpha \int_0^1 (1-t)^{N-1} \partial_x^\alpha \sigma(x - t y, 2^k \xi, 2^k \eta) \dy.
+%\end{align*}
+%Given multiindices $\beta, \gamma \in \naz^n$ and using that $\sigma \in BS^m_{\rho, \rho}$, it follows that
+%\begin{align*}
+%& |\partial_\xi^{\beta} \partial_\eta^{\gamma}  I_{\ell, k}(\xi, \eta)|\\
+%& = 2^{n \ell} 2^{k (|\beta+ \gamma|)}  \left|  \int_{\rn} \widecheck{\f}(2^{\ell}y) \sum\limits_{|\alpha| = N} \frac{N}{\alpha!} (-y)^\alpha \int_0^1 (1-t)^{N-1} \partial_x^\alpha \partial_\xi^{\beta} \partial_\eta^{\gamma}\sigma(x - t y, 2^k \xi, 2^k \eta) \,dt\dy \right|\\
+%& \lesssim  2^{k (|\beta+ \gamma|)}  (1+ |2^k \xi| + |2^k \eta|)^{m + \rho N -  \rho|\beta+ \gamma|} \int_{\rn} 2^{n \ell} |\widecheck{\f}(2^{\ell}y)| |y|^N \dy \\
+%&\lesssim 2^{- N \ell} 2^{k (|\beta+ \gamma|)}  (1+ |2^k \xi| + |2^k \eta|)^{m + \rho N -  \rho |\beta+ \gamma|}.
+%\end{align*}
+%Then, for $(\xi,\eta)$ in the support of $\sigma^1_{\ell,k}(x, 2^k\cdot,2^k\cdot)$  we get
+%\begin{equation*}
+% |\partial_\xi^{\beta} \partial_\eta^{\gamma}  I_{\ell, k}(\xi, \eta)| \lesssim 2^{- N \ell} 2^{k (1-\rho)|\beta+ \gamma|} 2^{k (m+\rho N)}.
+%\end{equation*}
+%Given $0< r \le 1$, taking  derivatives up to order $\lfloor{2n/r}\rfloor + 1$ in $(\xi,\eta)$ of
+%$\sigma^1_{\ell, k}(x, 2^k \xi, 2^k \eta) = \f(\xi) \f_0(\eta)  I_{\ell, k}(\xi, \eta),$
+% we obtain
+%\begin{align}\label{eq:estsigkl}
+%  \norm{\sigma^1_{\ell, k}(x, 2^{k} \cdot, 2^{k} \cdot)}{W^{\lfloor{2n/r}\rfloor + 1,1}(\re^{2n})} \lesssim 2^{- N \ell} 2^{k (1-\rho)( \lfloor{2n/r}\rfloor + 1)} 2^{k (m+\rho N)}.
+%\end{align}
+%From \eqref{eq:bound:h1:ell:k}, it then follows that for all $x\in\rn,$ we have
+%\begin{equation*}
+%|T_{\sigma^1_{\ell,k}}(\Delta^{\widecheck{\widetilde{\f}}}_k f,\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)(x)|  \lesssim 2^{- N \ell} 2^{k [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \mathcal{M}_r(\Delta{\widetilde{\f}}_k f)(x)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)(x).
+%\end{equation*}
+%
+%  Define $\pst=\min(1,p).$  For the sake of notation, we will next work with $q$ finite; the case $q=\infty$ can be treated analogously.
+%  Recalling that $T_{\sigma^1_\ell}(f,g)= \sum\limits_{k=0}^{\ell -4} T_{\sigma^1_{\ell,k}}(\Delta^{\widecheck{\widetilde{\f}}}_k f,\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)$,  \eqref{eq:T:sigma:1:fg} and the last  estimate give
+%\begin{align}
+%& \norm{T_{\sigma^1}(f,g)}{\B{s_1}{p}{q}}  \lesssim  \left( \sum\limits_{\ell=4}^\infty 2^{\ell s_1q} \norm{T_{\sigma^1_\ell}(f,g)}{L^p}^q \right)^\frac{1}{q}\label{eq:T1:fg:Fqp}\\
+%& \lesssim  \left[  \sum\limits_{\ell=4}^\infty 2^{\ell s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N\pst \ell} 2^{k\pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_kf)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \right]^\frac{1}{q}. \nonumber
+%\end{align}
+%Next, let us see that, for  $N>s_1$ and $0<\epsilon< N-s_1,$  it holds that
+%\begin{align}\nonumber
+%& \sum\limits_{\ell=4}^\infty 2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst\ell} 2^{k \pst[(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_kg)}{L^p}^{\pst}\right)^{\frac{q}{\pst}} \\ \label{eq:moving:the:sums}
+%&\hspace{2cm}\lesssim \sum\limits_{k=0}^\infty 2^{k q[ (1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+ s_1+\eps] }   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q.
+%\end{align}
+% Indeed, if $0 < q \leq \pst$, we have
+%\begin{align*}
+%& \sum\limits_{\ell=4}^\infty  2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst \ell} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \\
+%& \leq \sum\limits_{\ell=4}^\infty 2^{-(N-s_1) q \ell} \sum\limits_{k=0}^{\ell -4}  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q\\
+%&= \sum_{k=0}^{\infty} \left(\sum_{\ell=k+4}^\infty 2^{-(N-s_1) q \ell} \right)  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q \\
+%& \lesssim \sum\limits_{k=0}^\infty  2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]} 2^{-kq(N-s_1)}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q,
+%\end{align*}
+%and \eqref{eq:moving:the:sums} follows for any $\eps>0.$ Now, if $\pst<q <\infty$ and $0<\eps < N - s_1,$ we have
+%\begin{align*}
+%& \sum\limits_{\ell=4}^\infty   2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst \ell} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1) +m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \\
+%& \lesssim \sum\limits_{\ell=4}^\infty 2^{-  (N- s_1 - \eps) q \ell}  \left(  \sum\limits_{k=0}^{\ell -4} 2^{-\eps \pst k} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst}\\
+%& \lesssim  \sum\limits_{\ell=4}^\infty 2^{-  (N- s_1 - \eps) q \ell} \sum\limits_{k=0}^{\ell -4} 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q \\
+%& =  \sum\limits_{k=0}^\infty \left( \sum\limits_{\ell=k+4}^{\infty} 2^{- (N- s_1 - \eps) q \ell} \right) 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q \\
+%& \lesssim \sum\limits_{k=0}^\infty  2^{- (N- s_1 - \eps) kq } 2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1) + m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q 
+%\end{align*}
+%and \eqref{eq:moving:the:sums} follows.
+%
+%Using  \eqref{eq:moving:the:sums},  the fact that  
+%\begin{equation}\label{def:g*}
+%|\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g(x)| \leq \sup\limits_{0 < t \le 1} |t^{-n}\mathcal{F}^{-1}(\widetilde{\f}_0)(t^{-1} \cdot)* g(x)| =: g^*(x) \quad \forall k \in \naz,  x \in \rn, 
+%\end{equation}
+%and \eqref{eq:Mtau:in:Lp} with $0<r < \min(1,p),$ we can now continue with the inequality \eqref{eq:T1:fg:Fqp} to get
+%\begin{align*}
+%& \norm{T_{\sigma^1}(f,g)}{\B{s_1}{p}{q}}\\
+%&  \lesssim   \left[  \sum\limits_{k=0}^\infty   2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+s_1+\eps]}  \norm{ \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)}{L^{p_1}}^q \right]^\frac{1}{q} \norm{\mathcal{M}_r(g^*)}{L^{p_2}}\\
+%&  \lesssim   \left[  \sum\limits_{k=0}^\infty   2^{k q [(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+s_1+\eps]}   \norm{\Delta^{\widecheck{\widetilde{\f}}}_k f}{L^{p_1}}^q \right]^\frac{1}{q} \norm{g^*}{L^{p_2}}\\
+%& \lesssim \norm{f}{\B{(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m + s_1+\eps }{p_1}{q}}  \norm{ g}{h^{p_2}},
+%\end{align*}
+% where, if $p_2=\infty,$  $\norm{g}{h^{p_2}}$ should be replaced with $\norm{g}{L^\infty}.$ Since $\rho<1$, we can choose $N$ large enough so that
+%$$
+%(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m +s_1 +\eps  < s_2,
+%$$
+%and obtain $ \norm{f}{\B{(1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m +s_1+ \eps }{p_1}{q}} \leq  \norm{f}{\B{s_2}{p_1}{\bar{q}}}$ (by the embedding properties of Besov spaces). The proof of Lemma \ref{lem:T1} is then complete.
+%
+%\end{proof}
+%
+%\subsection{Estimates for $T_{\sigma^2}$}\label{sec:T2}
+%
+%In this section we prove the bounds for $T_{\sigma^2}$ which are stated in the following lemma.
+%
+%\begin{lemma}\label{lem:T2} 
+%Let $m \in \re,$ $0 \le \delta\le \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}$. If $0<p<\infty$ and $0< p_1, p_2 \le \infty$ are such that $\hcline,$ $0 < q,\bar{q} \leq \infty$, and $s_1, s_2 \in \re,$ it holds that
+%\begin{equation}\label{eq:T2}
+%\norm{T_{\sigma^2}(f,g)}{\B{s_1}{p}{q}}  \lesssim \norm{f}{\B{s_2}{p_1}{\bar{q}}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,
+%\end{equation}
+%where $\sigma^2$ is as in Section~\ref{sec:decomp} and $h^{p_2}$ must be replaced by $L^\infty$ if $p_2=\infty.$
+%\end{lemma}
+%
+%Like with Lemma \ref{lem:T1} there is no restriction on the order $m$ of the symbol and the regularity indices can be different on the left and right hand sides. In particular, Lemma \ref{lem:T2} implies the estimate
+%$$
+%\norm{T_{\sigma^2}(f,g)}{\B{s}{p}{q}}  \lesssim \norm{f}{\B{s}{p_1}{\bar{q}}} \norm{g}{h^{p_2}} \quad \forall f, g \in \sw,$$
+%with all parameters as in Lemma \ref{lem:T2} and $s\in\re$. 
+%
+%
+%The following two lemmas will be useful in the proof of Lemma \ref{lem:T2}.
+%
+%\begin{lemma}\label{lem:estimateKk} Let  $\K_k,$ $k\in\na_0,$ be as in the proof of Lemma~\ref{lem:T2}. If $J, N \in \na,$  it holds that 
+%\begin{equation}\label{eq:estimateKk}
+%|\K_k(x,y,z)| \lesssim \frac{2^{-Jk}}{(1+ |x-y| + |x-z|)^{N}} \quad \forall x, y, z \in \rn, k \ge 4. 
+%\end{equation}
+%\end{lemma}
+%
+%\begin{proof} Let $k\in\na$ such that $k\ge 4$ and consider $J$ and $N$ as in the hypotheses. Notice that 
+%\begin{align*}
+% \K_k(x,y,z) = \int_{\re^{4n}} \fk(\xi) \Phi_k(\eta) \Psi_k(\zeta) \sigma(w, \xi, \eta) e^{2\pi i (x-w) \cdot \zeta} e^{2\pi i \xi \cdot( x- y)} e^{2\pi i \eta \cdot(x-z)} \, dw \dxi \deta  \dzeta,
+%\end{align*}
+%where $\Phi_k= \sum\limits_{j=0}^k \fj$  is as in Section~\ref{sec:T1},  $\Psi_k$ is defined as $\Psi_k= \sum\limits_{\ell =k-3}^{k+3}\f_\ell$  and the integral effectively takes place where $2^{k-1} \leq |\xi| \leq 2^{k+1},$   $|\eta| \leq 2^{k+1}$ and  $2^{k-4} \leq |\zeta| \leq 2^{k+4}$. Given $M \in \na$, $2M>n,$ integration by parts in the $w$-variable gives 
+%\begin{equation}\label{eq:intw}
+%\int_{\rn} \sigma(w, \xi, \eta) e^{-2\pi i w \cdot \zeta} \, dw =  \frac{1}{(2\pi i|\zeta|)^{2M}} \int_{\rn} \Delta_w^M \sigma(w, \xi, \eta) e^{-2\pi i w \cdot \zeta} \, dw.
+%\end{equation}
+%  Integration by parts in the $\zeta$-variable yields
+%\begin{equation}\label{eq:intzeta}
+%\int_{\rn}  \frac{\Psi_k(\zeta)}{\abs{\zeta}^{2M}} e^{2\pi i (x-w) \cdot \zeta} \dzeta = 2^{-2Mk}\int_{\rn} (I - \Delta_\zeta)^M \left(\frac{\Psi_k(\zeta)}{\abs{2^{-k}\zeta}^{2M}}\right)  \frac{e^{2\pi i (x-w) \cdot \zeta}}{(1 + 4\pi^2|x - w|^2)^M} \dzeta.
+%\end{equation}
+%
+%Assume first that $|x-y|, |x-z| \leq 1$. Then, using that  $1+\abs{\xi}+\abs{\eta}\sim \abs{\xi}\sim \abs{\zeta} \sim 2^k,$ that $\sigma \in BS^m_{\rho, \rho}$,  \eqref{eq:intw} and \eqref{eq:intzeta} we obtain
+%$$
+%|\K_k(x,y,z)| \lesssim 2^{-2Mk} 2^{(m+ 2\rho M) k} 2^{3kn} = 2^{k [3n + m - 2 (1-\rho) M]}.
+%$$
+% Then \eqref{eq:estimateKk} follows by taking $M$ large enough so that
+%\begin{equation}\label{cond:M:J}
+%3n +m- 2 (1-\rho)M < - J,
+%\end{equation}
+%which can be done because $\rho < 1$.
+%
+%Next, assume that $|x-y| > 1$ and $|x-y| \geq |x-z|$. Let $j_0 \in \{1, \ldots, n\}$ be such that $|x_{j_0} - y_{j_0}| \sim |x-y|$. After performing \eqref{eq:intw} and \eqref{eq:intzeta}, integration by parts in the $\xi_{j_0}$-variable implies 
+%$$
+%\int_{\rn} \fk(\xi) \Delta_w^M\sigma(w, \xi, \eta) e^{2\pi i \xi \cdot( x- y)} \dxi = \frac{(2\pi i )^{-N}}{(x_{j_0} - y_{j_0})^{N}} \int_{\rn} \partial_{\xi_{j_0}}^N (\fk(\xi)  \Delta_w^M\sigma(w, \xi, \eta)) e^{2\pi i \xi \cdot( x- y)} \dxi,
+%$$
+%and since $1+|\xi| + |\eta| \sim |\xi| \sim 2^k$ and $\sigma  \in BS^m_{\rho, \rho}$,
+%$$
+%|\partial_{\xi_{j_0}}^N  (\fk(\xi)  \Delta_w^M\sigma(w, \xi, \eta))| \lesssim 2^{k (m +2 \rho M -  \rho N)}.
+%$$
+%Consequently, it holds that
+%$$
+%|\K_k(x,y,z)| \lesssim \frac{2^{k(m- 2 (1-\rho)M - \rho N)} 2^{3kn}}{|x-y|^{N}} \sim \frac{2^{k(3n +m- 2 (1-\rho)M - \rho N)}}{(1+ |x-y| + |x-z|)^{N}}. 
+%$$
+%The case $|x-z| > 1$ and $|x-z| \geq |x-y|$ follows similarly integrating by parts with respect to $\eta$ and using that $1+|\xi| + |\eta| \sim |\xi| \sim 2^k$ again. The proof of the lemma is complete by taking $M$ such that $3n +m- 2 (1-\rho)M - \rho N < - J$ which is already guaranteed by the choice \eqref{cond:M:J}. 
+% \end{proof}
+%
+%
+%\begin{lemma}\label{lem:int:M:N:k} Given $M >0$ and $N > M + n$ it holds that
+%\begin{equation*}
+%\int_{\rn} \frac{(1+ 2^k |x-y|)^M}{(1+ |w - y|)^N} \dy \lesssim 2^{kM} (1 + |x-w|)^M  \quad \forall x, w \in \rn, k \in \naz.
+%\end{equation*}
+%\end{lemma}
+%
+%
+%\begin{proof} Fix $w,x\in\rn,$  $k\in\naz,$ $M>0$ and $N>M+n.$ We split $\rn$ into the regions $R_1:=\{y \in \rn: |x-y| \leq 2^{-k} \}$ and $R_2:=\{y \in \rn: |x-y| > 2^{-k} \}$. Notice that we have $1 + 2^k |x-y| \sim 1$ on $R_1$   and $1 + 2^k |x-y| \sim 2^k |x-y|$ on $R_2$. Then we divide  $R_2$ into 
+%$$
+%R_{2,1}:= \{y \in R_2: |w-y| \leq 1 \}\quad \text{and} \quad R_{2,2}:= \{y \in R_2: |w-y| > 1 \},
+%$$
+%so that we have $1+ |w-y| \sim 1$ on $R_{2,1}$ and $1+ |w-y| \sim |w-y|$ on $R_{2,2}$. In turn,  we split $R_{2,2}$ into the regions
+%$$
+%R_{2,2,1}:= \{y \in R_{2,2}: |x-y| \geq 2 |x-w| \}\quad \text{and} \quad R_{2,2,2}:= \{y \in R_{2,2}: |x-y| < 2 |x-w| \}.
+%$$
+%We then have $\rn = R_1\cup  R_{2,1} \cup R_{2,2,1} \cup R_{2,2,2}$. 
+%
+%Using that $N > n$, it follows that
+%$$
+%\int_{R_1} \frac{(1+ 2^k |x-y|)^M}{(1+ |w - y|)^N} \dy \sim \int_{R_1} \frac{\dy}{(1+ |w - y|)^N} \lesssim 1. 
+%$$
+%
+%If $\abs{x-w}>2,$ on $R_{2,1}$ we have $|x-w| > 2 \geq 2 |w-y|,$ which makes for $|x-y| \sim |x - w|,$ and then
+%$$
+%\int_{R_{2,1}} \frac{(1+ 2^k |x-y|)^M}{(1+ |w - y|)^N} \dy \sim \int_{R_{2,1}} 2^{kM} |x-y|^M \dy \sim \int_{R_{2,1}} 2^{kM} |x-w|^M \dy   \lesssim  2^{kM} (1 + |x-w|)^M,
+%$$
+%where for the last inequality we used that $R_{2,1} \subset B(w, 1)$ and that $1 + |x-w| \sim |x-w|$ because $|x-w| > 2$. 
+%If $\abs{x-w}\le 2,$ on $R_{2,1}$ we have $|x -y| \leq |x-w| + |w - y| \leq 2 + 1 = 3$ and then (since $k \geq 0$)
+%$$
+%\int_{R_{2,1}} \frac{(1+ 2^k |x-y|)^M}{(1+ |w - y|)^N} \dy \lesssim 2^{kM} \int_{R_{2,1}} \frac{\dy}{(1+ |w - y|)^N} \sim 2^{kM} |R_{2,1}| \lesssim  2^{kM}.
+%$$
+%
+%On $R_{2,2,1}$ we have $|x-y| \geq 2 |x-w|,$ which implies $|x-y| \sim |w-y|,$ and then
+%$$
+%\int_{R_{2,2,1}} \frac{(1+ 2^k |x-y|)^M}{(1+ |w - y|)^N} \dy \sim 2^{kM} \int_{R_{2,2,1}} \frac{|w-y|^M}{|w - y|^N} \dy  \lesssim 2^{kM},
+%$$
+%since $N  >M+  n$. 
+%
+%Finally, on  $R_{2,2,2}$ we have $|x-y| < 2 |x-w|$ and then
+%\begin{align*}
+%\int_{R_{2,2,2}} \frac{(1+ 2^k |x-y|)^M}{(1+ |w - y|)^N} \dy &\sim \int_{R_{2,2,2}} \frac{2^{kM} |x-y|^M}{|w - y|^N} \dy \\&\lesssim  2^{kM} |x-w|^M  \int_{R_{2,2,2}}  \frac{\dy}{|w - y|^N}  \lesssim  2^{kM} |x-w|^M.
+%\end{align*}
+%\end{proof}
+%
+%\begin{proof}   Let $p_1,$ $p_2,$ $p,$ $q,$ $\bar{q},$ $s_1,$ $s_2,$ $m,$ $\rho$ and $\sigma$ be as in the hypotheses of the lemma and consider $\fk,$ $\Phi_k,$ $\widetilde{\f}_k$ and $\widetilde{\Phi}_k$ as in Section~\ref{sec:T1}. We assume $q<\infty;$ the proof for the case $q=\infty$ is analogous.
+%
+%Recall that
+%\[
+%\sigma^2= \quad \sum\limits_{k=0}^\infty  \sum\limits_{\ell =\max(0,k-3)}^{k+3} \sum\limits_{j=0}^k \sigma_{j,k,\ell}
+%\]
+%and write $\sigma^2=\sigma^{2,1}+\sigma^{2,2},$ where 
+%\[
+%\sigma^{2,1}= \quad \sum\limits_{k=0}^{3}  \sum\limits_{\ell =0}^{k+3} \sum\limits_{j=0}^k \sigma_{j,k,\ell}  
+%\quad \text{ and }\quad  \sigma^{2,2}= \sum\limits_{k=4}^\infty  \sum\limits_{\ell =k-3}^{k+3} \sum\limits_{j=0}^k \sigma_{j,k,\ell}.
+%\]
+%
+%Notice that the symbol $\sigma^{2,1}$ is supported on $\{(x,\xi,\eta)\in\re^{3n}: \abs{\xi}\le 2^{4} \text{ and } \abs{\eta}\le2^{4}\}$ and belongs to any H\"ormander class; in particular $\sigma^{2,1}\in BS^{m(0,p_1,p_2)}_{0,0}$ and by Miyachi--Tomita~\cite[Theorem 1.1]{MR3179688}, $T_{\sigma^{2,1}}$ is bounded from $h^{p_1}(\rn)\times h^{p_2}(\rn)$ to $h^{p}(\rn)$ (with $h^{p_1}(\rn)$ and $h^{p_2}(\rn)$ replaced by $L^\infty(\rn)$ if $p_1=\infty$ or $p_2=\infty$). Moreover, the Fourier transform of $T_{\sigma^{2,1}}(f,g)$ is supported on $\{\zeta\in\rn: \abs{\zeta}\le2^{8}\}.$ Let $h\in\sw$  be compactly supported and  identically one on $\{\xi\in\rn:\abs{\xi}\le 2^{4}\}.$ We then obtain
+%\begin{align*}
+%\norm{T_{\sigma^{2,1}}(f,g)}{\B{s_1}{p}{q}}&=\left(\sum_{k=0}^{8}2^{s_1kq}\norm{\Delta^{\varphi}_k T_{\sigma^{2,1}}(f,g)}{L^p}^q\right)^{\frac{1}{q}}\\&\lesssim \norm{T_{\sigma^{2,1}}(f,g)}{h^p}=\norm{T_{\sigma^{2,1}}(\Delta^h f,g)}{h^p}\\
+%&\lesssim \norm{\Delta^h f}{h^{p_1}}\norm{g}{h^{p_2}}\lesssim \norm{f}{\B{s_2}{p_1}{q}}\norm{g}{h^{p_2}},
+%\end{align*}
+%with $h^{p_1}$ or $h^{p_2}$ replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively.
+%
+%
+%We next analyze the operator with  symbol $\sigma^{2,2};$ for $k \geq 4$ set 
+%\begin{equation*}
+%\sigma^{2,2,k}  = \sum\limits_{\ell =k-3}^{k+3} \sum\limits_{j=0}^k \sigma_{j,k,\ell},
+%\end{equation*}
+%so that $\sigma^{2,2} = \sum\limits_{k=4}^\infty \sigma^{2,2,k}.$ 
+% Let $\K_k$ denote the bilinear kernel of  $T_{\sigma^{2,2,k}}$, that is,
+%$$
+%\K_k(x,y,z):= \int_{\rtn} \sigma^{2,2,k}(x, \xi, \eta) e^{2\pi i \xi \cdot( x- y)} e^{2\pi i \cdot \eta (x-z)} \dxi \deta.
+%$$
+%Note that
+%\begin{align*}
+%| \Delta{\f}_\nu T_{\sigma^{2,2,k}}(f,g)(x)| \leq \int_{\re^{3n}} |\widecheck{\f_\nu}(x- w)| |\K_k(w, y, z)| |\Delta^{\widecheck{\widetilde{\f}}}_k f(y)| |\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g(z)| \, dw \dy \dz.
+%\end{align*}
+%Given $0<\tau <1,$  let $M \in \na$ be such that $M \geq n/\tau$, then
+%\begin{align*}
+%|\Delta^{\widecheck{\widetilde{\f}}}_k f(y)|&  = \frac{|\Delta^{\widecheck{\widetilde{\f}}}_k f(y)|}{(1 + 2^k |x-y|)^M} (1 + 2^k |x-y|)^M\\
+%& \leq  (1 + 2^k |x-y|)^M \sup_{y\in\rn} \frac{|\Delta^{\widecheck{\widetilde{\f}}}_k f(y)|}{(1 + 2^k |x-y|)^M} \\
+%& \lesssim (1 + 2^k |x-y|)^M \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)(x)\quad\forall x,y\in\rn,k\in\na_0,
+%\end{align*}
+%where for the last inequality we used Peetre's maximal inequality (see Peetre~\cite{MR0380394} or Triebel~\cite[p.16, Theorem 1.3.1]{MR3024598}). Similarly, and recalling \eqref{def:g*},
+%\begin{align*}
+%|\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g(z)| & \lesssim (1 + 2^k |x-z|)^M \mathcal{M}_r(\mathcal{S}^{\widecheck{\widetilde{\Phi}}}_k g)(x)  \leq (1 + 2^k |x-z|)^M \mathcal{M}_r(g^*)(x)
+%\end{align*}
+%for all $ x,z\in\rn,$ $k\in\na_0.$
+%Given $J, N \in \na$ with $N>2(M+n),$  we use the estimates above, the fact that $\f\in\sw$ and Lemmas \ref{lem:estimateKk} and  \ref{lem:int:M:N:k} to obtain 
+%\begin{align*}
+% |\Delta^{\f}_\nu T_{\sigma^{2,2,k}}(f,g)(x)| &\lesssim 2^{-Jk} \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)(x) \mathcal{M}_r(g^*)(x)\\
+% &\quad\times \int_{\re^{3n}} \frac{2^{\nu n}}{(1+ 2^\nu |x- w|)^N} \frac{(1 + 2^k |x-y|)^M (1 + 2^k |x-z|)^M}{(1+ |w-y|)^{N/2} (1+ |w-z|)^{N/2}} \, dw \dy \dz\\
+%&\lesssim 2^{-Jk} \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)(x) \mathcal{M}_r(g^*)(x)\\
+%&\quad \times \int_{\rn}  \frac{2^{\nu n} 2^{2kM}}{(1+ 2^\nu |x- w|)^N}(1 +  |x-w|)^{2M} \, dw\quad \forall x\in\rn,k,\nu\in\na_0, k\ge 4.
+%\end{align*}
+%Since
+%\begin{align*}
+%\int_{\rn}  \frac{2^{\nu n} 2^{2kM}}{(1+ 2^\nu |x- w|)^N}(1 +  |x-w|)^{2M} \, dw\lesssim 2^{2kM}\quad \forall x\in\rn, k,\nu\in\na_0,
+%\end{align*}
+%we then get 
+%\begin{equation}\label{eq:fnuTbound}
+%|\Delta^{\f}_\nu T_{\sigma^{2,2,k}}(f,g)(x)|\lesssim  2^{-k (J-2M)} \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)(x) \mathcal{M}_r(g^*)(x)\quad \forall x\in\rn, k,\nu\in\na_0, k\ge 4.
+%\end{equation}
+% Using that  the Fourier transform of  $T_{\sigma^{2,2,k}}(f,g)$ is supported in $\{\zeta \in \rn: |\zeta| \leq 2^{k+5} \},$ choosing $\varepsilon>\max(0,s_1)$ and applying   \eqref{eq:fnuTbound},  we have
+%\begin{align*}
+% \norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} &=  \left(\sum\limits_{\nu =0}^\infty 2^{\nu s_1q}\norm{\Delta^{\f}_\nu \left(\sum\limits_{k=4}^\infty T_{\sigma^{2,2,k}}(f,g)\right)}{L^p}^q \right)^\frac{1}{q}\\
+%&\le \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1 q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty \left| \Delta^{\f}_\nu T_{\sigma^{2,2,k}}(f,g)\right|}{L^p}^q \right)^\frac{1}{q}\\
+%& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  s_1q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M)}  \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f) \mathcal{M}_r(g^*)}{L^p}^q \right)^\frac{1}{q}\\
+%& \lesssim \left(\sum\limits_{\nu =0}^{\infty}  2^{\nu  (s_1-\eps) q} \norm{\sum\limits_{k=\max(4,\nu -5)}^\infty 2^{-k (J-2M-\eps)}  \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f) \mathcal{M}_r(g^*)}{L^p}^q \right)^\frac{1}{q}\\
+%&\lesssim\norm{ \mathcal{M}_r(g^*) \sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)}  \mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f) }{L^p}\\
+%&\lesssim \left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\norm{\mathcal{M}_r(g^*)}{L^{p_2}},
+%\end{align*}
+%where $\widetilde{p_1}=\min(1,p_1).$ Using that
+%$$
+%\left(\sum\limits_{k=0}^\infty 2^{-k (J-2M-\eps)\widetilde{p}_1} \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)}{L^{p_1}}^{\widetilde{p}_1} \right)^{\frac{1}{\widetilde{p}_1}}\lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)}{L^{p_1}}^q  \right)^\frac{1}{q},
+%$$
+%along with  the boundedness properties of $\mathcal{M}_r$ with $0<\tau<\min(1,p_1,p_2),$ we obtain
+%\begin{align*}
+%\norm{T_{\sigma^{2,2}}(f,g)}{\B{s_1}{p}{q}} & \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)}{L^{p_1}}^q  \right)^\frac{1}{q}\norm{\mathcal{M}_r(g^*)}{L^{p_2}}\\
+%& \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\Delta^{\widecheck{\widetilde{\f}}}_k f)}{L^{p_1}}^q  \right)^\frac{1}{q} \norm{g^*}{L^{p_2}}\\
+%& \lesssim \norm{f}{\B{-J +2M +2\eps}{p_1}{q}} \norm{g}{h^{p_2}} \lesssim  \norm{f}{\B{s_2}{p_1}{\bar{q}}} \norm{g}{h^{p_2}},
+%\end{align*}
+%provided that we take $J$ large enough so that $-J +2M +2\eps < s_2$ and where $h^{p_2}$ should be replaced by $L^\infty$ if $p_2=\infty.$
+%\end{proof}
+%
+%
+%
+%
+%\subsection{Estimates for $T_{\sigma^3}$}\label{sec:T3}
+%
+%In this section we prove the bounds for $T_{\sigma^3}$. Let $m,$ $p_1,$ $p_2,$ $p,$ $q,$   $\rho$ and $\delta$ be as in the hypotheses of Theorem~\ref{thm:main1} and $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}.$ We decompose $\sigma^3,$ defined in Section~\ref{sec:decomp}, as $\sigma^3=\sigma^{3,1}+\sigma^{3,2}$ where
+%\begin{align*}
+%\sigma^{3,1}:=  \sum\limits_{k=4}^\infty \sum\limits_{j=0}^{k-4} \sum\limits_{\ell =0}^{k-4} \sigma_{j,k,\ell}\quad \text{and}\quad \sigma^{3,2}:= \sum\limits_{k=4}^\infty \sum\limits_{j=k-3}^k \sum\limits_{\ell =0}^{k-4} \sigma_{j,k,\ell}.
+%\end{align*}
+%It can be shown that $\sigma^{3,1}, \sigma^{3,2} \in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$ and satisfy 
+%\begin{equation*}
+%\text{supp}(\sigma^{3,j}) \subset \{ (x,\xi,\eta) \in \re^{3n}:|\eta| \leq A |\xi| \} \quad j=1,2,
+%\end{equation*}
+%\begin{equation*}
+%\text{\supp}(\widehat{\sigma(\cdot,\xi,\eta)}) \subset \{(x,\xi,\eta) \in \re^{3n}: |\xi| \leq \frac{1}{4} |\xi| \}.
+%\end{equation*}
+%In the case $j=1$ we have that $A=1/4$ and if $j=2$ then $A = 4$.
+%The following lemma shows that for $s\in\re$
+%\begin{equation}\label{eq:T31}
+%\norm{T_{\sigma^{3,1}}(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}} \quad \forall f,g\in \sw
+%\end{equation}
+%and that for $s>\tpline$
+%\begin{equation}\label{eq:T32}
+%\norm{T_{\sigma^{3,2}}(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}} \quad \forall f,g\in \sw.
+%\end{equation}
+%
+%
+%
+%\begin{lemma}\label{lem:T3}  Let $0<p<\infty$ and $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \infty$  and  $0\le \delta\le \rho<1.$   Consider $\sigma\in BS^{m(\rho,p_1,p_2)}_{\rho,\delta}$  such that for some positive constant $A$ it satisfies
+%\begin{align}
+%&\supp(\sigma)\subset\{(x,\xi,\eta)\in \re^{3n}: \abs{\eta}\le A\, \abs{\xi}\},\label{eq:supp1}\\
+%&\supp(\widehat{\sigma}^1(\cdot,\xi,\eta)) \subset\{\zeta\in\rn: \abs{\zeta}\le A\, \abs{\xi}\}\quad \forall \xi,\eta\in\rn. \label{eq:supp2}
+%\end{align}
+% If $0<A<1/2$ and $s\in\re$ it holds that
+%\begin{equation*}
+%\norm{T_\sigma(f,g)}{\B{s}{p}{q}}\lesssim \norm{f}{\B{s}{p_1}{q}}\norm{g}{h^{p_2}} \quad \forall f,g\in \sw,
+%\end{equation*}
+%where $h^{p_2}$ must be replaced by $L^\infty$ if $p_2=\infty;$  if $A\ge\frac{1}{2},$ the inequality above holds for $s>\tpline.$ 
+%\end{lemma}
+% 
+%
+%
+%
+%Before proving Lemma~\ref{lem:T3} we state and prove the following lemma which is useful in its proof.
+%
+%\begin{lemma}\label{lem:Tsk:bound} Let $0<p<\infty$ and $0<p_1,p_2\le \infty$  be such that $\hcline$ and $0\le \delta\le \rho<1;$ assume $\{\sigma_k\}_{k\in \na_0}$ is a sequence in $BS^{(\rho,p_1,p_2)}_{\rho,\delta}$  with constants uniform in $k$ and satisfies 
+%\begin{equation*}
+%\supp(\sigma_k)\subset \{(x,\xi,\eta)\in \re^{3n}: \abs{\xi}+\abs{\eta}\sim 2^k\},
+%\end{equation*}
+%with constants uniform in $k,$  where  $\abs{\xi}+\abs{\eta}\sim 2^k$ must be replaced by $\abs{\xi}+\abs{\eta}\lesssim 1$ if $k=0.$
+%Then 
+%\begin{equation*}
+%\norm{T_{\sigma_k}(f,g)}{L^p}\lesssim \norm{f}{h^{p_1}}\norm{g}{h^{p_2}}\quad \forall f,g\in\sw,k\in\na_0,
+%\end{equation*}
+%where the local Hardy spaces $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty.$
+%\end{lemma}
+%
+%\begin{proof} Let $p,$ $p_1,$ $p_2,$  $\rho,$  $\sigma_k,$ $f$ and $g$ be as in the hypotheses of the lemma.  
+%
+%Define
+%\[
+%\Sigma_k(x,\xi,\eta)=\sigma_k(2^{-\rho k}x, 2^{\rho k}\xi, 2^{\rho k} \eta);
+%\]
+%it easily follows that 
+%\begin{equation}\label{eq:sk:Sk}
+%T_{\sigma_k}(f,g)(x)=T_{\Sigma_k} (f_k,g_k)(2^{\rho k}x),
+%\end{equation}
+%where $f_k(x)=f(2^{-\rho k}x)$ and $g_k(x)=g(2^{-\rho k}x).$ 
+%
+%We next check that $\Sigma_k\in BS^{m(0,p_1,p_2)}_{0,0}$ with constants uniform in $k.$ Note that $\abs{\xi}+\abs{\eta}\sim 2^{(1-\rho)k}$ for $(x,\xi,\eta)\in \supp(\Sigma_k)$ and $k\in\na,$ and $\abs{\xi}+\abs{\eta}\lesssim 1$ for $(x,\xi,\eta)\in \supp(\Sigma_0).$ Using that $\sigma_k\in BS^{m(\rho,p_1,p_2)}_{\rho,\rho}$ with constants uniform in $k$ and assuming $(x,\xi,\eta)\in \supp(\Sigma_k),$ we have  
+%\begin{align*}
+%|\partial_x^\alpha\partial^\beta_\xi\partial^\gamma_\eta \Sigma_k(x,\xi, \eta)|&\lesssim (1+\abs{2^{\rho k}\xi}+\abs{2^{\rho k}\eta})^{m(\rho,p_1,p_2)+\rho\abs{\alpha}-\rho\abs{\beta+\gamma}}2^{-\rho k(\abs{\alpha}-\abs{\beta+\gamma})}\\
+%&\lesssim 2^{k(m(\rho,p_1,p_2)+\rho\abs{\alpha}-\rho\abs{\beta+\gamma})}2^{-\rho k(\abs{\alpha}-\abs{\beta+\gamma})}=2^{k(1-\rho)m(0,p_1,p_2)}\\
+%&\sim (1+\abs{\xi}+\abs{\eta})^{m(0,p_1,p_2)}.
+%\end{align*}
+%For the sake of notation assume $p_1$ and $p_2$ are finite; the argument below works as well replacing $h^{p_1}$ or $h^{p_2}$ with $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively.  By Miyachi--Tomita~\cite[Theorem 1.1]{MR3179688}, we have  
+%\begin{equation*}
+%\norm{T_{\Sigma_k}(f,g)}{h^p}\lesssim \norm{f}{h^{p_1}}\norm{g}{h^{p_2}}\quad \forall k\in\na_0.
+%\end{equation*}
+%Since $T_{\Sigma_k}(f,g)\in \sw$ for $f,g\in\sw,$ we can apply \eqref{eq:Lp:hp} to get 
+%\begin{equation*}
+%\norm{T_{\Sigma_k}(f,g)}{L^p}\lesssim \norm{f}{h^{p_1}}\norm{g}{h^{p_2}}\quad \forall k\in\na_0.
+%\end{equation*}
+%Recalling \eqref{eq:sk:Sk}, applying the estimate above and \eqref{eq:hp:scale}, we then obtain
+%\begin{align*}
+%\norm{T_{\sigma_k}(f,g)}{L^p}&=2^{-\rho k \frac{n}{p}}\norm{T_{\Sigma_k}(f_k,g_k)}{L^p}\lesssim 2^{-\rho k \frac{n}{p}} \norm{f_k}{h^{p_1}}\norm{g_k}{h^{p_2}}\\
+%&\le  2^{-\rho k \frac{n}{p}} 2^{\rho k \frac{n}{p_1}}\norm{f}{h^{p_1}} 2^{\rho k \frac{n}{p_2}}\norm{g}{h^{p_2}}=\norm{f}{h^{p_1}} \norm{g}{h^{p_2}} \quad \forall k\in\na_0. 
+%\end{align*}
+%\end{proof}
+%
+%
+%
+%
+%\begin{proof}[Proof of Lemma~\ref{lem:T3}]  Let $p,$ $p_1,$ $p_2,$ $q,$ $s,$  $\rho,$  $\sigma,$ $f$ and $g$ be as in the hypotheses of the lemma. 
+%For the sake of notation, assume $p_1$ and $p_2$ are finite; the argument given below works as well with $h^{p_1}$ or $h^{p_2}$ replaced with $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively.
+%
+%For $k\in\na_0,$ define $\sigma_k(x,\xi,\eta)=\sigma(x,\xi,\eta)\fk(\xi),$ where $\fk$ is as in Section~\ref{sec:decomp}; then $T_\sigma=\sum_{k=0}^\infty T_{\sigma_k}.$ Since  $\{\sigma_k\}_{k\in\na_0}$ satisfies the hypotheses of Lemma~\ref{lem:Tsk:bound}, we  have 
+%\begin{equation}\label{eq:Tk:bound}
+%\norm{T_{\sigma_k}(f,g)}{L^p}\lesssim \norm{f}{h^{p_1}}\norm{g}{h^{p_2}}\quad \forall k\in\na_0.
+%\end{equation}
+% The conditions on the supports of $\sigma$ and $\widehat{\sigma}^1$ imply that 
+%\begin{align*}
+%&\supp(\widehat{T_{\sigma_k}(f,g)}) \subset \{\zeta\in\rn: \abs{\zeta}\lesssim 2^k\}\quad \text{if } A\ge\fr{1}{2},\\
+%&\supp(\widehat{T_{\sigma_k}(f,g)}) \subset \{\zeta\in\rn: \abs{\zeta}\sim 2^k\} \quad \text{if } 0<A<\fr{1}{2},
+%\end{align*}
+%with constants independent of  $k,$  $f$ and $g$ (in the second inclusion $\abs{\zeta}\sim 2^k$ must be replaced with $\abs{\zeta}\lesssim 1$ if $k=0$).  Indeed,
+%\begin{align*}
+%\widehat{T_{\sigma_k}(f,g)}(\zeta)&=\int_{\rn}\left(\int_{\rtn}\sigma_k(x,\xi,\eta)\fhat(\xi)\ghat(\eta)\eixxe\dxi\deta\right)e^{-2\pi i x\cdot\zeta}\dx\\
+%&=\int_{\rtn} \fhat(\xi)\ghat(\eta) \widehat{\sigma_k}^1(\zeta-\xi-\eta,\xi,\eta)\dxi\deta.
+%\end{align*}
+%If $\zeta\in \supp(\widehat{T_{\sigma_k}(f,g)}),$ in view of \eqref{eq:supp1}, \eqref{eq:supp2} and the definition of $\sigma_k,$ there exist $\xi,\eta\in\rn$ such that $2^{k-1}\le \abs{\xi}\le 2^{k+1}$ ($\abs{\xi}\le 2$ if $k=0$), $\abs{\eta}\le A\abs{\xi}$ and $\abs{\zeta-\xi-\eta}\le A \abs{\xi}.$  This leads to 
+%\[
+%\abs{\zeta}\le \abs{\zeta-\xi-\eta}+\abs{\xi}+\abs{\eta}\le (2A+1) \abs{\xi}\lesssim 2^k\quad\forall k\in\na_0.
+%\]
+%and
+%\begin{equation*}
+%\abs{\zeta}\ge \abs{\xi}-\abs{\eta}-\abs{\zeta-\xi-\eta}\ge(1-2A)\abs{\xi}\ge (1-2A) 2^{k-1} \quad\forall k\in\na, 0<A<\fr{1}{2}.
+%\end{equation*}
+%Applying (\ref{item:thh:Nikolskij:B}) with $w\equiv 1$, recalling the definition of $\widetilde{\f}_k$ given at the beginning of Section~\ref{sec:T1} and using \eqref{eq:Tk:bound} and \eqref{eq:besovlh}, we obtain
+%\begin{align*}
+%\norm{T_\sigma(f,g)}{\ibes{p}{s}{q}}&\lesssim \left(\sum_{k=0}^\infty 2^{ksq}\norm{T_{\sigma_k}(f,g)}{L^p}^q\right)^{\frac{1}{q}}=\left(\sum_{k=0}^\infty 2^{ksq}\norm{T_{\sigma_k}(\Delta^{\widecheck{\widetilde{\f}}}_k f,g)}{L^p}^q\right)^{\frac{1}{q}}\\
+%&\lesssim\left(\sum_{k=0}^\infty 2^{ksq}\norm{\Delta^{\widecheck{\widetilde{\f}}}_k f}{h^{p_1}}^q\right)^{\frac{1}{q}}\norm{g}{h^{p_2}}\sim \norm{f}{\ibes{p_1}{s}{q}}\norm{g}{h^{p_2}}.
+%\end{align*}
+%\end{proof}
+%\section{Proof of Theorem \ref{thm:main1} }
+%In this section we use lemmas \ref{lem:T1}, \ref{lem:T2}, and \ref{lem:T3} to prove Theorem \ref{thm:main1}. 
+%
+%\begin{proof}[Proof of Theorem~\ref{thm:main1}] If $s>\tpline,$ then \eqref{eq:main1}  is a direct consequence of  Lemma~\ref{lem:T1}, Lemma~\ref{lem:T2}, the estimates \eqref{eq:T31} and \eqref{eq:T32} that follow from Lemma~\ref{lem:T3} and corresponding versions  of those results for $\sigma^4,$  $\sigma^5$ and $\sigma^6.$
+%
+%We next check that \eqref{eq:main1} holds for any $s\in \re$ if the support of the Fourier transform of $\sigma(\cdot,\xi,\eta)$ is contained outside the set 
+%$\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\eta}$ and for some fixed $\varepsilon>0$ independent of $\xi$ and $\eta.$ We first recall that the boundedness properties of the operators $T_{\sigma^1},$ $T_{\sigma^2}$ and $T_{\sigma^{3,1}}$ (and the corresponding operators $T_{\sigma^4},$ $T_{\sigma^5}$ and $T_{\sigma^{6,1}}$) proved in Sections~\ref{sec:T1}, \ref{sec:T2} and \ref{sec:T3} hold for any $s\in \re;$ on the other hand,  the boundedness properties for the operator $T_{\sigma^{3,2}}$ (and the corresponding operator $T_{\sigma^{6,2}}$) proved in Section~\ref{sec:T3} hold under the condition $s>\tpline.$   Therefore, the desired result will follow from further analyzing $\sigma^{3,2}$ and $\sigma^{6,2}.$ 
+%
+%Let $M\in\na$ be such that $M>4$ and $2^{2-M}<\varepsilon;$ consider the following decomposition of $\sigma^{3,2}:$
+%\begin{align*}
+%\sigma^{3,2}&=\sum_{k=4}^{M-1}\sum_{j=k-3}^k\sum_{\ell=0}^{k-4}\sigma_{j,k,l}+\sum_{k=M}^{\infty}\sum_{j=k-3}^k\sum_{\ell=k-M+1}^{k-4}\sigma_{j,k,l}+\sum_{k=M}^{\infty}\sum_{j=k-3}^k\sum_{\ell=0}^{k-M}\sigma_{j,k,l}\\&=:\sigma^{3,2,1} +\sigma^{3,2,2}+\sigma^{3,2,3}.
+%\end{align*}
+%The support of $\sigma^{3,2,1}$ is contained in $\{(x,\xi,\eta)\in \re^{3n}: |\xi| \leq 2^M \text{ and } |\eta|\leq 2^M \}$ therefore the operator $T_{\sigma^{3,2,1}}$ can be treated as $T_{\sigma^{2,1}}$ in Section \ref{sec:T2}. Similarly the operator $T_{\sigma^{3,2,2}}$ can be treated in the same way as $T_{\sigma^{2,2}}$. Therefore $T_{\sigma^{3,2,1}}$ and $T_{\sigma^{3,2,2}}$ satisfy the same estimates as $T_{\sigma^2}$ in Lemma \ref{lem:T2}. The support of $\widehat{\sigma}^{3,2,3}(\cdot,\xi,\eta)(\zeta)$ is contained in $\{(\zeta,\xi,\eta)\in\re^{3n}: |\zeta| \leq 2^{2-M} |\xi| \} \subset \{(\zeta,\xi,\eta)\in\re^{3n}: |\zeta| \leq \eps |\xi| \}$ and the support of $\sigma^{3,2,3}$ is contained in $\{(x,\xi,\eta)\in\re^{3n}: \frac{1}{32}|\xi| \leq |\eta| \leq 4|\xi| \}$. Therefore $T_{\sigma^{3,2,3}}$ satisfies the same estimates as $T_{\sigma^{3,2}}$ for $s>\text{max}(0,n(1/p - 1)$.
+%
+%A similar reasoning applies to $\sigma^{6,2}=\sum_{j=5}^\infty\sum_{k=j-3}^{j-1}\sum_{\ell=0}^{j-5}\sigma_{j,k,\ell}.$ In this case, the corresponding operators with symbols $\sigma^{6,2,1}$ and $\sigma^{6,2,2}$ satisfy the estimates for any $s\in \re$ while the operator with symbol $\sigma^{6,2,3}$ satisfies the estimates for $s>\tpline.$ The support of the Fourier transform of  $\sigma^{6,2,3}(\cdot,\xi,\eta)$ is contained in  $\{\zeta\in\rn: \abs{\zeta}< \varepsilon\abs{\eta}\}$ and the support of $\sigma^{6,2,3}$ is contained   in  $\{(x,\xi,\eta)\in\re^{3n}: 1/2\abs{\xi}\le\abs{\eta}\le 32\abs{\xi}\}.$
+%
+%With the work above and the formulas for the symbols $\sigma^{3,2,3}$ and $\sigma^{6,2,3}$ in terms of $\sigma$ we have that $\sigma^{3,2,3}$ and $\sigma^{6,2,3}$ are zero if  the support of the Fourier transform of $\sigma(\cdot,\xi,\eta)$ is contained outside the set 
+%$\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\eta}.$ Therefore the desired result follows.
+% 
+%
+%\end{proof}
+%\section{Proof of Corollary \ref{coro:main1}}
+%
+%In this section we prove Corollary \ref{coro:main1}. First we set some notation which will be useful in the proof. 
+%
+%
+% Let  $\Theta\in \sw$ be such that $\Theta(\xi)=1$ for $|\xi|\le 8$ and $\Theta(\xi)=0$ for $|\xi|\ge 16;$ define $\chi(\xi,\eta)=\Theta\left(\frac{\eta}{(1+\abs{\xi}^2)^{1/2}}\right).$ It follows that $\chi(\xi,\eta)=1$ for $\abs{\eta}\le 4$ or $\abs{\eta}\le 4\abs{\xi}$ and that the support of  $\chi$ is contained in the set where $ \abs{\eta}\le 16 \sqrt{2}$ or $\abs{\eta}\le 32\abs{\xi}.$ By recalling the supports of $\sigma^j$, $j = 1,2,\dots,6$ from Section \ref{sec:decomp} this implies  that 
+% \begin{align*}
+% \sigma^{j}(x,\xi,\eta)\chi(\xi,\eta)=\sigma^{j}(x,\xi,\eta) \text{ for } j=1,2, 3,\\
+%  \sigma^{j}(x,\xi,\eta)\chi(\eta,\xi)=\sigma^{j}(x,\xi,\eta)\text{ for } j=4, 5,6.
+% \end{align*}
+% Furthermore, it can be shown that given any pair of multiindices $\beta,\gamma\in \naz,$ there exists $C_{\beta,\gamma}$ such that
+% \begin{equation*}
+% \abs{\partial_\xi^\beta\partial_\eta^\gamma\chi(\xi,\eta)}\le C_{\beta,\gamma} (1+\abs{\xi}+\abs{\eta})^{-\abs{\beta+\gamma}}\quad \forall \xi,\eta\in \rn.
+% \end{equation*}
+% Therefor $\sigma(x,\xi,\eta)\chi(\xi,\eta)$ and $\sigma(x,\xi,\eta)\chi(\eta,\xi)$ belong to the same H\"ormander class as $\sigma.$
+%
+%
+%
+%\begin{proof}[Proof of Corollary~\ref{coro:main1}]
+% Let $p,$ $p_1,$ $p_2,$ $q,$ $s,$ $\rho,$ $m$  and $\bar{m}$ be as in the hypotheses and consider $\sigma\in BS^m_{\rho,\rho}.$  Let $\sigma^j,$ $j=1,\cdots,6,$  be as in Section~\ref{sec:decomp} and $\chi$ as described above. Denote by  $ J^{\bar{m}}$ the Fourier multiplier operator given by $\mathcal{F}(J^{\bar{m}}(f))(\xi)=(1+\abs{\xi}^2)^{{\bar{m}}/2}\fhat(\xi)$ for $\xi\in \rn$ and $f\in \sw.$ 
+%
+%It easily follows that
+%\begin{align*}
+%T_{\sigma}(f,g)(x)=&T_{\Sigma^1}(J^{\bar{m}}f, g)(x) +T_{\Sigma^2} (J^{\bar{m}}f, g)(x) + T_{\Sigma^3}(f,J^{\bar{m}}g)(x)\\ &+T_{\Sigma^4} (f, J^{\bar{m}}g)(x)+T_{\Sigma^5} (f, J^{\bar{m}}g)(x)+T_{\Sigma^6} (f, J^{\bar{m}}g)(x), 
+%\end{align*}
+%where $\Sigma^j(x,\xi,\eta):=\sigma^j(x,\xi,\eta)(1+\abs{\xi}^2)^{-\bar{m}/2}$ for $j=1,2,3$ and  $\Sigma^j(x,\xi,\eta):=\sigma^j(x,\xi,\eta)(1+\abs{\eta}^2)^{-\bar{m}/2}$ for $j=4,5,6.$
+%
+% Note that $\Sigma^1,$ $\Sigma^2$ and $\Sigma^3$ are precisely  the first three symbols that are obtained through the decomposition described in Section~\ref{sec:decomp} corresponding to the symbol $\Sigma^{1,2,3}(x,\xi,\eta):=\sigma(x,\xi,\eta)\chi(\xi,\eta)(1+\abs{\xi}^2)^{-\bar{m}/2};$ likewise, $\Sigma^4,$  $\Sigma^5$ and $\Sigma^6$  are exactly the last three symbols that are obtained through the decomposition described in Section~\ref{sec:decomp} corresponding to the symbol $\Sigma^{4,5,6}(x,\xi,\eta):=\sigma(x,\xi,\eta)\chi(\eta,\xi)(1+\abs{\eta}^2)^{-\bar{m}/2}.$  Since $\bar{m}=m-m(\rho,p_1,p_2)$ and $\sigma\in BS^m_{\rho,\rho},$ it follows that  $\Sigma^{1,2,3}$ and $\Sigma^{4,5,6}$ belong to $BS^{m(\rho,p_1,p_2)}_{\rho,\rho}.$ Then Lemma~\ref{lem:T1}, Lemma~\ref{lem:T2} and the results from Section~\ref{sec:T3}, along with their corresponding symmetric versions, can be applied to $\Sigma^1,$ $\Sigma^2,$ $\Sigma^3$ and $\Sigma^4,$ $\Sigma^5,$ $\Sigma^6,$ respectively, to obtain that 
+%\[
+%\norm{T_\sigma(f,g)}{B^s_{p,q}}\lesssim \norm{J^{\bar{m}}f}{B^s_{p_1,q}}\norm{g}{h^{p_2}}+\norm{f}{h^{p_1}}\norm{J^{\bar{m}}g}{B^s_{p_2,q}}\quad \forall f,g\in \sw,
+%\]
+%where $h^{p_1}$ and $h^{p_2}$ should be replaced with $L^\infty$ if $p_1=\infty$  or $p_2=\infty,$ respectively. The corollary then follows from the above estimate and  the lifting property  $\norm{J^{t}h}{B^{a}_{b,c}}\sim \norm{h}{B^{t+a}_{b,c}},$ valid for any  $t\in \re$ and $0<a,b,c\le \infty.$
+%\end{proof}
+
+
+
+\end{document}

@@ -44,6 +44,12 @@ A.~Almeida and P.~H{\"a}st{\"o}.
   operators.
 \newblock {\em Comm. Partial Differential Equations}, 28(5-6):1161--1181, 2003.
 
+\bibitem{MR2046194}
+\'{A} B\'{e}nyi and {R}. H. Torres.
+\newblock Almost orthogonality and a class of bounded bilinear
+  pseudodifferential operators.
+\newblock {\em Math. Res. Lett.}, 11(1):1--11, 2004.
+
 \bibitem{MR2680189}
 F.~Bernicot and P.~Germain.
 \newblock Bilinear oscillatory integrals and boundedness for new bilinear
@@ -71,7 +77,8 @@ J.~Brummer and V.~Naibo.
 J.~Brummer and V.~Naibo.
 \newblock Weighted fractional {L}eibniz-type rules for bilinear multiplier
   operators.
-\newblock {\em Potential Anal.}, 2018.
+\newblock {\em Potential Anal.}, 2018,
+  https://doi.org/10.1007/s11118-018-9703-9.
 
 \bibitem{MR1124294}
 M.~Christ and M.~Weinstein.
@@ -175,7 +182,7 @@ P.~Gurka, P.~Harjulehto, and A.~Nekvinda.
 \newblock {\em Math. Inequal. Appl.}, 10(3):661--676, 2007.
 
 \bibitem{MR3864388}
-Jarod Hart, Rodolfo~H. Torres, and Xinfeng Wu.
+J.~Hart, R.~H. Torres, and X.~Wu.
 \newblock Smoothing properties of bilinear operators and {L}eibniz-type rules
   in {L}ebesgue and mixed {L}ebesgue spaces.
 \newblock {\em Trans. Amer. Math. Soc.}, 370(12):8581--8612, 2018.
@@ -221,11 +228,6 @@ C.~Kenig, G.~Ponce, and L.~Vega.
 \newblock Well-posedness and scattering results for the generalized
   {K}orteweg-de {V}ries equation via the contraction principle.
 \newblock {\em Comm. Pure Appl. Math.}, 46(4):527--620, 1993.
-
-\bibitem{MR1713146}
-C.~E. Kenig and E.~M. Stein.
-\newblock Erratum to: ``{M}ultilinear estimates and fractional integration''.
-\newblock {\em Math. Res. Lett.}, 6(3-4):467, 1999.
 
 \bibitem{MR1682725}
 C.~E. Kenig and E.~M. Stein.
@@ -285,7 +287,7 @@ A.~Miyachi and N.~Tomita.
 
 \bibitem{MT2}
 A.~Miyachi and N.~Tomita.
-\newblock Bilinear pseudo-differential operators with exotic symbols, ii.
+\newblock Bilinear pseudo-differential operators with exotic symbols, {II}.
 \newblock {\em J. PseudoDiffer. Oper. Appl.}, 2018.
 
 \bibitem{MR0293384}
@@ -319,8 +321,8 @@ V.~Naibo and A.~Thomson.
 
 \bibitem{NaTh_CM}
 V.~Naibo and A.~Thomson.
-\newblock Coifman-meyer multipliers: Leibniz-type rules and applications to
-  scattering of solutions to pdes.
+\newblock Coifman-{M}eyer multipliers: Leibniz-type rules and applications to
+  scattering of solutions to {PDE}s.
 \newblock {\em To appear in Trans. Amer. Math. Soc.}, 2019.
 
 \bibitem{MR0374877}
@@ -333,13 +335,13 @@ S.~M. Nikol'ski\u\i.
 
 \bibitem{Oh_Wu}
 S.~Oh and X.~Wu.
-\newblock On $l^1$ endpoint kato-ponce inequality.
+\newblock On ${L}^1$ endpoint {K}ato-{P}once inequality.
 \newblock {\em Math. Res. Lett.}, 2019.
 
 \bibitem{Park}
 B.~J. Park.
 \newblock On the boundedness of pseudo-differential operators on
-  triebel-lizorkin and besov spaces.
+  {T}riebel-{L}izorkin and {B}esov spaces.
 \newblock {\em J. Math. Anal. Appl.}, 461:544--576, 2018.
 
 \bibitem{MR0380394}
@@ -368,7 +370,7 @@ M.~Rosenthal and H.-J. Schmeisser.
 \bibitem{ST2018}
 A.~Seeger and W.~Trebels.
 \newblock Embeddings for spaces of {L}orentz-{S}obolev type.
-\newblock {\em Preprint}, https://arxiv.org/abs/1801.10570v1, 2018.
+\newblock {\em Math. Ann.}, 2018, https://doi.org/10.1007/s00208-018-1730-8.
 
 \bibitem{MR3024598}
 H.~Triebel.

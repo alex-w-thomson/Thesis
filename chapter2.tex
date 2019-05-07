@@ -7,13 +7,13 @@ In this chapter, we obtain new Leibniz-type rules of the type \eqref{h_general_e
 
 We start with some preliminaries in Section \ref{ch2_prelim}, where we discuss Coifman-Meyer multipliers and Besov and Triebel-Lizorkin spaces based on weighted Lebesgue spaces.
 
-In Section \ref{sec:ch2_results}, we state and prove two of the main results of this chapter on Leibniz-type rules associated to Coifman-Meyer multipliers in the setting of Besov and Triebel-Lizorkin spaces based on weighted Lebesgue spaces. These results are stated as Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B}. We also present several corollaries and connections with related results in the literature and estimates \eqref{def:leibniz} and \eqref{def:ileibniz}. The method of proof used for Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B} can be adapted to obtain \eqref{h_general_estimate} and \eqref{i_general_estimate} for Coifman-Meyer multipliers in the context of Triebel-Lizorkin and Besov spaces based on other quasi-Banach spaces such as weighted Lorentz, weighted Morrey, and variable-Lebesgue spaces. These results are discussed in Section \ref{sec:othersettings}.
+In Section \ref{sec:ch2_results}, we state and prove two of the main results of this chapter on Leibniz-type rules associated to Coifman-Meyer multiplier operators in the setting of Besov and Triebel-Lizorkin spaces based on weighted Lebesgue spaces. These results are stated as Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B}. We also present several corollaries and connections with related results in the literature and estimates \eqref{def:leibniz} and \eqref{def:ileibniz}. The method of proof used for Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B} can be adapted to obtain \eqref{h_general_estimate} and \eqref{i_general_estimate} for Coifman-Meyer multiplier operators in the context of Triebel-Lizorkin and Besov spaces based on other quasi-Banach spaces such as weighted Lorentz, weighted Morrey, and variable-Lebesgue spaces. These results are discussed in Section \ref{sec:othersettings}.
 
 Finally, in Section \ref{ch2_applications} we present applications of the results in this chapter to scattering properties of solutions to partial differential equations. 
 
 \section{Preliminaries}\label{ch2_prelim}
 
-In this section we set some notation and present definitions and  results about weights, the scales of weighted Triebel--Lizorkin, Besov and Hardy spaces, and Coifman--Meyer multiplier operators.
+In this section, we set some notation and present definitions and  results about weights, the scales of weighted Triebel--Lizorkin, Besov and Hardy spaces, and Coifman--Meyer multiplier operators.
 
 The notations $\sw$ and $\swp$ are used for the Schwartz class of smooth rapidly decreasing functions defined on $\rn$ and its dual, the class of tempered distributions on $\rn$, respectively. $\swz$ refers to the closed subspace of functions in $\sw$ that have vanishing moments of all orders; that is, $f\in \swz$ if and only if $f\in \sw$ and $\int_{\rn}x^\alpha f(x)\,dx=0$ for all $\alpha\in \na_0^n.$ Its dual is  $\mathcal{S}'_0(\rn),$  which coincides with the class of tempered distributions modulo polynomials denoted by $\swp/\mathcal{P}(\rn).$ Throughout, all functions are defined on $\rn$ and therefore we omit $\rn$ in the notation of the  function spaces defined below. 
 
@@ -21,10 +21,10 @@ The Fourier transform of a tempered distribution $f\in\swp$ is denoted by   $\fh
 \begin{equation*}
 \widehat{f}(\xi)= \int_{\rn} f(x) e^{-2\pi i \xi\cdot x} \dx\quad \forall \xi\in\rn.
 \end{equation*}
-If $j\in \ent$ and  $h\in \sw,$ the operator $P_j^h$ is defined so that $\widehat{P_j^h f}(\xi)=h(2^{-j}\xi)\fhat(\xi)$ for $f\in \sw$ and $\xi\in \rn.$  If $\widehat{h}$ is supported in an annulus centered at the origin we will use the notation $\Delta_j^h$ rather than $P_j^h;$ if  $\widehat{h}$ is supported in a ball centered at the origin and $\widehat{h}(0)\neq 0,$   $S_j^h$ will be used instead of  $P_j^h.$
+If $j\in \ent$ and  $h\in \sw,$ the operator $P_j^h$ is defined so that $\widehat{P_j^h f}(\xi)=\widehat{h}(2^{-j}\xi)\fhat(\xi)$ for $f\in \sw$ and $\xi\in \rn.$  If $\widehat{h}$ is supported in an annulus centered at the origin we will use the notation $\Delta_j^h$ rather than $P_j^h;$ if  $\widehat{h}$ is supported in a ball centered at the origin and $\widehat{h}(0)\neq 0,$   $S_j^h$ will be used instead of  $P_j^h.$
 For $y\in\rn$ the translation operator, denoted by $\tau_y$, is given by $\tau_y h(x)=h(x+y)$ for  $x\in\rn.$ 
 
-The notation $A \lesssim B$ means that $A \leq c B$, where $c$ is a constant that may depend on some of the parameters used but not on the functions involved.
+The notation $A \lesssim B$ means that $A \leq c B$, where $c$ is a constant that may depend on some of the parameters used but not on the functions appearing in the expressions for $A$ and $B$. 
  
 \subsection{Coifman-Meyer Multipliers}\label{Coifman-Meyer Multipliers}
 
@@ -83,14 +83,14 @@ If $\sigma$ is an inhomogeneous Coifman--Meyer multiplier of order $m,$ a simila
 
 \subsection{The scale of weighted Triebel-Lizorkin and Besov spaces}\label{sec:weighted_TL_B}
 
-The Leibniz-type rules obtained in two of the main results of this chapter, Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B}, hold in the setting of weighted Triebel-Lizorkin and Besov spaces. In this section we define these scales of spaces and present some of their properties. In particular, we state and prove Nikol'skij representations, which constitute important tools for the proofs of Theorems \ref{thm:CM:TL:B} and \ref{thm:ICM:TL:B}.
+The Leibniz-type rules obtained in two of the main results of this chapter, Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B}, hold in the settings of weighted Triebel-Lizorkin and Besov spaces. In this section, we define these scales of spaces and present some of their properties. In particular, we state and prove Nikol'ski\u\i$\text{ }$ representations of the spaces, which constitute important tools for the proofs of Theorems \ref{thm:CM:TL:B} and \ref{thm:ICM:TL:B}.
 
 We start by defining the classes of weights we will be using and present maximal operators and inequalities.
 
 A \textit{weight} $w$ defined on $\rn$ is a locally integrable function such that $0<w(x)<\infty$ for almost every $x\in\rn$.
 Given a weight $w$ and $0<p<\infty$ we define the weighted Lebesgue space $L^p(w)$ as the space of all measurable functions $f$ satisfying 
 \[ \norm{f}{L^p(w)} := \left(\int_\rn |f(x)|^p w(x)dx\right)^{\frac{1}{p}} < \infty. \]
-In the case that $p=\infty$ we define $L^\infty (w) = L^\infty$. 
+In the case that $p=\infty$ we define $L^\infty (w) := L^\infty$. 
 
 The specific classes of weights in the hypotheses of the results of this chapter are Muckenhoupt weights, which we next define. 
 \begin{dfn}
@@ -98,20 +98,15 @@ For $1<p<\infty$, the \textit{Muckenhoupt class} $A_p$ consists of all weights $
  \begin{equation*}
  \sup_B\left(\frac{1}{\abs{B}}\int_Bw(x)\dx\right)\left(\frac{1}{\abs{B}}\int_Bw(x)^{-\frac{1}{p-1}}\dx\right)^{p-1}<\infty,
  \end{equation*}
-where the supremum is taken over all Euclidean balls $B\subset\rn$ and $|B|$ is the Lebesgue measure of $B$. For $p=\infty$ we define $A_\infty := \cup_{1<p} A_p$. 
+where the supremum is taken over all Euclidean balls $B\subset\rn$ and $|B|$ is the Lebesgue measure of $B$. For $p=\infty$ we define $A_\infty := \bigcup\limits_{1<p} A_p$. 
 \end{dfn} 
-From this definition it follows that $A_p \subset A_q$ when $p\leq q$. Moreover, it can be proved that if $w\in A_p$, $p>1$, then $w\in A_{p-\eps}$ for some $\eps > 0$. 
+From this definition, it follows that $A_p \subset A_q$ when $p\leq q$. Moreover, it can be proved that if $w\in A_p$, $p>1$, then $w\in A_{p-\eps}$ for some $\eps > 0$. 
 For $w\in A_\infty$ we set 
-$\tau_w = \inf\{p \in (1,\infty]: w\in A_p \}$. 
-
-
-
-
-
-The Muckenhoupt classes arise in the study of boundedness properties of the Hardy-Littlewood maximal operator in the setting of weighted Lebesgue spaces, as we next explain. The \textit{Hardy-Littlewood maximal operator} $\mathcal{M}$ is defined as 
+$$\tau_w := \inf\{p \in (1,\infty): w\in A_p \}.$$
+\indent The Muckenhoupt classes arise in the study of boundedness properties of the Hardy-Littlewood maximal operator in the setting of weighted Lebesgue spaces, as we next explain. The \textit{Hardy-Littlewood maximal operator} $\mathcal{M}$ is defined as 
 \[ \mathcal{M}(f)(x)  = \sup_{B \ni x} \frac{1}{|B|}\int_B |f(y)|dy \quad \forall x\in\mathbb{R}^n, f\in L^1_{loc}, \]
 where the supremum is taken over all Euclidean balls $B \subset \rn$. It turns out that $\mathcal{M}$ is bounded on $L^p(w)$ if and only if $w\in A_p$. That is, for $1<p<\infty$, $w\in A_p$ if and only if 
-\[\norm{\mathcal{M}(f)}{L^p (w)} \lesssim \norm{f}{L^p (w)}, \quad \forall f\in L^p(w). \]
+\[\norm{\mathcal{M}(f)}{L^p (w)} \lesssim \norm{f}{L^p (w)} \quad \forall f\in L^p(w). \]
 
 
 Given $0<r<\infty$ and $f\in L^1_{loc}$, we set $\mathcal{M}_r (f) := \left(\mathcal{M}(|f|^r)\right)^{\frac{1}{r}}$. By the boundedness properties for the Hardy-Littlewood maximal operator stated above, it holds that $\mathcal{M}_r$ is bounded on $L^p (w)$ for $0<r<p$ and $w\in A_{p/r}$ (i.e. $0<r<\frac{p}{\tau_w}$). This fact is a particular case of the following estimate known as the Fefferman-Stein inequality:
@@ -170,7 +165,7 @@ Let $s\in\mathbb{R}$ and $0<q\leq\infty$.
 \norm{f}{\itlw{p}{s}{q}{w}}:= \norm{S^\varphi_0 f}{L^p(w)} + \norm{\left(\sum_{j\in\na}(2^{sj}|\Delta^\psi_jf|)^q\right)^{\frac{1}{q}}}{\lebw{p}{w}}<\infty,
 \end{equation*}
 with appropriate changes if $q=\infty$.
-\item For $0<p\leq\infty$, the \textit{weighted inhomogeneous Besov space} $\besw{p}{s}{q}{w}$ consists of all $f\in\mathcal{S}'(\rn)$ such that 
+\item For $0<p\leq\infty$, the \textit{weighted inhomogeneous Besov space} $\ibesw{p}{s}{q}{w}$ consists of all $f\in\mathcal{S}'(\rn)$ such that 
 \begin{equation*}
 \norm{f}{\ibesw{p}{s}{q}{w}}: = \norm{S^\varphi_0 f}{L^p(w)} + \left(\sum_{j\in\na} (2^{js}\norm{\Delta^\psi_jf}{L^p(w)})^q\right)^{\frac{1}{q}} < \infty,
 \end{equation*}
@@ -179,30 +174,30 @@ with appropriate changes if $q=\infty$.
 \end{dfn}
 
 The definitions above are independent of the choice of $\varphi$ and $\psi$. Triebel-Lizorkin and Besov spaces are quasi-Banach spaces and, if $p,q \geq 1$, they are Banach spaces. These spaces provide a unified framework that includes a variety of other spaces such as weighted Lebesgue, Hardy, and Sobolev spaces.  For instance, the following equalities hold with equivalent norms: 
-\begin{enumerate}[(i)]
-\item \label{TL_equal1} $\tlw{p}{0}{2}{w} = H^p (w) \text{ for } 0<p<\infty,  w\in A_\infty,  $
-\item \label{TL_equal2}  $\itlw{p}{0}{2}{w} = h^p(w) \text{ for } 0<p<\infty,  w\in A_\infty,$ 
-\item \label{TL_equal3}  $\tlw{p}{0}{2}{w} = \itlw{p}{0}{2}{w} = L^p(w) = H^p(w) = h^p(w) \text{ for } 1<p<\infty,  w\in A_p,$ 
-\item \label{TL_equal4}  $\tlw{p}{s}{2}{w} = \dot{W}^{s,p}(w) \text{ for } 1<p<\infty,  w\in A_p$, 
-\end{enumerate}
+\begin{align}
+ \tlw{p}{0}{2}{w} &= H^p (w) \text{ for } 0<p<\infty,  w\in A_\infty, \label{TL_equal1} \\
+ \itlw{p}{0}{2}{w}&= h^p(w) \text{ for } 0<p<\infty,  w\in A_\infty, \label{TL_equal2}  \\
+  \tlw{p}{0}{2}{w} &= \itlw{p}{0}{2}{w} = L^p(w) = H^p(w) = h^p(w) \text{ for } 1<p<\infty,  w\in A_p, \label{TL_equal3} \\
+ \tlw{p}{s}{2}{w} &= \dot{W}^{s,p}(w) \text{ for } 1<p<\infty,  w\in A_p,\label{TL_equal4}  
+\end{align}
 where $H^p(w)$, $h^p (w)$, and $\dot{W}^{s,p}(w)$ are, respectively, a weighted Hardy space, a weighted local Hardy space, and a weighted Sobolev space, whose definitions we next recall.
-Let $\phi\in \sw$ be such that $\int_{\rn}\phi(x)\dx\neq 0.$ Given $0<p<\infty,$ the weighted Hardy space $H^p(w)$ is defined as 
+Let $\phi\in \sw$ be such that $\int_{\rn}\phi(x)\dx\neq 0.$ Given $0<p<\infty$ and $w\in A_\infty$, the weighted Hardy space $H^p(w)$ is defined as 
 \begin{equation*}
 H^p(w) :=\{f \in \swp: \norm{f}{H^p(w)}< \infty \},
 \end{equation*}
 where 
 \[
-\norm{f}{H^p(w)}:= \norm{\sup_{t>0} \abs{t^{-n}\phi(t^{-1}\cdot)\ast f}}{L^p(w)} .
+\norm{f}{H^p(w)}:= \norm{\sup_{t>0} \abs{t^{-n}\phi(t^{-1}\cdot)\ast f}}{L^p(w)} ;
 \]
-The weighted local Hardy spaces $h^p(w)$ is defined as
-\begin{equation}\label{def:local_Hardy}
+the weighted local Hardy spaces $h^p(w)$ is defined as
+\begin{equation*}\label{def:local_Hardy}
 h^p(w) :=\{f \in \swp: \norm{f}{h^p(w)}< \infty \},
-\end{equation}
+\end{equation*}
 where 
 \[
 \norm{f}{h^p(w)}:= \norm{\sup_{0<t<1} \abs{t^{-n}\phi(t^{-1}\cdot)\ast f}}{L^p(w)} .
 \]
-The weighted Sobolev space $\dot{W}^{s,p}(w)$ is the space of all tempered distributions modulo polynomials such that 
+For $1<p<\infty$ and $w\in A_\infty$ the weighted Sobolev space $\dot{W}^{s,p}(w)$ is the space of all tempered distributions modulo polynomials such that 
 \[\norm{f}{\dot{W}^{s,p}(w)} := \norm{D^s f}{L^p(w)} < \infty. \]
 
 
@@ -211,7 +206,6 @@ For a detailed overview of the development of Besov and Triebel-Lizorkin spaces 
  \begin{equation}\label{lifting_TL}
   \norm{f}{\tlw{p}{s}{q}{w}}\simeq\norm{D^s f}{\tlw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\itlw{p}{s}{q}{w}}\simeq\norm{J^s f}{\itlw{p}{0}{q}{w}},
  \end{equation}
-
  \begin{equation}\label{lifting_B}
   \norm{f}{\besw{p}{s}{q}{w}}\simeq\norm{D^s f}{\besw{p}{0}{q}{w}} \quad \text{ and } \quad \norm{f}{\ibesw{p}{s}{q}{w}}\simeq\norm{J^s f}{\ibesw{p}{0}{q}{w}}.
  \end{equation}
@@ -221,20 +215,15 @@ We end this section by introducing notation used in the statements of the main r
 \begin{equation}\label{def:tau_pq(w)}
 \tau_{p,q}(w) := n \left(\frac{1}{\min(p/\tau_w,q,1)} - 1 \right)  \quad \text{and}\quad \tau_{p}(w):=n\left(\frac{1}{\min(p/\tau_w,1)}-1\right).
 \end{equation} 
-If $w\equiv 1,$ in which case $\tau_w=1,$ we just write $\tau_{p,q}$  and $\tau_p,$ respectively. Note  that $\tau_{p,2}(w)=\tau_p(w),$ $\tau_{p,q}(w)\ge \tau_{p,q}$ and $\tau_p(w)\ge \tau_p$ for any $w\in A_\infty.$
+If $w\equiv 1,$ in which case $\tau_w=1,$ we just write $\tau_{p,q}$  and $\tau_p,$ respectively. Note  that $\tau_{p,2}(w)=\tau_p(w),$ $\tau_{p,q}(w)\ge \tau_{p,q}$, and $\tau_p(w)\ge \tau_p$ for any $w\in A_\infty.$
 
-\subsubsection{Nikol'skij representations for weighted Triebel-Lizorkin and Besov spaces}
+\subsubsection{Nikol'ski\u\i$\text{ }$ representations for weighted Triebel-Lizorkin and Besov spaces}
 
-An important tool for the proofs of Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B} is the Nikol'skij representation for weighted Triebel-Lizorkin and Besov spaces, stated below as Theorem \ref{thm:Nikolskij:weighted}. Such result is a weighted version of \cite[Theorem 3.7]{MR837335}. 
+An important tool for the proofs of Theorem \ref{thm:CM:TL:B} and Theorem \ref{thm:ICM:TL:B} is the Nikol'ski\u\i$\text{ }$ representation for weighted Triebel-Lizorkin and Besov spaces, stated below as Theorem \ref{thm:Nikolskij:weighted}. Such result is a weighted version of \cite[Theorem 3.7]{MR837335}. 
 
 Given $0<p,q\leq\infty$, and a sequence of functions $\{ f_j\}_{j\in\mathbb{Z}}$ defined on $\re^n$, the following notation will be used in this section:
-
-\[ \norm{\{f_j\}_{j\in\mathbb{Z}}}{L^p(w)(\ell^q)}:= \norm{\left( \sum\limits_{j\in\mathbb{Z}} |f_j|^q \right)^{1/q} }{L^p(w)}, \]
-
-\[ \norm{\{f_j\}_{j\in\mathbb{Z}}}{\ell^q(L^p(w))}:=\left( \sum\limits_{j\in\mathbb{Z}} \norm{f_j}{L^p(w)}^q \right)^{1/q}. \] 
-
-
-\begin{theorem}\label{thm:Nikolskij:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
+\[ \norm{\{f_j\}_{j\in\mathbb{Z}}}{L^p(w)(\ell^q)}:= \norm{\left( \sum\limits_{j\in\mathbb{Z}} |f_j|^q \right)^{1/q} }{L^p(w)}, \quad \norm{\{f_j\}_{j\in\mathbb{Z}}}{\ell^q(L^p(w))}:=\left( \sum\limits_{j\in\mathbb{Z}} \norm{f_j}{L^p(w)}^q \right)^{1/q}. \] 
+\begin{theorem}[Nikol'ski\u\i$\text{ }$ representation] \label{thm:Nikolskij:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
 \begin{equation*}
 \supp(\widehat{u_j}) \subset B(0, \A\, 2^j ) \quad \forall j \in \ent.
 \end{equation*}
@@ -311,7 +300,9 @@ where in the last equality we have used that $\tau < 0$. If $1 < q < \infty$ we 
 &    =C_{k_0, \tau, q} \norm{\{2^{j \lambda} d_j\}_{j\in\ent}}{\ell^q}.
 \end{align*}
 
-The case $q = \infty$ is straightforward. This completes the proof.
+The case $q = \infty$ is straightforward. \begin{flushright}
+$\Box$
+\end{flushright}
 
 
 We now prove Theorem \ref{thm:Nikolskij:weighted}.
@@ -391,7 +382,7 @@ If $q=\infty,$  we use that $\{2^{(s-\varepsilon)j}u_j\}_{j\ge 0}$ and $\{2^{(s+
 \norm{U_N}{\tlw{p}{s}{\infty}{w}}\lesssim \norm{\{2^{js} u_j\}_{-N\le j\le N}}{\lebw{p}{w}(\ell^\infty)}\le \norm{\{2^{js} u_j\}_{j\in \ent}}{\lebw{p}{w}(\ell^\infty)},
 \]
 with the implicit constant independent of $N$ and $\{u_j\}_{j\in\ent}.$
-Since $\tlw{p}{s}{\infty}{w}$ has the Fatou property (see Remark~\ref{fatou}), we conclude that $\lim_{N\to \infty} U_N=\sum_{j\in\ent}u_j$ belongs to $\tlw{p}{s}{\infty}{w}$ and 
+Since $\tlw{p}{s}{\infty}{w}$ has the Fatou property (see Section~\ref{appendix}), we conclude that $\lim_{N\to \infty} U_N=\sum_{j\in\ent}u_j$ belongs to $\tlw{p}{s}{\infty}{w}$ and 
 \[
 \norm{\sum_{j\in\ent}u_j}{\tlw{p}{s}{\infty}{w}}\lesssim  \norm{\{2^{js} u_j\}_{j\in \ent}}{\lebw{p}{w}(\ell^\infty)}.
 \]
@@ -407,9 +398,9 @@ Since $\tlw{p}{s}{\infty}{w}$ has the Fatou property (see Remark~\ref{fatou}), w
  
  \subsection{Homogeneous Leibniz-type rules}\label{sec:homogeneous_rules}
  
- In this section we present one of the main results in this chapter (Theorem \ref{thm:CM:TL:B}) about Leibniz-type rules associated to Coifman-Meyer multipliers in the setting of weighted homogeneous Besov and Triebel Lizorkin spaces. We infer corollaries that include extensions and improvements of the fractional Leibniz rules (\ref{def:leibniz}) and we compare the new results to those in the literature. 
+ In this section, we present one of the main results in this chapter (Theorem \ref{thm:CM:TL:B}) about Leibniz-type rules associated to Coifman-Meyer multipliers in the setting of weighted homogeneous Besov and Triebel Lizorkin spaces. We infer corollaries that include extensions and improvements of the fractional Leibniz rules (\ref{def:leibniz}) and we compare the new results to those in the literature. 
  
- We remind the reader that the notation $\tau_{p,q}(w)$ and $\tau_p (w)$ for $w\in A_\infty$ is defined in Section \ref{sec:weighted_TL_B} see \eqref{def:tau_pq(w)}; we recall that $\tau_{p,2}(w) = \tau_p(w)$ and we write $\tau_{p,q}$ and $\tau_p$ if $w\equiv 1$. 
+ We remind the reader that the notation $\tau_{p,q}(w)$ and $\tau_p (w)$ for $w\in A_\infty$ is defined in Section \ref{sec:weighted_TL_B} (see \ref{def:tau_pq(w)}); we recall that $\tau_{p,2}(w) = \tau_p(w)$ and we write $\tau_{p,q}$ and $\tau_p$ if $w\equiv 1$. 
   
   \begin{theorem}\label{thm:CM:TL:B}  For $m \in \re,$ let $\sigma(\xi,\eta),$ $\xi,\eta\in\rn,$ be a Coifman-Meyer multiplier of order $m.$ Consider  $0 < p, p_1, p_2  \le \infty$  such that $\hcline$ and  $0 < q \leq \infty;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
 If $0 < p,p_1,p_2 < \infty$ and  $s > \tau_{p,q}(w),$  it holds that
@@ -432,37 +423,31 @@ where $0<p<\infty,$ $0<q\le\infty$ and $s>\tau_{p,q}(w).$
 We note that if $m\geq 0$ then the above estimates hold for any $f,g\in\sw$ when $\sw$ is a subspace of the function spaces on the right-hand side. This is the case when $1<p_1,p_2<\infty$, $w_1\in A_{p_1}$, and $w_2\in A_{p_2}$ in (\ref{KP:CM:TL}) and (\ref{KP:CM:B}) and $w\in A_p$ for (\ref{KP:CM:TL2}). 
 
 By the lifting properties for weighted homogeneous Besov and Triebel-Lizorkin spaces (\ref{lifting_TL}) and (\ref{lifting_B}), the estimates (\ref{KP:CM:TL}), (\ref{KP:CM:B}), and (\ref{KP:CM:TL2}) can be respectively written as
-\begin{equation}\label{lift:KP:CM:TL}
-\norm{D^s T_\sigma(f,g)}{\tlw{p}{0}{q}{w}} \lesssim \norm{D^s f}{\tlw{p_1}{m}{q}{w_1} } \norm{g}{H^{p_2}(w_2)} +  \norm{f}{H^{p_1}(w_1)}   \norm{D^s g}{\tlw{p_2}{m}{q}{w_2} }, 
-\end{equation}
+\begin{align}
+\norm{D^s T_\sigma(f,g)}{\tlw{p}{0}{q}{w}} & \lesssim \norm{D^s f}{\tlw{p_1}{m}{q}{w_1} } \norm{g}{H^{p_2}(w_2)} +  \norm{f}{H^{p_1}(w_1)}   \norm{D^s g}{\tlw{p_2}{m}{q}{w_2} }, \label{lift:KP:CM:TL}  \\
+\norm{D^s T_\sigma(f,g)}{\besw{p}{0}{q}{w}} & \lesssim \norm{D^s f}{\besw{p_1}{m}{q}{w_1} } \norm{g}{H^{p_2}(w_2)} +  \norm{f}{H^{p_1}(w_1)}   \norm{D^s g}{\besw{p_2}{m}{q}{w_2} }, \label{lift:KP:CM:B} \\
+\norm{D^s T_\sigma(f,g)}{\tlw{p}{0}{q}{w}} & \lesssim \norm{D^s f}{\tlw{p}{m}{q}{w} } \norm{g}{L^\infty} +  \norm{f}{L^\infty}   \norm{D^s g}{\tlw{p}{m}{q}{w}}. \label{lift:KP:CM:TL2}
+\end{align}
 
-\begin{equation}\label{lift:KP:CM:B}
-\norm{D^s T_\sigma(f,g)}{\besw{p}{0}{q}{w}} \lesssim \norm{D^s f}{\besw{p_1}{m}{q}{w_1} } \norm{g}{H^{p_2}(w_2)} +  \norm{f}{H^{p_1}(w_1)}   \norm{D^s g}{\besw{p_2}{m}{q}{w_2} },
-\end{equation}
-
-\begin{equation}\label{lift:KP:CM:TL2}
-\norm{D^s T_\sigma(f,g)}{\tlw{p}{0}{q}{w}} \lesssim \norm{D^s f}{\tlw{p}{m}{q}{w} } \norm{g}{L^\infty} +  \norm{f}{L^\infty}   \norm{D^s g}{\tlw{p}{m}{q}{w}}.
-\end{equation}
 
 We next give particular cases of (\ref{lift:KP:CM:TL}), (\ref{lift:KP:CM:B}), and (\ref{lift:KP:CM:TL2}) including extensions and  improvements of the fractional Leibniz rules (\ref{def:leibniz}).
 
 The relation (\ref{TL_equal1}) between weighted Triebel-Lizorkin spaces and weighted Hardy spaces imply the following result for Coifman-Meyer multipliers of order 0.
-
-\begin{corollary}\label{coro:KP:CM:Hardy}  Let $\sigma(\xi,\eta),$ $\xi,\eta\in\rn,$ be a Coifman-Meyer multiplier of order $0.$ 
+\begin{corollary}\label{coro:KP:ICM:Hardy}  Let $\sigma(\xi,\eta),$ $\xi,\eta\in\rn,$ be a Coifman-Meyer multiplier of order $0.$ 
 Consider  $0 < p, p_1, p_2  < \infty$  such that $\hcline;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
 If  $s > \tau_p(w),$ it holds that
-\begin{equation}\label{KP:CM:Hardy1}
+\begin{equation}\label{KP:ICM:Hardy1}
 \norm{D^s(T_\sigma(f,g))}{H^p(w)} \lesssim \norm{D^s f}{H^{p_1}(w_1)} \norm{g}{H^{p_2}(w_2)} +  \norm{f}{H^{p_1}(w_1)}   \norm{D^s g}{H^{p_2}(w_2)} \quad \forall f, g \in \swz.
 \end{equation}
-If $w_1=w_2$ then different pairs of $p_1, p_2$ can be used on the right-hand side of \eqref{KP:CM:Hardy1}; moreover, if $w\in A_\infty,$ then 
-\begin{equation}\label{Kp:CM:Hardy2}
+If $w_1=w_2$ then different pairs of $p_1, p_2$ can be used on the right-hand side of \eqref{KP:ICM:Hardy1}; moreover, if $w\in A_\infty,$ then 
+\begin{equation}\label{Kp:ICM:Hardy2}
 \norm{D^s(T_\sigma(f,g))}{H^p(w)} \lesssim \norm{D^s f}{H^{p}(w)} \norm{g}{L^\infty} +  \norm{f}{L^\infty}   \norm{D^s g}{H^{p}(w)} \quad \forall f, g \in \swz,
 \end{equation}
 where $0<p<\infty$ and $s>\tau_{p}(w).$
 
 \end{corollary}
 
-Taking $\sigma \equiv 1$ in Corollary \ref{coro:KP:CM:Hardy}, we obtain weighted fractional Leibniz rules for the product of two functions: 
+Taking $\sigma \equiv 1$ in Corollary \ref{coro:KP:ICM:Hardy}, we obtain weighted fractional Leibniz rules for the product of two functions: 
 
 \begin{corollary}\label{coro:KP:Hardy} 
 Consider  $0 < p, p_1, p_2  < \infty$  such that $\hcline;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
@@ -483,7 +468,7 @@ In particular, the case $w_1 = w_2 = 1$ in Corollary \ref{coro:KP:Hardy} leads t
 \norm{D^s(fg)}{H^p} \lesssim \norm{D^s f}{H^{p_1}} \norm{g}{H^{p_2}} +  \norm{f}{H^{p_1}}   \norm{D^s g}{H^{p_2}}
 \end{equation}
 
-\noindent for $0<p,p_1,p_2, \tilde{p}_1, \tilde{p}_2 < \infty,$ $1/p = 1/p_1 + 1/p_2 = 1/\tilde{p}_1 + 1/\tilde{p}_2$, and $s>n(1/min(p,1) - 1)$. The estimates (\ref{coro:leibniz_improvement}) improve and extend (\ref{def:leibniz}). Indeed, the inequality \eqref{coro:leibniz_improvement} extends the range of $p$, $p_1$, $\tilde{p}_1$, $p_2$, and $\tilde{p}_2$ by allowing $0<p,p_1,\tilde{p}_1,p_2,\tilde{p}_2<\infty$ while \eqref{def:leibniz} requires $1<p_1,p_2,\tilde{p}_1, \tilde{p}_2\leq \infty$. Additionally (\ref{coro:leibniz_improvement}) allows for the $H^p$ norm on the left-hand side which is larger than the $L^p$ norm. 
+\noindent for $0<p,p_1,p_2, \tilde{p}_1, \tilde{p}_2 < \infty,$ $1/p = 1/p_1 + 1/p_2 = 1/\tilde{p}_1 + 1/\tilde{p}_2$, and $s>n(1/\text{min}(p,1) - 1)$. The estimates (\ref{coro:leibniz_improvement}) improve and extend (\ref{def:leibniz}). Indeed, the inequality \eqref{coro:leibniz_improvement} extends the range of $p$, $p_1$, $\tilde{p}_1$, $p_2$, and $\tilde{p}_2$ by allowing $0<p,p_1,\tilde{p}_1,p_2,\tilde{p}_2<\infty$ while \eqref{def:leibniz} requires $1<p_1,p_2,\tilde{p}_1, \tilde{p}_2\leq \infty$. Additionally, (\ref{coro:leibniz_improvement}) allows for the $H^p$ norm on the left-hand side, which is larger than the $L^p$ norm. 
 
 More generally, Theorem \ref{thm:CM:TL:B} implies the following weighted fractional Leibniz rules for the product of two functions. 
 
@@ -505,7 +490,7 @@ If $w_1=w_2$ then different pairs of $p_1, p_2$ can be used on the right-hand si
 where $0<p<\infty,$ $0<q\le \infty$ and $s>\tau_{p,q}(w).$
 \end{corollary}
 
-We close this section by comparing Corollaries \ref{coro:KP:CM:Hardy} and \ref{coro:KP:Hardy} with other related results in the literature: 
+We close this section by comparing Corollaries \ref{coro:KP:ICM:Hardy} and \ref{coro:KP:Hardy} with other related results in the literature. 
 
  Using different methods, the following result was proven in Brummer-Naibo \cite[Theorem 1.1]{BrNa2017}:
 
@@ -516,28 +501,26 @@ We close this section by comparing Corollaries \ref{coro:KP:CM:Hardy} and \ref{c
 Moreover, if $w_1=w_2$ then different pairs of $p_1, p_2$ can be used on the right-hand side of \eqref{KP:CM:Lebesgue}.
 }
 
-
-Corollary \ref{coro:KP:CM:Hardy} and this result compare as follows: 
-
+Corollary \ref{coro:KP:ICM:Hardy} and this result compare as follows: 
 \begin{itemize}
-\item The estimate (\ref{KP:CM:Hardy1}) allows for $0<p,p_1,p_2 < \infty$, $w_1,w_2 \in A_\infty$, and $H^p(w)$ on the left-hand side if $s>\tau_p(w)$. On the other hand, (\ref{KP:CM:Lebesgue}) requires $1<p_1,p_2\le \infty,$ $w_1\in A_{p_1},$ $w_2\in A_{p_2}$ and the smaller $L^p(w)$ norm on the left-hand side when $s>\tau_{p}$. Therefore, (\ref{KP:CM:Hardy1}) is less restrictive than (\ref{KP:CM:Lebesgue}) in terms of the indices $p$, $p_1$, and $p_2$ and the classes that the weights $w_1$ and $w_2$ belong to. However, since $\tau_{p} \leq \tau_p(w)$, (\ref{KP:CM:Hardy1}) is more restrictive than (\ref{KP:CM:Lebesgue}) in terms of the range of the regularity $s$.
-\item  Let  $1/2<p<\infty,$ $1<p_1,p_2<\infty$ such that $\hcline,$  $w_1\in A_{p_1}$ and $w_2\in A_{p_2}$. If $s>\tau_{p}(w)$ then \eqref{KP:CM:Hardy1} holds and implies \eqref{KP:CM:Lebesgue}; however, if $\tau_p < \tau_p(w)$ then \eqref{KP:CM:Lebesgue} holds also for $\tau_p < s \leq \tau_p(w)$ while (\ref{KP:CM:Hardy1}) may not be true for such range of $s$. We next give examples of $w_1$ and $w_2$ such that the corresponding weight $w$ satisfies $\tau_p < \tau_p(w)$.  Let $1<p_1\leq p_2 <\infty$ and $w_1(x) = w_2(x) = w(x) = |x|^a$ with $n(r-1)<a<n(p_1-1)$ for some $1<r<p_1$. Then $w \in A_{p_1} \subset A_{p_2}$, and $w \notin A_r$. This implies that $1<\tau_w$ which leads to $\tau_p < \tau_p(w)$ if $p<\tau_w$. 
-\item  The estimate (\ref{KP:CM:Lebesgue}) implies (\ref{Kp:CM:Hardy2}) for $1<p<\infty$, $w\in A_p$, and $s>\tau_{p}$ and gives the endpoint estimate 
+\item The estimate (\ref{KP:ICM:Hardy1}) allows for $0<p,p_1,p_2 < \infty$, $w_1,w_2 \in A_\infty$, and $H^p(w)$ on the left-hand side if $s>\tau_p(w)$. On the other hand, (\ref{KP:CM:Lebesgue}) requires $1<p_1,p_2\le \infty,$ $w_1\in A_{p_1},$ $w_2\in A_{p_2}$, and the smaller $L^p(w)$ norm on the left-hand side when $s>\tau_{p}$. Therefore, (\ref{KP:ICM:Hardy1}) is less restrictive than (\ref{KP:CM:Lebesgue}) in terms of the indices $p$, $p_1$, and $p_2$ and the classes that the weights $w_1$ and $w_2$ belong to. However, since $\tau_{p} \leq \tau_p(w)$, (\ref{KP:ICM:Hardy1}) is more restrictive than (\ref{KP:CM:Lebesgue}) in terms of the range of the regularity $s$.
+\item  Let  $1/2<p<\infty,$ $1<p_1,p_2<\infty$ such that $\hcline,$  $w_1\in A_{p_1}$ and $w_2\in A_{p_2}$. If $s>\tau_{p}(w)$ then \eqref{KP:ICM:Hardy1} holds and implies \eqref{KP:CM:Lebesgue}; however, if $\tau_p < \tau_p(w)$ then \eqref{KP:CM:Lebesgue} holds also for $\tau_p < s \leq \tau_p(w)$ while (\ref{KP:ICM:Hardy1}) may not be true for such range of $s$. We next give examples of $w_1$ and $w_2$ such that the corresponding weight $w$ satisfies $\tau_p < \tau_p(w)$.  Let $1<p_1\leq p_2 <\infty$ and $w_1(x) = w_2(x) = w(x) = |x|^a$ with $n(r-1)<a<n(p_1-1)$ for some $1<r<p_1$. Then $w \in A_{p_1} \subset A_{p_2}$, and $w \notin A_r$. This implies that $1<\tau_w$, which leads to $\tau_p < \tau_p(w)$ if $p<\tau_w$. 
+\item  The estimate (\ref{KP:CM:Lebesgue}) implies (\ref{Kp:ICM:Hardy2}) for $1<p<\infty$, $w\in A_p$, and $s>\tau_{p}$ and gives the endpoint estimate 
 $$ \norm{D^s(T_\sigma(f,g))}{L^p(w)} \lesssim \norm{D^s f}{L^{\infty}} \norm{g}{L^{p}(w)} +  \norm{f}{L^{p}(w)}\norm{D^s g}{L^\infty}. $$
-\noindent However, (\ref{Kp:CM:Hardy2}) allows $0<p<\infty$ and $w\in A_\infty$ if $s>\tau_p (w)$.
+\noindent However, (\ref{Kp:ICM:Hardy2}) allows $0<p<\infty$ and $w\in A_\infty$ if $s>\tau_p (w)$.
 \end{itemize}
 
 
 
 
-Corollary~\ref{coro:KP:Hardy} complements some of the estimates obtained through different methods in \cite[Theorem 1.1]{MR3513582} in the same manner  Corollary~\ref{coro:KP:CM:Hardy} complements  \cite[Theorem 1.1]{BrNa2017} as explained above; as in that case, 
+Corollary~\ref{coro:KP:Hardy} complements some of the estimates obtained through different methods in \cite[Theorem 1.1]{MR3513582} in the same manner  Corollary~\ref{coro:KP:ICM:Hardy} complements  \cite[Theorem 1.1]{BrNa2017} as explained above; as in that case, 
  Corollary~\ref{coro:KP:Hardy} and \cite[Theorem 1.1]{MR3513582} have some estimates in common but each of them gives a different set of results.
 
 
  
 \subsection{Proofs of the homogeneous Leibniz-type rules}
  
-In this section we prove Theorem \ref{thm:CM:TL:B}. The following lemma will be useful in the proof of Theorem \ref{thm:CM:TL:B}.
+In this section we prove Theorem \ref{thm:CM:TL:B}. The following lemma will be useful in its proof.
 
 \begin{lemma}\label{lem:pointineq} Let $\phi_1,\phi_2\in \sw$ be  such that $\widehat{\phi_1}$ and $\widehat{\phi_2}$ have compact supports and  $\widehat{\phi_1}\widehat{\phi_2}=\widehat{\phi_1}.$  If $0<r\le 1$ and $\varepsilon>0,$ it holds that
 \begin{align*}
@@ -560,7 +543,7 @@ Combining these two estimates completes the proof.
 We now prove Theorem \ref{thm:CM:TL:B}.
  
 \begin{proof}[Proof of Theorem~\ref{thm:CM:TL:B}] Consider $\Phi,$ $\Psi,$ $T_\sigma^1,$ $T_\sigma^2,$ $\{\C_j(a,b)\}_{j\in\ent,a,b\in\ent^n}$ as in Section~\ref{Coifman-Meyer Multipliers}. Let $m,$ $\sigma,$ $p,$ $p_1,$ $p_2,$ $q,$ $s,$ $w_1,$ $w_2$ and $w$ be as in the hypotheses.  
-For ease of notation, $p_1$ and $p_2$ will be assumed to be finite; the same proof applies for \eqref{KP:CM:B} if that is not the case.
+For ease of notation, $p_1$ and $p_2$ will be assumed to be finite; the same proof applies for \eqref{KP:CM:B} if that is not the case, and for \eqref{KP:CM:TL2}.
 
 
 We next prove \eqref{KP:CM:TL} and \eqref{KP:CM:B}. Here we will only work with $T_\sigma^1$ as the estimate for $T_\sigma^2$ is shown through symmetry. Hence we will prove that 
@@ -599,7 +582,7 @@ Consider $\varphi,\psi\in\sw$ as in Section~\ref{TL_B_section} such that   $\wid
 &\lesssim (1+\abs{a})^{\varepsilon+\frac{n}{r_1}} \norm{\left(\sum_{j \in \ent}  2^{(s +m) q j}  |\Do{\psi }{j} f|^q   \right)^\frac{1}{q}}{L^{p_1}(w_1)}\\
 &\sim (1+\abs{a})^{\varepsilon+\frac{n}{r_1}}  \norm{f}{\dot{F}^{s+m}_{p,q}(w_1)},
 \end{align*}
-where the implicit constants are independent of $a$ and $f.$ Next, let  $0<r_2<\min(1,p_2/\tau_{w_2})$; by Lemma~\ref{lem:pointineq} and the boundedness properties of the Hardy-Littlewood maximal operator on weighted Lebesgue space  we have that  
+where the implicit constants are independent of $a$ and $f.$ Next, let  $0<r_2<\min(1,p_2/\tau_{w_2})$; by Lemma~\ref{lem:pointineq} and the boundedness properties of the Hardy-Littlewood maximal operator on weighted Lebesgue spaces  we have that  
 \begin{align*}
 \norm{\sup_{j\in\ent}|\So{\tau_b\Phi}{j}g|}{L^{p_2}(w_2)}&\lesssim (1+\abs{b})^{\varepsilon+\frac{n}{r_2}} \norm{\M_{r_2}(\sup_{j\in\ent}|\So{\varphi}{j}g|)}{L^{p_2}(w_2)}\\
 &\lesssim (1+\abs{b})^{\varepsilon+\frac{n}{r_2}} \norm{\sup_{j\in\ent}|\So{\varphi}{j}g|}{L^{p_2}(w_2)}\\
@@ -608,7 +591,7 @@ where the implicit constants are independent of $a$ and $f.$ Next, let  $0<r_2<\
 where the implicit constants are independent of $b$ and $g.$ Putting all together we obtain \eqref{eq:estbbTL}.
 
 
-For \eqref{eq:estbbB},  Theorem \ref{thm:Nikolskij:weighted} \ref{item:thh:Nikolskij:B}, the bound \eqref{eq:cjbound} for $\C_j(a,b)$ and H\"older's inequality  give
+For \eqref{eq:estbbB},  Theorem \ref{thm:Nikolskij:weighted} (\ref{item:thh:Nikolskij:B}), the bound \eqref{eq:cjbound} for $\C_j(a,b)$, and H\"older's inequality  give
 \begin{align*}
 \norm{T^{a,b}(f,g)}{\dot{B}^s_{p,q}(w)} & \lesssim \norm{\{2^{sj} \C_j(a,b) \,(\Do{ \tau_a \Psi }{j} f ) \, (\So{ \tau_b \Phi }{j} g)\}_{j\in\ent} }{\ell^q(L^p(w))}\\
 & \lesssim \left(\sum\limits_{j \in \ent}  2^{(s +m) q j}  \norm{(\Do{ \tau_a \Psi }{j} f ) \, (\So{ \tau_b \Phi }{j} g)}{L^p(w)}^q   \right)^\frac{1}{q}  \\
@@ -626,7 +609,7 @@ It is clear from the proof above that if $w_1=w_2,$ then  different pairs of $p_
 For convergence purposes, the relations between $N$ in \eqref{eq:decompT1} and the powers  $\varepsilon+n/r_1$ and $\varepsilon+n/r_2$ in \eqref{eq:estbbTL} and   \eqref{eq:estbbB} must be such that $(N-\varepsilon-n/r_1)\,r^*>n$ and $(N-\varepsilon-n/r_2)\,r^*>n,$ where $r^*=\min(p,q,1).$ Moreover,  $r_1$ and $r_2$ were selected so that $0<r_j<\min(1, p_j/\tau_{w_j},q)$ in the context of  Triebel--Lizorkin spaces and  $0<r_j<\min(1,p_j/\tau_{w_j})$ in the context of Besov spaces. Therefore, if  $N>n(1/r^*+1/\min(1, p_1/\tau_{w_1},p_2/\tau_{w_2},q))$ in the Triebel--Lizorkin setting and $N>n(1/r^*+1/\min(1, p_1/\tau_{w_1},p_2/\tau_{w_2}))$ in the Besov setting,  $\varepsilon,$  $r_1$ and  $r_2$ can be chosen so that all the conditions above are satisfied. In view of this and Remark~\ref{re:numderiv1},  the multiplier $\sigma$ in Theorem~\ref{thm:CM:TL:B}  needs only satisfy  \eqref{eq:CMm} for $\abs{\alpha+\beta}\le 2( [n(1/r^*+1/\min(1,p_1/\tau_{w_1},p_2/\tau_{w_2},q))]+1)$ in the Triebel--Lizorkin case and $\abs{\alpha+\beta}\le 2( [n(1/r^*+1/\min(1, p_1/\tau_{w_1},p_2/\tau_{w_2}))]+1)$ in the Besov case. 
 \end{remark}
  \subsection{Inhomogeneous Leibniz-type rules}
- In this section we obtain Leibniz-type rules for Coifman-Meyer multiplier operators associated to inhomogeneous symbols, which lead to extensions and improvements of the fractional Leibniz rule (\ref{def:ileibniz}). Our main result is a counterpart in the inhomogeneous setting to Theorem \ref{thm:CM:TL:B}, which we next state.
+ In this section, we obtain Leibniz-type rules for Coifman-Meyer multiplier operators associated to inhomogeneous symbols, which lead to extensions and improvements of the fractional Leibniz rule (\ref{def:ileibniz}). Our main result is a counterpart in the inhomogeneous setting to Theorem \ref{thm:CM:TL:B}, which we next state.
  
 \begin{theorem}\label{thm:ICM:TL:B}  For $m \in \re,$ let $\sigma(\xi,\eta),$ $\xi,\eta\in\rn,$ be an inhomogeneous Coifman-Meyer multiplier of order $m.$ Consider  $0 < p, p_1, p_2  \le \infty$  such that $\hcline$ and  $0 < q \leq \infty;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
 If $0 < p,p_1,p_2 < \infty$ and  $s > \tau_{p,q}(w),$  it holds that
@@ -650,32 +633,27 @@ where $0<p<\infty,$ $0<q\le\infty$ and $s>\tau_{p,q}(w).$
 
 
 By the lifting properties for weighted inhomogeneous Besov and Triebel-Lizorkin spaces (\ref{lifting_TL}) and (\ref{lifting_B}), the estimates (\ref{KP:ICM:TL}), (\ref{KP:ICM:B}), and (\ref{KP:ICM:TL2}) can be written respectively as 
-
-
 \begin{equation}\label{lifted:KP:ICM:TL}
 \norm{J^s T_\sigma(f,g)}{\itlw{p}{0}{q}{w}} \lesssim \norm{J^s f}{\itlw{p_1}{m}{q}{w_1}} \norm{g}{h^{p_2}(w_2)} +  \norm{f}{h^{p_1}(w_1)}   \norm{J^s g}{\itlw{p_2}{m}{q}{w_2}},
 \end{equation}
-
 \begin{equation}\label{lifted:KP:ICM:B}
 \norm{J^s T_\sigma(f,g)}{\ibesw{p}{0}{q}{w}} \lesssim \norm{J^s f}{\ibesw{p_1}{m}{q}{w_1} } \norm{g}{h^{p_2}(w_2)} +  \norm{f}{h^{p_1}(w_1)}   \norm{J^s g}{\ibesw{p_2}{m}{q}{w_2} },
 \end{equation}
-
 \begin{equation}\label{lifted:KP:ICM:TL2}
 \norm{J^s T_\sigma(f,g)}{\itlw{p}{0}{q}{w}} \lesssim \norm{J^s f}{\itlw{p}{m}{q}{w} } \norm{g}{L^\infty} +  \norm{f}{L^\infty}   \norm{J^s g}{\itlw{p}{m}{q}{w}}.
 \end{equation}
-
-The proof of Theorem \ref{thm:ICM:TL:B} follows along the same lines as the proof of Theorem \ref{thm:CM:TL:B}. Theorem \ref{thm:ICM:TL:B} implies versions in the inhomogeneous settings of the corollaries presented in Section \ref{sec:homogeneous_rules}. As an example we state the inhomogeneous counterpart to Corolarry \ref{coro:KP:CM:Hardy} and obtain an improvement of the fractional Leibniz rule (\ref{def:ileibniz}).
+The proof of Theorem \ref{thm:ICM:TL:B} follows along the same lines as the proof of Theorem \ref{thm:CM:TL:B}. Theorem \ref{thm:ICM:TL:B} implies versions in the inhomogeneous settings of the corollaries presented in Section \ref{sec:homogeneous_rules}. As an example we state the inhomogeneous counterpart to Corolarry \ref{coro:KP:ICM:Hardy} and obtain an improvement of the fractional Leibniz rule (\ref{def:ileibniz}).
 
 \begin{corollary}\label{coro:KP:CM:Hardyloc}  Let $\sigma(\xi,\eta),$ $\xi,\eta\in\rn,$ be an inhomogeneous Coifman-Meyer multiplier of order $0.$ 
 Consider  $0 < p, p_1, p_2  < \infty$  such that $\hcline;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
 If  $s > \tau_p(w),$ it holds that
-\begin{equation*}
+\begin{equation}\label{KP:CM:Hardyloc1}
 \norm{J^s(T_\sigma(f,g))}{h^p(w)} \lesssim \norm{J^s f}{h^{p_1}(w_1)} \norm{g}{h^{p_2}(w_2)} +  \norm{f}{h^{p_1}(w_1)}   \norm{J^s g}{h^{p_2}(w_2)} \quad \forall f, g \in \sw.
-\end{equation*}
-If $w_1=w_2$ then different pairs of $p_1, p_2$ can be used on the right-hand side of \eqref{KP:CM:Hardy}; moreover, if $w\in A_\infty,$ then 
-\begin{equation*}
+\end{equation}
+If $w_1=w_2$ then different pairs of $p_1, p_2$ can be used on the right-hand side of \eqref{KP:CM:Hardyloc1}; moreover, if $w\in A_\infty,$ then 
+\begin{equation}\label{KP:CM:Hardyloc2}
 \norm{J^s(T_\sigma(f,g))}{h^p(w)} \lesssim \norm{J^s f}{h^{p}(w)} \norm{g}{L^\infty} +  \norm{f}{L^\infty}   \norm{J^s g}{h^{p}(w)} \quad \forall f, g \in \sw,
-\end{equation*}
+\end{equation}
 where $0<p<\infty$ and $s>\tau_{p}(w).$
 \end{corollary}
 
@@ -686,24 +664,24 @@ Corollary~\ref{coro:KP:CM:Hardyloc} applied to the case $\sigma\equiv 1$ gives i
 which  supplements  some of the estimates obtained in \cite[Theorem 1.1]{MR3513582} for $J^s$.  The case $w_1=w_2\equiv 1$ of \eqref{eq:kplochardy} was obtained in \cite{MR3750316} and is an extension and an improvement of \eqref{def:ileibniz}; indeed,  \eqref{eq:kplochardy} allows for $0<p,p_1,p_2<\infty$ and, when $1<p_1,p_2<\infty,$ it improves \eqref{def:ileibniz} by allowing the larger quantity $\norm{J^s(fg)}{h^p}$ on the left-hand side.
 
 \begin{remark}
-An analogous observation to Remark \ref{remark:thm:CM:TL:B} follows for the multiplier $\sigma$ in Theorem~\ref{thm:ICM:TL:B} in relation to the condition  obtained from \eqref{eq:CMm} with $\abs{\xi}+\abs{\eta}$ replaced by $1+\abs{\xi}+\abs{\eta}.$ 
+An analogous observation to Remark \ref{remark:thm:CM:TL:B} follows for the multiplier $\sigma$ in Theorem~\ref{thm:ICM:TL:B} in relation to the condition  \eqref{eq:CMm2}.
 \end{remark}
  
  
 
  
  \section{Leibniz-type rules in other functions spaces}\label{sec:othersettings}
- The method used to prove Theorem (\ref{thm:CM:TL:B}) is quite versatile and can be applied to Triebel-Lizorkin and Besov spaces that are based in other quasi-Banach spaces.
+ The method used to prove Theorems \ref{thm:CM:TL:B} and \ref{thm:ICM:TL:B} is quite versatile and can be applied to Triebel-Lizorkin and Besov spaces that are based in other quasi-Banach spaces.
  
 The main features of weighted Triebel-Lizorkin and Besov spaces used in the proofs of Theorems \ref{thm:CM:TL:B} and \ref{thm:ICM:TL:B} are the following:
 \begin{enumerate}[(i)]
 \item\label{item:first} there exists $r>0$ such that $\norm{f+g}{\itlw{p}{s}{q}{w}}^r\le \norm{f}{\itlw{p}{s}{q}{w}}^r+\norm{g}{\itlw{p}{s}{q}{w}}^r;$ similarly for the weighted inhomogeneous  Besov spaces and the weighted homogeneous  Triebel--Lizorkin and Besov spaces;
 \item \label{item:second} H\"older's inequality in weighted Lebesgue spaces;
 \item \label{item:third}  the boundedness properties in weighted Lebesgue spaces  of the Hardy--Littlewood maximal operator (for the Besov space setting) and the weighted Fefferman--Stein inequality (for the Triebel--Lizorkin space setting);
-\item \label{item:last} Nikol'skij representations for weighted Triebel--Lizorkin and Besov spaces (Theorem~\ref{thm:Nikolskij:weighted}).
+\item \label{item:last} Nikol'ski\u\i$\text{ }$  representations for weighted Triebel--Lizorkin and Besov spaces (Theorem~\ref{thm:Nikolskij:weighted}).
 \end{enumerate}
 
-In the following subsections we consider quasi-Banach spaces $\mathcal{X}$ such that properties \ref{item:first}--\ref{item:last} hold for the homogeneous and inhomogeneous $\mathcal{X}$-based Triebel-Lizorkin and Besov spaces. We show that corresponding versions of Theorems \ref{thm:CM:TL:B} and \ref{thm:ICM:TL:B} hold in Triebel-Lizorkin and Besov spaces based on these spaces. The homogeneous $\chi$-based Triebel-Lizorkin and Besov spaces, denoted by $\tl{\mathcal{X}}{s}{q}$ and $\bes{\mathcal{X}}{s}{q}$ respectively, are defined analogously to the weighted homogeneous Triebel-Lizorkin and Besov spaces with the $||\cdot||_{L^p(w)}$ quasi-norm replaced with the $||\cdot||_\mathcal{X}$ quasi-norm. The inhomogeneous spaces are defined similarly. 
+In the following subsections we consider quasi-Banach spaces $\mathcal{X}$ such that properties (\ref{item:first})--(\ref{item:last}) hold for the homogeneous and inhomogeneous $\mathcal{X}$-based Triebel-Lizorkin and Besov spaces. We show that corresponding versions of Theorems \ref{thm:CM:TL:B} and \ref{thm:ICM:TL:B} hold in Triebel-Lizorkin and Besov spaces based on these spaces. The homogeneous $\chi$-based Triebel-Lizorkin and Besov spaces, denoted by $\tl{\mathcal{X}}{s}{q}$ and $\bes{\mathcal{X}}{s}{q}$ respectively, are defined analogously to the weighted homogeneous Triebel-Lizorkin and Besov spaces with the quasi-norm $||\cdot||_{L^p(w)}$ replaced with the quasi-norm $||\cdot||_\mathcal{X}$. The inhomogeneous spaces are defined similarly. 
 
 
 \subsection{Leibniz-type rules in the settings of Lorentz-based Triebel--Lizorkin and Besov spaces.}
@@ -719,12 +697,12 @@ $w_f(\lambda)=w(\{x\in\rn : \abs{f(x)}>\lambda\})$; the obvious changes apply if
  The corresponding weighted inhomogeneous Triebel--Lizorkin and Besov spaces are denoted by $\itlw{(p,t)}{s}{q}{w}$ and  $\ibesw{(p,t)}{s}{q}{w},$  respectively. These spaces contain $\sw,$ are independent of the choice of $\varphi$ and $\psi$ from Section~\ref{TL_B_section}, are quasi-Banach spaces and have appeared in a variety of settings (see Seeger--Trebels~\cite{ST2018} and references therein). The space $h^{p,t}(w)$ is defined in the same way as $h^p(w)$ with the quasi-norm in $\lebw{p}{w}$ replaced by the quasi-norm in $\lebw{p,t}{w}.$   
  
 
- We next consider the corresponding properties \ref{item:first}-\ref{item:last} in this context. Regarding property \ref{item:first}, given $0<p<\infty,$  $0<t,q\le \infty$   and $s\in \re,$   it follows that there exist $r>0$ and a quasi-norm $|||\cdot |||_{\lebw{p,t}{w}(\ell^q)}$ comparable to $\|\cdot\|_{\lebw{p,t}{w}(\ell^q)}$ such that $|||\cdot |||^r_{\lebw{p,t}{w}(\ell^q)}$ is subadditive; this is an adequate substitute for property \ref{item:first}. The quasi-norm $|||\cdot |||_{\lebw{p,t}{w}(\ell^q)}$ is defined analogously to $\|\cdot \|_{\lebw{p,t}{w}(\ell^q)}$ by replacing $\|\cdot \|_{\lebw{p,t}{w}}$ with a comparable quasi-norm $|||\cdot |||_{\lebw{p,t}{w}}$ for which $|||\cdot |||^r_{\lebw{p,t}{w}}$ is subadditive (see \cite[p. 258,
-  (2.2)]{MR0223874}). As for property \ref{item:second}, weighted Lorentz spaces satisfy a  H\"older-type inequality (see \cite[Thm 4.5]{MR0223874}): Given a weight $w$ in $\rn$ and indices $0<p, p_1,p_2<\infty$ and $ 0<t, t_1,t_2\le \infty$  such that $\hcline$ and $1/t=1/t_1+1/t_2,$ it holds that
+ We next consider the corresponding properties (\ref{item:first})-(\ref{item:last}) in this context. Regarding property (\ref{item:first}), given $0<p<\infty,$  $0<t,q\le \infty$   and $s\in \re,$   it follows that there exist $r>0$ and a quasi-norm $|||\cdot |||_{\lebw{p,t}{w}(\ell^q)}$ comparable to $\|\cdot\|_{\lebw{p,t}{w}(\ell^q)}$ such that $|||\cdot |||^r_{\lebw{p,t}{w}(\ell^q)}$ is subadditive; this is an adequate substitute for property (\ref{item:first}). The quasi-norm $|||\cdot |||_{\lebw{p,t}{w}(\ell^q)}$ is defined analogously to $\|\cdot \|_{\lebw{p,t}{w}(\ell^q)}$ by replacing $\|\cdot \|_{\lebw{p,t}{w}}$ with a comparable quasi-norm $|||\cdot |||_{\lebw{p,t}{w}}$ for which $|||\cdot |||^r_{\lebw{p,t}{w}}$ is subadditive (see \cite[p. 258,
+  (2.2)]{MR0223874}). As for property (\ref{item:second}), weighted Lorentz spaces satisfy a  H\"older-type inequality (see \cite[Thm 4.5]{MR0223874}): Given a weight $w$ in $\rn$ and indices $0<p, p_1,p_2<\infty$ and $ 0<t, t_1,t_2\le \infty$  such that $\hcline$ and $1/t=1/t_1+1/t_2,$ it holds that
   \begin{equation*}
   \norm{fg}{\lebw{p,t}{w}}\lesssim \norm{f}{\lebw{p_1,t_1}{w}} \norm{g}{\lebw{p_2,t_2}{w}},
   \end{equation*}
- where the implicit constant is independent of $f$ and $g$ ($p_1=t_1=\infty,$ which gives $p=p_2$ and $t_2=t,$ is also allowed). The following boundedness properties of the Hardy--Littlewood maximal operator in  weighted Lorentz spaces (property \ref{item:third}) hold true: 
+ where the implicit constant is independent of $f$ and $g$ ($p_1=t_1=\infty,$ which gives $p=p_2$ and $t_2=t,$ is also allowed). The following boundedness properties of the Hardy--Littlewood maximal operator in  weighted Lorentz spaces (property (\ref{item:third})) hold true: 
   If $0<p<\infty,$  $0<t,q\le\infty,$  $0<r<\min(p/\tau_w,q)$ and $0<r\le t,$ it holds that
 \begin{equation}\label{eq:FTLorentz}
 \norm{\left(\sum_{j\in\ent} \abs{\M_r(f_j)}^q\right)^{\frac{1}{q}}}{\lebw{p,t}{w}}\lesssim \norm{\left(\sum_{j\in\na_0} \abs{f_j}^q\right)^{\frac{1}{q}}}{\lebw{p,t}{w}}\quad \forall \{f_j\}_{j\in \na_0}\in \lebw{p,t}{w}(\ell^q);  
@@ -735,7 +713,7 @@ in particular, if $0<r<p/\tau_w$ and $0<r\le t,$ it holds that
 \end{equation*}
 When $r=1,$ $1<p<\infty,$  $1\le t\le \infty$ and $1<q\le \infty,$  the vector-valued inequality above follows from extrapolation and the weighted Fefferman--Stein inequality in weighted Lebesgue spaces (see   \cite[Theorem 4.10 and comments on p. 70]{MR2797562} for the extrapolation theorem).
 The rest of the cases follow from the latter and the fact that $\norm{\abs{f}^s}{\lebw{p,t}{w}}=\norm{f}{\lebw{sp,st}{w}}^s$ for any $0<s<\infty.$ 
-Regarding property \ref{item:last}, the  Nikol'skij representation for $\itlw{(p,t)}{s}{q}{w}$  and $\ibesw{(p,t)}{s}{q}{w}$ with $w\in A_\infty$ can be stated as in  Theorem~\ref{thm:Nikolskij:weighted} with $0 < p< \infty,$ $0<t,q\le \infty$;  $s > (1/\min(p/\tau_w, t, q,1)-1)$ and $\itlw{p}{s}{q}{w}$ replaced with $\itlw{(p,t)}{s}{q}{w}$ in the Triebel--Lizorkin setting;  $s> \tau_{p,t}(w)$ and $\ibesw{p}{s}{q}{w}$ replaced with $\ibesw{(p,t)}{s}{q}{w}$ in the Besov setting. In the context of $\itlw{(p,t)}{s}{q}{w},$ the convergence of the series  holds in $\swp$ if $t=\infty$ or $q=\infty$ and in $\itlw{(p,t)}{s}{q}{w}$ otherwise; in the setting of $\ibesw{(p,t)}{s}{q}{w},$ the convergence of the series holds in $\swp$ if $q=\infty$ and in $\ibesw{(p,t)}{s}{q}{w}$ otherwise. The proofs follow parallel steps to those in the proof of Theorem~\ref{thm:Nikolskij:weighted} (see also Remark~\ref{appendix}).
+Regarding property (\ref{item:last}), the  Nikol'ski\u\i$\text{ }$ representation for $\itlw{(p,t)}{s}{q}{w}$  and $\ibesw{(p,t)}{s}{q}{w}$ with $w\in A_\infty$ can be stated as in  Theorem~\ref{thm:Nikolskij:weighted} with $0 < p< \infty,$ $0<t,q\le \infty$;  $s > (1/\min(p/\tau_w, t, q,1)-1)$ and $\itlw{p}{s}{q}{w}$ replaced with $\itlw{(p,t)}{s}{q}{w}$ in the Triebel--Lizorkin setting;  $s> \tau_{p,t}(w)$ and $\ibesw{p}{s}{q}{w}$ replaced with $\ibesw{(p,t)}{s}{q}{w}$ in the Besov setting. In the context of $\itlw{(p,t)}{s}{q}{w},$ the convergence of the series  holds in $\swp$ if $t=\infty$ or $q=\infty$ and in $\itlw{(p,t)}{s}{q}{w}$ otherwise; in the setting of $\ibesw{(p,t)}{s}{q}{w},$ the convergence of the series holds in $\swp$ if $q=\infty$ and in $\ibesw{(p,t)}{s}{q}{w}$ otherwise. The proofs follow parallel steps to those in the proof of Theorem~\ref{thm:Nikolskij:weighted} (see also Section~\ref{appendix}).
  
 
 
@@ -779,7 +757,7 @@ where the supremum is taken over all Euclidean balls $B$ contained in $\rn;$
  it easily  follows that $\mow{p}{p}{w}=\lebw{p}{w}.$  We refer the reader to the work Rosenthal--Schmeisser~\cite{MR3538648} and the  references it contains for more details about weighted Morrey spaces. The corresponding weighted inhomogeneous Triebel--Lizorkin spaces and inhomogeneous Besov spaces  are denoted by $\itlw{[p,t]}{s}{q}{w}$ and   $\ibesw{[p,t]}{s}{q}{w},$ respectively. These Morrey-based Triebel--Lizorkin and Besov  spaces are independent of the choice of $\varphi$ and $\psi$ given in  Section~\ref{TL_B_section} and are quasi-Banach spaces that contain $\sw$ (see the works Kozono--Yamazaki~\cite{MR1274547}, Mazzucato~\cite{MR1946395}, Izuki et al.~\cite{MR2792058} and the references they cotain). The corresponding local Hardy spaces are denoted by $h^t_p(w).$
  
 
-Property \ref{item:first} for $\itlw{[p,t]}{s}{q}{w}$ and   $\ibesw{[p,t]}{s}{q}{w}$ is easily verified with  $r=\min(p,q,1)$ using that $\norm{\abs{f}^s}{\mow{p}{t}{w}}=\norm{f}{\mow{sp}{st}{w}}^s$ for $0<s<\infty.$ Regarding property \ref{item:second}, we have that if $0<p\le t<\infty,$ $0<p_1\le t_1<\infty$ and $0<p_2\le t_2<\infty$ are such that $\hcline$ and $1/t=1/t_1+1/t_2,$ then  
+Property (\ref{item:first}) for $\itlw{[p,t]}{s}{q}{w}$ and   $\ibesw{[p,t]}{s}{q}{w}$ is easily verified with  $r=\min(p,q,1)$ using that $\norm{\abs{f}^s}{\mow{p}{t}{w}}=\norm{f}{\mow{sp}{st}{w}}^s$ for $0<s<\infty.$ Regarding property (\ref{item:second}), we have that if $0<p\le t<\infty,$ $0<p_1\le t_1<\infty$ and $0<p_2\le t_2<\infty$ are such that $\hcline$ and $1/t=1/t_1+1/t_2,$ then  
 \begin{equation*}
 \norm{fg}{\mow{p}{t}{w}}\le \norm{f}{\mow{p_1}{t_1}{w}} \norm{g}{\mow{p_2}{t_2}{w}};
 \end{equation*}
@@ -787,7 +765,7 @@ also, if $0<p\le t<\infty,$ $0<p_1,p_2<\infty$ are such that $\hcline$ and $w=w_
 \begin{equation*}
 \norm{fg}{\mow{p}{t}{w}}\le \norm{f}{\mow{p_1}{\frac{p_1t}{p}}{w_1}} \norm{g}{\mow{p_2}{\frac{p_2t}{p}}{w_2}}.
 \end{equation*}
-Both inequalities are  straightforward consequences of H\"older's inequality for weighted Lebesgue spaces. As for property \ref{item:third}, it holds that  if $0<p\le t<\infty,$  $0<q\le \infty$ and  $0<r<\min(p/\tau_w,q),$ then
+Both inequalities are  straightforward consequences of H\"older's inequality for weighted Lebesgue spaces. As for property (\ref{item:third}), it holds that  if $0<p\le t<\infty,$  $0<q\le \infty$ and  $0<r<\min(p/\tau_w,q),$ then
 \begin{equation}\label{eq:FTMorrey}
 \norm{\left(\sum_{j\in\ent} \abs{\M_r(f_j)}^q\right)^{\frac{1}{q}}}{\mow{p}{t}{w}}\lesssim \norm{\left(\sum_{j\in\na_0} \abs{f_j}^q\right)^{\frac{1}{q}}}{\mow{p}{t}{w}}\quad \forall \{f_j\}_{j\in \na_0}\in \mow{p}{t}{w}(\ell^q);  
 \end{equation}
@@ -795,12 +773,12 @@ in particular, if $0<p\le t<\infty$ and $0<r<p/\tau_w,$ it holds that
 \begin{equation*}
 \norm{\M_r(f)}{\mow{p}{t}{w}}\lesssim \norm{f}{\mow{p}{t}{w}}\quad \forall f\in \mow{p}{t}{w}. 
 \end{equation*}
-When $r=1,$ $1<p\le t<\infty$   and $1<q\le \infty,$  the vector-valued inequality follows from extrapolation and the weighted Fefferman--Stein inequality for weighted Lebesgue spaces (see \cite[Theorem 5.3]{MR3538648} for the corresponding extrapolation theorem). The rest of the cases follow from the latter and the fact that $\norm{\abs{f}^s}{\mow{p}{t}{w}}=\norm{f}{\mow{sp}{st}{w}}^s$ for any $0<s<\infty.$  The Nikol'skij representation for $\itlw{[p,t]}{s}{q}{w}$ and $\ibesw{[p,t]}{s}{q}{w}$ with $w\in A_\infty$  (property~\ref{item:last})  has an analogous statement to that of Theorem~\ref{thm:Nikolskij:weighted} with parameters $0<p\le t<\infty,$ $0<q\le \infty$  and $\lebw{p}{w}$ replaced by $\mow{p}{t}{w}.$ In the setting of $\itlw{[p,t]}{s}{q}{w},$ the convergence of the series is in $\swp$ for any choice of parameters; in the case of $\ibesw{[p,t]}{s}{q}{w},$ the convergence of the series holds in $\swp$ if $q=\infty$ and in $\ibesw{[p,t]}{s}{q}{w}$ otherwise. A similar proof to that of Theorem~\ref{thm:Nikolskij:weighted} applies (see  also Remark~\ref{appendix}).
+When $r=1,$ $1<p\le t<\infty$   and $1<q\le \infty,$  the vector-valued inequality follows from extrapolation and the weighted Fefferman--Stein inequality for weighted Lebesgue spaces (see \cite[Theorem 5.3]{MR3538648} for the corresponding extrapolation theorem). The rest of the cases follow from the latter and the fact that $\norm{\abs{f}^s}{\mow{p}{t}{w}}=\norm{f}{\mow{sp}{st}{w}}^s$ for any $0<s<\infty.$  The Nikol'ski\u\i$\text{ }$ representation for $\itlw{[p,t]}{s}{q}{w}$ and $\ibesw{[p,t]}{s}{q}{w}$ with $w\in A_\infty$  (property~(\ref{item:last}))  has an analogous statement to that of Theorem~\ref{thm:Nikolskij:weighted} with parameters $0<p\le t<\infty,$ $0<q\le \infty$  and $\lebw{p}{w}$ replaced by $\mow{p}{t}{w}.$ In the setting of $\itlw{[p,t]}{s}{q}{w},$ the convergence of the series is in $\swp$ for any choice of parameters; in the case of $\ibesw{[p,t]}{s}{q}{w},$ the convergence of the series holds in $\swp$ if $q=\infty$ and in $\ibesw{[p,t]}{s}{q}{w}$ otherwise. A similar proof to that of Theorem~\ref{thm:Nikolskij:weighted} applies (see  also Section~\ref{appendix}).
 
 Finally, we next present a counterpart  of Theorem~\ref{thm:ICM:TL:B} in the context of  $\itlw{[p,t]}{s}{q}{w}.$ 
 
 \begin{theorem}\label{thm:ICM:Morrey}  For $m \in \re,$ let $\sigma(\xi,\eta),$ $\xi,\eta\in\rn,$ be an inhomogeneous Coifman-Meyer multiplier of order $m.$ 
-\begin{enumerate}
+\begin{enumerate}[(i)]
 \item If $w\in A_\infty,$ $0<p\le t<\infty,$ $0<p_1\le t_1<\infty$ and $0<p_2\le t_2<\infty$  are  such that $\hcline$ and $1/t=1/t_1+1/t_2,$  $0 < q \le \infty$  and  $s > \tau_{p,q}(w),$  it holds that
 \begin{equation*}
 \norm{T_\sigma(f,g)}{\itlw{[p,t]}{s}{q}{w}} \lesssim \norm{f}{\itlw{[p_1,t_1]}{s+m}{q}{w}} \norm{g}{h_{p_2}^{t_2}(w)} +  \norm{f}{h_{p_1}^{t_1}(w)}   \norm{g}{\itlw{[p_2,t_2]}{s+m}{q}{w}} \quad \forall f, g \in \sw.
@@ -859,12 +837,12 @@ respectively. If $\pp\in\mathcal{P}_0^*,$ these spaces are independent of the fu
 The local Hardy space with variable exponent $\pp\in \mathcal{P}_0,$  denoted $h^{\pp},$  is defined analogously to $h^p(w)$ with the quasi-norm in $\lebw{p}{w}$ replaced by the quasi-norm in $\Lp.$ 
 
 
-We next consider properties \ref{item:first}-\ref{item:last} in the variable-exponent setting. Given $\pp\in \mathcal{P}_0,$ $0<q\le\infty$ and $s\in \re,$  property \ref{item:first} for $\itl{\pp}{s}{q}$ and $\ibes{\pp}{s}{q}$ with $r=\min(p_-,q,1)$ follows right away using \eqref{eq:power}.  Property \ref{item:second} is given by the following version of H\"older's inequality  in the context of variable-exponent Lebesgue spaces: If $\ppo,\, \ppt,\, \pp \in \mathcal{P}_0$ are such that
+We next consider properties (\ref{item:first})-(\ref{item:last}) in the variable-exponent setting. Given $\pp\in \mathcal{P}_0,$ $0<q\le\infty$ and $s\in \re,$  property (\ref{item:first}) for $\itl{\pp}{s}{q}$ and $\ibes{\pp}{s}{q}$ with $r=\min(p_-,q,1)$ follows right away using \eqref{eq:power}.  Property (\ref{item:second}) is given by the following version of H\"older's inequality  in the context of variable-exponent Lebesgue spaces: If $\ppo,\, \ppt,\, \pp \in \mathcal{P}_0$ are such that
 $ {1}/{\pp} = {1}/{\ppo} + {1}/{\ppt}$ then
 \begin{equation*}
  \|fg\|_{L^\pp} \lesssim \|f\|_{L^\ppo}\|g\|_{L^\ppt}\quad \forall f\in L^\ppo, g\in L^\ppt.
  \end{equation*}
- For a proof with exponents in $\mathcal{P}_0$ such that $p_-\ge1$ see, for instance,  \cite[Corollary 2.28]{MR3026953}; the general case with exponents in $\mathcal{P}_0$ follows from the latter and \eqref{eq:power}. Regarding property \ref{item:third} for  variable-exponent Lebesgue spaces, the following version of the Fefferman-Stein inequality follows from \cite[Section 5.6.8]{MR3026953} and \eqref{eq:power}: If $\pp\in\mathcal{P}_0^*,$  $0<q\le \infty$  and $0<r<\min(\tau_{\pp},q)$ then
+ For a proof with exponents in $\mathcal{P}_0$ such that $p_-\ge1$ see, for instance,  \cite[Corollary 2.28]{MR3026953}; the general case with exponents in $\mathcal{P}_0$ follows from the latter and \eqref{eq:power}. Regarding property (\ref{item:third}) for  variable-exponent Lebesgue spaces, the following version of the Fefferman-Stein inequality follows from \cite[Section 5.6.8]{MR3026953} and \eqref{eq:power}: If $\pp\in\mathcal{P}_0^*,$  $0<q\le \infty$  and $0<r<\min(\tau_{\pp},q)$ then
 \begin{equation*}
 \norm{\left(\sum_{j\in\ent} \abs{\M_r(f_j)}^q\right)^{\frac{1}{q}}}{\Lp}\lesssim \norm{\left(\sum_{j\in\na_0} \abs{f_j}^q\right)^{\frac{1}{q}}}{\Lp}\quad \forall \{f_j\}_{j\in \na_0}\in \Lp(\ell^q);
 \end{equation*}
@@ -872,7 +850,7 @@ in particular, if $0<r<\tau_{\pp}$ it holds that
 \begin{equation*}
 \norm{\M_r(f)}{\Lp}\lesssim \norm{f}{\Lp}\quad \forall f\in \Lp.
 \end{equation*}
-Finally, the following version of the Nikol'skij representation for $\itl{\pp}{s}{q}$ and $\ibes{\pp}{s}{q}$ (property \ref{item:last}), can be proved along the lines of the proof of Theorem~\ref{thm:Nikolskij:weighted} (see also Remark~\ref{appendix}):
+Finally, the following version of the Nikol'ski\u\i$\text{ }$ representation for $\itl{\pp}{s}{q}$ and $\ibes{\pp}{s}{q}$ (property (\ref{item:last})), can be proved along the lines of the proof of Theorem~\ref{thm:Nikolskij:weighted} (see also Section~\ref{appendix}):
 \begin{theorem}\label{thm:Nikolskij:variable} For $\A> 0,$ let $\{u_j\}_{j \in \ent} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that $\supp(\widehat{u_j}) \subset B(0, \A\, 2^j ) $ for all $j \in \ent.$
 Let $ \pp\in \mathcal{P}_0^*$, $0 < q \le \infty$ and $s > n(1/\min(\tau_{\pp},q,1)-1)$. If $\norm{\{2^{js} u_j\}_{j\in\ent}}{\Lp(\ell^{q})} < \infty$, then the series $\sum_{j \in \ent} u_j$ converges in $\itl{\pp}{s}{q}$ (in $\swp$ if $q=\infty$) and 
 \begin{equation*}
@@ -1237,7 +1215,7 @@ These last two estimates  extend some of the inequalities in \cite[Theorem 1.2]{
 %%\end{equation*}
 %%The case for $r=1,$ $1<p\le t<\infty$ and $1<q\le \infty$ are shown using extrapolation and the Fefferman-Stein inequality in weighted Lebesgue spaces. For the extrapolation theorem see \cite[Theorem 5.3]{MR3538648}. The remaining cases are shown using that for $0<s<\infty$ $\| |f|^s \|_{\mow{p}{t}{w}} = \|f\|^s_{\mow{sp}{st}{w}}$ and the previous case.
 %%
-%%The Nikol'skij representation for weighted Morrey-based Triebel-Lizorkin and Besov spaces is as follows.
+%%The Nikol'ski\u\i$\text{ }$ representation for weighted Morrey-based Triebel-Lizorkin and Besov spaces is as follows.
 %%\begin{theorem}\label{thm:Nikolskij:Morrey:weighted} For $\A> 0,$ let $\{u_j\}_{j \in \naz} \subset \mathcal{S}'(\rn)$ be a sequence of tempered distributions such that
 %%\begin{equation*}
 %%\supp(\widehat{u_j}) \subset B(0, \A\, 2^j ) \quad \forall j \in \naz.
@@ -1544,23 +1522,25 @@ These last two estimates  extend some of the inequalities in \cite[Theorem 1.2]{
 %%\end{equation*}
 %%\end{theorem}
 
-\subsection{Nikol'skij representations of Triebel-Lizorkin and Besov spaces}\label{appendix}
-In this section we remark on the proofs of the corresponding versions of Theorem \ref{thm:Nikolskij:weighted} in the settings of Lorentz spaces, Morrey spaces, and variable-exponent Lebesgue spaces. 
+\subsection{Nikol'ski\u\i$\text{ }$ representations of Triebel-Lizorkin and Besov spaces}\label{appendix}
+In this section, we remark on the proofs of Theorem \ref{thm:Nikolskij:weighted} and the corresponding versions in the settings of weighted Lorentz spaces, weighted Morrey spaces, and variable-exponent Lebesgue spaces. 
 
 Regarding the proof of Part~\eqref{item:thh:Nikolskij:TL} of Theorem~\ref{thm:Nikolskij:weighted} (for instance, in the inhomogeneous case) the fact that $\norm{\{2^{js} u_j\}_{M+1\le \abs{j}\le N}}{\lebw{p}{w}(\ell^q)}$ converges to zero, as $M,N\to\infty,$  when $q$ is finite, allows to conclude that $\sum_{j\in\naz} u_j$ converges in $\itlw{p}{s}{q}{w}$ through the use of \eqref{eq:convergence}. Under the hypothesis of  Part~\eqref{item:thh:Nikolskij:TL} for $\mathcal{X}=\lebw{p,t}{w}$ with $0<p,t<\infty$ or $\mathcal{X}=\Lp$ with $\pp\in \mathcal{P}_0$ and $q$  finite,  it holds that 
 \begin{equation}\label{eq:cauchyseq}
 \norm{\{2^{js} u_j\}_{M+1\le \abs{j}\le N}}{\mathcal{X}(\ell^q)}\to 0\quad \text{as } M,N\to\infty;
 \end{equation}
-therefore, $\sum_{j\in\naz} u_j$ converges in $\itlw{(p,t)}{s}{q}{w}$ and  $\itl{\pp}{s}{q},$  respectively. In the Lorentz space $\lebw{p,t}$ the fact (\ref{eq:cauchyseq}) is  a consequence of the following dominated convergence type thoerem.
+therefore, $\sum_{j\in\naz} u_j$ converges in $\itlw{(p,t)}{s}{q}{w}$ and  $\itl{\pp}{s}{q},$  respectively.
 
-\begin{theorem}
-Suppose $f_n \rightarrow f$ in measure and $|f_n (x)| \leq |g(x)|$ for some $g\in L^{p,t}(w)$. Then $$\lim_{n\rightarrow\infty} \norm{f_n-f}{L^{p,t}(w)} = 0.$$
-\end{theorem}
+ In the case of Lorentz spaces, the fact (\ref{eq:cauchyseq}) is  a consequence of the following dominated convergence type theorem:
 
-In the setting of variable-exponent Lebesgue spaces (\ref{eq:cauchyseq}) is  a consequence of the following dominated convergence type thoerem.
-\begin{theorem}
-Suppose $f_n \rightarrow f$ pointwise a.e. and $|f_n (x)| \leq |g(x)|$ for some $g\in \Lp.$. Then $f_n \rightarrow f$ in $\Lp.$
-\end{theorem}
+\noindent \textit{Suppose $f_n \rightarrow f$ in measure with respect to a weight w and $|f_n (x)| \leq |g(x)|$ a.e. for some $g\in L^{p,t}(w)$, $0<p,t<\infty$. Then $\lim\limits_{n\rightarrow\infty} \norm{f_n-f}{L^{p,t}(w)} = 0.$
+}
+
+In the setting of variable-exponent Lebesgue spaces, (\ref{eq:cauchyseq}) is  a consequence of the following dominated convergence type theorem:
+
+\noindent \textit{Suppose $f_n \rightarrow f$ pointwise a.e. and $|f_n (x)| \leq |g(x)|$ a.e. for some $g\in \Lp$, $p(\cdot) \in \mathcal{P}_0$. Then $f_n \rightarrow f$ in $\Lp.$}
+
+
 For the indices for which \eqref{eq:cauchyseq} does not necessarily hold under the corresponding assumptions in Part~\eqref{item:thh:Nikolskij:TL} ($t=\infty$ or $q=\infty$ when  $\mathcal{X}=\lebw{p,t}{w},$ $0<p\le t<\infty$ and $0<q\le \infty$ when  $\mathcal{X}=\mow{p}{t}{w},$ $q=\infty$ when  $\mathcal{X}=\Lp$), the convergence of $\sum_{j\in\naz} u_j$ holds in $\swp$ rather than in  $\itlw{(p,t)}{s}{q}{w},$ $\itlw{[p,t]}{s}{q}{w}$ or  $\itl{\pp}{s}{q},$ respectively. Regarding Part~\eqref{item:thh:Nikolskij:B}, the counterpart of \eqref{eq:cauchyseq} is
 \begin{equation*}
 \norm{\{2^{js} u_j\}_{M+1\le \abs{j}\le N}}{\ell^q(\mathcal{X})}\to 0\quad \text{as }M,N\to\infty,
@@ -1574,26 +1554,24 @@ It can be shown, using standard proofs, that Triebel--Lizorkin and Besov spaces 
 
 \section{Applications to scattering properties of PDEs}\label{ch2_applications}
 
-In this section we discuss applications of Theorem \ref{thm:CM:TL:B}, Theorem \ref{thm:ICM:TL:B}, and their counterparts in Section \ref{sec:othersettings} to systems of partial differential equations involving powers of the Laplacian. The systems of partial differential equations that we study are of the form
-
+In this section, we discuss applications of Theorem \ref{thm:CM:TL:B}, Theorem \ref{thm:ICM:TL:B}, and their counterparts in Section \ref{sec:othersettings} to systems of partial differential equations involving powers of the Laplacian. The systems of partial differential equations that we study are of the form
 \begin{equation} \label{eq:a:b:}
-\left\{ \begin{array}{lll}  \partial_t u =vw, & \mathcal{P}artial_t v +a(D) v = 0, & \mathcal{P}artial_t w + b(D) w = 0, \\
+\left\{ \begin{array}{lll}  \partial_t u =vw, & \partial_t v +a(D) v = 0, & \partial_t w + b(D) w = 0, \\
   u(0,x)=0,&v(0,x)=f(x),&w(0,x) = g(x),
  \end{array} \right.
 \end{equation}
-
-\noindent where $u=u(t,x)$, $v=v(t,x)$, and $w=w(t,x)$, $t\geq 0$ and $x\in\re^n$. Here the operators $a(D)$ and $b(D)$ are \textit{linear} Fourier multiplier operators with the symbols $a(\xi)$ and $b(\xi)$ respectively; that is, $\widehat{a(D)f}(\xi) = a(\xi)\widehat{f}(\xi)$ and $\widehat{b(D)f}(\xi) = b(\xi)\widehat{f}(\xi)$. 
+\noindent where $u=u(t,x)$, $v=v(t,x)$, and $w=w(t,x)$, $t\geq 0$ and $x\in\re^n$. Here the operators $a(D)$ and $b(D)$ are \textit{linear} Fourier multiplier operators associated to the symbols $a(\xi)$ and $b(\xi)$ respectively; that is, $\widehat{a(D)f}(\xi) = a(\xi)\widehat{f}(\xi)$ and $\widehat{b(D)f}(\xi) = b(\xi)\widehat{f}(\xi)$. 
 
 Without taking issues of convergence into account, we get that 
 \begin{equation}\label{V}
-v(t,x) = \int_\rn e^{-ta(\xi)} \widehat{f}(\xi)e^{2\mathcal{P}i i x\cdot \xi} d\xi.
+v(t,x) = \int_\rn e^{-ta(\xi)} \widehat{f}(\xi)e^{2\pi i x\cdot \xi} d\xi.
 \end{equation}
 Indeed, using the system (\ref{eq:a:b:}) we obtain
 \begin{align*}
 \partial_t v(x) +a(D) v(x) &= \int_\rn (\widehat{\partial_t v(t,\cdot)}(\xi) + a(\xi)\widehat{v(t,\cdot)}(\xi))e^{2\pi i \xi \cdot x} d\xi \\
 &=0,
 \end{align*}
-where the Fourier transforms $\widehat{\partial_t v(t,\cdot)}$ and $\widehat{v(t,\cdot)}$; 
+where the Fourier transforms $\widehat{\partial_t v(t,\cdot)}$ and $\widehat{v(t,\cdot)}$ are taken with respect to the variable $x$; 
 so we must have $\widehat{\partial_t v(t,\cdot)}(\xi) + a(\xi)\widehat{v(t,\cdot)}(\xi) = 0$. By interchanging the Fourier transform with the derivative with respect to $t$ we get $\widehat{v(t,\cdot)}(\xi) = e^{-t a(\xi)} F(\xi)$ for some function $F$. Setting $t=0$ and using the system (\ref{eq:a:b:}) it follows that $F(\xi) = \widehat{f}(\xi)$; by inverting the Fourier transform we obtain (\ref{V}). A similar calculation shows that $$w(t,x) = \int_\rn e^{-tb(\eta)} \widehat{g}(\eta) e^{2\pi i x\cdot \eta} d\eta.$$
 These expressions for $v$ and $w$ yield that
 \begin{align*}
@@ -1603,6 +1581,7 @@ Setting $\lambda(\xi,\eta)=a(\xi)+b(\eta)$ and assuming that $\lambda$ never van
 \begin{equation}\label{u:T:lambda}
 u(t,x) = T_{\frac{1-e^{-t\lambda}}{\lambda}}(f,g)(x).
 \end{equation}
+
 Following Bernicot--Germain~\cite[Section 9.4]{MR2680189}, suppose there exists   $u_\infty\in \swp$ such that 
 \begin{equation}\label{def:u:infty}
 \lim\limits_{t \to \infty} u(t, \cdot ) = u_\infty \quad \text{in } \swp;
@@ -1618,12 +1597,10 @@ For $0<p_1,p_2, p, q\le \infty$ and $w_1,w_2\in A_\infty,$ set
 \gamt&=2( [n(1/\min(p,q,1)+1/\min(1,p_1/\tau_{w_1},p_2/\tau_{w_2},q))]+1),\\
  \gamb&=2( [n(1/\min(p,q,1)+1/\min(1,p_1/\tau_{w_1},p_2/\tau_{w_2}))]+1).
 \end{align*}
-
-
 For $\delta>0$ define
-$$
+$
 \Ss_{\delta}=\{(\xi,\eta)\in \re^{2n}: \abs{\eta}\le \delta^{-1}\abs{\xi}\text{ and }\abs{\xi}\le \delta^{-1}\abs{\eta}\}.
-$$
+$
 
  
  \begin{theorem}\label{thm:scattering} Consider  $0 < p, p_1, p_2  \le \infty$  such that $\hcline$ and  $0 < q \leq \infty;$ let  $w_1,w_2\in A_\infty$ and set $w=w_1^{{p}/{p_1}} w_2^{{p}/{p_2}}.$ 
@@ -1633,10 +1610,7 @@ Fix $\gamma>0;$ if $\gamma$ is even, or $\gamma\ge \gamt$ in the setting of Trie
   u(0,x)=0,&v(0,x)=f(x),&w(0,x) = g(x).
  \end{array} \right.
 \end{equation}
-
-
-
-If $0 < p,p_1,p_2 < \infty$ and  $s > \tau_{p,q}(w),$ the solution $u$ of \eqref{eq:Ds:Ds}  scatters in $\tlw{p}{s}{q}{w}$ to a function $u_\infty$ that satisfies the following estimates: 
+\noindent If $0 < p,p_1,p_2 < \infty$ and  $s > \tau_{p,q}(w),$ the solution $u$ of \eqref{eq:Ds:Ds}  scatters in $\tlw{p}{s}{q}{w}$ to a function $u_\infty$ that satisfies the following estimates: 
 \begin{equation}\label{eq:scattering1}
 \norm{u_\infty}{\tlw{p}{s}{q}{w}} \lesssim \norm{f}{\tlw{p_1}{s-\gamma}{q}{w_1} } \norm{g}{H^{p_2}(w_2)} +  \norm{f}{H^{p_1}(w_1)}   \norm{g}{\tlw{p_2}{s-\gamma}{q}{w_2} },
 \end{equation}
@@ -1655,7 +1629,7 @@ where $0<p<\infty,$ $0<q\le\infty,$  $s>\tau_{p,q}(w),$ and the implicit constan
 
 
 For $\delta >0$ define
-\[ \tilde{\Ss}_{\delta}=\{(\xi,\eta)\in \re^{2n}: \abs{\eta}\le \delta^{-1}(1+\abs{\xi}^2)^\frac{1}{2} \text{ and }\abs{\xi}\le \delta^{-1}(1+\abs{\eta}^2)^\frac{1}{2}\}.\]
+$ \tilde{\Ss}_{\delta}=\{(\xi,\eta)\in \re^{2n}: \abs{\eta}\le \delta^{-1}(1+\abs{\xi}^2)^\frac{1}{2} \text{ and }\abs{\xi}\le \delta^{-1}(1+\abs{\eta}^2)^\frac{1}{2}\}.$
 
 
 
@@ -1687,28 +1661,27 @@ where $0<p<\infty,$ $0<q\le\infty,$  $s>\tau_{p,q}(w),$ and the implicit constan
 $$
 u_\infty(x)=\int_{\re^{2n}} (a(\xi)+b(\eta))^{-1}\fhat(\xi)\ghat(\eta)\eixxe\dxi\deta=T_{\lambda^{-1}} (f,g)(x).
 $$
-Indeed, we write
-\begin{align*}
-u(t,x) & = \int_{\rtn} \frac{1-e^{-t(|\xi|^\gamma + |\eta|^\gamma)}}{|\xi|^\gamma + |\eta|^\gamma} \widehat{f}(\xi) \widehat{g}(\eta) \, \eixxe \dxi\deta \\
-	& = \int_{|\xi|,|\eta| \leq 1} \frac{1-e^{-t(|\xi|^\gamma + |\eta|^\gamma)}}{|\xi|^\gamma + |\eta|^\gamma} \widehat{f}(\xi) \widehat{g}(\eta) \, \eixxe \dxi\deta  \\
-	&+ \int_{|\xi|,|\eta| > 1} \frac{1-e^{-t(|\xi|^\gamma + |\eta|^\gamma)}}{|\xi|^\gamma + |\eta|^\gamma} \widehat{f}(\xi) \widehat{g}(\eta) \, \eixxe \dxi\deta \\
-	& = I + II
-\end{align*}
-
-It is easily seen that $II < \infty$. For $I$ using that $f\in\mathcal{S}_0$ we have  
-\begin{align*}
-\widehat{f}(\xi) & = \left\lfloor\gamma\right\rfloor
-\frac{\partial^\alpha \widehat{f}(0)}{\alpha !}\xi^\alpha
- + \sum\limits{|\alpha| = 
- \left\lfloor\gamma\right\rfloor + 1} \frac{\partial^\alpha \widehat{f}(c \xi)}{\alpha !}\xi^\alpha \\
- & = \sum_{|\alpha| = 
- \left\lfloor\gamma\right\rfloor + 1} \frac{\partial^\alpha \widehat{f}(c \xi)}{\alpha !}\xi^\alpha,
-\end{align*}
-for some $0<c<1$. Because $|\xi|\leq 1$ we bound $\partial^\alpha \widehat{f}(c \xi)$ uniformly in $c$ and $\xi$, $\max |\partial^\alpha \widehat{f}(c \xi)| \leq \max\limits_{|\xi|\leq 1} \partial^\alpha \widehat{f}(\xi) < \mathcal{C}$ for some $\mathcal{C}<\infty$. Therefore,
-$$ |I| \leq \int_{|\xi|,|\eta| \leq 1} \mathcal{C} |\xi|^{1 + \left\lfloor\gamma\right\rfloor - \gamma }  \widehat{g}(\eta) \, \eixxe \dxi\deta < \infty.$$
-
-
-So by applying the Dominated Convergence Theorem and letting $t \rightarrow \infty$ we get that $u(t,\cdot)$ converges to $u_\infty$ both pointwise and in $\mathcal{S}'$. 
+%Indeed, we write
+%\begin{align*}
+%u(t,x) & = \int_{\rtn} \frac{1-e^{-t(|\xi|^\gamma + |\eta|^\gamma)}}{|\xi|^\gamma + |\eta|^\gamma} \widehat{f}(\xi) \widehat{g}(\eta) \, \eixxe \dxi\deta \\
+%	& = \int_{|\xi|,|\eta| \leq 1} \frac{1-e^{-t(|\xi|^\gamma + |\eta|^\gamma)}}{|\xi|^\gamma + |\eta|^\gamma} \widehat{f}(\xi) \widehat{g}(\eta) \, \eixxe \dxi\deta  \\
+%	&+ \int_{|\xi|,|\eta| > 1} \frac{1-e^{-t(|\xi|^\gamma + |\eta|^\gamma)}}{|\xi|^\gamma + |\eta|^\gamma} \widehat{f}(\xi) \widehat{g}(\eta) \, \eixxe \dxi\deta \\
+%	& = I + II
+%\end{align*}
+%
+%It is easily seen that $II < \infty$. For $I$ using that $f\in\mathcal{S}_0$ we have  
+%\begin{align*}
+%\widehat{f}(\xi) & = \sum\limits_{|\alpha|\left\lfloor\gamma\right\rfloor}
+%\frac{\partial^\alpha \widehat{f}(0)}{\alpha !}\xi^\alpha
+% + \sum\limits_{|\alpha| =\left\lfloor\gamma\right\rfloor + 1} \frac{\partial^\alpha \widehat{f}(c \xi)}{\alpha !}\xi^\alpha \\
+% & = \sum_{|\alpha| = 
+% \left\lfloor\gamma\right\rfloor + 1} \frac{\partial^\alpha \widehat{f}(c \xi)}{\alpha !}\xi^\alpha,
+%\end{align*}
+%for some $0<c<1$. Because $|\xi|\leq 1$ we bound $\partial^\alpha \widehat{f}(c \xi)$ uniformly in $c$ and $\xi$, $\max |\partial^\alpha \widehat{f}(c \xi)| \leq \max\limits_{|\xi|\leq 1} \partial^\alpha \widehat{f}(\xi) < \mathcal{C}$ for some $\mathcal{C}<\infty$. Therefore,
+%$$ |I| \leq \int_{|\xi|,|\eta| \leq 1} \mathcal{C} |\xi|^{1 + \left\lfloor\gamma\right\rfloor - \gamma }  \widehat{g}(\eta) \, \eixxe \dxi\deta < \infty.$$
+%
+%
+%So by applying the Dominated Convergence Theorem and letting $t \rightarrow \infty$ we get that $u(t,\cdot)$ converges to $u_\infty$ both pointwise and in $\mathcal{S}'$. 
 
 If $\gamma$ is an even positive integer then $\lambda^{-1}$ satisfies the estimates \eqref{eq:CMm} with $m=-\gamma$ for all $\alpha,\beta\in\na_0^n.$ Then,  all estimates from Theorem~\ref{thm:CM:TL:B} hold for $T_{\lambda^{-1}}$  and therefore the desired estimates follow for $u_\infty$ with constants independent of $f,g\in\swz.$ 
 

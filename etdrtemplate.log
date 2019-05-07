@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.7)  20 APR 2019 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.7)  5 MAY 2019 16:57
 entering extended mode
 **./etdrtemplate.tex
 (etdrtemplate.tex
@@ -754,10 +754,7 @@ Package hyperref Warning: Option `pdfpagelabels' has already been used,
 
 \c@theorem=\count126
 \c@thm=\count127
-\c@dfn=\count128
-\c@example=\count129
-\c@remark=\count130
-\c@list=\count131
+\c@list=\count128
 (etdrtemplate.aux)
 \openout1 = `etdrtemplate.aux'.
 
@@ -786,7 +783,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count132
+\c@section@level=\count129
 )
 LaTeX Info: Redefining \ref on input line 317.
 LaTeX Info: Redefining \pageref on input line 317.
@@ -799,16 +796,16 @@ LaTeX Info: Redefining \nameref on input line 317.
 ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
+\scratchcounter=\count130
 \scratchdimen=\dimen141
 \scratchbox=\box32
-\nofMPsegments=\count134
-\nofMParguments=\count135
+\nofMPsegments=\count131
+\nofMParguments=\count132
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count136
+\MPscratchCnt=\count133
 \MPscratchDim=\dimen142
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks32
 )
 ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
@@ -860,33 +857,42 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(title.tex) [1
+(abstracttitle.tex) [1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
 
 {C:/Users/laure/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(etdrtemplate.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+(abstract.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 1.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 20.
 ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.fd
 ")
-LaTeX Font Info:    Try loading font information for U+lasy on input line 1.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
  ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+esint on input line 1.
+LaTeX Font Info:    Try loading font information for U+esint on input line 20.
 ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/esint\uesint.fd"
 File: uesint.fd 
-)
-[6
+)) [-1] (title.tex)pdfTeX warning (ext4): destination with the same identifier 
+(name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.363 \begin{abstract}
+                       [1] (abstract.tex)pdfTeX warning (ext4): destination wit
+h the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 \end{abstract}
+                     [1] (etdrtemplate.toc [6
 
 ])
 \tf@toc=\write4
@@ -921,185 +927,192 @@ q\OML/cmm/m/it/12 :$
  []
 
 [9] [10] [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 152.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
 
 
 ("C:\Users\laure\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
 
 [12] [13] [14] [15] [16] [17] [18]
-Overfull \hbox (2.03561pt too wide) detected at line 360
+Overfull \hbox (2.03561pt too wide) detected at line 351
 []
  []
 
-[19]
-
-LaTeX Warning: Reference `fatou' on page 20 undefined on input line 394.
-
-[20]
-Overfull \hbox (0.63261pt too wide) in paragraph at lines 406--406
+[19] [20]
+Overfull \hbox (0.63261pt too wide) in paragraph at lines 397--397
 []\OT1/cmr/bx/n/17.28 Leibniz-type rules in weighted Triebel-Lizorkin and
  []
 
 [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31]
-Overfull \hbox (13.35248pt too wide) in paragraph at lines 703--704
-[]\OT1/cmr/m/n/12 Nikol'skij rep-re-sen-ta-tions for weighted Triebel--Lizorkin
- and Besov spaces (The-o-rem [][]2.1.1[][][]). 
+Overfull \hbox (16.94272pt too wide) in paragraph at lines 681--682
+[]\OT1/cmr/m/n/12 Nikol'ski$[]$ rep-re-sen-ta-tions for weighted Triebel--Liz
+orkin and Besov spaces (The-o-rem [][]2.1.6[][][]). 
  []
 
 [32] [33] [34] [35]
-Overfull \hbox (9.10947pt too wide) in paragraph at lines 789--791
+Overfull \hbox (9.10947pt too wide) in paragraph at lines 767--769
 \OT1/cmr/m/n/12 Both in-equal-i-ties are straight-for-ward con-se-quences of H
 older's in-equal-ity for weighted Lebesgue
  []
 
 [36] [37]
-Overfull \hbox (33.67761pt too wide) detected at line 816
+Overfull \hbox (32.37808pt too wide) detected at line 794
 [][] \U/matha/m/n/12 À [][] [][]   [][] [][]  @\OML/cmm/m/it/12 f; g \U/matha/m
 /n/12 P \OMS/cmsy/m/n/12 S\U/matha/m/n/12 p[]q\OML/cmm/m/it/12 :
  []
 
 
-Overfull \hbox (13.83104pt too wide) in paragraph at lines 834--834
+Overfull \hbox (13.83104pt too wide) in paragraph at lines 812--812
 []\OT1/cmr/bx/n/14.4 Leibniz-type rules in the set-tings of variable-exponent T
 riebel--
  []
 
 [38] [39] [40]
-Overfull \hbox (13.95116pt too wide) in paragraph at lines 1547--1547
-[]\OT1/cmr/bx/n/14.4 Nikol'skij rep-re-sen-ta-tions of Triebel-Lizorkin and Bes
-ov spaces 
+Overfull \hbox (18.90114pt too wide) in paragraph at lines 1525--1525
+[]\OT1/cmr/bx/n/14.4 Nikol'ski$[]$ rep-re-sen-ta-tions of Triebel-Lizorkin an
+d Besov spaces 
  []
 
-[41] [42] [43] [44] [45] [46] [47] [48]) (chapter3.tex [49]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1525.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1525.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\u' on input line 1525.
+
+[41] [42] [43] [44] [45] [46] [47]) (chapter3.tex [48]
 Chapter 3.
-[50
+[49
 
 
-] [51] [52] [53] [54] [55]
+]
+Overfull \hbox (7.54745pt too wide) in paragraph at lines 27--30
+\OT1/cmr/m/n/12 have been ex-ten-sively stud-ied; see Benyi-Bernicot-Maldonado
+-Naibo-Torres [[]], Benyi-Chaffee-
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 154.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 154.
-
+[50] [51] [52] [53] [54]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 154.
+(hyperref)                removing `math shift' on input line 164.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 154.
-
-[56] [57] [58]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 189.
+(hyperref)                removing `subscript' on input line 164.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 189.
+(hyperref)                removing `\sigma' on input line 164.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 189.
+(hyperref)                removing `math shift' on input line 164.
+
+[55] [56] [57]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 189.
+(hyperref)                removing `subscript' on input line 198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 189.
+(hyperref)                removing `\sigma' on input line 198.
 
-[59]
-Overfull \hbox (26.16676pt too wide) detected at line 226
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 198.
+
+[58]
+Overfull \hbox (26.16676pt too wide) detected at line 234
 []
  []
 
-[60] [61] [62] [63] [64]
+[59] [60] [61] [62]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 337.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 337.
+(hyperref)                removing `math shift' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 337.
+(hyperref)                removing `subscript' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 337.
+(hyperref)                removing `\sigma' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 337.
+(hyperref)                removing `superscript' on input line 348.
 
-[65] [66] [67] [68] [69]
-Overfull \hbox (5.06645pt too wide) in paragraph at lines 484--486
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 348.
+
+[63] [64] [65]
+Overfull \hbox (5.06645pt too wide) in paragraph at lines 425--427
 \OT1/cmr/m/n/12 where for the last in-equal-ity we used Pee-tre's max-i-mal in-
 equal-ity (see Pee-tre [[]] or Triebel [[],
  []
 
-[70] [71]
+[66] [67] [68] [69] [70]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 530.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 530.
+(hyperref)                removing `math shift' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 530.
+(hyperref)                removing `subscript' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 530.
+(hyperref)                removing `\sigma' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 530.
-
-[72] [73] [74] [75] [76] [77] [78]) [79] (etdrtemplate.bbl [80
+(hyperref)                removing `superscript' on input line 542.
 
 
-] [81] [82]
-[83] [84] [85])
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 542.
+
+[71] [72] [73] [74] [75] [76] [77]) [78] (etdrtemplate.bbl [79
+
+
+] [80] [81]
+[82] [83] [84])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 547.
- [86]
+ [85]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 547.
  (etdrtemplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 547.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 547.
 Package rerunfilecheck Info: File `etdrtemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 5496BA4F9AF46EDF8C4A9A3975578822;2503.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: A40610F85E342A07A481D7E77C0E99F4;2444.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 547.
  ) 
 Here is how much of TeX's memory you used:
- 9285 strings out of 492942
- 134334 string characters out of 3126094
- 237827 words of memory out of 3000000
- 12683 multiletter control sequences out of 15000+200000
- 24971 words of font info for 99 fonts, out of 3000000 for 9000
+ 9281 strings out of 492942
+ 134530 string characters out of 3126094
+ 239853 words of memory out of 3000000
+ 12674 multiletter control sequences out of 15000+200000
+ 26210 words of font info for 103 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,13n,35p,1681b,672s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,16n,35p,1575b,672s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmmi10.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1108,25 +1121,26 @@ onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/laure/AppData/Local/Programs
 cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/laur
 e/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
 :/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr6.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/laure/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/laure/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/
-laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathabx-type1/matha1
-2.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/math
-abx-type1/matha6.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/mathabx-type1/matha8.pfb><C:/Users/laure/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/mathabx-type1/mathb12.pfb><C:/Users/laure/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/mathabx-type1/mathb6.pfb><C:/Users/la
-ure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathabx-type1/mathb8.p
-fb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathabx
--type1/mathx10.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb>
-Output written on etdrtemplate.pdf (89 pages, 659642 bytes).
+cmr17.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr6.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/laure/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/laure/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/l
+aure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
+b><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathabx-
+type1/matha12.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/mathabx-type1/matha6.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/mathabx-type1/matha8.pfb><C:/Users/laure/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/mathabx-type1/mathb12.pfb><C:/Users/laure
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathabx-type1/mathb6.pfb>
+<C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathabx-ty
+pe1/mathb8.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/mathabx-type1/mathx10.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on etdrtemplate.pdf (91 pages, 674507 bytes).
 PDF statistics:
- 1407 PDF objects out of 1440 (max. 8388607)
- 330 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1411 PDF objects out of 1440 (max. 8388607)
+ 324 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
