@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {3.2}A maximal inequality for bilinear pseudodiffernetial operators}{53}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Decomposition of the operator $T_\sigma $ and main estimates}{55}{section.3.3}% 
 \contentsline {subsection}{\numberline {3.3.1}Estimates for $T_{\sigma ^1}$}{58}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Estimates for $T_{\sigma ^2}$}{64}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.2}Estimates for $T_{\sigma ^2}$}{63}{subsection.3.3.2}% 
 \contentsline {subsection}{\numberline {3.3.3}Estimates for $T_{\sigma ^3}$}{71}{subsection.3.3.3}% 
 \contentsline {section}{\numberline {3.4}Conclusion of the proofs of the main results}{75}{section.3.4}% 
 \contentsline {chapter}{Bibliography}{79}{section*.4}% 

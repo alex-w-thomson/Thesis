@@ -1,4 +1,4 @@
-\% +--------------------------------------------------------------------+
+% +--------------------------------------------------------------------+
 % | Sample Chapter 3
 % +--------------------------------------------------------------------+
 
@@ -14,7 +14,7 @@
 
 \section{Introduction and main results}
 
-In this chapter, we obtain Leibniz-type rules for bilinear pseudodifferential operators associated to symbols in the H\"ormander classes of critical order in the setting of Besov and local Hardy spaces. 
+In this chapter, we obtain Leibniz-type rules for bilinear pseudodifferential operators associated to symbols in the bilinear H\"ormander classes of critical order in the setting of Besov and local Hardy spaces. 
 
 In this section, we present the bilinear H\"ormander classes and state the main results of this chapter. The notation used corresponds with that introduced in Chapter \ref{chapter2}. In particular, $L^p$, $B^s_{p,q}$ and $h^p$ denote the unweighted Lebesgue, Besov and local Hardy spaces on $\rn$, respectively. We recall that $\tau_p = n(1/\text{min}(p,1) - 1)$ for $0<p<\infty$. 
 
@@ -50,9 +50,9 @@ Let $0<p<\infty$ and  $0<p_1,p_2\le \infty$ be such that $\hcline,$ $0<q\le \inf
 where $h^{p_1}$ and $h^{p_2}$ must be replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\infty,$ respectively. Moreover,  if there exits $\varepsilon>0$ such that the Fourier transform of  $\sigma(\cdot,\xi,\eta)$ is  supported outside the set  $\{\zeta\in\rn:\abs{\zeta}<\varepsilon (\abs{\xi}+\abs{\eta})\}$ for all  $\xi,\eta\in\rn$ such that $1/32\abs{\xi}\le \abs{\eta}\le 32 \abs{\xi},$ then \eqref{eq:main1} holds for any $s\in\re.$
 \end{theorem}
 
-Results related to estimate (\ref{eq:main1}) were proved for the class $BS^0_{1,1}$ in B\'enyi \cite{MR1996120}, Koezuka-Timita \cite{MR3750316}, and Naibo \citep{MR3393696}. Concerning bilinear pseudodifferential operators with symbols belonging to the subcritical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\leq p_1,p_2,p \leq \infty$ and to the critical classes $BS^{m(0,p_1,p_2)}_{0,0}$ with $1<p_1,p_2,p<\infty$, estimate (\ref{eq:main1}) was shown in Naibo \citep[Theorem 1.3]{MR3393696} for $s>\tau_p$. Theorem \ref{thm:main1} extends this result to the critical classes and allows for the regularity $s$ to be in the wider range $(0,\infty)$ under certain assumptions on $\sigma$. 
+Results related to estimate (\ref{eq:main1}) were proved for the class $BS^0_{1,1}$ in B\'enyi \cite{MR1996120}, Koezuka-Tomita \cite{MR3750316}, and Naibo \citep{MR3393696}. Concerning bilinear pseudodifferential operators with symbols belonging to the subcritical classes $BS^m_{\rho,\delta}$ with $m<m(\rho,p_1,p_2)$ and $1\leq p_1,p_2,p \leq \infty$ and to the critical classes $BS^{m(0,p_1,p_2)}_{0,0}$ with $1<p_1,p_2,p<\infty$, estimate (\ref{eq:main1}) was shown in Naibo \citep[Theorem 1.3]{MR3393696} for $s>\tau_p$. Theorem \ref{thm:main1} extends this result to the critical classes and allows for the regularity $s$ to be in the wider range $(0,\infty)$ under certain assumptions on $\sigma$. 
 
-The proof of Theorem~\ref{thm:main1} uses the fact that operators with symbols in $BS^{m(0,p_1,p_2)}_{0,0}$ that are localized at certain dyadic frequencies are bounded in the setting of local Hardy spaces; no other boundedness properties of operators with symbols in the bilinear H\"ormander classes are required in the proof. The tools employed are inspired by bilinear techniques in Naibo~\cite{MR3393696} and linear ones in   Johnsen~\cite{MR2163627}, Marschall~\cite{MR1376592} and   Park~\cite{Park}.
+The proof of Theorem~\ref{thm:main1} uses the fact that operators with symbols in $BS^{m(0,p_1,p_2)}_{0,0}$ that are localized at certain dyadic frequencies are bounded in the setting of local Hardy spaces; no other boundedness properties of operators with symbols in the bilinear H\"ormander classes are required in the proof. The tools employed are inspired by bilinear techniques in Naibo~\cite{MR3393696} and linear ones in   Johnsen~\cite{MR2163627}, Marschall~\cite{MR1376592}, and   Park~\cite{Park}.
 
 As a consequence of Theorem~\ref{thm:main1}, we obtain  Leibniz-type rules for bilinear pseudodifferential operators associated to symbols in a general class $BS^m_{\rho,\delta}:$
 
@@ -119,11 +119,12 @@ If $0< r\le1$ and $\norm{\sigma(x, 2^{k_0+1} \cdot, 2^{k_0+1} \cdot)}{W^{\lfloor
 where the implicit constant is independent of $\sigma,$  $f,$ $g$ and $k_0.$
 \end{lemma}
 
-Lemma \ref{lem:biMarschall} will be a consequence of the following result from Marchall~\cite[p.118, Proposition 5(a)]{MR1376592} and  Johnsen~\cite[p.275, Proposition 4.1]{MR2163627}:
+Lemma \ref{lem:biMarschall} will be a consequence of the following result from Marschall~\cite[p.118, Proposition 5(a)]{MR1376592} and  Johnsen~\cite[p.275, Proposition 4.1]{MR2163627}:
 
 \begin{lem}\label{lem:Marschall} Consider $F\in \mathcal{S}(\re^N)$ and let $\Sigma=\Sigma(X, \zeta)$ be a  symbol in $C^\infty(\re^N \times \re^N)$ such that for some polynomial $P(\zeta),$
-\begin{equation*}\abs{\Sigma(X, \zeta)}\lesssim P(\zeta)\quad \forall X,\zeta\in\re^N.
-\end{equation*}
+\[
+\abs{\Sigma(X, \zeta)}\lesssim P(\zeta)\quad \forall X,\zeta\in\re^N.
+\]
 Suppose there exists $k_0\in \ent$ such that
 $$
 \supp (\Sigma(X, \cdot)) \subset  \{ \zeta \in \re^N:  |\zeta| \le 2^{k_0}\}\quad \forall X\in \re^N
@@ -132,7 +133,7 @@ $$
 $$
 If $0<r \le 1$ and $\norm{\Sigma(X, 2^{k_0} \cdot)}{W^{\left\lfloor N/r \right\rfloor + 1 , 1}(\mathbb{R}^N)} \mathcal{M}_r(F)(X)$ is locally integrable in $\re^N,$ it holds that
 \begin{equation}\label{eq:Marschall:N}
-|T_{\Sigma}(F)(X)| \lesssim \norm{\Sigma(X, 2^{k_0} \cdot)}{W^{\left\lfloor N/r \right\rfloor + 1, 1}(\mathbb{R}^N} \mathcal{M}_r(F)(X) \quad \forall X \in \re^N,
+|T_{\Sigma}(F)(X)| \lesssim \norm{\Sigma(X, 2^{k_0} \cdot)}{W^{\left\lfloor N/r \right\rfloor + 1, 1}(\mathbb{R}^N)} \mathcal{M}_r(F)(X) \quad \forall X \in \re^N,
 \end{equation}
 where the implicit constant is independent of $\Sigma,$ $F$ and $k_0.$
 \end{lem}
@@ -162,7 +163,7 @@ We note that $\norm{\sigma(x, 2^{k_0+1} \cdot, 2^{k_0+1} \cdot)}{W^{\lfloor{2n/r
 
 
 \section{Decomposition of the operator $T_\sigma$ and main estimates}\label{sec:decomp}
-In the proofs that follow in this chapter we implicitly assume that the symbol $\sigma$ in the statements of Theorem \ref{thm:main1} and Corollary \ref{coro:main1} has compact support in $\mathbb{R}^{3n}$ and prove estimates for such symbols with constants independent of its support. The following limiting argument then allows us to to prove these results for symbols in the bilinear H\"ormander classes without compact support. For $0\le \delta,\rho\le 1,$ $m\in\re,$ $\sigma\in BS^m_{\rho,\delta}$ and $0\le \varepsilon<1$ let $\sigma_\epsilon (x,\xi,\eta) = \Psi(\varepsilon x, \varepsilon \xi, \varepsilon \eta) \sigma( x, \xi,\eta)$ for a smooth  function $\Psi$ of compact support such that $\Psi(0,0,0) = 1$. It follows that $\sigma_\varepsilon \in BS^m_{\rho,\delta}$ with constants independent of $\varepsilon$ and that, as $\varepsilon \rightarrow 0$, $T_{\sigma_\varepsilon}(f,g)$ converges to $T_\sigma(f,g)$ in $\swp$ for $f,g \in \sw$. Indeed, by the product rule, the facts that $\sigma \in BS^m_{\rho,\delta}$ and $0<\eps<1$, and the properties of $\Psi$, we have
+In the proofs that follow in this chapter we implicitly assume that the symbol $\sigma$ in the statements of Theorem \ref{thm:main1} and Corollary \ref{coro:main1} has compact support in $\mathbb{R}^{3n}$ and prove estimates for such symbols with constants independent of its support. The following limiting argument then allows us to prove these results for symbols in the bilinear H\"ormander classes without compact support. For $0\le \delta,\rho\le 1,$ $m\in\re,$ $\sigma\in BS^m_{\rho,\delta}$ and $0\le \varepsilon<1$ let $\sigma_\epsilon (x,\xi,\eta) = \Psi(\varepsilon x, \varepsilon \xi, \varepsilon \eta) \sigma( x, \xi,\eta)$ for a smooth  function $\Psi$ of compact support such that $\Psi(0,0,0) = 1$. It follows that $\sigma_\varepsilon \in BS^m_{\rho,\delta}$ with constants independent of $\varepsilon$ and that, as $\varepsilon \rightarrow 0$, $T_{\sigma_\varepsilon}(f,g)$ converges to $T_\sigma(f,g)$ in $\swp$ for $f,g \in \sw$. Indeed, by the product rule, the facts that $\sigma \in BS^m_{\rho,\delta}$, and $0<\eps<1$, and the properties of $\Psi$, we have
 \begin{align*}
 |\partial^\alpha_\xi \partial^\beta_\eta \sigma_\varepsilon(x,\xi,\eta)| & 
 \lesssim \sum_{\alpha_0 \leq \alpha, \beta_0 \leq \beta} \varepsilon^{|\alpha_0| + |\beta_0|}|\partial^{\alpha_0}_\xi \partial^{\beta_0}_\eta \Psi(\varepsilon x, \varepsilon \xi, \varepsilon \eta) \partial^{\alpha - \alpha_0}_\xi \partial^{\beta - \beta_0}_\eta \sigma(x,\xi,\eta) | \\
@@ -177,7 +178,9 @@ We now present the decomposition of $T_\sigma$ that will be used in the proof of
 Let $m \in \re,$ $0 \leq \delta\le \rho < 1$ and $\sigma \in BS^m_{\rho, \delta}.$ Denote by $\widehat{\sigma}^1$ the Fourier transform of $\sigma(x,\xi,\eta)$ with respect to $x$, that is, $\widehat{\sigma}^1(\zeta,\xi,\eta) = \widehat{\sigma(\cdot,\xi,\eta)}(\zeta)$. We perform a spectral decomposition of $T_\sigma(f,g)$ with $f,g\in\sw:$
 \begin{align*}
 T_\sigma(f,g)(x)&= \int_{\rtn} \sigma(x, \xi, \eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta \\
-& =  \sumjkNz \int_{\rtn} \left( \int_{\rn} \widehat{\sigma}^1(\zeta, \xi, \eta) \eixzeta  d\zeta \right) \fk(\xi) \fj(\eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta\\
+& =  \sumjkNz \int_{\rtn} \left( \int_{\rn} \widehat{\sigma}^1(\zeta, \xi, \eta) \eixzeta  d\zeta \right) \fk(\xi) \fj(\eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta
+\end{align*}
+\begin{align*}
 & =  \sum_{j,k,\ell\in\na_0} \int_{\rtn} \left( \int_{\rn} \f_\ell(\zeta)\widehat{\sigma}^1(\zeta, \xi, \eta) \eixzeta  d\zeta \right) \fk(\xi) \fj(\eta) \fhat(\xi) \ghat(\eta) \eixxe \dxi \deta\\
 &= \sum_{j,k,\ell\in\na_0}  T_{\sigma_{j,k,\ell}}(f,g)(x),
 \end{align*}
@@ -191,7 +194,7 @@ Using this decomposition we define the following symbols:
 &\sigma^4:= \quad \sum\limits_{\ell=5}^\infty \sum\limits_{j=1}^{\ell - 4} \sum\limits_{k =0}^{j-1} \sigma_{j,k,\ell}, \quad \sigma^5:= \quad  \sum\limits_{j=1}^\infty \sum\limits_{k=0}^{j-1} \sum\limits_{\ell =\max(0,j-4)}^{j+3} \sigma_{j,k,\ell},\quad \sigma^6:= \quad \sum\limits_{j=5}^\infty \sum\limits_{k=0}^{j-1} \sum\limits_{\ell =0}^{j-5} \sigma_{j,k,\ell},
 \end{align*}
 so that $\sigma = \sigma^1+\sigma^2+\sigma^3+\sigma^4+\sigma^5+\sigma^6.$ Notice that since $j\leq k$ in $\sigma_1$, $\sigma_2$, and $\sigma_3$, they are supported on the set $\{(x,\xi,\eta) \in \mathbb{R}^{3n} : |\eta| \leq 4|\xi|\}$. On the other hand $\sigma_4$, $\sigma_5$, and $\sigma_6$ are supported on $\{(x,\xi,\eta) \in \mathbb{R}^{3n} : |\xi| \leq 2|\eta|\}$. By taking the Fourier transform with respect to $x$ we have that $\widehat{\sigma^1(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\xi}\lesssim \abs{\zeta}\},$
-$\widehat{\sigma^2(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\xi}\sim \abs{\zeta}\}$ and $\widehat{\sigma^3(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\zeta}\lesssim \abs{\xi}\}$. The supports of $\widehat{\sigma^4(\cdot,\xi,\eta)}$, $\widehat{\sigma^5(\cdot,\xi,\eta)}$, and $\widehat{\sigma^6(\cdot,\xi,\eta)}$ are contained in similar sets with $|\xi|$ replaced by $|\eta|$. The proof of Theorem \ref{thm:main1} will follow from obtaining bounds for $T_{\sigma^j}$, $j=1,2,3,4,5,6$. We will show boundedness properties for $T_{\sigma^1}$, $T_{\sigma^2}$, and $T_{\sigma^3}$; by symmetry, analogous results are obtained for $T_{\sigma^4}$, $T_{\sigma^5}$, and $T_{\sigma^6}$.
+$\widehat{\sigma^2(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\xi}\sim \abs{\zeta}\}$, and $\widehat{\sigma^3(\cdot,\xi,\eta)}$ is supported on $\{\zeta\in\rn: \abs{\zeta}\lesssim \abs{\xi}\}$. The supports of $\widehat{\sigma^4(\cdot,\xi,\eta)}$, $\widehat{\sigma^5(\cdot,\xi,\eta)}$, and $\widehat{\sigma^6(\cdot,\xi,\eta)}$ are contained in similar sets with $|\xi|$ replaced by $|\eta|$. The proof of Theorem \ref{thm:main1} will follow from obtaining bounds for $T_{\sigma^j}$, $j=1,2,3,4,5,6$. We will show boundedness properties for $T_{\sigma^1}$, $T_{\sigma^2}$, and $T_{\sigma^3}$; by symmetry, analogous results are obtained for $T_{\sigma^4}$, $T_{\sigma^5}$, and $T_{\sigma^6}$.
 
 We note that $BS^m_{\rho,\delta}\subset BS^m_{\rho,\rho}$ for $m\in\re$ and $0\le \delta\le \rho\le 1$. With this in mind we will assume that $\rho = \delta$ in the proofs.
 
@@ -200,7 +203,7 @@ In this section, we prove the estimates for the operator $T_{{\sigma}^1}$. For $
 \begin{equation*}
 \Phi_k(\xi):= \sum_{j=0}^k \varphi_j(\xi)=\f_0(2^{-k}\xi)\quad \forall \xi\in\rn, k\in\naz,
 \end{equation*}
-and consider $\widetilde{\f},\widetilde{\f}_0\in\sw$ with $\widecheck{\widetilde{\f}}$ and $\widecheck{\widetilde{\f_0}}$ satisfying conditions (\ref{TL_B_psi1}) - (\ref{TL_B_psi2}) and (\ref{TL_B_phi1})  - (\ref{TL_B_phi2}), respectively, and such that $\widetilde{\f}_0\f_0=\f_0$ and $\widetilde{\f}\f=\f.$ We then define $\widetilde{\f}_k(\xi)=\widetilde{\f}(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\na$ and $\widetilde{\Phi}_k(\xi)=\widetilde{\f}_0(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\naz.$ It holds that $\widetilde{\f}_k \fk = \fk$ and $\widetilde{\Phi}_k \Phi_k = \Phi_k$ for all $k\in\naz.$
+and consider $\widetilde{\f},\widetilde{\f}_0\in\sw$ with $\widecheck{\widetilde{\f}}$ and $\widecheck{\widetilde{\f}}_0$ satisfying conditions (\ref{TL_B_psi1}) - (\ref{TL_B_psi2}) and (\ref{TL_B_phi1})  - (\ref{TL_B_phi2}), respectively, and such that $\widetilde{\f}_0\f_0=\f_0$ and $\widetilde{\f}\f=\f.$ We then define $\widetilde{\f}_k(\xi)=\widetilde{\f}(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\na$ and $\widetilde{\Phi}_k(\xi)=\widetilde{\f}_0(2^{-k}\xi)$ for $\xi\in\rn$ and $k\in\naz.$ It holds that $\widetilde{\f}_k \fk = \fk$ and $\widetilde{\Phi}_k \Phi_k = \Phi_k$ for all $k\in\naz.$
 
 The precise bounds for $T_{\sigma^1}$ are stated in the following lemma.
 
@@ -247,7 +250,7 @@ Recalling the definitions of $\widetilde{\f}_k$ and $\widetilde{\Phi}_k,$  we ha
 T_{\sigma^1_\ell}(f,g)(x) = 
   \sum\limits_{k=0}^{\ell -4} T_{\sigma^1_{\ell,k}}(\Delta^{\widecheck{\widetilde{\f}}}_k f,S^{\widecheck{\widetilde{\Phi}}}_k g)(x),
 \end{align*}
-where, to simplify notation, we set $\Delta^{\widecheck{\widetilde{\f}}}_0 :=S^{\widecheck{\widetilde{\f_0}}}_0$ and for each $k$ between $0$ and $\ell -4$, we set 
+where, to simplify notation, we set $\Delta^{\widecheck{\widetilde{\f}}}_0 :=S^{\widecheck{\widetilde{\f}}_0}_0$ and for each $k$ between $0$ and $\ell -4$, we set 
 $$
 \sigma^1_{\ell, k}(x, \xi, \eta):=\left( \int_{\rn}  \f_\ell(\zeta) \widehat{\sigma}^1(\zeta, \xi, \eta) e^{2\pi i x \cdot \zeta}  \dzeta \right)  \fk(\xi) \Phi_k(\eta).
 $$ 
@@ -276,7 +279,9 @@ with a similar expression for $\sigma^1_{\ell, 0}$ obtained by replacing $\f$ wi
 Given multiindices $\beta, \gamma \in \naz^n$ and using that $\sigma \in BS^m_{\rho, \rho}$, it follows that
 \begin{align*}
 & |\partial_\xi^{\beta} \partial_\eta^{\gamma}  I_{\ell, k}(\xi, \eta)|\\
-& = 2^{n \ell} 2^{k (|\beta+ \gamma|)}  \left|  \int_{\rn} \widecheck{\f}(2^{\ell}y) \sum\limits_{|\alpha| = N} \frac{N}{\alpha!} (-y)^\alpha \int_0^1 (1-t)^{N-1} \partial_x^\alpha \partial_\xi^{\beta} \partial_\eta^{\gamma}\sigma(x - t y, 2^k \xi, 2^k \eta) \,dt\dy \right| \\
+& = 2^{n \ell} 2^{k (|\beta+ \gamma|)}  \left|  \int_{\rn} \widecheck{\f}(2^{\ell}y) \sum\limits_{|\alpha| = N} \frac{N}{\alpha!} (-y)^\alpha \int_0^1 (1-t)^{N-1} \partial_x^\alpha \partial_\xi^{\beta} \partial_\eta^{\gamma}\sigma(x - t y, 2^k \xi, 2^k \eta) \,dt\dy \right| 
+\end{align*}
+\begin{align*}
 & \lesssim  2^{k (|\beta+ \gamma|)}  (1+ |2^k \xi| + |2^k \eta|)^{m + \rho N -  \rho|\beta+ \gamma|} \int_{\rn} 2^{n \ell} |\widecheck{\f}(2^{\ell}y)| |y|^N \dy \\
 &\lesssim 2^{- N \ell} 2^{k (|\beta+ \gamma|)}  (1+ |2^k \xi| + |2^k \eta|)^{m + \rho N -  \rho |\beta+ \gamma|}.
 \end{align*}
@@ -302,10 +307,12 @@ From \eqref{eq:bound:h1:ell:k}, it then follows that for all $x\in\rn,$ we have
 & \lesssim  \left[  \sum\limits_{\ell=4}^\infty 2^{\ell s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N\pst \ell} 2^{k\pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_kf)\mathcal{M}_r(S^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \right]^\frac{1}{q}. \nonumber
 \end{align}
 Next, let us see that, for  $N>s_1$ and $0<\epsilon< N-s_1,$  it holds that
-\begin{align}\nonumber
-& \sum\limits_{\ell=4}^\infty 2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst\ell} 2^{k \pst[(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(S^{\widecheck{\widetilde{\Phi}}}_kg)}{L^p}^{\pst}\right)^{\frac{q}{\pst}} \\ \label{eq:moving:the:sums}
-&\hspace{2cm}\lesssim \sum\limits_{k=0}^\infty 2^{k q[ (1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+ s_1+\eps] }   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(S^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q.
+\begin{align}\label{eq:moving:the:sums}
+& \sum\limits_{\ell=4}^\infty 2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst\ell} 2^{k \pst[(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}    \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(S^{\widecheck{\widetilde{\Phi}}}_kg)}{L^p}^{\pst}\right)^{\frac{q}{\pst}}  
 \end{align}
+\begin{align*}
+&\hspace{2cm}\lesssim \sum\limits_{k=0}^\infty 2^{k q[ (1-\rho)( \lfloor{2n/r}\rfloor + 1-N) + m+ s_1+\eps] }   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(S^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^q.
+\end{align*}
  Indeed, if $0 < q \leq \pst$, we have
 \begin{align*}
 & \sum\limits_{\ell=4}^\infty  2^{\ell  s_1 q} \left(  \sum\limits_{k=0}^{\ell -4} 2^{- N \pst \ell} 2^{k \pst [(1-\rho)( \lfloor{2n/r}\rfloor + 1)+m+\rho N]}   \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)\mathcal{M}_r(S^{\widecheck{\widetilde{\Phi}}}_k g)}{L^p}^{\pst}\right)^\frac{q}{\pst} \\
@@ -405,7 +412,7 @@ with $h^{p_1}$ or $h^{p_2}$ replaced by $L^\infty$ if $p_1=\infty$ or $p_2=\inft
 
 We next analyze the operator with  symbol $\sigma^{2,2};$ for $k \geq 4$ set 
 \begin{equation*}
-\sigma^{2,2,k}  = \sum\limits_{\ell =k-3}^{k+3} \sum\limits_{j=0}^k \sigma_{j,k,\ell},
+\sigma^{2,2,k} := \sum\limits_{\ell =k-3}^{k+3} \sum\limits_{j=0}^k \sigma_{j,k,\ell},
 \end{equation*}
 so that $\sigma^{2,2} = \sum\limits_{k=4}^\infty \sigma^{2,2,k}.$ 
  Let $\K_k$ denote the bilinear kernel of  $T_{\sigma^{2,2,k}}$, that is,
@@ -459,7 +466,7 @@ along with  the boundedness properties of $\mathcal{M}_r$ with $0<r<\min(1,p_1,p
 \begin{align*}
 \norm{T_{\sigma^{2,2}}(f,g)}{\ibes{p}{s_1}{q}} & \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\mathcal{M}_r(\Delta^{\widecheck{\widetilde{\f}}}_k f)}{L^{p_1}}^q  \right)^\frac{1}{q}\norm{\mathcal{M}_r(g^*)}{L^{p_2}}\\
 & \lesssim \left( \sum\limits_{k=0}^\infty 2^{-k  (J-2M -2\eps)q} \norm{\Delta^{\widecheck{\widetilde{\f}}}_k f)}{L^{p_1}}^q  \right)^\frac{1}{q} \norm{g^*}{L^{p_2}}\\
-& \lesssim \norm{f}{\ibes{p_1}{-J +2M +2\eps}{q}} \norm{g}{h^{p_2}} \lesssim  \norm{f}{\ibes{p_1}{s_2}{\bar{q}}} \norm{g}{h^{p_2}},
+& \lesssim \norm{f}{\ibes{p_1}{2M -J +2\eps}{q}} \norm{g}{h^{p_2}} \lesssim  \norm{f}{\ibes{p_1}{s_2}{\bar{q}}} \norm{g}{h^{p_2}},
 \end{align*}
 provided that we take $J$ large enough so that $-J +2M +2\eps < s_2$ and where $h^{p_2}$ should be replaced by $L^\infty$ if $p_2=\infty.$
 \end{proof}
@@ -690,7 +697,7 @@ Before proving Corollary \ref{coro:main1}, we set some notation. Let  $\Theta\in
  \begin{equation*}
  \abs{\partial_\xi^\beta\partial_\eta^\gamma\chi(\xi,\eta)}\le C_{\beta,\gamma} (1+\abs{\xi}+\abs{\eta})^{-\abs{\beta+\gamma}}\quad \forall \xi,\eta\in \rn.
  \end{equation*}
- Therefor $\sigma(x,\xi,\eta)\chi(\xi,\eta)$ and $\sigma(x,\xi,\eta)\chi(\eta,\xi)$ belong to the same H\"ormander class as $\sigma.$
+ Therefore $\sigma(x,\xi,\eta)\chi(\xi,\eta)$ and $\sigma(x,\xi,\eta)\chi(\eta,\xi)$ belong to the same H\"ormander class as $\sigma.$
 
 
 

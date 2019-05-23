@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.7)  28 APR 2019 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.7)  14 MAY 2019 11:48
 entering extended mode
 **./test.tex
 (test.tex
@@ -821,56 +821,40 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-LaTeX Warning: Citation `MR1986065;MR2046194' on page 1 undefined on input line
- 157.
-
-
-LaTeX Warning: Citation `MR3211086;MR3627725' on page 1 undefined on input line
- 159.
-
-
-LaTeX Warning: Citation `MR3179688;MT1;MT2' on page 1 undefined on input line 1
-61.
-
-(test.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 6.
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
- [1
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
+[1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
 {C:/Users/laure/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
  (test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: D602D82190B21AE1AD83629EF0FC0CF6;47.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 8209 strings out of 492942
- 118177 string characters out of 3126094
- 209398 words of memory out of 3000000
- 11821 multiletter control sequences out of 15000+200000
- 10813 words of font info for 44 fonts, out of 3000000 for 9000
+ 8251 strings out of 492942
+ 118598 string characters out of 3126094
+ 210394 words of memory out of 3000000
+ 11851 multiletter control sequences out of 15000+200000
+ 18824 words of font info for 77 fonts, out of 3000000 for 9000
  1302 hyphenation exceptions out of 8191
- 34i,5n,35p,253b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,7n,35p,253b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmcsc10.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/laure/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on test.pdf (1 page, 38310 bytes).
+/cm/cmmi12.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/laure/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/laure/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/laure/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Use
+rs/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathabx-type1/mat
+ha12.pfb><C:/Users/laure/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/m
+athabx-type1/mathx10.pfb>
+Output written on test.pdf (1 page, 52326 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
