@@ -52,6 +52,16 @@ and can be interpreted as taking derivatives up to order $s$ of $f$ when $s>0$.
 
 The estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) are also known as Kato-Ponce inequalities due to the foundational work of Kato-Ponce \cite{MR951744}, where the estimate (\ref{def:ileibniz}) was proved in the case $1<p=p_1=\tilde{p}_2<\infty$ and $p_2=\tilde{p}_1=\infty$, with applications to the Cauchy problem for Euler and Navier-Stokes equations. This result was extended by Gulisashvili-Kon \cite{MR1420922}, who showed (\ref{def:leibniz}) and (\ref{def:ileibniz}) for the cases $s>0$, $1<p<\infty$, and $1 < p_1,p_2,\tilde{p}_1,\tilde{p}_2\leq\infty$ in connection to smoothing properties of Schr\"odinger semigroups. Grafakos-Oh \cite{MR3200091} and Muscalu-Schlag \cite{MR3052499} established the cases for $1/2 <p\leq 1$; the case $p=\infty$ was completed in the work of Bourgain-Li \cite{MR3263081} and Grafakos-Maldonado-Naibo \cite{MR3189525}; finally, the case $p_1 = 1$, $1\leq p_2 \leq \infty$ and $\frac{1}{2} \leq p \leq 1$ was established by Oh-Wu \cite{Oh_Wu}. Applications of the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}) to Korteweg-de Vries equations were studied by Christ-Weinstein \cite{MR1124294} and Kenig-Ponce-Vega \cite{MR1211741}.
 
+We know consider an example of an application of the estimates \eqref{def:leibniz} and \eqref{def:ileibniz} to partial differential equations. Using the fractional Leibniz rule \eqref{def:leibniz} Christ-Weinstein \cite{MR1124294} obtained dispersive estimates for solutions to the Korteweg-de Vries equation 
+\[ \begin{cases}
+\partial_t u + \partial^3_x u + \partial_x F(u) = 0 \\
+u(0,x) = g(x),
+\end{cases} \]
+where $F$ is some nonlinear function such as $F(u) = |u|^s$. Such equations can be used to model shallow water waves. In particular the following result holds: \textit{Consider the Korteweg-de Vries equation with $F(u) = u^5$. Then there exists $\eps > 0$ such that if $g$ satisfies \[||g||_{L^1} + ||g||_{W^{2,p}} <\eps,\]
+then the solution $u$ satisfies \[\sup_{t\in\mathbb{R}} (1 + |t|^2)^{2/3} ||u(t,\cdot)||_{L^{\infty}} < \infty. \]}
+In particular, as an application of \eqref{def:leibniz} it is obtained that solutions to the Korteweg-de Vries equation above disperse to $0$ as $t\rightarrow \infty.$
+
+
 In the estimates (\ref{def:leibniz}) and (\ref{def:ileibniz}), the two functions $f$ and $g$ are related through pointwise multiplication. In this dissertation, we will consider bilinear estimates in the spirit of (\ref{def:leibniz}) and (\ref{def:ileibniz}) where the two functions are related through a pseudodifferential operator. Let $\sigma(x,\xi,\eta)$ be a smooth, complex-valued function defined for $x,\xi,\eta\in\rn$. We define the \textit{bilinear pseudodifferential operator}  associated to $\sigma$, $T_\sigma$, by 
 \begin{equation}\label{psydo}
 T_{\sigma}(f,g)(x) = \int_{\mathbb{R}^{2n}} \sigma(x,\xi,\eta) \widehat{f}(\xi)\widehat{g}(\eta)e^{2\pi i x\cdot(\xi+\eta)}d\xi d\eta. 

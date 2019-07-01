@@ -1,26 +1,28 @@
+\contentsline {chapter}{Acknowledgements}{viii}{section*.2}% 
+\contentsline {chapter}{Dedication}{ix}{section*.3}% 
 \contentsline {chapter}{\numberline {1}Introduction to Leibniz-type rules}{1}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}Weighted Leibniz-type rules and applications to scattering properties of PDEs}{6}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Preliminaries}{7}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}Coifman-Meyer Multipliers}{8}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}The scale of weighted Triebel-Lizorkin and Besov spaces}{10}{subsection.2.1.2}% 
-\contentsline {subsubsection}{Weighted Triebel-Lizorkin and Besov spaces}{12}{section*.2}% 
-\contentsline {subsubsection}{Nikol'ski\u \i $\text { }$ representations for weighted Triebel-Lizorkin and Besov spaces}{15}{section*.3}% 
-\contentsline {section}{\numberline {2.2}Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}{21}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Homogeneous Leibniz-type rules}{21}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Proofs of the homogeneous Leibniz-type rules}{26}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Inhomogeneous Leibniz-type rules}{30}{subsection.2.2.3}% 
-\contentsline {section}{\numberline {2.3}Leibniz-type rules in other functions spaces}{32}{section.2.3}% 
+\contentsline {chapter}{\numberline {2}Weighted Leibniz-type rules and applications to scattering properties of PDEs}{7}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Preliminaries}{8}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Coifman-Meyer Multipliers}{9}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}The scale of weighted Triebel-Lizorkin and Besov spaces}{11}{subsection.2.1.2}% 
+\contentsline {subsubsection}{Weighted Triebel-Lizorkin and Besov spaces}{12}{section*.4}% 
+\contentsline {subsubsection}{Nikol'ski\u \i $\text { }$ representations for weighted Triebel-Lizorkin and Besov spaces}{16}{section*.5}% 
+\contentsline {section}{\numberline {2.2}Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}{22}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Homogeneous Leibniz-type rules}{22}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Proofs of the homogeneous Leibniz-type rules}{27}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Inhomogeneous Leibniz-type rules}{31}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Leibniz-type rules in other functions spaces}{33}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Leibniz-type rules in the settings of Lorentz-based Triebel--Lizorkin and Besov spaces.}{33}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}Leibniz-type rules in the settings of Morrey-based Triebel--Lizorkin and Besov spaces.}{36}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Leibniz-type rules in the settings of variable-exponent Triebel--Lizorkin and Besov spaces.}{38}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.3}Leibniz-type rules in the settings of variable-exponent Triebel--Lizorkin and Besov spaces.}{39}{subsection.2.3.3}% 
 \contentsline {subsection}{\numberline {2.3.4}Nikol'ski\u \i $\text { }$ representations of Triebel-Lizorkin and Besov spaces}{42}{subsection.2.3.4}% 
-\contentsline {section}{\numberline {2.4}Applications to scattering properties of PDEs}{43}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Applications to scattering properties of PDEs}{44}{section.2.4}% 
 \contentsline {chapter}{\numberline {3}Bilinear H\"ormander Classes and Leibniz-type rules}{49}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Introduction and main results}{49}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}A maximal inequality for bilinear pseudodiffernetial operators}{53}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Decomposition of the operator $T_\sigma $ and main estimates}{55}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Estimates for $T_{\sigma ^1}$}{58}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.1}Estimates for $T_{\sigma ^1}$}{57}{subsection.3.3.1}% 
 \contentsline {subsection}{\numberline {3.3.2}Estimates for $T_{\sigma ^2}$}{63}{subsection.3.3.2}% 
 \contentsline {subsection}{\numberline {3.3.3}Estimates for $T_{\sigma ^3}$}{71}{subsection.3.3.3}% 
 \contentsline {section}{\numberline {3.4}Conclusion of the proofs of the main results}{75}{section.3.4}% 
-\contentsline {chapter}{Bibliography}{79}{section*.4}% 
+\contentsline {chapter}{Bibliography}{78}{section*.6}% 

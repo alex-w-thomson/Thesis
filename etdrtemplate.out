@@ -1,27 +1,29 @@
 \BOOKMARK [0][-]{PDFTitlePage.0}{Title Page}{}% 1
 \BOOKMARK [0][-]{PDFAbstractPage.0}{Abstract}{}% 2
 \BOOKMARK [0][-]{contents.0}{Table of Contents}{}% 3
-\BOOKMARK [0][-]{chapter.1}{Introduction to Leibniz-type rules}{}% 4
-\BOOKMARK [0][-]{chapter.2}{Weighted Leibniz-type rules and applications to scattering properties of PDEs}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Preliminaries}{chapter.2}% 6
-\BOOKMARK [2][-]{subsection.2.1.1}{Coifman-Meyer Multipliers}{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.2}{The scale of weighted Triebel-Lizorkin and Besov spaces}{section.2.1}% 8
-\BOOKMARK [1][-]{section.2.2}{Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.1}{Homogeneous Leibniz-type rules}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.2}{Proofs of the homogeneous Leibniz-type rules}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.3}{Inhomogeneous Leibniz-type rules}{section.2.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Leibniz-type rules in other functions spaces}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{Leibniz-type rules in the settings of Lorentz-based Triebel\205Lizorkin and Besov spaces.}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.2}{Leibniz-type rules in the settings of Morrey-based Triebel\205Lizorkin and Besov spaces.}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.3}{Leibniz-type rules in the settings of variable-exponent Triebel\205Lizorkin and Besov spaces.}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.4}{Nikol'ski\232 \040representations of Triebel-Lizorkin and Besov spaces}{section.2.3}% 17
-\BOOKMARK [1][-]{section.2.4}{Applications to scattering properties of PDEs}{chapter.2}% 18
-\BOOKMARK [0][-]{chapter.3}{Bilinear H\366rmander Classes and Leibniz-type rules}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Introduction and main results}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.2}{A maximal inequality for bilinear pseudodiffernetial operators}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.3}{Decomposition of the operator T and main estimates}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.1}{Estimates for T1}{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.2}{Estimates for T2}{section.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.3}{Estimates for T3}{section.3.3}% 25
-\BOOKMARK [1][-]{section.3.4}{Conclusion of the proofs of the main results}{chapter.3}% 26
-\BOOKMARK [0][-]{section*.4}{Bibliography}{}% 27
+\BOOKMARK [0][-]{section*.2}{Acknowledgements}{}% 4
+\BOOKMARK [0][-]{section*.3}{Dedication}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Introduction to Leibniz-type rules}{}% 6
+\BOOKMARK [0][-]{chapter.2}{Weighted Leibniz-type rules and applications to scattering properties of PDEs}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Preliminaries}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{Coifman-Meyer Multipliers}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{The scale of weighted Triebel-Lizorkin and Besov spaces}{section.2.1}% 10
+\BOOKMARK [1][-]{section.2.2}{Leibniz-type rules in weighted Triebel-Lizorkin and Besov spaces}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Homogeneous Leibniz-type rules}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Proofs of the homogeneous Leibniz-type rules}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Inhomogeneous Leibniz-type rules}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Leibniz-type rules in other functions spaces}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.3.1}{Leibniz-type rules in the settings of Lorentz-based Triebel\205Lizorkin and Besov spaces.}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.2}{Leibniz-type rules in the settings of Morrey-based Triebel\205Lizorkin and Besov spaces.}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.3}{Leibniz-type rules in the settings of variable-exponent Triebel\205Lizorkin and Besov spaces.}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.4}{Nikol'ski\232 \040representations of Triebel-Lizorkin and Besov spaces}{section.2.3}% 19
+\BOOKMARK [1][-]{section.2.4}{Applications to scattering properties of PDEs}{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{Bilinear H\366rmander Classes and Leibniz-type rules}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Introduction and main results}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{A maximal inequality for bilinear pseudodiffernetial operators}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Decomposition of the operator T and main estimates}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.1}{Estimates for T1}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.2}{Estimates for T2}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.3}{Estimates for T3}{section.3.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Conclusion of the proofs of the main results}{chapter.3}% 28
+\BOOKMARK [0][-]{section*.6}{Bibliography}{}% 29
